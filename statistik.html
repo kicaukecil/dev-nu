@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>NU | Statistic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <link rel="apple-touch-icon" href="pages/ico/60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/bootstrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/nvd3/nv.d3.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/mapplic/css/mapplic.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/rickshaw/rickshaw.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="assets/plugins/jquery-metrojs/MetroJs.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+    <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 9]>
+	<link href="assets/plugins/codrops-dialogFx/dialog.ie.css" rel="stylesheet" type="text/css" media="screen" />
+	<![endif]-->
+
+  <style media="screen">
+    .sidebar-header span.text-success{
+      font-size: 33px;
+    }
+    .header .brand{
+      padding-left: 100px;
+      padding-right: 30px;
+      width: auto;
+      text-align: left;
+    }
+  </style>
+
+  </head>
+  <body class="fixed-header">
+    <!-- END SIDEBPANEL-->
+    <!-- START PAGE-CONTAINER -->
+    <div class="page-container ">
+      <!-- START HEADER -->
+
+      <!-- END HEADER -->
+      <!-- START PAGE CONTENT WRAPPER -->
+      <div class="page-content-wrapper ">
+        <!-- START PAGE CONTENT -->
+        <div class="content ">
+          <!-- START CONTAINER FLUID -->
+          
+            <!-- END BREADCRUMB -->
+            <div class="row">
+              <div class="col-sm-12">
+            <!-- START PANEL -->
+            <div class="panel panel-no-border">
+              <div class="panel-heading ">
+                <div class="panel-title">Rickshaw Charts
+                </div>
+              </div>
+              <div class="panel-body">
+                <div class="col-md-4 no-padding">
+                  <div class="p-r-30">
+                    <h3>Wilayah Jawa Tengah</h3>
+                    <br>
+                    <p>Halaman ini memperlihatkan statistik umum pada Wilayah tertentu untuk membantu dalam pengambilan keputusan</p>
+                    <br>
+                    <div class="inline">
+                      <p class="small hint-text">Rickshaw: JavaScript toolkit for creating interactive time series graphs.
+                        <br> <a href="http://code.shutterstock.com/rickshaw/">View the official
+									documentation</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="panel panel-transparent">
+                    <div class="panel-heading ">
+                      <div class="panel-controls">
+                        <ul>
+                          <li><a href="#" class="portlet-collapse" data-toggle="collapse"><i
+											class="pg-arrow_maximize"></i></a>
+                          </li>
+                          <li><a href="#" class="portlet-refresh" data-toggle="refresh"><i
+											class="pg-refresh_new"></i></a>
+                          </li>
+                          <li><a href="#" class="portlet-close" data-toggle="close"><i
+											class="pg-close"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="panel-body">
+                      <!-- Nav tabs -->
+                      <ul id="tabs-rickshaw" class="nav nav-tabs nav-tabs-linetriangle">
+                        <li class="active">
+                          <a data-toggle="tab" href="#tab-rickshaw-realtime">
+                            <span>Realtime Charts</span>
+                          </a>
+                        </li>
+                        <li class="">
+                          <a data-toggle="tab" href="#tab-rickshaw-bars">
+                            <span>Jumlah perserta didik</span>
+                          </a>
+                        </li>
+                        <li class="">
+                          <a data-toggle="tab" href="#tab-rickshaw-slider">
+                            <span>Nilai prestasi perseta didik</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- Tab panes -->
+                      <div class="tab-content no-padding bg-transparent">
+                        <div class="tab-pane active relative" id="tab-rickshaw-realtime">
+                          <div id="rickshaw-realtime_y_axis" class=""></div>
+                          <div id="rickshaw-realtime" class="rickshaw-chart"></div>
+                        </div>
+                        <div class="tab-pane " id="tab-rickshaw-bars">
+                          <div id="rickshaw-stacked-bars" class="rickshaw-chart"></div>
+                        </div>
+                        <div class="tab-pane" id="tab-rickshaw-slider">
+                          <div id="rickshaw-slider" class="relative">
+                            <div class="slider full-width m-t-20"></div>
+                            <div class="y_axis"></div>
+                            <div class="chart full-width rickshaw-chart"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END PANEL -->
+            </div>
+            </div>
+            <!-- END CONTAINER FLUID -->
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="ar-2-1">
+                  <!-- START WIDGET widget_barTile-->
+                  <div class="widget-5 panel no-border  widget-loader-bar">
+                    <div class="panel-heading pull-top top-right">
+                      <div class="panel-controls">
+                        <ul>
+                          <li><a data-toggle="refresh" class="portlet-refresh text-black" href="#"><i
+          class="portlet-icon portlet-icon-refresh"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="container-xs-height full-height">
+                      <div class="row row-xs-height">
+                        <div class="col-xs-5 col-xs-height col-middle relative">
+                          <div class="padding-15 top-left bottom-left">
+                            <h5 class="hint-text no-margin p-l-10">Jumblah tenaga pengajar</h5>
+                            <p class=" bold font-montserrat p-l-10">2,345,789
+                            <p class=" hint-text visible-xlg p-l-10">Hari ini</p>
+                          </div>
+                        </div>
+                        <div class="col-xs-7 col-xs-height col-bottom relative widget-5-chart-container">
+                          <div class="widget-5-chart">
+                            <svg><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="112.87128712871286" width="7" y="1.128712871287135" x="0"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="90.2970297029703" width="7" y="23.702970297029694" x="24.142857142857142"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="56.43564356435643" width="7" y="57.56435643564357" x="48.285714285714285"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="101.58415841584159" width="7" y="12.415841584158414" x="72.42857142857143"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="56.43564356435643" width="7" y="57.56435643564357" x="96.57142857142857"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="90.2970297029703" width="7" y="23.702970297029694" x="120.7142857142857"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="112.87128712871286" width="7" y="1.128712871287135" x="144.85714285714286"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="0" width="7" y="1.128712871287135" x="0"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="22.574257425742577" width="7" y="1.128712871287135" x="24.142857142857142"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="56.43564356435643" width="7" y="1.128712871287135" x="48.285714285714285"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="11.287128712871288" width="7" y="1.128712871287135" x="72.42857142857143"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="56.43564356435643" width="7" y="1.128712871287135" x="96.57142857142857"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="22.574257425742577" width="7" y="1.128712871287135" x="120.7142857142857"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="0" width="7" y="1.128712871287135" x="144.85714285714286"></rect></svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END WIDGET -->
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <!-- START WIDGET D3 widget_stackedBarWidgetBasic-->
+                <div class="widget panel no-margin no-border widget-loader-circle">
+                  <div class="panel-heading top-right">
+                    <div class="panel-controls">
+                      <ul>
+                        <li><a href="#" class="portlet-refresh text-black" data-toggle="refresh"><i
+							class="portlet-icon portlet-icon-refresh"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <ul class="nav nav-tabs nav-tabs-simple">
+                    <li class="active">
+                      <a href="#widget-15-2-tab-1">
+					                   Jumlah perserta <br> didik
+					(<span class="text-success">60.223%</span>)
+				</a>
+                    </li>
+                    <li><a href="#widget-15-2-tab-2">
+				                  Ketersediaan <br> kelas
+				(<span class="text-danger">06.56%</span>)
+			</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane no-padding active" id="widget-15-2-tab-1">
+                      <div class="full-width">
+                        <div class="widget-15-chart2 rickshaw-chart full-height">
+                          <svg height="200" width="349"><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.02453829264532" width="8.288749999999999" y="138.97546170735467" x="0"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="68.46639446048658" width="8.288749999999999" y="131.53360553951342" x="8.725"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="64.62297591698135" width="8.288749999999999" y="135.37702408301865" x="17.45"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.6454579166428" width="8.288749999999999" y="138.35454208335722" x="26.175"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="59.66202010716193" width="8.288749999999999" y="140.33797989283806" x="34.9"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="60.81507013457858" width="8.288749999999999" y="139.18492986542142" x="43.625"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="62.087140153865924" width="8.288749999999999" y="137.91285984613407" x="52.35"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="67.28849756732068" width="8.288749999999999" y="132.7115024326793" x="61.075"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="57.66079916050377" width="8.288749999999999" y="142.33920083949624" x="69.8"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="65.98100365398167" width="8.288749999999999" y="134.01899634601833" x="78.525"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="58.43690607563566" width="8.288749999999999" y="141.56309392436435" x="87.25"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="57.386509606700095" width="8.288749999999999" y="142.6134903932999" x="95.97500000000001"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.002471803390925" width="8.288749999999999" y="138.99752819660907" x="104.7"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.16194164132428" width="8.288749999999999" y="138.8380583586757" x="113.425"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="55.10243018365581" width="8.288749999999999" y="144.89756981634417" x="122.15"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="58.36135922721596" width="8.288749999999999" y="141.63864077278404" x="130.875"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="57.986228856845635" width="8.288749999999999" y="142.01377114315437" x="139.6"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="55.06841381061477" width="8.288749999999999" y="144.93158618938523" x="148.325"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="53.88419820718649" width="8.288749999999999" y="146.1158017928135" x="157.05"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.47816238209658" width="8.288749999999999" y="138.52183761790343" x="165.775"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="59.15408792684534" width="8.288749999999999" y="140.84591207315466" x="174.5"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="55.858365961605806" width="8.288749999999999" y="144.1416340383942" x="183.225"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="49.62315537181453" width="8.288749999999999" y="150.37684462818547" x="191.95000000000002"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="48.18750491216661" width="8.288749999999999" y="151.81249508783338" x="200.675"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="57.17376335595693" width="8.288749999999999" y="142.82623664404306" x="209.4"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="46.99997511829486" width="8.288749999999999" y="153.00002488170514" x="218.125"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="47.08686772887926" width="8.288749999999999" y="152.91313227112073" x="226.85"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="50.1312357372512" width="8.288749999999999" y="149.8687642627488" x="235.57500000000002"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="57.16754168834623" width="8.288749999999999" y="142.83245831165377" x="244.3"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="50.73726745906812" width="8.288749999999999" y="149.2627325409319" x="253.025"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="55.95976321448839" width="8.288749999999999" y="144.0402367855116" x="261.75"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="48.404938601809384" width="8.288749999999999" y="151.5950613981906" x="270.475"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="50.90656180034364" width="8.288749999999999" y="149.09343819965636" x="279.2"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="53.31795586085507" width="8.288749999999999" y="146.68204413914492" x="287.925"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="54.36797930360976" width="8.288749999999999" y="145.63202069639024" x="296.65"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="58.00785521882052" width="8.288749999999999" y="141.9921447811795" x="305.375"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.75469935047679" width="8.288749999999999" y="138.24530064952322" x="314.1"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="65.06430009844293" width="8.288749999999999" y="134.9356999015571" x="322.825"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="67.40373814619554" width="8.288749999999999" y="132.59626185380446" x="331.55"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="55.843640935548244" width="8.288749999999999" y="144.15635906445175" x="340.275"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="67.5445513538097" width="8.288749999999999" y="71.43091035354496" x="0"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="62.083143829079" width="8.288749999999999" y="69.45046171043441" x="8.725"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="58.424016890918296" width="8.288749999999999" y="76.95300719210036" x="17.45"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="56.49153154649269" width="8.288749999999999" y="81.86301053686454" x="26.175"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="60.55950647824565" width="8.288749999999999" y="79.77847341459243" x="34.9"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="59.91097658160689" width="8.288749999999999" y="79.27395328381452" x="43.625"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="66.46086049418547" width="8.288749999999999" y="71.45199935194859" x="52.35"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="59.118302506444905" width="8.288749999999999" y="73.5931999262344" x="61.075"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="62.05222452539553" width="8.288749999999999" y="80.28697631410071" x="69.8"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="67.35232967935167" width="8.288749999999999" y="66.66666666666666" x="78.525"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="62.49096447349635" width="8.288749999999999" y="79.07212945086796" x="87.25"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="54.81729237707788" width="8.288749999999999" y="87.79619801622202" x="95.97500000000001"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="60.5273085452992" width="8.288749999999999" y="78.47021965130989" x="104.7"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="64.28641302769856" width="8.288749999999999" y="74.55164533097718" x="113.425"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="62.59776559386947" width="8.288749999999999" y="82.29980422247472" x="122.15"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="58.530307613023666" width="8.288749999999999" y="83.10833315976036" x="130.875"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="59.9314072797008" width="8.288749999999999" y="82.08236386345355" x="139.6"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="55.818812754988315" width="8.288749999999999" y="89.11277343439691" x="148.325"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="53.676770745896995" width="8.288749999999999" y="92.43903104691651" x="157.05"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="55.79904817379961" width="8.288749999999999" y="82.72278944410381" x="165.775"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="54.030660062634674" width="8.288749999999999" y="86.81525201051998" x="174.5"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="46.651580426388755" width="8.288749999999999" y="97.49005361200544" x="183.225"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="56.86903277471957" width="8.288749999999999" y="93.50781185346591" x="191.95000000000002"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="47.397332202805664" width="8.288749999999999" y="104.41516288502773" x="200.675"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="48.483067121762325" width="8.288749999999999" y="94.34316952228076" x="209.4"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="48.49818856690516" width="8.288749999999999" y="104.50183631479999" x="218.125"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="52.03412672041053" width="8.288749999999999" y="100.87900555071019" x="226.85"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="52.5595972941377" width="8.288749999999999" y="97.3091669686111" x="235.57500000000002"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="50.73015970480926" width="8.288749999999999" y="92.10229860684451" x="244.3"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="49.29919705814964" width="8.288749999999999" y="99.96353548278223" x="253.025"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="54.38685551588935" width="8.288749999999999" y="89.65338126962226" x="261.75"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="48.04021279656849" width="8.288749999999999" y="103.55484860162213" x="270.475"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="46.74768209173212" width="8.288749999999999" y="102.34575610792422" x="279.2"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="56.26628619029578" width="8.288749999999999" y="90.41575794884915" x="287.925"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="53.27038843682066" width="8.288749999999999" y="92.36163225956959" x="296.65"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="50.99919771495204" width="8.288749999999999" y="90.99294706622744" x="305.375"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="53.894649802795" width="8.288749999999999" y="84.35065084672819" x="314.1"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="57.59447960711307" width="8.288749999999999" y="77.34122029444399" x="322.825"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="56.2599597721503" width="8.288749999999999" y="76.33630208165417" x="331.55"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="55.503524822235285" width="8.288749999999999" y="88.65283424221649" x="340.275"></rect></svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane no-padding" id="widget-15-2-tab-2">
+                    </div>
+
+                  </div>
+                </div>
+                <!-- END WIDGET -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END PAGE CONTENT -->
+        <!-- START COPYRIGHT -->
+        <!-- START CONTAINER FLUID -->
+        <!-- START CONTAINER FLUID -->
+        <div class="container-fluid container-fixed-lg footer">
+          <div class="copyright sm-text-center">
+            <p class="small no-margin pull-left sm-pull-reset">
+              <span class="hint-text">Copyright &copy; 2014 </span>
+              <span class="font-montserrat">REVOX</span>.
+              <span class="hint-text">All rights reserved. </span>
+              <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+            </p>
+            <p class="small no-margin pull-right sm-pull-reset">
+              <a href="#">Hand-crafted</a> <span class="hint-text">&amp; Made with Love ®</span>
+            </p>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <!-- END COPYRIGHT -->
+      </div>
+      <!-- END PAGE CONTENT WRAPPER -->
+    </div>
+    <!-- END PAGE CONTAINER -->
+    <!--START QUICKVIEW -->
+    <div id="quickview" class="quickview-wrapper" data-pages="quickview">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs">
+        <li class="">
+          <a href="#quickview-notes" data-toggle="tab">Notes</a>
+        </li>
+        <li>
+          <a href="#quickview-alerts" data-toggle="tab">Alerts</a>
+        </li>
+        <li class="active">
+          <a href="#quickview-chat" data-toggle="tab">Chat</a>
+        </li>
+      </ul>
+      <a class="btn-link quickview-toggle" data-toggle-element="#quickview" data-toggle="quickview"><i class="pg-close"></i></a>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!-- BEGIN Notes !-->
+        <div class="tab-pane fade  in no-padding" id="quickview-notes">
+          <div class="view-port clearfix quickview-notes" id="note-views">
+            <!-- BEGIN Note List !-->
+            <div class="view list" id="quick-note-list">
+              <div class="toolbar clearfix">
+                <ul class="pull-right ">
+                  <li>
+                    <a href="#" class="delete-note-link"><i class="fa fa-trash-o"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="new-note-link" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="fa fa-plus"></i></a>
+                  </li>
+                </ul>
+                <button class="btn-remove-notes btn btn-xs btn-block hide"><i class="fa fa-times"></i> Delete</button>
+              </div>
+              <ul>
+                <!-- BEGIN Note Item !-->
+                <li data-noteid="1">
+                  <div class="left">
+                    <!-- BEGIN Note Action !-->
+                    <div class="checkbox check-warning no-margin">
+                      <input id="qncheckbox1" type="checkbox" value="1">
+                      <label for="qncheckbox1"></label>
+                    </div>
+                    <!-- END Note Action !-->
+                    <!-- BEGIN Note Preview Text !-->
+                    <p class="note-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <!-- BEGIN Note Preview Text !-->
+                  </div>
+                  <!-- BEGIN Note Details !-->
+                  <div class="right pull-right">
+                    <!-- BEGIN Note Date !-->
+                    <span class="date">12/12/14</span>
+                    <a href="#" data-navigate="view" data-view-port="#note-views" data-view-animation="push"><i class="fa fa-chevron-right"></i></a>
+                    <!-- END Note Date !-->
+                  </div>
+                  <!-- END Note Details !-->
+                </li>
+                <!-- END Note List !-->
+                <!-- BEGIN Note Item !-->
+                <li data-noteid="2">
+                  <div class="left">
+                    <!-- BEGIN Note Action !-->
+                    <div class="checkbox check-warning no-margin">
+                      <input id="qncheckbox2" type="checkbox" value="1">
+                      <label for="qncheckbox2"></label>
+                    </div>
+                    <!-- END Note Action !-->
+                    <!-- BEGIN Note Preview Text !-->
+                    <p class="note-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <!-- BEGIN Note Preview Text !-->
+                  </div>
+                  <!-- BEGIN Note Details !-->
+                  <div class="right pull-right">
+                    <!-- BEGIN Note Date !-->
+                    <span class="date">12/12/14</span>
+                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                    <!-- END Note Date !-->
+                  </div>
+                  <!-- END Note Details !-->
+                </li>
+                <!-- END Note List !-->
+                <!-- BEGIN Note Item !-->
+                <li data-noteid="2">
+                  <div class="left">
+                    <!-- BEGIN Note Action !-->
+                    <div class="checkbox check-warning no-margin">
+                      <input id="qncheckbox3" type="checkbox" value="1">
+                      <label for="qncheckbox3"></label>
+                    </div>
+                    <!-- END Note Action !-->
+                    <!-- BEGIN Note Preview Text !-->
+                    <p class="note-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <!-- BEGIN Note Preview Text !-->
+                  </div>
+                  <!-- BEGIN Note Details !-->
+                  <div class="right pull-right">
+                    <!-- BEGIN Note Date !-->
+                    <span class="date">12/12/14</span>
+                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                    <!-- END Note Date !-->
+                  </div>
+                  <!-- END Note Details !-->
+                </li>
+                <!-- END Note List !-->
+                <!-- BEGIN Note Item !-->
+                <li data-noteid="3">
+                  <div class="left">
+                    <!-- BEGIN Note Action !-->
+                    <div class="checkbox check-warning no-margin">
+                      <input id="qncheckbox4" type="checkbox" value="1">
+                      <label for="qncheckbox4"></label>
+                    </div>
+                    <!-- END Note Action !-->
+                    <!-- BEGIN Note Preview Text !-->
+                    <p class="note-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <!-- BEGIN Note Preview Text !-->
+                  </div>
+                  <!-- BEGIN Note Details !-->
+                  <div class="right pull-right">
+                    <!-- BEGIN Note Date !-->
+                    <span class="date">12/12/14</span>
+                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                    <!-- END Note Date !-->
+                  </div>
+                  <!-- END Note Details !-->
+                </li>
+                <!-- END Note List !-->
+                <!-- BEGIN Note Item !-->
+                <li data-noteid="4">
+                  <div class="left">
+                    <!-- BEGIN Note Action !-->
+                    <div class="checkbox check-warning no-margin">
+                      <input id="qncheckbox5" type="checkbox" value="1">
+                      <label for="qncheckbox5"></label>
+                    </div>
+                    <!-- END Note Action !-->
+                    <!-- BEGIN Note Preview Text !-->
+                    <p class="note-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <!-- BEGIN Note Preview Text !-->
+                  </div>
+                  <!-- BEGIN Note Details !-->
+                  <div class="right pull-right">
+                    <!-- BEGIN Note Date !-->
+                    <span class="date">12/12/14</span>
+                    <a href="#"><i class="fa fa-chevron-right"></i></a>
+                    <!-- END Note Date !-->
+                  </div>
+                  <!-- END Note Details !-->
+                </li>
+                <!-- END Note List !-->
+              </ul>
+            </div>
+            <!-- END Note List !-->
+            <div class="view note" id="quick-note">
+              <div>
+                <ul class="toolbar">
+                  <li><a href="#" class="close-note-link"><i class="pg-arrow_left"></i></a>
+                  </li>
+                  <li><a href="#" data-action="Bold"><i class="fa fa-bold"></i></a>
+                  </li>
+                  <li><a href="#" data-action="Italic"><i class="fa fa-italic"></i></a>
+                  </li>
+                  <li><a href="#" class=""><i class="fa fa-link"></i></a>
+                  </li>
+                </ul>
+                <div class="body">
+                  <div>
+                    <div class="top">
+                      <span>21st april 2014 2:13am</span>
+                    </div>
+                    <div class="content">
+                      <div class="quick-note-editor full-width full-height js-input" contenteditable="true"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END Notes !-->
+        <!-- BEGIN Alerts !-->
+        <div class="tab-pane fade no-padding" id="quickview-alerts">
+          <div class="view-port clearfix" id="alerts">
+            <!-- BEGIN Alerts View !-->
+            <div class="view bg-white">
+              <!-- BEGIN View Header !-->
+              <div class="navbar navbar-default navbar-sm">
+                <div class="navbar-inner">
+                  <!-- BEGIN Header Controler !-->
+                  <a href="javascript:;" class="inline action p-l-10 link text-master" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                    <i class="pg-more"></i>
+                  </a>
+                  <!-- END Header Controler !-->
+                  <div class="view-heading">
+                    Notications
+                  </div>
+                  <!-- BEGIN Header Controler !-->
+                  <a href="#" class="inline action p-r-10 pull-right link text-master">
+                    <i class="pg-search"></i>
+                  </a>
+                  <!-- END Header Controler !-->
+                </div>
+              </div>
+              <!-- END View Header !-->
+              <!-- BEGIN Alert List !-->
+              <div data-init-list-view="ioslist" class="list-view boreded no-top-border">
+                <!-- BEGIN List Group !-->
+                <div class="list-view-group-container">
+                  <!-- BEGIN List Group Header!-->
+                  <div class="list-view-group-header text-uppercase">
+                    Calendar
+                  </div>
+                  <!-- END List Group Header!-->
+                  <ul>
+                    <!-- BEGIN List Group Item!-->
+                    <li class="alert-list">
+                      <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
+                      <a href="javascript:;" class="" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                        <p class="col-xs-height col-middle">
+                          <span class="text-warning fs-10"><i class="fa fa-circle"></i></span>
+                        </p>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-9 overflow-ellipsis fs-12">
+                          <span class="text-master">David Nester Birthday</span>
+                        </p>
+                        <p class="p-r-10 col-xs-height col-middle fs-12 text-right">
+                          <span class="text-warning">Today <br></span>
+                          <span class="text-master">All Day</span>
+                        </p>
+                      </a>
+                      <!-- END Alert Item!-->
+                      <!-- BEGIN List Group Item!-->
+                    </li>
+                    <!-- END List Group Item!-->
+                    <!-- BEGIN List Group Item!-->
+                    <li class="alert-list">
+                      <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
+                      <a href="#" class="" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                        <p class="col-xs-height col-middle">
+                          <span class="text-warning fs-10"><i class="fa fa-circle"></i></span>
+                        </p>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-9 overflow-ellipsis fs-12">
+                          <span class="text-master">Meeting at 2:30</span>
+                        </p>
+                        <p class="p-r-10 col-xs-height col-middle fs-12 text-right">
+                          <span class="text-warning">Today</span>
+                        </p>
+                      </a>
+                      <!-- END Alert Item!-->
+                    </li>
+                    <!-- END List Group Item!-->
+                  </ul>
+                </div>
+                <!-- END List Group !-->
+                <div class="list-view-group-container">
+                  <!-- BEGIN List Group Header!-->
+                  <div class="list-view-group-header text-uppercase">
+                    Social
+                  </div>
+                  <!-- END List Group Header!-->
+                  <ul>
+                    <!-- BEGIN List Group Item!-->
+                    <li class="alert-list">
+                      <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
+                      <a href="javascript:;" class="p-t-10 p-b-10" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                        <p class="col-xs-height col-middle">
+                          <span class="text-complete fs-10"><i class="fa fa-circle"></i></span>
+                        </p>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12 overflow-ellipsis fs-12">
+                          <span class="text-master link">Jame Smith commented on your status<br></span>
+                          <span class="text-master">“Perfection Simplified - Company Revox"</span>
+                        </p>
+                      </a>
+                      <!-- END Alert Item!-->
+                    </li>
+                    <!-- END List Group Item!-->
+                    <!-- BEGIN List Group Item!-->
+                    <li class="alert-list">
+                      <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
+                      <a href="javascript:;" class="p-t-10 p-b-10" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                        <p class="col-xs-height col-middle">
+                          <span class="text-complete fs-10"><i class="fa fa-circle"></i></span>
+                        </p>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12 overflow-ellipsis fs-12">
+                          <span class="text-master link">Jame Smith commented on your status<br></span>
+                          <span class="text-master">“Perfection Simplified - Company Revox"</span>
+                        </p>
+                      </a>
+                      <!-- END Alert Item!-->
+                    </li>
+                    <!-- END List Group Item!-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <!-- BEGIN List Group Header!-->
+                  <div class="list-view-group-header text-uppercase">
+                    Sever Status
+                  </div>
+                  <!-- END List Group Header!-->
+                  <ul>
+                    <!-- BEGIN List Group Item!-->
+                    <li class="alert-list">
+                      <!-- BEGIN Alert Item Set Animation using data-view-animation !-->
+                      <a href="#" class="p-t-10 p-b-10" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                        <p class="col-xs-height col-middle">
+                          <span class="text-danger fs-10"><i class="fa fa-circle"></i></span>
+                        </p>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12 overflow-ellipsis fs-12">
+                          <span class="text-master link">12:13AM GTM, 10230, ID:WR174s<br></span>
+                          <span class="text-master">Server Load Exceeted. Take action</span>
+                        </p>
+                      </a>
+                      <!-- END Alert Item!-->
+                    </li>
+                    <!-- END List Group Item!-->
+                  </ul>
+                </div>
+              </div>
+              <!-- END Alert List !-->
+            </div>
+            <!-- EEND Alerts View !-->
+          </div>
+        </div>
+        <!-- END Alerts !-->
+        <div class="tab-pane fade in active no-padding" id="quickview-chat">
+          <div class="view-port clearfix" id="chat">
+            <div class="view bg-white">
+              <!-- BEGIN View Header !-->
+              <div class="navbar navbar-default">
+                <div class="navbar-inner">
+                  <!-- BEGIN Header Controler !-->
+                  <a href="javascript:;" class="inline action p-l-10 link text-master" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                    <i class="pg-plus"></i>
+                  </a>
+                  <!-- END Header Controler !-->
+                  <div class="view-heading">
+                    Chat List
+                    <div class="fs-11">Show All</div>
+                  </div>
+                  <!-- BEGIN Header Controler !-->
+                  <a href="#" class="inline action p-r-10 pull-right link text-master">
+                    <i class="pg-more"></i>
+                  </a>
+                  <!-- END Header Controler !-->
+                </div>
+              </div>
+              <!-- END View Header !-->
+              <div data-init-list-view="ioslist" class="list-view boreded no-top-border">
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">
+                    a</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">ava flores</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">b</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">bella mccoy</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">bob stephens</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">c</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">carole roberts</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">christopher perez</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">d</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">danielle fletcher</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">david sutton</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">e</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">earl hamilton</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">elaine lawrence</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">ellen grant</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">erik taylor</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">everett wagner</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">f</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">freddie gomez</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">g</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">glen jensen</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">gwendolyn walker</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">j</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">janet romero</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">k</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">kim martinez</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">l</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">lawrence white</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">leroy bell</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">letitia carr</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">lucy castro</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">m</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">mae hayes</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">marilyn owens</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">marlene cole</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">marsha warren</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">marsha dean</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">mia diaz</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">n</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">noah elliott</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">p</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">phyllis hamilton</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">r</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">raul rodriquez</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">rhonda barnett</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" src="assets/img/profiles/5x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">roberta king</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">s</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" src="assets/img/profiles/6x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">scott armstrong</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" src="assets/img/profiles/7x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">sebastian austin</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/8x.jpg" data-src="assets/img/profiles/8.jpg" src="assets/img/profiles/8x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">sofia davis</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">t</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/9x.jpg" data-src="assets/img/profiles/9.jpg" src="assets/img/profiles/9x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">terrance young</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" src="assets/img/profiles/1x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">theodore woods</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" src="assets/img/profiles/2x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">todd wood</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" src="assets/img/profiles/3x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">tommy jenkins</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+                <div class="list-view-group-container">
+                  <div class="list-view-group-header text-uppercase">w</div>
+                  <ul>
+                    <!-- BEGIN Chat User List Item  !-->
+                    <li class="chat-user-list clearfix">
+                      <a data-view-animation="push-parrallax" data-view-port="#chat" data-navigate="view" class="" href="#">
+                        <span class="col-xs-height col-middle">
+                        <span class="thumbnail-wrapper d32 circular bg-success">
+                            <img width="34" height="34" alt="" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" src="assets/img/profiles/4x.jpg" class="col-top">
+                        </span>
+                        </span>
+                        <p class="p-l-10 col-xs-height col-middle col-xs-12">
+                          <span class="text-master">wilma hicks</span>
+                          <span class="block text-master hint-text fs-12">Hello there</span>
+                        </p>
+                      </a>
+                    </li>
+                    <!-- END Chat User List Item  !-->
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- BEGIN Conversation View  !-->
+            <div class="view chat-view bg-white clearfix">
+              <!-- BEGIN Header  !-->
+              <div class="navbar navbar-default">
+                <div class="navbar-inner">
+                  <a href="javascript:;" class="link text-master inline action p-l-10 p-r-10" data-navigate="view" data-view-port="#chat" data-view-animation="push-parrallax">
+                    <i class="pg-arrow_left"></i>
+                  </a>
+                  <div class="view-heading">
+                    John Smith
+                    <div class="fs-11 hint-text">Online</div>
+                  </div>
+                  <a href="#" class="link text-master inline action p-r-10 pull-right ">
+                    <i class="pg-more"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- END Header  !-->
+              <!-- BEGIN Conversation  !-->
+              <div class="chat-inner" id="my-conversation">
+                <!-- BEGIN From Me Message  !-->
+                <div class="message clearfix">
+                  <div class="chat-bubble from-me">
+                    Hello there
+                  </div>
+                </div>
+                <!-- END From Me Message  !-->
+                <!-- BEGIN From Them Message  !-->
+                <div class="message clearfix">
+                  <div class="profile-img-wrapper m-t-5 inline">
+                    <img class="col-top" width="30" height="30" src="assets/img/profiles/avatar_small.jpg" alt="" data-src="assets/img/profiles/avatar_small.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg">
+                  </div>
+                  <div class="chat-bubble from-them">
+                    Hey
+                  </div>
+                </div>
+                <!-- END From Them Message  !-->
+                <!-- BEGIN From Me Message  !-->
+                <div class="message clearfix">
+                  <div class="chat-bubble from-me">
+                    Did you check out Pages framework ?
+                  </div>
+                </div>
+                <!-- END From Me Message  !-->
+                <!-- BEGIN From Me Message  !-->
+                <div class="message clearfix">
+                  <div class="chat-bubble from-me">
+                    Its an awesome chat
+                  </div>
+                </div>
+                <!-- END From Me Message  !-->
+                <!-- BEGIN From Them Message  !-->
+                <div class="message clearfix">
+                  <div class="profile-img-wrapper m-t-5 inline">
+                    <img class="col-top" width="30" height="30" src="assets/img/profiles/avatar_small.jpg" alt="" data-src="assets/img/profiles/avatar_small.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg">
+                  </div>
+                  <div class="chat-bubble from-them">
+                    Yea
+                  </div>
+                </div>
+                <!-- END From Them Message  !-->
+              </div>
+              <!-- BEGIN Conversation  !-->
+              <!-- BEGIN Chat Input  !-->
+              <div class="b-t b-grey bg-white clearfix p-l-10 p-r-10">
+                <div class="row">
+                  <div class="col-xs-1 p-t-15">
+                    <a href="#" class="link text-master"><i class="fa fa-plus-circle"></i></a>
+                  </div>
+                  <div class="col-xs-8 no-padding">
+                    <input type="text" class="form-control chat-input" data-chat-input="" data-chat-conversation="#my-conversation" placeholder="Say something">
+                  </div>
+                  <div class="col-xs-2 link text-master m-l-10 m-t-15 p-l-10 b-l b-grey col-top">
+                    <a href="#" class="link text-master"><i class="pg-camera"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- END Chat Input  !-->
+            </div>
+            <!-- END Conversation View  !-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END QUICKVIEW-->
+    <!-- START OVERLAY -->
+    <div class="overlay hide" data-pages="search">
+      <!-- BEGIN Overlay Content !-->
+      <div class="overlay-content has-results m-t-20">
+        <!-- BEGIN Overlay Header !-->
+        <div class="container-fluid">
+          <!-- BEGIN Overlay Logo !-->
+          <img class="overlay-brand" src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
+          <!-- END Overlay Logo !-->
+          <!-- BEGIN Overlay Close !-->
+          <a href="#" class="close-icon-light overlay-close text-black fs-16">
+            <i class="pg-close"></i>
+          </a>
+          <!-- END Overlay Close !-->
+        </div>
+        <!-- END Overlay Header !-->
+        <div class="container-fluid">
+          <!-- BEGIN Overlay Controls !-->
+          <input id="overlay-search" class="no-border overlay-search bg-transparent" placeholder="Search..." autocomplete="off" spellcheck="false">
+          <br>
+          <div class="inline-block">
+            <div class="checkbox right">
+              <input id="checkboxn" type="checkbox" value="1" checked="checked">
+              <label for="checkboxn"><i class="fa fa-search"></i> Search within page</label>
+            </div>
+          </div>
+          <div class="inline-block m-l-10">
+            <p class="fs-13">Press enter to search</p>
+          </div>
+          <!-- END Overlay Controls !-->
+        </div>
+        <!-- BEGIN Overlay Search Results, This part is for demo purpose, you can add anything you like !-->
+        <div class="container-fluid">
+          <span>
+                <strong>suggestions :</strong>
+            </span>
+          <span id="overlay-suggestions"></span>
+          <br>
+          <div class="search-results m-t-40">
+            <p class="bold">Pages Search Results</p>
+            <div class="row">
+              <div class="col-md-6">
+                <!-- BEGIN Search Result Item !-->
+                <div class="">
+                  <!-- BEGIN Search Result Item Thumbnail !-->
+                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
+                    <div>
+                      <img width="50" height="50" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
+                    </div>
+                  </div>
+                  <!-- END Search Result Item Thumbnail !-->
+                  <div class="p-l-10 inline p-t-5">
+                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> on pages</h5>
+                    <p class="hint-text">via john smith</p>
+                  </div>
+                </div>
+                <!-- END Search Result Item !-->
+                <!-- BEGIN Search Result Item !-->
+                <div class="">
+                  <!-- BEGIN Search Result Item Thumbnail !-->
+                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
+                    <div>T</div>
+                  </div>
+                  <!-- END Search Result Item Thumbnail !-->
+                  <div class="p-l-10 inline p-t-5">
+                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> related topics</h5>
+                    <p class="hint-text">via pages</p>
+                  </div>
+                </div>
+                <!-- END Search Result Item !-->
+                <!-- BEGIN Search Result Item !-->
+                <div class="">
+                  <!-- BEGIN Search Result Item Thumbnail !-->
+                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
+                    <div><i class="fa fa-headphones large-text "></i>
+                    </div>
+                  </div>
+                  <!-- END Search Result Item Thumbnail !-->
+                  <div class="p-l-10 inline p-t-5">
+                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> music</h5>
+                    <p class="hint-text">via pagesmix</p>
+                  </div>
+                </div>
+                <!-- END Search Result Item !-->
+              </div>
+              <div class="col-md-6">
+                <!-- BEGIN Search Result Item !-->
+                <div class="">
+                  <!-- BEGIN Search Result Item Thumbnail !-->
+                  <div class="thumbnail-wrapper d48 circular bg-info text-white inline m-t-10">
+                    <div><i class="fa fa-facebook large-text "></i>
+                    </div>
+                  </div>
+                  <!-- END Search Result Item Thumbnail !-->
+                  <div class="p-l-10 inline p-t-5">
+                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> on facebook</h5>
+                    <p class="hint-text">via facebook</p>
+                  </div>
+                </div>
+                <!-- END Search Result Item !-->
+                <!-- BEGIN Search Result Item !-->
+                <div class="">
+                  <!-- BEGIN Search Result Item Thumbnail !-->
+                  <div class="thumbnail-wrapper d48 circular bg-complete text-white inline m-t-10">
+                    <div><i class="fa fa-twitter large-text "></i>
+                    </div>
+                  </div>
+                  <!-- END Search Result Item Thumbnail !-->
+                  <div class="p-l-10 inline p-t-5">
+                    <h5 class="m-b-5">Tweats on<span class="semi-bold result-name"> ice cream</span></h5>
+                    <p class="hint-text">via twitter</p>
+                  </div>
+                </div>
+                <!-- END Search Result Item !-->
+                <!-- BEGIN Search Result Item !-->
+                <div class="">
+                  <!-- BEGIN Search Result Item Thumbnail !-->
+                  <div class="thumbnail-wrapper d48 circular text-white bg-danger inline m-t-10">
+                    <div><i class="fa fa-google-plus large-text "></i>
+                    </div>
+                  </div>
+                  <!-- END Search Result Item Thumbnail !-->
+                  <div class="p-l-10 inline p-t-5">
+                    <h5 class="m-b-5">Circles on<span class="semi-bold result-name"> ice cream</span></h5>
+                    <p class="hint-text">via google plus</p>
+                  </div>
+                </div>
+                <!-- END Search Result Item !-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END Overlay Search Results !-->
+      </div>
+      <!-- END Overlay Content !-->
+    </div>
+    <!-- END OVERLAY -->
+    <!-- BEGIN VENDOR JS -->
+    <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-bez/jquery.bez.min.js"></script>
+    <script src="assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+    <script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-select2/select2.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
+    <script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/lib/d3.v3.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/nv.d3.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/utils.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/tooltip.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/interactiveLayer.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/models/axis.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/models/line.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/models/lineWithFocusChart.js" type="text/javascript"></script>
+    <script src="assets/plugins/mapplic/js/hammer.js"></script>
+    <script src="assets/plugins/mapplic/js/jquery.mousewheel.js"></script>
+    <script src="assets/plugins/mapplic/js/mapplic.js"></script>
+    <script src="assets/plugins/rickshaw/rickshaw.min.js"></script>
+    <script src="assets/plugins/jquery-metrojs/MetroJs.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/skycons/skycons.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <!-- END VENDOR JS -->
+    <!-- BEGIN CORE TEMPLATE JS -->
+    <script src="pages/js/pages.min.js"></script>
+    <!-- END CORE TEMPLATE JS -->
+    <!-- BEGIN PAGE LEVEL JS -->
+    <script src="assets/js/charts.js" type="text/javascript"></script>
+    <script src="assets/js/dashboard.js" type="text/javascript"></script>
+    <script src="assets/js/scripts.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL JS -->
+  </body>
+</html>
