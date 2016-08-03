@@ -5,14 +5,14 @@
  * ============================================================ */
 
 (function($) {
-    
+
     'use strict';
 
     $(document).ready(function() {
 
-        // Apply mapplic plugin 
+        // Apply mapplic plugin
         $('#mapplic').mapplic({
-            source: 'http://revox.io/json/countries.json',
+            source: 'http://139.59.239.219/demo/assets/js/countries.json',
             height: '100%',
             search: false,
             sidebar: false,
@@ -31,7 +31,7 @@
         });
 
         // Load country list into select2
-        $.getJSON('http://revox.io/json/countries.json', function(data) {
+        $.getJSON('http://139.59.239.219/demo/assets/js/countries.json', function(data) {
             var countryList = [];
 
             $.each(data.levels[0].locations, function(key, val) {
