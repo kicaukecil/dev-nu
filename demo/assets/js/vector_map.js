@@ -5,18 +5,18 @@
  * ============================================================ */
 
 (function($) {
-    
+
     'use strict';
 
     $(document).ready(function() {
 
-        // Apply mapplic plugin 
+        // Apply mapplic plugin
         $('#mapplic').mapplic({
-            source: 'http://revox.io/json/countries.json',
+            source: 'assets/js/indonesia.json',
             height: '100%',
             search: false,
             sidebar: false,
-            minimap: true,
+            minimap: false,
             locations: true,
             deeplinking: true,
             fullscreen: true,
@@ -31,7 +31,7 @@
         });
 
         // Load country list into select2
-        $.getJSON('http://revox.io/json/countries.json', function(data) {
+        $.getJSON('assets/js/indonesia.json', function(data) {
             var countryList = [];
 
             $.each(data.levels[0].locations, function(key, val) {
