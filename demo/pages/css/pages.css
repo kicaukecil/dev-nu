@@ -1074,7 +1074,7 @@ body.rtl [class*="col-"] {
 .page-container .page-content-wrapper .content {
   /* Content holder */
   z-index: 10;
-  padding-top: 60px;
+  padding-top: 0px;
   padding-bottom: 72px;
   min-height: 100%;
   -webkit-transition: all 0.3s ease;
