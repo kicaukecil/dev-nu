@@ -26,7 +26,9 @@
 	 }
 
 	 svg a .country:hover {
-	 	opacity: 0.6;
+	 	fill: #10cfbd;
+		stroke-width:1.2;
+		stroke-fill: #10cfbd;
 	 }
 	 </style>
 <rect id="Ocean" x="600" y="-299.754" class="ocean" width="1600" height="1000"/>
