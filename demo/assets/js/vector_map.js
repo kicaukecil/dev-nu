@@ -12,11 +12,11 @@
 
         // Apply mapplic plugin
         $('#mapplic').mapplic({
-            source: 'http://139.59.239.219/demo/assets/js/countries.json',
+            source: 'assets/js/indonesia.json',
             height: '100%',
             search: false,
             sidebar: false,
-            minimap: true,
+            minimap: false,
             locations: true,
             deeplinking: true,
             fullscreen: true,
@@ -31,7 +31,7 @@
         });
 
         // Load country list into select2
-        $.getJSON('http://139.59.239.219/demo/assets/js/countries.json', function(data) {
+        $.getJSON('assets/js/indonesia.json', function(data) {
             var countryList = [];
 
             $.each(data.levels[0].locations, function(key, val) {
