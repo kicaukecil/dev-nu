@@ -5,14 +5,6 @@
     <meta charset="utf-8" />
     <title>Pages - Admin Dashboard UI Kit - Blank Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
-    <link rel="apple-touch-icon" href="pages/ico/60.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta content="" name="description" />
     <meta content="" name="author" />
     <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
@@ -28,65 +20,29 @@
     <link href="assets/plugins/jquery-metrojs/MetroJs.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+
     <!--[if lte IE 9]>
 	<link href="assets/plugins/codrops-dialogFx/dialog.ie.css" rel="stylesheet" type="text/css" media="screen" />
 	<![endif]-->
   </head>
-  <body class=" menu-pin">
+  <body class="fixed-header menu-pin">
     <!-- BEGIN SIDEBPANEL-->
     <nav class="page-sidebar" data-pages="sidebar">
       <!-- BEGIN SIDEBAR MENU TOP TRAY CONTENT-->
       <div class="sidebar-overlay-slide from-top" id="appMenu">
-
       </div>
       <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
       <!-- BEGIN SIDEBAR MENU HEADER-->
       <div class="sidebar-header" style="padding-left: 70px; height: auto">
         <img src="logo.png" alt="logo" data-src="logo.png" width="110" height="110">
-        <!--<div class="sidebar-header-controls">
-          <button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20" data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i>
-          </button>
-          <button type="button" class="btn btn-link visible-lg-inline" data-toggle-pin="sidebar"><i class="fa fs-12"></i>
-          </button>
-        </div>-->
       </div>
       <!-- END SIDEBAR MENU HEADER-->
       <!-- START SIDEBAR MENU -->
       <div class="sidebar-menu" style="padding-top: 10px">
         <!-- BEGIN SIDEBAR MENU ITEMS-->
-        <ul class="menu-items">
-          <li class="m-t-30 ">
-            <a href="dashboard.html" class="">
-              <span class="title">Dashboard</span>
-              <span class="details"></span>
-            </a>
-            <span class="icon-thumbnail"><i class="pg-home"></i></span>
-          </li>
-          <li class="">
-            <a class="detailed" href="statistic.html"><span class="title">Statistics</span><span class="details">2 New Updates</span></a>
-            <span class="bg-success  icon-thumbnail"><i class="pg-charts"></i></span>
-          </li>
-          <li class="">
-            <a href="data_table.html"><span class="title">Data Table</span></a>
-            <span class="icon-thumbnail"><i class="pg-tables"></i></span>
-          </li>
-          <li class="">
-            <a href="activity.html"><span class="title">Activity</span></a>
-            <span class="icon-thumbnail"><i class="pg-menu_lv"></i></span>
-          </li>
-          <li class="">
-            <a href="insert.html"><span class="title">Insert Data</span></a>
-            <span class="icon-thumbnail"><i class="pg-inbox"></i></span>
-          </li>
-          <li class="">
-            <a href="import.html"><span class="title">Import Data</span></a>
-            <span class="icon-thumbnail"><i class="fa fa-upload"></i></span>
-          </li>
-          <li class="">
-            <a href="users.html"><span class="title">Users</span></a>
-            <span class="icon-thumbnail"><i class="fa fa-user"></i></span>
-          </li>
-        </ul>
+
+      <script src="menu.js"></script>
+
         <div class="clearfix"></div>
       </div>
       <!-- END SIDEBAR MENU -->
@@ -96,267 +52,199 @@
     <!-- START PAGE-CONTAINER -->
     <div class="page-container ">
       <!-- START HEADER -->
-      <div class="header ">
-        <!-- START MOBILE CONTROLS -->
-        <div class="container-fluid relative">
-          <!-- LEFT SIDE -->
-          <div class="pull-left full-height visible-sm visible-xs">
-            <!-- START ACTION BAR -->
-            <div class="header-inner">
-              <a href="#" class="btn-link toggle-sidebar visible-sm-inline-block visible-xs-inline-block padding-5" data-toggle="sidebar">
-                <span class="icon-set menu-hambuger"></span>
-              </a>
-            </div>
-            <!-- END ACTION BAR -->
-          </div>
-          <div class="pull-center hidden-md hidden-lg">
-            <div class="header-inner">
-              <div class="brand inline">
-                <img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
-              </div>
-            </div>
-          </div>
-          <!-- RIGHT SIDE -->
-          <div class="pull-right full-height visible-sm visible-xs">
-            <!-- START ACTION BAR -->
-            <div class="header-inner">
-              <a href="#" class="btn-link visible-sm-inline-block visible-xs-inline-block" data-toggle="quickview" data-toggle-element="#quickview">
-                <span class="icon-set menu-hambuger-plus"></span>
-              </a>
-            </div>
-            <!-- END ACTION BAR -->
-          </div>
-        </div>
-        <!-- END MOBILE CONTROLS -->
-        <div class=" pull-left sm-table hidden-xs hidden-sm">
-          <div class="header-inner">
-            <div class="brand inline">
-              <img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
-            </div>
-            <!-- START NOTIFICATION LIST -->
-
-            <!-- END NOTIFICATIONS LIST -->
-
-        </div>
-        <div class=" pull-right">
-          <div class="header-inner">
-            <a href="#" class="btn-link icon-set menu-hambuger-plus m-l-20 sm-no-margin hidden-sm hidden-xs" data-toggle="quickview" data-toggle-element="#quickview"></a>
-          </div>
-        </div>
-        <div class=" pull-right">
-          <!-- START User Info-->
-          <div class="visible-lg visible-md m-t-10">
-            <div class="pull-left p-r-10 p-t-10 fs-16 font-heading">
-              <span class="semi-bold">David</span> <span class="text-master">Nest</span>
-            </div>
-            <div class="dropdown pull-right">
-              <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="thumbnail-wrapper d32 circular inline m-t-5">
-                <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
-            </span>
-              </button>
-              <ul class="dropdown-menu profile-dropdown" role="menu">
-                <li><a href="#"><i class="pg-settings_small"></i> Settings</a>
-                </li>
-                <li><a href="#"><i class="pg-outdent"></i> Feedback</a>
-                </li>
-                <li><a href="#"><i class="pg-signals"></i> Help</a>
-                </li>
-                <li class="bg-master-lighter">
-                  <a href="#" class="clearfix">
-                    <span class="pull-left">Logout</span>
-                    <span class="pull-right"><i class="pg-power"></i></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- END User Info-->
-        </div>
-      </div>
       <!-- END HEADER -->
       <!-- START PAGE CONTENT WRAPPER -->
       <div class="page-content-wrapper ">
         <!-- START PAGE CONTENT -->
-        <div class="content ">
-
+        <div class="content">
+          <!-- START JUMBOTRON -->
+          <div class="jumbotron" data-pages="parallax">
+            <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
+              <div class="inner">
+                <!-- START BREADCRUMB -->
+                <ul class="breadcrumb">
+                  <li><a href="#" class="active">Statistic</a>
+                  </li>
+                </ul>
+                <!-- END BREADCRUMB -->
+              </div>
+            </div>
+          </div>
+          <!-- END JUMBOTRON -->
           <!-- START CONTAINER FLUID -->
           <div class="container-fluid container-fixed-lg">
-            <ul class="breadcrumb">
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li><a href="#" class="active">Statistic</a>
-              </li>
-            </ul>
+            <!-- BEGIN PlACE PAGE CONTENT HERE -->
 
-            <!-- END BREADCRUMB -->
-            <div class="row">
-              <div class="col-sm-12">
-            <!-- START PANEL -->
-            <div class="panel panel-no-border">
-              <div class="panel-heading ">
-                <div class="panel-title">Rickshaw Charts
+
+
+              <div class="row">
+                <div class="col-sm-12">
+              <!-- START PANEL -->
+              <div class="panel panel-no-border">
+                <div class="panel-heading ">
+                  <div class="panel-title">Rickshaw Charts
+                  </div>
                 </div>
-              </div>
-              <div class="panel-body">
-                <div class="col-md-4 no-padding">
-                  <div class="p-r-30">
-                    <h3>Wilayah Jawa Tengah</h3>
-                    <br>
-                    <p>Halaman ini memperlihatkan statistik umum pada Wilayah tertentu untuk membantu dalam pengambilan keputusan</p>
-                    <br>
-                    <div class="inline">
-                      <p class="small hint-text">Rickshaw: JavaScript toolkit for creating interactive time series graphs.
-                        <br> <a href="http://code.shutterstock.com/rickshaw/">View the official
-                  documentation</a>
-                      </p>
+                <div class="panel-body">
+                  <div class="col-md-4 no-padding">
+                    <div class="p-r-30">
+                      <h3>Wilayah Jawa Tengah</h3>
+                      <br>
+                      <p>Halaman ini memperlihatkan statistik umum pada Wilayah tertentu untuk membantu dalam pengambilan keputusan</p>
+                      <br>
+                      <div class="inline">
+                        <p class="small hint-text">Rickshaw: JavaScript toolkit for creating interactive time series graphs.
+                          <br> <a href="http://code.shutterstock.com/rickshaw/">View the official
+                    documentation</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="panel panel-transparent">
+                      <div class="panel-heading ">
+                        <div class="panel-controls">
+                          <ul>
+                            <li><a href="#" class="portlet-collapse" data-toggle="collapse"><i
+                        class="pg-arrow_maximize"></i></a>
+                            </li>
+                            <li><a href="#" class="portlet-refresh" data-toggle="refresh"><i
+                        class="pg-refresh_new"></i></a>
+                            </li>
+                            <li><a href="#" class="portlet-close" data-toggle="close"><i
+                        class="pg-close"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="panel-body">
+                        <!-- Nav tabs -->
+                        <ul id="tabs-rickshaw" class="nav nav-tabs nav-tabs-linetriangle">
+                          <li class="active">
+                            <a data-toggle="tab" href="#tab-rickshaw-realtime">
+                              <span>Realtime</span>
+                            </a>
+                          </li>
+                          <li class="">
+                            <a data-toggle="tab" href="#tab-rickshaw-bars">
+                              <span>Jumlah perserta didik</span>
+                            </a>
+                          </li>
+                          <li class="">
+                            <a data-toggle="tab" href="#tab-rickshaw-slider">
+                              <span>Nilai prestasi</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content no-padding bg-transparent">
+                          <div class="tab-pane active relative" id="tab-rickshaw-realtime">
+                            <div id="rickshaw-realtime_y_axis" class=""></div>
+                            <div id="rickshaw-realtime" class="rickshaw-chart"></div>
+                          </div>
+                          <div class="tab-pane " id="tab-rickshaw-bars">
+                            <div id="rickshaw-stacked-bars" class="rickshaw-chart"></div>
+                          </div>
+                          <div class="tab-pane" id="tab-rickshaw-slider">
+                            <div id="rickshaw-slider" class="relative">
+                              <div class="slider full-width m-t-20"></div>
+                              <div class="y_axis"></div>
+                              <div class="chart full-width rickshaw-chart"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-8">
-                  <div class="panel panel-transparent">
-                    <div class="panel-heading ">
+                <!-- END PANEL -->
+              </div>
+              </div>
+              <!-- END CONTAINER FLUID -->
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="ar-2-1">
+                    <!-- START WIDGET widget_barTile-->
+                    <div class="widget-5 panel no-border  widget-loader-bar">
+                      <div class="panel-heading pull-top top-right">
+                        <div class="panel-controls">
+                          <ul>
+                            <li><a data-toggle="refresh" class="portlet-refresh text-black" href="#"><i
+            class="portlet-icon portlet-icon-refresh"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="container-xs-height full-height">
+                        <div class="row row-xs-height">
+                          <div class="col-xs-5 col-xs-height col-middle relative">
+                            <div class="padding-15 top-left bottom-left">
+                              <h5 class="hint-text no-margin p-l-10">Jumblah tenaga pengajar</h5>
+                              <p class=" bold font-montserrat p-l-10">2,345,789
+                              <p class=" hint-text visible-xlg p-l-10">Hari ini</p>
+                            </div>
+                          </div>
+                          <div class="col-xs-7 col-xs-height col-bottom relative widget-5-chart-container">
+                            <div class="widget-5-chart">
+                              <svg><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="112.87128712871286" width="7" y="1.128712871287135" x="0"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="90.2970297029703" width="7" y="23.702970297029694" x="24.142857142857142"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="56.43564356435643" width="7" y="57.56435643564357" x="48.285714285714285"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="101.58415841584159" width="7" y="12.415841584158414" x="72.42857142857143"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="56.43564356435643" width="7" y="57.56435643564357" x="96.57142857142857"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="90.2970297029703" width="7" y="23.702970297029694" x="120.7142857142857"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="112.87128712871286" width="7" y="1.128712871287135" x="144.85714285714286"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="0" width="7" y="1.128712871287135" x="0"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="22.574257425742577" width="7" y="1.128712871287135" x="24.142857142857142"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="56.43564356435643" width="7" y="1.128712871287135" x="48.285714285714285"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="11.287128712871288" width="7" y="1.128712871287135" x="72.42857142857143"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="56.43564356435643" width="7" y="1.128712871287135" x="96.57142857142857"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="22.574257425742577" width="7" y="1.128712871287135" x="120.7142857142857"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="0" width="7" y="1.128712871287135" x="144.85714285714286"></rect></svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- END WIDGET -->
+                  </div>
+                </div>
+                <div class="col-sm-5">
+                  <!-- START WIDGET D3 widget_stackedBarWidgetBasic-->
+                  <div class="widget panel no-margin no-border widget-loader-circle">
+                    <div class="panel-heading top-right">
                       <div class="panel-controls">
                         <ul>
-                          <li><a href="#" class="portlet-collapse" data-toggle="collapse"><i
-                      class="pg-arrow_maximize"></i></a>
-                          </li>
-                          <li><a href="#" class="portlet-refresh" data-toggle="refresh"><i
-                      class="pg-refresh_new"></i></a>
-                          </li>
-                          <li><a href="#" class="portlet-close" data-toggle="close"><i
-                      class="pg-close"></i></a>
+                          <li><a href="#" class="portlet-refresh text-black" data-toggle="refresh"><i
+                class="portlet-icon portlet-icon-refresh"></i></a>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="panel-body">
-                      <!-- Nav tabs -->
-                      <ul id="tabs-rickshaw" class="nav nav-tabs nav-tabs-linetriangle">
-                        <li class="active">
-                          <a data-toggle="tab" href="#tab-rickshaw-realtime">
-                            <span>Realtime</span>
-                          </a>
-                        </li>
-                        <li class="">
-                          <a data-toggle="tab" href="#tab-rickshaw-bars">
-                            <span>Jumlah perserta didik</span>
-                          </a>
-                        </li>
-                        <li class="">
-                          <a data-toggle="tab" href="#tab-rickshaw-slider">
-                            <span>Nilai prestasi</span>
-                          </a>
-                        </li>
-                      </ul>
-                      <!-- Tab panes -->
-                      <div class="tab-content no-padding bg-transparent">
-                        <div class="tab-pane active relative" id="tab-rickshaw-realtime">
-                          <div id="rickshaw-realtime_y_axis" class=""></div>
-                          <div id="rickshaw-realtime" class="rickshaw-chart"></div>
-                        </div>
-                        <div class="tab-pane " id="tab-rickshaw-bars">
-                          <div id="rickshaw-stacked-bars" class="rickshaw-chart"></div>
-                        </div>
-                        <div class="tab-pane" id="tab-rickshaw-slider">
-                          <div id="rickshaw-slider" class="relative">
-                            <div class="slider full-width m-t-20"></div>
-                            <div class="y_axis"></div>
-                            <div class="chart full-width rickshaw-chart"></div>
+                    <ul class="nav nav-tabs nav-tabs-simple">
+                      <li class="active">
+                        <a href="#widget-15-2-tab-1">
+                               Jumlah perserta <br> didik
+            (<span class="text-success">60.223%</span>)
+            </a>
+                      </li>
+                      <li><a href="#widget-15-2-tab-2">
+                            Ketersediaan <br> kelas
+            (<span class="text-danger">06.56%</span>)
+            </a>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane no-padding active" id="widget-15-2-tab-1">
+                        <div class="full-width">
+                          <div class="widget-15-chart2 rickshaw-chart full-height">
+                            <svg height="200" width="349"><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.02453829264532" width="8.288749999999999" y="138.97546170735467" x="0"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="68.46639446048658" width="8.288749999999999" y="131.53360553951342" x="8.725"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="64.62297591698135" width="8.288749999999999" y="135.37702408301865" x="17.45"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.6454579166428" width="8.288749999999999" y="138.35454208335722" x="26.175"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="59.66202010716193" width="8.288749999999999" y="140.33797989283806" x="34.9"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="60.81507013457858" width="8.288749999999999" y="139.18492986542142" x="43.625"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="62.087140153865924" width="8.288749999999999" y="137.91285984613407" x="52.35"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="67.28849756732068" width="8.288749999999999" y="132.7115024326793" x="61.075"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="57.66079916050377" width="8.288749999999999" y="142.33920083949624" x="69.8"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="65.98100365398167" width="8.288749999999999" y="134.01899634601833" x="78.525"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="58.43690607563566" width="8.288749999999999" y="141.56309392436435" x="87.25"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="57.386509606700095" width="8.288749999999999" y="142.6134903932999" x="95.97500000000001"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.002471803390925" width="8.288749999999999" y="138.99752819660907" x="104.7"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.16194164132428" width="8.288749999999999" y="138.8380583586757" x="113.425"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="55.10243018365581" width="8.288749999999999" y="144.89756981634417" x="122.15"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="58.36135922721596" width="8.288749999999999" y="141.63864077278404" x="130.875"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="57.986228856845635" width="8.288749999999999" y="142.01377114315437" x="139.6"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="55.06841381061477" width="8.288749999999999" y="144.93158618938523" x="148.325"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="53.88419820718649" width="8.288749999999999" y="146.1158017928135" x="157.05"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.47816238209658" width="8.288749999999999" y="138.52183761790343" x="165.775"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="59.15408792684534" width="8.288749999999999" y="140.84591207315466" x="174.5"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="55.858365961605806" width="8.288749999999999" y="144.1416340383942" x="183.225"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="49.62315537181453" width="8.288749999999999" y="150.37684462818547" x="191.95000000000002"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="48.18750491216661" width="8.288749999999999" y="151.81249508783338" x="200.675"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="57.17376335595693" width="8.288749999999999" y="142.82623664404306" x="209.4"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="46.99997511829486" width="8.288749999999999" y="153.00002488170514" x="218.125"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="47.08686772887926" width="8.288749999999999" y="152.91313227112073" x="226.85"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="50.1312357372512" width="8.288749999999999" y="149.8687642627488" x="235.57500000000002"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="57.16754168834623" width="8.288749999999999" y="142.83245831165377" x="244.3"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="50.73726745906812" width="8.288749999999999" y="149.2627325409319" x="253.025"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="55.95976321448839" width="8.288749999999999" y="144.0402367855116" x="261.75"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="48.404938601809384" width="8.288749999999999" y="151.5950613981906" x="270.475"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="50.90656180034364" width="8.288749999999999" y="149.09343819965636" x="279.2"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="53.31795586085507" width="8.288749999999999" y="146.68204413914492" x="287.925"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="54.36797930360976" width="8.288749999999999" y="145.63202069639024" x="296.65"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="58.00785521882052" width="8.288749999999999" y="141.9921447811795" x="305.375"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.75469935047679" width="8.288749999999999" y="138.24530064952322" x="314.1"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="65.06430009844293" width="8.288749999999999" y="134.9356999015571" x="322.825"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="67.40373814619554" width="8.288749999999999" y="132.59626185380446" x="331.55"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="55.843640935548244" width="8.288749999999999" y="144.15635906445175" x="340.275"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="67.5445513538097" width="8.288749999999999" y="71.43091035354496" x="0"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="62.083143829079" width="8.288749999999999" y="69.45046171043441" x="8.725"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="58.424016890918296" width="8.288749999999999" y="76.95300719210036" x="17.45"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="56.49153154649269" width="8.288749999999999" y="81.86301053686454" x="26.175"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="60.55950647824565" width="8.288749999999999" y="79.77847341459243" x="34.9"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="59.91097658160689" width="8.288749999999999" y="79.27395328381452" x="43.625"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="66.46086049418547" width="8.288749999999999" y="71.45199935194859" x="52.35"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="59.118302506444905" width="8.288749999999999" y="73.5931999262344" x="61.075"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="62.05222452539553" width="8.288749999999999" y="80.28697631410071" x="69.8"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="67.35232967935167" width="8.288749999999999" y="66.66666666666666" x="78.525"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="62.49096447349635" width="8.288749999999999" y="79.07212945086796" x="87.25"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="54.81729237707788" width="8.288749999999999" y="87.79619801622202" x="95.97500000000001"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="60.5273085452992" width="8.288749999999999" y="78.47021965130989" x="104.7"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="64.28641302769856" width="8.288749999999999" y="74.55164533097718" x="113.425"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="62.59776559386947" width="8.288749999999999" y="82.29980422247472" x="122.15"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="58.530307613023666" width="8.288749999999999" y="83.10833315976036" x="130.875"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="59.9314072797008" width="8.288749999999999" y="82.08236386345355" x="139.6"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="55.818812754988315" width="8.288749999999999" y="89.11277343439691" x="148.325"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="53.676770745896995" width="8.288749999999999" y="92.43903104691651" x="157.05"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="55.79904817379961" width="8.288749999999999" y="82.72278944410381" x="165.775"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="54.030660062634674" width="8.288749999999999" y="86.81525201051998" x="174.5"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="46.651580426388755" width="8.288749999999999" y="97.49005361200544" x="183.225"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="56.86903277471957" width="8.288749999999999" y="93.50781185346591" x="191.95000000000002"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="47.397332202805664" width="8.288749999999999" y="104.41516288502773" x="200.675"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="48.483067121762325" width="8.288749999999999" y="94.34316952228076" x="209.4"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="48.49818856690516" width="8.288749999999999" y="104.50183631479999" x="218.125"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="52.03412672041053" width="8.288749999999999" y="100.87900555071019" x="226.85"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="52.5595972941377" width="8.288749999999999" y="97.3091669686111" x="235.57500000000002"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="50.73015970480926" width="8.288749999999999" y="92.10229860684451" x="244.3"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="49.29919705814964" width="8.288749999999999" y="99.96353548278223" x="253.025"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="54.38685551588935" width="8.288749999999999" y="89.65338126962226" x="261.75"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="48.04021279656849" width="8.288749999999999" y="103.55484860162213" x="270.475"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="46.74768209173212" width="8.288749999999999" y="102.34575610792422" x="279.2"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="56.26628619029578" width="8.288749999999999" y="90.41575794884915" x="287.925"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="53.27038843682066" width="8.288749999999999" y="92.36163225956959" x="296.65"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="50.99919771495204" width="8.288749999999999" y="90.99294706622744" x="305.375"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="53.894649802795" width="8.288749999999999" y="84.35065084672819" x="314.1"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="57.59447960711307" width="8.288749999999999" y="77.34122029444399" x="322.825"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="56.2599597721503" width="8.288749999999999" y="76.33630208165417" x="331.55"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="55.503524822235285" width="8.288749999999999" y="88.65283424221649" x="340.275"></rect></svg>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- END PANEL -->
-            </div>
-            </div>
-            <!-- END CONTAINER FLUID -->
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="ar-2-1">
-                  <!-- START WIDGET widget_barTile-->
-                  <div class="widget-5 panel no-border  widget-loader-bar">
-                    <div class="panel-heading pull-top top-right">
-                      <div class="panel-controls">
-                        <ul>
-                          <li><a data-toggle="refresh" class="portlet-refresh text-black" href="#"><i
-          class="portlet-icon portlet-icon-refresh"></i></a>
-                          </li>
-                        </ul>
+                      <div class="tab-pane no-padding" id="widget-15-2-tab-2">
                       </div>
-                    </div>
-                    <div class="container-xs-height full-height">
-                      <div class="row row-xs-height">
-                        <div class="col-xs-5 col-xs-height col-middle relative">
-                          <div class="padding-15 top-left bottom-left">
-                            <h5 class="hint-text no-margin p-l-10">Jumblah tenaga pengajar</h5>
-                            <p class=" bold font-montserrat p-l-10">2,345,789
-                            <p class=" hint-text visible-xlg p-l-10">Hari ini</p>
-                          </div>
-                        </div>
-                        <div class="col-xs-7 col-xs-height col-bottom relative widget-5-chart-container">
-                          <div class="widget-5-chart">
-                            <svg><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="112.87128712871286" width="7" y="1.128712871287135" x="0"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="90.2970297029703" width="7" y="23.702970297029694" x="24.142857142857142"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="56.43564356435643" width="7" y="57.56435643564357" x="48.285714285714285"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="101.58415841584159" width="7" y="12.415841584158414" x="72.42857142857143"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="56.43564356435643" width="7" y="57.56435643564357" x="96.57142857142857"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="90.2970297029703" width="7" y="23.702970297029694" x="120.7142857142857"></rect><rect fill="rgba(245, 87, 83, 1)" transform="matrix(1,0,0,1,0,0)" height="112.87128712871286" width="7" y="1.128712871287135" x="144.85714285714286"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="0" width="7" y="1.128712871287135" x="0"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="22.574257425742577" width="7" y="1.128712871287135" x="24.142857142857142"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="56.43564356435643" width="7" y="1.128712871287135" x="48.285714285714285"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="11.287128712871288" width="7" y="1.128712871287135" x="72.42857142857143"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="56.43564356435643" width="7" y="1.128712871287135" x="96.57142857142857"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="22.574257425742577" width="7" y="1.128712871287135" x="120.7142857142857"></rect><rect fill="rgba(230, 230, 230, 1)" transform="matrix(1,0,0,1,0,0)" height="0" width="7" y="1.128712871287135" x="144.85714285714286"></rect></svg>
-                          </div>
-                        </div>
-                      </div>
+
                     </div>
                   </div>
                   <!-- END WIDGET -->
                 </div>
               </div>
-              <div class="col-sm-5">
-                <!-- START WIDGET D3 widget_stackedBarWidgetBasic-->
-                <div class="widget panel no-margin no-border widget-loader-circle">
-                  <div class="panel-heading top-right">
-                    <div class="panel-controls">
-                      <ul>
-                        <li><a href="#" class="portlet-refresh text-black" data-toggle="refresh"><i
-              class="portlet-icon portlet-icon-refresh"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <ul class="nav nav-tabs nav-tabs-simple">
-                    <li class="active">
-                      <a href="#widget-15-2-tab-1">
-                             Jumlah perserta <br> didik
-          (<span class="text-success">60.223%</span>)
-          </a>
-                    </li>
-                    <li><a href="#widget-15-2-tab-2">
-                          Ketersediaan <br> kelas
-          (<span class="text-danger">06.56%</span>)
-          </a>
-                    </li>
-                  </ul>
-                  <div class="tab-content">
-                    <div class="tab-pane no-padding active" id="widget-15-2-tab-1">
-                      <div class="full-width">
-                        <div class="widget-15-chart2 rickshaw-chart full-height">
-                          <svg height="200" width="349"><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.02453829264532" width="8.288749999999999" y="138.97546170735467" x="0"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="68.46639446048658" width="8.288749999999999" y="131.53360553951342" x="8.725"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="64.62297591698135" width="8.288749999999999" y="135.37702408301865" x="17.45"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.6454579166428" width="8.288749999999999" y="138.35454208335722" x="26.175"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="59.66202010716193" width="8.288749999999999" y="140.33797989283806" x="34.9"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="60.81507013457858" width="8.288749999999999" y="139.18492986542142" x="43.625"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="62.087140153865924" width="8.288749999999999" y="137.91285984613407" x="52.35"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="67.28849756732068" width="8.288749999999999" y="132.7115024326793" x="61.075"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="57.66079916050377" width="8.288749999999999" y="142.33920083949624" x="69.8"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="65.98100365398167" width="8.288749999999999" y="134.01899634601833" x="78.525"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="58.43690607563566" width="8.288749999999999" y="141.56309392436435" x="87.25"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="57.386509606700095" width="8.288749999999999" y="142.6134903932999" x="95.97500000000001"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.002471803390925" width="8.288749999999999" y="138.99752819660907" x="104.7"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.16194164132428" width="8.288749999999999" y="138.8380583586757" x="113.425"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="55.10243018365581" width="8.288749999999999" y="144.89756981634417" x="122.15"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="58.36135922721596" width="8.288749999999999" y="141.63864077278404" x="130.875"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="57.986228856845635" width="8.288749999999999" y="142.01377114315437" x="139.6"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="55.06841381061477" width="8.288749999999999" y="144.93158618938523" x="148.325"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="53.88419820718649" width="8.288749999999999" y="146.1158017928135" x="157.05"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.47816238209658" width="8.288749999999999" y="138.52183761790343" x="165.775"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="59.15408792684534" width="8.288749999999999" y="140.84591207315466" x="174.5"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="55.858365961605806" width="8.288749999999999" y="144.1416340383942" x="183.225"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="49.62315537181453" width="8.288749999999999" y="150.37684462818547" x="191.95000000000002"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="48.18750491216661" width="8.288749999999999" y="151.81249508783338" x="200.675"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="57.17376335595693" width="8.288749999999999" y="142.82623664404306" x="209.4"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="46.99997511829486" width="8.288749999999999" y="153.00002488170514" x="218.125"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="47.08686772887926" width="8.288749999999999" y="152.91313227112073" x="226.85"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="50.1312357372512" width="8.288749999999999" y="149.8687642627488" x="235.57500000000002"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="57.16754168834623" width="8.288749999999999" y="142.83245831165377" x="244.3"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="50.73726745906812" width="8.288749999999999" y="149.2627325409319" x="253.025"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="55.95976321448839" width="8.288749999999999" y="144.0402367855116" x="261.75"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="48.404938601809384" width="8.288749999999999" y="151.5950613981906" x="270.475"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="50.90656180034364" width="8.288749999999999" y="149.09343819965636" x="279.2"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="53.31795586085507" width="8.288749999999999" y="146.68204413914492" x="287.925"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="54.36797930360976" width="8.288749999999999" y="145.63202069639024" x="296.65"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="58.00785521882052" width="8.288749999999999" y="141.9921447811795" x="305.375"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="61.75469935047679" width="8.288749999999999" y="138.24530064952322" x="314.1"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="65.06430009844293" width="8.288749999999999" y="134.9356999015571" x="322.825"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="67.40373814619554" width="8.288749999999999" y="132.59626185380446" x="331.55"></rect><rect fill="rgba(109, 192, 249, 1)" transform="matrix(1,0,0,1,0,0)" height="55.843640935548244" width="8.288749999999999" y="144.15635906445175" x="340.275"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="67.5445513538097" width="8.288749999999999" y="71.43091035354496" x="0"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="62.083143829079" width="8.288749999999999" y="69.45046171043441" x="8.725"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="58.424016890918296" width="8.288749999999999" y="76.95300719210036" x="17.45"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="56.49153154649269" width="8.288749999999999" y="81.86301053686454" x="26.175"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="60.55950647824565" width="8.288749999999999" y="79.77847341459243" x="34.9"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="59.91097658160689" width="8.288749999999999" y="79.27395328381452" x="43.625"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="66.46086049418547" width="8.288749999999999" y="71.45199935194859" x="52.35"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="59.118302506444905" width="8.288749999999999" y="73.5931999262344" x="61.075"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="62.05222452539553" width="8.288749999999999" y="80.28697631410071" x="69.8"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="67.35232967935167" width="8.288749999999999" y="66.66666666666666" x="78.525"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="62.49096447349635" width="8.288749999999999" y="79.07212945086796" x="87.25"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="54.81729237707788" width="8.288749999999999" y="87.79619801622202" x="95.97500000000001"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="60.5273085452992" width="8.288749999999999" y="78.47021965130989" x="104.7"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="64.28641302769856" width="8.288749999999999" y="74.55164533097718" x="113.425"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="62.59776559386947" width="8.288749999999999" y="82.29980422247472" x="122.15"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="58.530307613023666" width="8.288749999999999" y="83.10833315976036" x="130.875"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="59.9314072797008" width="8.288749999999999" y="82.08236386345355" x="139.6"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="55.818812754988315" width="8.288749999999999" y="89.11277343439691" x="148.325"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="53.676770745896995" width="8.288749999999999" y="92.43903104691651" x="157.05"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="55.79904817379961" width="8.288749999999999" y="82.72278944410381" x="165.775"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="54.030660062634674" width="8.288749999999999" y="86.81525201051998" x="174.5"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="46.651580426388755" width="8.288749999999999" y="97.49005361200544" x="183.225"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="56.86903277471957" width="8.288749999999999" y="93.50781185346591" x="191.95000000000002"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="47.397332202805664" width="8.288749999999999" y="104.41516288502773" x="200.675"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="48.483067121762325" width="8.288749999999999" y="94.34316952228076" x="209.4"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="48.49818856690516" width="8.288749999999999" y="104.50183631479999" x="218.125"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="52.03412672041053" width="8.288749999999999" y="100.87900555071019" x="226.85"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="52.5595972941377" width="8.288749999999999" y="97.3091669686111" x="235.57500000000002"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="50.73015970480926" width="8.288749999999999" y="92.10229860684451" x="244.3"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="49.29919705814964" width="8.288749999999999" y="99.96353548278223" x="253.025"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="54.38685551588935" width="8.288749999999999" y="89.65338126962226" x="261.75"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="48.04021279656849" width="8.288749999999999" y="103.55484860162213" x="270.475"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="46.74768209173212" width="8.288749999999999" y="102.34575610792422" x="279.2"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="56.26628619029578" width="8.288749999999999" y="90.41575794884915" x="287.925"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="53.27038843682066" width="8.288749999999999" y="92.36163225956959" x="296.65"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="50.99919771495204" width="8.288749999999999" y="90.99294706622744" x="305.375"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="53.894649802795" width="8.288749999999999" y="84.35065084672819" x="314.1"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="57.59447960711307" width="8.288749999999999" y="77.34122029444399" x="322.825"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="56.2599597721503" width="8.288749999999999" y="76.33630208165417" x="331.55"></rect><rect fill="rgba(240, 240, 240, 1)" transform="matrix(1,0,0,1,0,0)" height="55.503524822235285" width="8.288749999999999" y="88.65283424221649" x="340.275"></rect></svg>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane no-padding" id="widget-15-2-tab-2">
-                    </div>
 
-                  </div>
-                </div>
-                <!-- END WIDGET -->
-              </div>
-            </div>
+
+            <!-- END PLACE PAGE CONTENT HERE -->
           </div>
           <!-- END CONTAINER FLUID -->
         </div>
         <!-- END PAGE CONTENT -->
         <!-- START COPYRIGHT -->
-        <!-- START CONTAINER FLUID -->
         <!-- START CONTAINER FLUID -->
         <div class="container-fluid container-fixed-lg footer">
           <div class="copyright sm-text-center">
@@ -377,146 +265,8 @@
       <!-- END PAGE CONTENT WRAPPER -->
     </div>
     <!-- END PAGE CONTAINER -->
-    <!--START QUICKVIEW -->
-    <!-- END QUICKVIEW-->
-    <!-- START OVERLAY -->
-    <div class="overlay hide" data-pages="search">
-      <!-- BEGIN Overlay Content !-->
-      <div class="overlay-content has-results m-t-20">
-        <!-- BEGIN Overlay Header !-->
-        <div class="container-fluid">
-          <!-- BEGIN Overlay Logo !-->
-          <img class="overlay-brand" src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
-          <!-- END Overlay Logo !-->
-          <!-- BEGIN Overlay Close !-->
-          <a href="#" class="close-icon-light overlay-close text-black fs-16">
-            <i class="pg-close"></i>
-          </a>
-          <!-- END Overlay Close !-->
-        </div>
-        <!-- END Overlay Header !-->
-        <div class="container-fluid">
-          <!-- BEGIN Overlay Controls !-->
-          <input id="overlay-search" class="no-border overlay-search bg-transparent" placeholder="Search..." autocomplete="off" spellcheck="false">
-          <br>
-          <div class="inline-block">
-            <div class="checkbox right">
-              <input id="checkboxn" type="checkbox" value="1" checked="checked">
-              <label for="checkboxn"><i class="fa fa-search"></i> Search within page</label>
-            </div>
-          </div>
-          <div class="inline-block m-l-10">
-            <p class="fs-13">Press enter to search</p>
-          </div>
-          <!-- END Overlay Controls !-->
-        </div>
-        <!-- BEGIN Overlay Search Results, This part is for demo purpose, you can add anything you like !-->
-        <div class="container-fluid">
-          <span>
-                <strong>suggestions :</strong>
-            </span>
-          <span id="overlay-suggestions"></span>
-          <br>
-          <div class="search-results m-t-40">
-            <p class="bold">Pages Search Results</p>
-            <div class="row">
-              <div class="col-md-6">
-                <!-- BEGIN Search Result Item !-->
-                <div class="">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
-                    <div>
-                      <img width="50" height="50" src="assets/img/profiles/avatar.jpg" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" alt="">
-                    </div>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> on pages</h5>
-                    <p class="hint-text">via john smith</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-                <!-- BEGIN Search Result Item !-->
-                <div class="">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
-                    <div>T</div>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> related topics</h5>
-                    <p class="hint-text">via pages</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-                <!-- BEGIN Search Result Item !-->
-                <div class="">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-success text-white inline m-t-10">
-                    <div><i class="fa fa-headphones large-text "></i>
-                    </div>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> music</h5>
-                    <p class="hint-text">via pagesmix</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-              </div>
-              <div class="col-md-6">
-                <!-- BEGIN Search Result Item !-->
-                <div class="">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-info text-white inline m-t-10">
-                    <div><i class="fa fa-facebook large-text "></i>
-                    </div>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5"><span class="semi-bold result-name">ice cream</span> on facebook</h5>
-                    <p class="hint-text">via facebook</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-                <!-- BEGIN Search Result Item !-->
-                <div class="">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular bg-complete text-white inline m-t-10">
-                    <div><i class="fa fa-twitter large-text "></i>
-                    </div>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5">Tweats on<span class="semi-bold result-name"> ice cream</span></h5>
-                    <p class="hint-text">via twitter</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-                <!-- BEGIN Search Result Item !-->
-                <div class="">
-                  <!-- BEGIN Search Result Item Thumbnail !-->
-                  <div class="thumbnail-wrapper d48 circular text-white bg-danger inline m-t-10">
-                    <div><i class="fa fa-google-plus large-text "></i>
-                    </div>
-                  </div>
-                  <!-- END Search Result Item Thumbnail !-->
-                  <div class="p-l-10 inline p-t-5">
-                    <h5 class="m-b-5">Circles on<span class="semi-bold result-name"> ice cream</span></h5>
-                    <p class="hint-text">via google plus</p>
-                  </div>
-                </div>
-                <!-- END Search Result Item !-->
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END Overlay Search Results !-->
-      </div>
-      <!-- END Overlay Content !-->
-    </div>
-    <!-- END OVERLAY -->
-    <!-- BEGIN VENDOR JS -->
+
+
     <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
     <script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
