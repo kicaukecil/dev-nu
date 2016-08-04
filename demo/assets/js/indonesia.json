@@ -1,0 +1,58 @@
+{
+	"mapwidth":"1600",
+	"mapheight":"1000",
+	"categories":[
+
+	],
+	"levels":[
+		{
+			"id":"countries",
+			"title":"Countries",
+			"map":"assets/js/indo-map.svg",
+			"minimap":"",
+			"locations":[
+				{
+						"id":"ID-JT",
+						"title":"Jawa Tengah",
+						"description":"<strong>JT</strong> Jawa Tengah",
+						"action": "tooltip",
+						"pin": "marker green",
+						"x":"0.3233100",
+						"y":"0.68444"
+					},
+					{
+							"id":"ID-AC",
+							"title":"Aceh",
+							"description":"<strong>AC</strong> Aceh",
+							"action": "tooltip",
+							"pin": "marker green",
+							"x":"0.0400000",
+							"y":"0.28111"
+					},
+					{
+							"id":"ID-JI",
+							"title":"Jawa Timur",
+							"description":"<strong>JI</strong> Jawa Timur",
+							"action": "tooltip",
+							"pin": "marker green",
+							"x":"0.3733100",
+							"y":"0.69444"
+					},
+					{
+							"id":"ID-SN",
+							"title":"Sulawesi Selatan",
+							"description":"<strong>JI</strong> Sulawesi Selatan",
+							"action": "tooltip",
+							"pin": "marker green",
+							"x":"0.5371200",
+							"y":"0.56444"
+					}
+
+
+			]
+		}
+	],
+	"minimap":"false",
+	"sidebar":"true",
+	"zoomlimit":"3"
+}
