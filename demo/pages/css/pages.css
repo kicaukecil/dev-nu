@@ -1098,7 +1098,7 @@ body.rtl [class*="col-"] {
 }
 .page-container .page-content-wrapper .footer {
   /* Footer */
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   bottom: 0;

@@ -20,7 +20,7 @@ document.write('\
       <span class="icon-thumbnail"><i class="pg-menu_lv"></i></span>\
     </li>\
     <li class="">\
-      <a href="insert.html"><span class="title">Insert Data</span></a>\
+      <a href="inputsekolah.html"><span class="title">Insert Data</span></a>\
       <span class="icon-thumbnail"><i class="pg-inbox"></i></span>\
       <ul class="sub-menu">\
         <li class="">\

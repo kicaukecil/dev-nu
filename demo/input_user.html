@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Pages - Admin Dashboard UI Kit - Blank Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <link rel="apple-touch-icon" href="../pages/ico/60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../pages/ico/76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../pages/ico/120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../pages/ico/152.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="../assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/plugins/bootstrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+    <link class="main-stylesheet" href="../pages/css/pages.css" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 9]>
+	<link href="../assets/plugins/codrops-dialogFx/dialog.ie.css" rel="stylesheet" type="text/css" media="screen" />
+	<![endif]-->
+  </head>
+  <body class="fixed-header menu-pin">
+  <div class="container">
+    <div class="row">
+
+      <!-- form user =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
+      <div class="col-sm-12">
+        <div class="panel panel-transparent">
+          <div class="panel-body">
+            <form id="form-project" role="form" autocomplete="off">
+              <h3>Form User Baru</h3>
+              <div class="form-group-attached">
+                <div class="row clearfix">
+                  <div class="col-sm-6">
+                    <div class="form-group form-group-default required">
+                      <label>Nama depan</label>
+                      <input type="text" class="form-control" name="nama" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group form-group-default">
+                      <label>Nama belakang</label>
+                      <input type="text" class="form-control" name="nama-belakang">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group form-group-default required">
+                  <label>Email <i class="fa fa-email text-complete m-l-5"></i>
+                  </label>
+                  <input type="email" class="form-control" name="email" required>
+                </div>
+                <div class="form-group form-group-default required">
+                  <label>Password
+                  </label>
+                  <input type="password" class="form-control" name="password" required>
+                </div>
+                <div class="form-group form-group-default required">
+                  <label>Ulangi password
+                  </label>
+                  <input type="password" class="form-control" name="re-password" required>
+                </div>
+              </div>
+              <div class="form-group-attached m-t-10 m-b-20">
+                <div class="form-group form-group-default">
+                  <label>No. Telepon <i class="fa fa-phone text-complete m-l-5"></i>
+                  </label>
+                  <input type="text" class="form-control" name="telepon" placeholder="+62 ">
+                </div>
+                <div class="form-group form-group-default">
+                  <label>Alamat
+                  </label>
+                  <textarea rows="7" type="text" class="form-control" name="alamat"></textarea>
+                </div>
+                <div class="row clearfix">
+                  <div class="col-sm-6">
+                    <div class="form-group form-group-default form-group-default-select2 required">
+                      <label>Provinsi</label>
+                      <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
+                        <optgroup label="Indonesi Bagian Barat">
+                          <option value="AK">DKI Jakarta</option>
+                          <option value="HI">Jawa Barat</option>
+                          <option value="HI">Banten</option>
+                        </optgroup>
+                        <optgroup label="Indonesi Bagian Tengah">
+                          <option value="CA">Bali</option>
+                          <option value="NV">Sulawesi Selatan</option>
+                          <option value="OR">Kalimantan Timur</option>
+                        </optgroup>
+                        <optgroup label="Indonesi Bagian Timur">
+                          <option value="AZ">Maluku</option>
+                          <option value="CO">Colorado</option>
+                          <option value="ID">Idaho</option>
+                          <option value="MT">Montana</option>
+                          <option value="NE">Nebraska</option>
+                          <option value="NM">New Mexico</option>
+                          <option value="ND">North Dakota</option>
+                          <option value="UT">Utah</option>
+                          <option value="WY">Wyoming</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group form-group-default form-group-default-select2 required">
+                      <label>Kota / Kabupaten</label>
+                      <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
+                        <optgroup label="DKI Jakarta">
+                          <option value="AK">Jakarta Pusat</option>
+                          <option value="HI">Jakarta Barat</option>
+                          <option value="HI">Jakarta Selatan</option>
+                        </optgroup>
+                        <optgroup label="Jawa Barat">
+                          <option value="CA">Bandung</option>
+                          <option value="NV">Bogor</option>
+                        </optgroup>
+                        <optgroup label="Jawa Timur">
+                          <option value="AZ">Surabaya</option>
+                          <option value="CO">Kediri</option>
+                          <option value="ID">Lamogan</option>
+                          <option value="MT">Ponorogo</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group form-group-default required">
+                      <label class="">Level user</label>
+                      <!-- <div class="col-sm-6"> -->
+                        <select class="cs-select cs-skin-slide form-control" data-init-plugin="cs-select">
+                          <option value="sightseeing">Pengurus Pusat</option>
+                          <option value="business">Pengurus Wilayah (Provinsi)</option>
+                          <option value="honeymoon">Pengurus cabang (Kota/Kab)</option>
+                        </select>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group form-group-default input-group">
+                      <label class="inline">Aktif</label>
+                      <span class="input-group-addon bg-transparent">
+                <input name="aktif" type="checkbox" data-init-plugin="switchery" data-size="small" data-color="primary" checked="checked" />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-success" type="submit">Simpan</button>
+              <button class="btn btn-default"><i class="pg-close"></i> Bersih</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- end form =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
+
+    </div>
+  </div>
+
+
+
+    <!-- BEGIN VENDOR JS -->
+    <script src="../assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <script src="../assets/plugins/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+    <script src="../assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../assets/plugins/bootstrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
+    <script src="../assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+    <script src="../assets/plugins/jquery-bez/jquery.bez.min.js"></script>
+    <script src="../assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
+    <script src="../assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+    <script src="../assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/bootstrap-select2/select2.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/classie/classie.js"></script>
+    <script src="../assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
+    <!-- END VENDOR JS -->
+    <!-- BEGIN CORE TEMPLATE JS -->
+    <script src="../pages/js/pages.min.js"></script>
+    <!-- END CORE TEMPLATE JS -->
+    <!-- BEGIN PAGE LEVEL JS -->
+    <script src="../assets/js/scripts.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL JS -->
+  </body>
+</html>
