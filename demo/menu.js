@@ -53,7 +53,7 @@ document.write('\
         <a href="#">Tampilkan</a>\
       </li>\
         <li class="">\
-          <a href="inputsekolah.html">Buat Satuan Pendidikan</a>\
+          <a href="input_sekolah.html">Buat Satuan Pendidikan</a>\
         </li>\
         <li class="">\
           <a href="#">Import</a>\
