@@ -50,13 +50,13 @@ document.write('\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
       <li class="">\
-        <a href="#">Tampilkan</a>\
+        <a href="data_sekolah.html">Tampilkan</a>\
       </li>\
         <li class="">\
           <a href="input_sekolah.html">Buat Satuan Pendidikan</a>\
         </li>\
         <li class="">\
-          <a href="#">Import</a>\
+          <a href="import.html">Import</a>\
         </li>\
       </ul>\
     </li>\
@@ -71,7 +71,7 @@ document.write('\
           <a href="input_sekolah.html">Buat Tenaga Kerja</a>\
         </li>\
         <li class="">\
-          <a href="#">Import</a>\
+          <a href="import.html">Import</a>\
         </li>\
       </ul>\
     </li>\
@@ -86,7 +86,7 @@ document.write('\
           <a href="#">Buat Tenaga Kerja</a>\
         </li>\
         <li class="">\
-          <a href="#">Import</a>\
+          <a href="import.html">Import</a>\
         </li>\
       </ul>\
     </li>\
