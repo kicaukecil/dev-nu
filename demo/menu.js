@@ -22,6 +22,12 @@ document.write('\
     <li class="">\
       <a href="insert.html"><span class="title">Insert Data</span></a>\
       <span class="icon-thumbnail"><i class="pg-inbox"></i></span>\
+      <ul class="sub-menu">\
+        <li class="">\
+          <a href="inputsekolah.html">Input Satuan Pendidikan</a>\
+          <span class="icon-thumbnail">bt</span>\
+        </li>\
+      </ul>\
     </li>\
     <li class="">\
       <a href="import.html"><span class="title">Import Data</span></a>\
@@ -30,6 +36,12 @@ document.write('\
     <li class="">\
       <a href="users.html"><span class="title">Users</span></a>\
       <span class="icon-thumbnail"><i class="fa fa-user"></i></span>\
+      <ul class="sub-menu">\
+        <li class="">\
+          <a href="inputuser.html">Input User</a>\
+          <span class="icon-thumbnail">bt</span>\
+        </li>\
+      </ul>\
     </li>\
   </ul>\
 ');
