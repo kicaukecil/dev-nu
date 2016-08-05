@@ -38,7 +38,7 @@ document.write('\
       <span class="icon-thumbnail"><i class="fa fa-user"></i></span>\
       <ul class="sub-menu">\
         <li class="">\
-          <a href="inputuser.html">Input User</a>\
+          <a href="inputuser.html">Input Users</a>\
           <span class="icon-thumbnail">bt</span>\
         </li>\
       </ul>\
