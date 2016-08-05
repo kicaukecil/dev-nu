@@ -20,7 +20,7 @@ document.write('\
       <span class="icon-thumbnail"><i class="pg-menu_lv"></i></span>\
     </li>\
     <li class="">\
-      <a href="inputsekolah.html"><span class="title">Insert Data</span></a>\
+      <a href="#"><span class="title">Insert Data</span></a>\
       <span class="icon-thumbnail"><i class="pg-inbox"></i></span>\
       <ul class="sub-menu">\
         <li class="">\
@@ -34,7 +34,7 @@ document.write('\
       <span class="icon-thumbnail"><i class="fa fa-upload"></i></span>\
     </li>\
     <li class="">\
-      <a href="users.html"><span class="title">Users</span></a>\
+      <a href="#"><span class="title">Users</span></a>\
       <span class="icon-thumbnail"><i class="fa fa-user"></i></span>\
       <ul class="sub-menu">\
         <li class="">\
