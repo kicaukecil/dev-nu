@@ -68,7 +68,7 @@ document.write('\
         <a href="#">Tampilkan</a>\
         </li>\
         <li class="">\
-          <a href="inputsekolah.html">Buat Tenaga Kerja</a>\
+          <a href="input_sekolah.html">Buat Tenaga Kerja</a>\
         </li>\
         <li class="">\
           <a href="#">Import</a>\
