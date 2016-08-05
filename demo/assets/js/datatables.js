@@ -14,7 +14,7 @@
         phone: 480
     };
 
-    // Initialize datatable showing a search box at the top right corner
+    //Initialize datatable showing a search box at the top right corner
     var initTableWithSearch = function() {
         var table = $('#tableWithSearch');
 
