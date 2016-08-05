@@ -5,41 +5,88 @@ document.write('\
         <span class="title">Dashboard</span>\
         <span class="details">12 New Updates</span>\
       </a>\
-      <span class="bg-success icon-thumbnail"><i class="pg-home"></i></span>\
     </li>\
     <li class="">\
-      <a href="statistic.html"><span class="title">Statistics</span></a>\
-      <span class="icon-thumbnail"><i class="pg-charts"></i></span>\
-    </li>\
-    <li class="">\
-      <a href="data_table.html"><span class="title">Data Table</span></a>\
-      <span class="icon-thumbnail"><i class="pg-tables"></i></span>\
-    </li>\
-    <li class="">\
-      <a href="activity.html"><span class="title">Activity</span></a>\
-      <span class="icon-thumbnail"><i class="pg-menu_lv"></i></span>\
-    </li>\
-    <li class="">\
-      <a href="inputsekolah.html"><span class="title">Insert Data</span></a>\
-      <span class="icon-thumbnail"><i class="pg-inbox"></i></span>\
+      <a href="javascript:;"><span class="title">Users</span>\
+      <span class="arrow"></span></a>\
       <ul class="sub-menu">\
         <li class="">\
-          <a href="inputsekolah.html">Input Satuan Pendidikan</a>\
-          <span class="icon-thumbnail">bt</span>\
+          <a href="data_user.html">Tampilkan</a>\
+        </li>\
+        <li class="">\
+          <a href="input_user.html">Buat Users</a>\
+        </li>\
+        <li class="">\
+          <a href="users.html">Users</a>\
         </li>\
       </ul>\
     </li>\
     <li class="">\
-      <a href="import.html"><span class="title">Import Data</span></a>\
-      <span class="icon-thumbnail"><i class="fa fa-upload"></i></span>\
-    </li>\
-    <li class="">\
-      <a href="users.html"><span class="title">Users</span></a>\
-      <span class="icon-thumbnail"><i class="fa fa-user"></i></span>\
+      <a href="javascript:;"><span class="title">Kantor Wilayah</span>\
+      <span class="arrow"></span></a>\
       <ul class="sub-menu">\
         <li class="">\
-          <a href="inputuser.html">Input Users</a>\
-          <span class="icon-thumbnail">bt</span>\
+          <a href="#">Tampilkan</a>\
+        </li>\
+        <li class="">\
+          <a href="input_kantor_wilayah.html">Buat Kantor Wilayah</a>\
+        </li>\
+      </ul>\
+    </li>\
+    <li class="">\
+      <a href="javascript:;"><span class="title">Kantor Cabang</span>\
+      <span class="arrow"></span></a>\
+      <ul class="sub-menu">\
+        <li class="">\
+          <a href="#">Tampilkan</a>\
+        </li>\
+        <li class="">\
+          <a href="input_kantor_cabang.html">Buat Kantor Cabang</a>\
+        </li>\
+      </ul>\
+    </li>\
+    <li class="">\
+      <a href="javascript:;"><span class="title">Satuan Pendidikan</span>\
+      <span class="arrow"></span></a>\
+      <ul class="sub-menu">\
+      <li class="">\
+        <a href="#">Tampilkan</a>\
+      </li>\
+        <li class="">\
+          <a href="inputsekolah.html">Buat Satuan Pendidikan</a>\
+        </li>\
+        <li class="">\
+          <a href="#">Import</a>\
+        </li>\
+      </ul>\
+    </li>\
+    <li class="">\
+      <a href="#"><span class="title">Tenaga Kerja</span>\
+      <span class="arrow"></span></a>\
+      <ul class="sub-menu">\
+        <li class="">\
+        <a href="#">Tampilkan</a>\
+        </li>\
+        <li class="">\
+          <a href="inputsekolah.html">Buat Tenaga Kerja</a>\
+        </li>\
+        <li class="">\
+          <a href="#">Import</a>\
+        </li>\
+      </ul>\
+    </li>\
+    <li class="">\
+      <a href="#"><span class="title">Perserta Didik</span>\
+      <span class="arrow"></span></a>\
+      <ul class="sub-menu">\
+        <li class="">\
+        <a href="#">Tampilkan</a>\
+        </li>\
+        <li class="">\
+          <a href="#">Buat Tenaga Kerja</a>\
+        </li>\
+        <li class="">\
+          <a href="#">Import</a>\
         </li>\
       </ul>\
     </li>\

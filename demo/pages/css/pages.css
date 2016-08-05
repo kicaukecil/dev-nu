@@ -13740,3 +13740,10 @@ Main components
     background-size: 114px 29px;
   }
 }
+
+
+
+/*Custom*/
+.page-sidebar .sidebar-menu .menu-items li > a{
+  width: 90%;
+}
