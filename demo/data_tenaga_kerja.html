@@ -38,6 +38,49 @@
       /*width: 200px ! important;*/
       crusor:default ! important;
     }
+    .far-table{
+      background: #fff ! important;
+      margin-left: 200px;
+      border-collapse:none ! important;
+    }
+    .far-table thead th {
+        /*background-color: #DDEFEF;*/
+        /*border: none;*/
+        /*color: #336B6B;*/
+        /*padding: 10px;*/
+        /*text-align: left;*/
+        /*text-shadow: 1px 1px 1px #fff;*/
+        white-space: nowrap;
+    }
+    .far-table tbody td {
+        /*border-bottom: solid 1px #DDEFEF;*/
+        /*color: #333;*/
+        /*padding: 10px;*/
+        /*text-shadow: 1px 1px 1px #fff;*/
+        white-space: nowrap;
+    }
+    .dataTables_wrapper {
+        position: relative;
+    }
+    .table-responsive {
+        /*margin-left: 220px;*/
+        overflow-x: scroll;
+        overflow-y: visible;
+        /*padding-bottom: 5px;*/
+        /*width: 300px;*/
+    }
+    .far-table .far-sticky-col {
+        /*border-left: solid 1px #DDEFEF;*/
+        /*border-right: solid 1px #DDEFEF;*/
+        left: 0;
+        position: absolute ! important;
+        top: auto;
+        border: none;
+        background: #fff;
+        z-index: 10;
+        /*width: 120px;*/
+
+    }
   </style>
   </head>
   <body class="fixed-header menu-pin">
@@ -107,210 +150,253 @@
                   <div class="clearfix"></div>
                 </div>
                 <div class="panel-body">
-                  <table class="table table-hover demo-table-search " id="tableUser">
-                    <thead>
-                      <tr>
-                        <th class="sorting-non" style="width:1%;" ><button class="btn"><i class="pg-trash"></i>
-                        </button></th>
-                        <th style="width:20%">Nama</th>
-                        <th style="width:19%;">Satuan Pendidikan</th>
-                        <th style="width:20%;">Jenis Tenaga Kerja</th>
-                        <th style="width:15%;">Bidang</th>
-                        <th style="width:10%;">Status</th>
-                        <th class="sorting-non" style="width:15%;" ></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="v-align-middle ">
-                          <div class="checkbox ">
-                            <input type="checkbox" value="1" id="checkbox1">
-                            <label for="checkbox1"></label>
+                  <table class="table table-hover demo-table-search far-table" id="tableUser">
+                <thead>
+                  <tr>
+                    <th class="sorting-non far-sticky-col" style="width:16%;" ><button class="btn"><i class="pg-trash"></i>
+                    </button></th>
+                    <th>Nama</th>
+                    <th>Satuan Pendidikan</th>
+                    <th>Jenis Tenaga Kerja</th>
+                    <th>Bidang pendidikan</th>
+                    <th>Bidang kependidikan</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="v-align-middle far-sticky-col">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <input type="checkbox" value="1" id="checkbox1">
+                        </span>
+                        <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul style="width: 141px;" class="dropdown-menu ">
+                                  <li><a href="#">Edit</a></li>
+                                  <li><a href="#">Hapus</a></li>
+                              </ul>
                           </div>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Iva Sulis</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Satuan Pendidikan A kota Bnyuwangi</p>
-                        </td>
-                        <td class="v-align-middle semi-bold">
-                          <p>Tenaga Kependidikan</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Admin</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Aktif</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <div class="btn-group dropdown-default"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                                <ul style="width: 141px;" class="dropdown-menu ">
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Hapus</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="v-align-middle ">
-                          <div class="checkbox ">
-                            <input type="checkbox" value="1" id="checkbox1">
-                            <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Iva Sulis</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Satuan Pendidikan A kota Bnyuwangi</p>
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                      <p>Tenaga Kependidikan</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p> - </p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Admin</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Aktif</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="v-align-middle far-sticky-col">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <input type="checkbox" value="1" id="checkbox1">
+                        </span>
+                        <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul style="width: 141px;" class="dropdown-menu ">
+                                  <li><a href="#">Edit</a></li>
+                                  <li><a href="#">Hapus</a></li>
+                              </ul>
                           </div>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Danilah sari</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Satuan Pendidikan C kota Solo</p>
-                        </td>
-                        <td class="v-align-middle semi-bold">
-                          <p>Tenaga Pendidik</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Bidang ajar Matematika</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Aktif</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <div class="btn-group dropdown-default"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                                <ul style="width: 141px;" class="dropdown-menu ">
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Hapus</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="v-align-middle ">
-                          <div class="checkbox ">
-                            <input type="checkbox" value="1" id="checkbox1">
-                            <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Eka Sulis</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Satuan Pendidikan A kota Bnyuwangi</p>
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                      <p>Tenaga Kependidikan</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p> - </p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Admin</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Aktif</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="v-align-middle far-sticky-col">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <input type="checkbox" value="1" id="checkbox1">
+                        </span>
+                        <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul style="width: 141px;" class="dropdown-menu ">
+                                  <li><a href="#">Edit</a></li>
+                                  <li><a href="#">Hapus</a></li>
+                              </ul>
                           </div>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Danilah sari</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Satuan Pendidikan C kota Solo</p>
-                        </td>
-                        <td class="v-align-middle semi-bold">
-                          <p>Tenaga Pendidik</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Bidang ajar Matematika</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Aktif</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <div class="btn-group dropdown-default"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                                <ul style="width: 141px;" class="dropdown-menu ">
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Hapus</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="v-align-middle ">
-                          <div class="checkbox ">
-                            <input type="checkbox" value="1" id="checkbox1">
-                            <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Sari Sulis</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Satuan Pendidikan A kota Bnyuwangi</p>
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                      <p>Tenaga Kependidikan</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p> - </p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Admin</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Aktif</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="v-align-middle far-sticky-col">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <input type="checkbox" value="1" id="checkbox1">
+                        </span>
+                        <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul style="width: 141px;" class="dropdown-menu ">
+                                  <li><a href="#">Edit</a></li>
+                                  <li><a href="#">Hapus</a></li>
+                              </ul>
                           </div>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Danilah sari</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Satuan Pendidikan C kota Solo</p>
-                        </td>
-                        <td class="v-align-middle semi-bold">
-                          <p>Tenaga Pendidik</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Bidang ajar Matematika</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Aktif</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <div class="btn-group dropdown-default"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                                <ul style="width: 141px;" class="dropdown-menu ">
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Hapus</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="v-align-middle ">
-                          <div class="checkbox ">
-                            <input type="checkbox" value="1" id="checkbox1">
-                            <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Liza Sulis</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Satuan Pendidikan A kota Bnyuwangi</p>
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                      <p>Tenaga Kependidikan</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p> - </p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Admin</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Aktif</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="v-align-middle far-sticky-col">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <input type="checkbox" value="1" id="checkbox1">
+                        </span>
+                        <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul style="width: 141px;" class="dropdown-menu ">
+                                  <li><a href="#">Edit</a></li>
+                                  <li><a href="#">Hapus</a></li>
+                              </ul>
                           </div>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Danilah sari</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Satuan Pendidikan C kota Solo</p>
-                        </td>
-                        <td class="v-align-middle semi-bold">
-                          <p>Tenaga Pendidik</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Bidang ajar Matematika</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Aktif</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <div class="btn-group dropdown-default"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                                <ul style="width: 141px;" class="dropdown-menu ">
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Hapus</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="v-align-middle ">
-                          <div class="checkbox ">
-                            <input type="checkbox" value="1" id="checkbox1">
-                            <label for="checkbox1"></label>
+                      </div>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Wulan Sulis</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Satuan Pendidikan A kota Bnyuwangi</p>
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                      <p>Tenaga Kependidikan</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p> - </p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Admin</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Aktif</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="v-align-middle far-sticky-col">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <input type="checkbox" value="1" id="checkbox1">
+                        </span>
+                        <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul style="width: 141px;" class="dropdown-menu ">
+                                  <li><a href="#">Edit</a></li>
+                                  <li><a href="#">Hapus</a></li>
+                              </ul>
                           </div>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Joko Anwar</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Satuan Pendidikan D kota Probolinggo</p>
-                        </td>
-                        <td class="v-align-middle semi-bold">
-                          <p>Tenaga Pendidik</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Bidang ajar Geografi</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Aktif</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <div class="btn-group dropdown-default"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                                <ul style="width: 141px;" class="dropdown-menu ">
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Hapus</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                      </tr>
-
-
-                    </tbody>
-                  </table>
+                      </div>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Nur Sulis</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Satuan Pendidikan A kota Bnyuwangi</p>
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                      <p>Tenaga Kependidikan</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p> - </p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Admin</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Aktif</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="v-align-middle far-sticky-col">
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <input type="checkbox" value="1" id="checkbox1">
+                        </span>
+                        <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul style="width: 141px;" class="dropdown-menu ">
+                                  <li><a href="#">Edit</a></li>
+                                  <li><a href="#">Hapus</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Iva Sulis</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Satuan Pendidikan A kota Bnyuwangi</p>
+                    </td>
+                    <td class="v-align-middle semi-bold">
+                      <p>Tenaga Kependidikan</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p> - </p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Admin</p>
+                    </td>
+                    <td class="v-align-middle">
+                      <p>Aktif</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
                 </div>
               </div>
             </div>
@@ -402,7 +488,7 @@
                     "sLengthMenu": "_MENU_ ",
                     "sInfo": "Menampilkan <b>_START_ - _END_</b> dari _TOTAL_ data."
                 },
-                "iDisplayLength": 8 //jumlah data tampil per page
+                "iDisplayLength": 7 //jumlah data tampil per page
             };
 
             table.dataTable(settings);
