@@ -50,13 +50,13 @@ document.write('\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
       <li class="">\
-        <a href="#">Tampilkan</a>\
+        <a href="data_sekolah.html">Tampilkan</a>\
       </li>\
         <li class="">\
-          <a href="inputsekolah.html">Buat Satuan Pendidikan</a>\
+          <a href="input_sekolah.html">Buat Satuan Pendidikan</a>\
         </li>\
         <li class="">\
-          <a href="#">Import</a>\
+          <a href="import.html">Import</a>\
         </li>\
       </ul>\
     </li>\
@@ -68,25 +68,33 @@ document.write('\
         <a href="data_tenaga_kerja.html">Tampilkan</a>\
         </li>\
         <li class="">\
+<<<<<<< HEAD
           <a href="input_tenaga_kerja.html">Buat Tenaga Kerja</a>\
+=======
+          <a href="input_sekolah.html">Buat Tenaga Kerja</a>\
+>>>>>>> 32886b1992a9c715ae2bffc73ad51744632cb662
         </li>\
         <li class="">\
-          <a href="#">Import</a>\
+          <a href="import.html">Import</a>\
         </li>\
       </ul>\
     </li>\
     <li class="">\
-      <a href="#"><span class="title">Perserta Didik</span>\
+      <a href="#"><span class="title">Peserta Didik</span>\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
         <li class="">\
-        <a href="#">Tampilkan</a>\
+        <a href="data_murid.html">Tampilkan</a>\
         </li>\
         <li class="">\
+<<<<<<< HEAD
           <a href="#">Buat Perserta Didik</a>\
+=======
+          <a href="input_murid.html">Buat Peserta Didik</a>\
+>>>>>>> 32886b1992a9c715ae2bffc73ad51744632cb662
         </li>\
         <li class="">\
-          <a href="#">Import</a>\
+          <a href="import.html">Import</a>\
         </li>\
       </ul>\
     </li>\
