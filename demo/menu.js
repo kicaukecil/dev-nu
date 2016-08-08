@@ -26,10 +26,10 @@ document.write('\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
         <li class="">\
-          <a href="data_wilayah.html">Tampilkan</a>\
+          <a href="#">Tampilkan</a>\
         </li>\
         <li class="">\
-          <a href="input_wilayah.html">Buat Kantor Wilayah</a>\
+          <a href="input_kantor_wilayah.html">Buat Kantor Wilayah</a>\
         </li>\
       </ul>\
     </li>\
@@ -76,14 +76,14 @@ document.write('\
       </ul>\
     </li>\
     <li class="">\
-      <a href="#"><span class="title">Perserta Didik</span>\
+      <a href="#"><span class="title">Peserta Didik</span>\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
         <li class="">\
-        <a href="#">Tampilkan</a>\
+        <a href="data_murid.html">Tampilkan</a>\
         </li>\
         <li class="">\
-          <a href="#">Buat Tenaga Kerja</a>\
+          <a href="input_murid.html">Buat Peserta Didik</a>\
         </li>\
         <li class="">\
           <a href="import.html">Import</a>\
