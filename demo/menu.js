@@ -26,10 +26,10 @@ document.write('\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
         <li class="">\
-          <a href="#">Tampilkan</a>\
+          <a href="data_wilayah.html">Tampilkan</a>\
         </li>\
         <li class="">\
-          <a href="input_kantor_wilayah.html">Buat Kantor Wilayah</a>\
+          <a href="input_wilayah.html">Buat Kantor Wilayah</a>\
         </li>\
       </ul>\
     </li>\
