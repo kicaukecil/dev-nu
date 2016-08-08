@@ -38,7 +38,7 @@ document.write('\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
         <li class="">\
-          <a href="#">Tampilkan</a>\
+          <a href="data_kantor_cabang.html">Tampilkan</a>\
         </li>\
         <li class="">\
           <a href="input_kantor_cabang.html">Buat Kantor Cabang</a>\
@@ -65,10 +65,10 @@ document.write('\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
         <li class="">\
-        <a href="#">Tampilkan</a>\
+        <a href="data_tenaga_kerja.html">Tampilkan</a>\
         </li>\
         <li class="">\
-          <a href="inputsekolah.html">Buat Tenaga Kerja</a>\
+          <a href="input_tenaga_kerja.html">Buat Tenaga Kerja</a>\
         </li>\
         <li class="">\
           <a href="#">Import</a>\
@@ -83,7 +83,7 @@ document.write('\
         <a href="#">Tampilkan</a>\
         </li>\
         <li class="">\
-          <a href="#">Buat Tenaga Kerja</a>\
+          <a href="#">Buat Perserta Didik</a>\
         </li>\
         <li class="">\
           <a href="#">Import</a>\
