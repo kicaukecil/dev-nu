@@ -32,11 +32,47 @@
         /*width: 200px ! important;*/
         crusor:default ! important;
       }
-      .sticky th{
-        position: absolute;
-        z-index: 1000;
-        display: block;
-        overflow-x: visible;
+      .far-table{
+        background: #fff ! important;
+        margin-left: 200px;
+        border-collapse:none ! important;
+      }
+      .far-table thead th {
+          /*background-color: #DDEFEF;*/
+          /*border: none;*/
+          /*color: #336B6B;*/
+          /*padding: 10px;*/
+          /*text-align: left;*/
+          /*text-shadow: 1px 1px 1px #fff;*/
+          white-space: nowrap;
+      }
+      .far-table tbody td {
+          /*border-bottom: solid 1px #DDEFEF;*/
+          /*color: #333;*/
+          /*padding: 10px;*/
+          /*text-shadow: 1px 1px 1px #fff;*/
+          white-space: nowrap;
+      }
+      .dataTables_wrapper {
+          position: relative;
+      }
+      .table-responsive {
+          /*margin-left: 220px;*/
+          overflow-x: scroll;
+          overflow-y: visible;
+          /*padding-bottom: 5px;*/
+          /*width: 300px;*/
+      }
+      .far-table .far-sticky-col {
+          /*border-left: solid 1px #DDEFEF;*/
+          /*border-right: solid 1px #DDEFEF;*/
+          left: 0;
+          position: absolute ! important;
+          top: auto;
+          border: none;
+          background: #fff;
+          z-index: 10;
+          /*width: 120px;*/
 
       }
     </style>
@@ -99,12 +135,11 @@
                 <div class="clearfix"></div>
               </div>
               <div class="panel-body">
-                <table class="table table-hover demo-table-search " id="tableSekolah">
+                <table class="table table-hover demo-table-search far-table" id="tableSekolah">
                   <thead>
                     <tr>
-                      <th class="sticky sorting-non" style="width:0.1%;" ><button class="btn"><i class="pg-trash"></i>
+                      <th class="sorting-non far-sticky-col" ><button class="btn"><i class="pg-trash"></i>
                       </button></th>
-                      <th class="sticky sorting-non" style="width:15%;" ></th>
                       <th style="width:20%">Nama Sekolah</th>
                       <th style="width:19%;">Status</th>
                       <th style="width:20%;">Bentuk</th>
@@ -125,22 +160,21 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <a href="#"><tr>
-                      <th class="sticky v-align-middle ">
-                        <div class="checkbox ">
-                          <input type="checkbox" value="3" id="checkbox1">
-                          <label for="checkbox1"></label>
+                    <tr>
+                      <td class="v-align-middle far-sticky-col">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                <ul style="width: 141px;" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#">Hapus</a></li>
+                                </ul>
+                            </div>
                         </div>
-                      </th>
-                      <th class="sticky v-align-middle">
-                        <div class="btn-group dropdown-default"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                              <ul style="width: 141px;" class="dropdown-menu ">
-                                  <li><a href="#">Lihat</a></li><li><a href="#">Edit</a></li>
-
-                                  <li><a href="#">Hapus</a></li>
-                              </ul>
-                          </div>
-                      </th>
+                      </td>
                       <td class="v-align-middle">
                         <p>Yanto SLTP 2 Admin Sekolah</p>
                       </td>
@@ -193,21 +227,20 @@
 
                     </tr></a>
                     <tr>
-                      <th class="sticky v-align-middle semi-bold">
-                        <div class="checkbox ">
-                          <input type="checkbox" value="3" id="checkbox2">
-                          <label for="checkbox2"></label>
+                      <td class="v-align-middle far-sticky-col">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                <ul style="width: 141px;" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#">Hapus</a></li>
+                                </ul>
+                            </div>
                         </div>
-                      </th>
-                      <th class="sticky v-align-middle">
-                        <div class="btn-group dropdown-default"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                              <ul style="width: 141px;" class="dropdown-menu ">
-                                  <li><a href="#">Lihat</a></li><li><a href="#">Edit</a></li>
-
-                                  <li><a href="#">Hapus</a></li>
-                              </ul>
-                          </div>
-                      </th>
+                      </td>
                       <td class="v-align-middle">
                         <p>yadi SLTP 2 Admin Sekolah</p>
                       </td>
@@ -260,21 +293,20 @@
 
                     </tr>
                     <tr>
-                      <th class="sticky v-align-middle semi-bold">
-                        <div class="checkbox stick">
-                          <input type="checkbox" value="3" id="checkbox3">
-                          <label for="checkbox3"></label>
+                      <td class="v-align-middle far-sticky-col">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                <ul style="width: 141px;" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#">Hapus</a></li>
+                                </ul>
+                            </div>
                         </div>
-                      </th>
-                      <th class="sticky v-align-middle">
-                        <div class="btn-group dropdown-default"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                              <ul style="width: 141px;" class="dropdown-menu ">
-                                  <li><a href="#">Lihat</a></li><li><a href="#">Edit</a></li>
-
-                                  <li><a href="#">Hapus</a></li>
-                              </ul>
-                          </div>
-                      </th>
+                      </td>
                       <td class="v-align-middle">
                         <p>SLTP 2 Admin Sekolah</p>
                       </td>
@@ -327,21 +359,20 @@
 
                     </tr>
                     <tr>
-                      <th class="sticky v-align-middle semi-bold">
-                        <div class="checkbox ">
-                          <input type="checkbox" value="3" id="checkbox3">
-                          <label for="checkbox3"></label>
+                      <td class="v-align-middle far-sticky-col">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                <ul style="width: 141px;" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#">Hapus</a></li>
+                                </ul>
+                            </div>
                         </div>
-                      </th>
-                      <th class="sticky v-align-middle">
-                        <div class="btn-group dropdown-default"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                              <ul style="width: 141px;" class="dropdown-menu ">
-                                  <li><a href="#">Lihat</a></li><li><a href="#">Edit</a></li>
-
-                                  <li><a href="#">Hapus</a></li>
-                              </ul>
-                          </div>
-                      </th>
+                      </td>
                       <td class="v-align-middle">
                         <p>SLTP 2 Admin Sekolah</p>
                       </td>
@@ -393,21 +424,20 @@
 
                     </tr>
                     <tr>
-                      <th class="sticky v-align-middle semi-bold">
-                        <div class="checkbox ">
-                          <input type="checkbox" value="3" id="checkbox3">
-                          <label for="checkbox3"></label>
+                      <td class="v-align-middle far-sticky-col">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                <ul style="width: 141px;" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#">Hapus</a></li>
+                                </ul>
+                            </div>
                         </div>
-                      </th>
-                      <th class="sticky v-align-middle">
-                        <div class="btn-group dropdown-default"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                              <ul style="width: 141px;" class="dropdown-menu ">
-                                  <li><a href="#">Lihat</a></li><li><a href="#">Edit</a></li>
-
-                                  <li><a href="#">Hapus</a></li>
-                              </ul>
-                          </div>
-                      </th>
+                      </td>
                       <td class="v-align-middle">
                         <p>Joko SLTP 2 Admin Sekolah</p>
                       </td>
@@ -460,21 +490,20 @@
 
                     </tr>
                     <tr>
-                      <th class="sticky v-align-middle semi-bold">
-                        <div class="checkbox ">
-                          <input type="checkbox" value="3" id="checkbox3">
-                          <label for="checkbox3"></label>
+                      <td class="v-align-middle far-sticky-col">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                <ul style="width: 141px;" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#">Hapus</a></li>
+                                </ul>
+                            </div>
                         </div>
-                      </th>
-                      <th class="sticky v-align-middle">
-                        <div class="btn-group dropdown-default"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                              <ul style="width: 141px;" class="dropdown-menu ">
-                                  <li><a href="#">Lihat</a></li><li><a href="#">Edit</a></li>
-
-                                  <li><a href="#">Hapus</a></li>
-                              </ul>
-                          </div>
-                      </th>
+                      </td>
                       <td class="v-align-middle">
                         <p>SLTP 2 Admin Sekolah</p>
                       </td>
@@ -527,21 +556,20 @@
 
                     </tr>
                     <tr>
-                      <th class="sticky v-align-middle semi-bold">
-                        <div class="checkbox ">
-                          <input type="checkbox" value="3" id="checkbox3">
-                          <label for="checkbox3"></label>
+                      <td class="v-align-middle far-sticky-col">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                <ul style="width: 141px;" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#">Hapus</a></li>
+                                </ul>
+                            </div>
                         </div>
-                      </th>
-                      <th class="sticky v-align-middle">
-                        <div class="btn-group dropdown-default"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                              <ul style="width: 141px;" class="dropdown-menu ">
-                                  <li><a href="#">Lihat</a></li><li><a href="#">Edit</a></li>
-
-                                  <li><a href="#">Hapus</a></li>
-                              </ul>
-                          </div>
-                      </th>
+                      </td>
                       <td class="v-align-middle">
                         <p>SLTP 2 Admin Sekolah</p>
                       </td>
@@ -594,21 +622,20 @@
 
                     </tr>
                     <tr>
-                      <th class="sticky v-align-middle semi-bold">
-                        <div class="checkbox ">
-                          <input type="checkbox" value="3" id="checkbox3">
-                          <label for="checkbox3"></label>
+                      <td class="v-align-middle far-sticky-col">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                <ul style="width: 141px;" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#">Hapus</a></li>
+                                </ul>
+                            </div>
                         </div>
-                      </th>
-                      <th class="sticky v-align-middle">
-                        <div class="btn-group dropdown-default"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                              <ul style="width: 141px;" class="dropdown-menu ">
-                                  <li><a href="#">Lihat</a></li><li><a href="#">Edit</a></li>
-
-                                  <li><a href="#">Hapus</a></li>
-                              </ul>
-                          </div>
-                      </th>
+                      </td>
                       <td class="v-align-middle">
                         <p>Rosyid SLTP 2 Admin Sekolah</p>
                       </td>
@@ -661,21 +688,20 @@
 
                     </tr>
                     <tr>
-                      <th class="sticky v-align-middle semi-bold">
-                        <div class="checkbox ">
-                          <input type="checkbox" value="3" id="checkbox3">
-                          <label for="checkbox3"></label>
+                      <td class="v-align-middle far-sticky-col">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                <ul style="width: 141px;" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#">Hapus</a></li>
+                                </ul>
+                            </div>
                         </div>
-                      </th>
-                      <th class="sticky v-align-middle">
-                        <div class="btn-group dropdown-default"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                              <ul style="width: 141px;" class="dropdown-menu ">
-                                  <li><a href="#">Lihat</a></li><li><a href="#">Edit</a></li>
-
-                                  <li><a href="#">Hapus</a></li>
-                              </ul>
-                          </div>
-                      </th>
+                      </td>
                       <td class="v-align-middle">
                         <p>Kurniawan SLTP 2 Admin Sekolah</p>
                       </td>
