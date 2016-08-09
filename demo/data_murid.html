@@ -138,7 +138,7 @@
                 <table class="table table-hover demo-table-search far-table" id="tableSekolah">
                   <thead>
                     <tr>
-                      <th class="sorting-non far-sticky-col" ><button class="btn"><i class="pg-trash"></i>
+                      <th class="sorting-non far-sticky-col" ><button class="btn clickDelete"><i class="pg-trash"></i>
                       </button></th>
                       <th style="width:20%">Nama Sekolah</th>
                       <th style="width:19%;">Status</th>
@@ -170,7 +170,7 @@
                                 <ul style="width: 141px;" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Hapus</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -236,7 +236,7 @@
                                 <ul style="width: 141px;" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Hapus</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -302,7 +302,7 @@
                                 <ul style="width: 141px;" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Hapus</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -368,7 +368,7 @@
                                 <ul style="width: 141px;" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Hapus</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -433,7 +433,7 @@
                                 <ul style="width: 141px;" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Hapus</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -499,7 +499,7 @@
                                 <ul style="width: 141px;" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Hapus</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -565,7 +565,7 @@
                                 <ul style="width: 141px;" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Hapus</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -631,7 +631,7 @@
                                 <ul style="width: 141px;" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Hapus</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -697,7 +697,7 @@
                                 <ul style="width: 141px;" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Hapus</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -787,6 +787,27 @@
         <!-- END COPYRIGHT -->
       </div>
       <!-- END PAGE CONTENT WRAPPER -->
+    </div>
+
+    <div class="modal fade slide-up disable-scroll in" id="confirmDelete" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content-wrapper">
+          <div class="modal-content">
+            <div class="modal-header clearfix text-left">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+              </button>
+              <h5><i class="pg-trash"></i> Menghapus Data</h5>
+            </div>
+            <div class="modal-body">
+              <p class="no-margin">Apa anda yakin?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary btn-cons  pull-left inline" onclick="notifDelete()" data-dismiss="modal">Ya</button>
+              <button type="button" class="btn btn-default btn-cons no-margin pull-left inline" data-dismiss="modal">Batal</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- END PAGE CONTAINER -->
 
