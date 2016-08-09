@@ -4,6 +4,24 @@
  * jQuery DataTables plugin
  * For DEMO purposes only. Extract what you need.
  * ============================================================ */
+
+
+ $('.clickDelete').click(function(){
+   $('#confirmDelete').modal('show');
+ });
+
+ function notifDelete() {
+   // Apply the plugin to the body
+
+   $('body').pgNotification({
+     style: 'flip',
+     message: 'Data berhasil dihapus',
+     position: 'top-right',
+     timeout: 0,
+     type: 'success'
+   }).show();
+ };
+
 (function($) {
 
     'use strict';

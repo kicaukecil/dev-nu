@@ -138,7 +138,7 @@
                           <div class="btn-group dropdown-default"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
                                 <ul style="width: 141px;" class="dropdown-menu ">
                                     <li><a href="#">Edit</a></li>
-                                    <li><a href="#" class="clickDelete" class="clickDelete">Hapus</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
                                 </ul>
                             </div>
                         </td>
@@ -490,7 +490,7 @@
       </div>
       <!-- END PAGE CONTENT WRAPPER -->
     </div>
-    <div class="modal fade stick-up" id="confirmDelete" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade slide-up disable-scroll in" id="confirmDelete" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-sm">
         <div class="modal-content-wrapper">
           <div class="modal-content">
@@ -508,9 +508,7 @@
             </div>
           </div>
         </div>
-        <!-- /.modal-content -->
       </div>
-      <!-- /.modal-dialog -->
     </div>
 
 
@@ -545,21 +543,7 @@
     <script type="text/javascript">
     //Custum script
 
-    $('.clickDelete').click(function(){
-      $('#confirmDelete').modal('show');
-    });
 
-    function notifDelete() {
-      // Apply the plugin to the body
-
-      $('body').pgNotification({
-        style: 'flip',
-        message: 'Data berhasil dihapus',
-        position: 'top-right',
-        timeout: 0,
-        type: 'success'
-      }).show();
-    };
 
     (function($) {
 
