@@ -90,5 +90,17 @@ document.write('\
         </li>\
       </ul>\
     </li>\
+    <li class="">\
+      <a href="#"><span class="title">Master Admin</span>\
+      <span class="arrow"></span></a>\
+      <ul class="sub-menu">\
+        <li class="">\
+        <a href="#">Data Provinsi</a>\
+        </li>\
+        <li class="">\
+          <a href="edit_user.html">User Akses</a>\
+        </li>\
+      </ul>\
+    </li>\
   </ul>\
 ');
