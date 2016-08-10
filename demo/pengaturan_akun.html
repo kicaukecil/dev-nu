@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Halaman User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/bootstrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+    <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+
+    <!--[if lte IE 9]>
+	<link href="assets/plugins/codrops-dialogFx/dialog.ie.css" rel="stylesheet" type="text/css" media="screen" />
+	<![endif]-->
+  <!-- ..... custom ..... -->
+  <script src="header.js" type="text/javascript"></script>
+  <!-- ... end custom ... -->
+  <style media="screen">
+    .nav-tabs.nav-tabs-right{
+      float:none;
+    }
+  </style>
+  </head>
+  <body class=" menu-pin">
+    <!-- BEGIN SIDEBPANEL-->
+    <nav class="page-sidebar" data-pages="sidebar">
+      <!-- BEGIN SIDEBAR MENU TOP TRAY CONTENT-->
+      <div class="sidebar-overlay-slide from-top" id="appMenu">
+      </div>
+      <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
+      <!-- BEGIN SIDEBAR MENU HEADER-->
+      <div class="sidebar-header" style="padding-left: 70px; height: auto">
+        <img src="logo.png" alt="logo" data-src="logo.png" width="110" height="110">
+      </div>
+      <!-- END SIDEBAR MENU HEADER-->
+      <!-- START SIDEBAR MENU -->
+      <div class="sidebar-menu" style="padding-top: 10px">
+        <!-- BEGIN SIDEBAR MENU ITEMS-->
+
+      <script src="menu.js"></script>
+
+        <div class="clearfix"></div>
+      </div>
+      <!-- END SIDEBAR MENU -->
+    </nav>
+    <!-- END SIDEBAR -->
+    <!-- END SIDEBPANEL-->
+    <!-- START PAGE-CONTAINER -->
+    <div class="page-container ">
+      <!-- START HEADER -->
+      <!-- END HEADER -->
+      <!-- START PAGE CONTENT WRAPPER -->
+      <div class="page-content-wrapper ">
+        <!-- START PAGE CONTENT -->
+        <div class="content">
+          <!-- START JUMBOTRON -->
+          <script type="text/javascript">
+            header('Pegaturan');
+          </script>
+          <!-- END JUMBOTRON -->
+          <!-- START CONTAINER FLUID -->
+          <div class="container-fluid p-t-70">
+            <div class="row bg-white">
+              <div class="col-sm-8 no-padding">
+                <div class="panel panel-transparant">
+                  <div class="panel-body">
+                    <div class="tab-content bg-white">
+                      <div class="tab-pane active" id="akun">
+                        <div class="row column-seperation">
+                          <div class="col-md-12">
+                            <h3 class="no-margin"><span class="semi-bold">Akun</span></h3>
+                            <p class="small">Ubah informasi dasar akun.</p>
+                              <form id="form-project" class="m-t-20" role="form" autocomplete="off">
+                                <div class="form-group-attached">
+                                  <div class="row clearfix">
+                                    <div class="col-sm-6">
+                                      <div class="form-group form-group-default required">
+                                        <label>Nama depan</label>
+                                        <input type="text" class="form-control" name="nama" value="Andi" required>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                      <div class="form-group form-group-default">
+                                        <label>Nama belakang</label>
+                                        <input type="text" class="form-control" value="Priatna" name="nama-belakang">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-group form-group-default required">
+                                    <label>Email <i class="fa fa-email text-complete m-l-5"></i>
+                                    </label>
+                                    <input type="email" class="form-control" value="andi@email.com" name="email" required>
+                                  </div>
+                                  <div class="form-group form-group-default">
+                                    <label>No. Telepon <i class="fa fa-phone text-complete m-l-5"></i>
+                                    </label>
+                                    <input type="text" class="form-control" name="telepon" placeholder="+6200009999000 ">
+                                  </div>
+                                  <div class="form-group form-group-default">
+                                    <label>Alamat
+                                    </label>
+                                    <textarea rows="7" type="text" class="form-control" name="alamat">Jl. Serui No. 40</textarea>
+                                  </div>
+                                </div>
+                                <div class="row text-center p-t-20">
+                                  <button class="btn btn-success" type="submit">Simpan Perubahan</button>
+                                </div>
+                              </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane " id="gantiPassword">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h3 class="no-margin">Ganti <span class="semi-bold">Password</span></h3>
+                            <p class="small">Ubah kata sandi Anda atau pulihkan kata sandi yang sekarang.</p>
+                            <form id="form-project" class="m-t-20" role="form" autocomplete="off">
+                              <div class="form-group-attached">
+                                <div class="form-group form-group-default required">
+                                  <label>Password Lama
+                                  </label>
+                                  <input type="password" class="form-control" name="password" required>
+
+                                </div>
+                              </div>
+                              <p class="m-t-10"><a href="#">Lupa password?</a><p>
+
+                              <div class="form-group-attached m-t-20">
+                                <div class="form-group form-group-default required">
+                                  <label>Password Baru
+                                  </label>
+                                  <input type="password" class="form-control" name="password" required>
+                                </div>
+                                <div class="form-group form-group-default required">
+                                  <label>Ulangi password Baru
+                                  </label>
+                                  <input type="password" class="form-control" name="re-password" required>
+                                </div>
+                              </div>
+                              <div class="row text-center p-t-20">
+                                <button class="btn btn-success" type="submit">Simpan Perubahan</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="tab4Inspire">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h3>Follow us &amp; get updated!</h3>
+                            <p>Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.</p>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 no-padding">
+              <div class="panel panel-default bg-info no-margin">
+                <div class="panel-body">
+                  <div class="container-xs-height">
+                              <div class="row-xs-height">
+                                <div class="social-user-profile col-xs-height text-center col-top">
+                                  <div class="thumbnail-wrapper d48 circular bordered b-white">
+                                    <img alt="Avatar" data-src-retina="assets/img/profiles/avatar_small2x.jpg" data-src="assets/img/profiles/avatar.jpg" src="assets/img/profiles/avatar.jpg" height="55" width="55">
+                                  </div>
+                                  <br>
+                                  <i class="fa fa-check-circle text-success fs-16 m-t-10"></i>
+                                </div>
+                                <div class="col-xs-height p-l-20">
+                                  <h3 class="no-margin text-white">Nama User</h3>
+                                  <p class="no-margin fs-16 text-white">Pengurus Wilayah Provinsi A
+                                  </p>
+                                  <p class="hint-text m-t-5 small text-white">Wakil ketua | Kantor kota a.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                </div>
+              </div>
+                <ul class="nav nav-tabs nav-tabs-simple nav-tabs-right bg-white" id="tab-4" role="tablist">
+                  <li class="active"><a href="#akun" data-toggle="tab" role="tab">akun</a>
+                  </li>
+                  <li><a href="#gantiPassword" data-toggle="tab" role="tab">Ganti Password</a>
+                  </li>
+                  <li ><a href="#tab4Inspire" data-toggle="tab" role="tab">Pengaturan Lainya</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- END CONTAINER FLUID -->
+        </div>
+        <!-- END PAGE CONTENT -->
+        <!-- START COPYRIGHT -->
+        <!-- START CONTAINER FLUID -->
+        <div class="container-fluid container-fixed-lg footer">
+          <div class="copyright sm-text-center">
+            <p class="small no-margin pull-left sm-pull-reset">
+              <span class="hint-text">Copyright &copy; 2016 </span>
+              <span class="font-montserrat">Indonesia</span>.
+              <span class="hint-text">All rights reserved. </span>
+              <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+            </p>
+            <p class="small no-margin pull-right sm-pull-reset">
+              <a href="#">Hand-crafted</a> <span class="hint-text">&amp; Made with Love ®</span>
+            </p>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <!-- END COPYRIGHT -->
+      </div>
+      <!-- END PAGE CONTENT WRAPPER -->
+    </div>
+    <!-- END PAGE CONTAINER -->
+
+
+    <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-bez/jquery.bez.min.js"></script>
+    <script src="assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+    <script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-select2/select2.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
+    <script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
+    <!-- END VENDOR JS -->
+    <!-- BEGIN CORE TEMPLATE JS -->
+    <script src="pages/js/pages.min.js"></script>
+    <!-- END CORE TEMPLATE JS -->
+    <!-- BEGIN PAGE LEVEL JS -->
+    <script src="assets/js/scripts.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL JS -->
+  </body>
+</html>

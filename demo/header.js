@@ -104,7 +104,8 @@ document.write('\
       </span>\
         </button>\
         <ul class="dropdown-menu profile-dropdown" role="menu">\
-          <li><a href="#"><i class="pg-settings_small"></i> Pengaturan</a>\
+        <li><a href="activity.html"><i class="pg-clock"></i> Aktivitas</a></li>\
+          <li><a href="pengaturan_akun.html"><i class="pg-settings_small"></i> Pengaturan</a>\
           </li>\
           <li><a href="#"><i class="pg-signals"></i> Pusat bantuan</a>\
           </li>\
