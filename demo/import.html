@@ -78,30 +78,96 @@
           <!-- START CONTAINER FLUID -->
           <div class="container-fluid container-fixed-lg">
             <!-- BEGIN PlACE PAGE CONTENT HERE -->
-
-              <!-- START PANEL -->
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <tr><td><div class="panel-title">
-                    Import Data Satuan Pendidikan Menggunakan Format Excel atau CSV
-                  </div></td>
-                  <td><div class="" style="margin-top: 10px; margin-bottom: 10px"><button class="btn btn-complete btn-cons">UPLOAD DATA</button><button class="btn btn-primary btn-cons">DOWNLOAD TEMPLATE</button></div></td>
-                </tr>
-                  <div class="tools">
-                    <a class="collapse" href="javascript:;"></a>
-                    <a class="config" data-toggle="modal" href="#grid-config"></a>
-                    <a class="reload" href="javascript:;"></a>
-                    <a class="remove" href="javascript:;"></a>
+            <div class="alert alert-info visible-xs m-r-5 m-l-5" role="alert">
+              <button class="close" data-dismiss="alert"></button>
+              <strong>Info: </strong> On mobile the tab will be come a Accorian by using data-init-reponsive-tabs="collapse"
+            </div>
+            <div class="panel">
+              <ul class="nav nav-tabs nav-tabs-simple" role="tablist" data-init-reponsive-tabs="collapse">
+                <li class="active"><a href="#tab2satdik" data-toggle="tab" role="tab">Import Satuan Pendidikan</a>
+                </li>
+                <li><a href="#tab2naker" data-toggle="tab" role="tab">Import Tenaga Kerja</a>
+                </li>
+                <li><a href="#tab2pesertadidik" data-toggle="tab" role="tab">Import Peserta Didik</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="tab2satdik">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <tr><td><div class="panel-title">
+                        Import Data Satuan Pendidikan Menggunakan Format Excel atau CSV
+                      </div></td>
+                      <td><div class="" style="margin-top: 10px; margin-bottom: 10px"><button class="btn btn-complete btn-cons">UPLOAD DATA</button><button class="btn btn-primary btn-cons">DOWNLOAD TEMPLATE</button></div></td>
+                    </tr>
+                      <div class="tools">
+                        <a class="collapse" href="javascript:;"></a>
+                        <a class="config" data-toggle="modal" href="#grid-config"></a>
+                        <a class="reload" href="javascript:;"></a>
+                        <a class="remove" href="javascript:;"></a>
+                      </div>
+                    </div>
+                    <div class="panel-body no-scroll no-padding">
+                      <form action="/file-upload" class="dropzone no-margin">
+                        <div class="fallback">
+                          <input name="file" type="file" multiple/>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
-                <div class="panel-body no-scroll no-padding">
-                  <form action="/file-upload" class="dropzone no-margin">
-                    <div class="fallback">
-                      <input name="file" type="file" multiple/>
+                <div class="tab-pane " id="tab2naker">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <tr><td><div class="panel-title">
+                        Import Data Tenaga Kerja Menggunakan Format Excel atau CSV
+                      </div></td>
+                      <td><div class="" style="margin-top: 10px; margin-bottom: 10px"><button class="btn btn-complete btn-cons">UPLOAD DATA</button><button class="btn btn-primary btn-cons">DOWNLOAD TEMPLATE</button></div></td>
+                    </tr>
+                      <div class="tools">
+                        <a class="collapse" href="javascript:;"></a>
+                        <a class="config" data-toggle="modal" href="#grid-config"></a>
+                        <a class="reload" href="javascript:;"></a>
+                        <a class="remove" href="javascript:;"></a>
+                      </div>
                     </div>
-                  </form>
+                    <div class="panel-body no-scroll no-padding">
+                      <form action="/file-upload" class="dropzone no-margin">
+                        <div class="fallback">
+                          <input name="file" type="file" multiple/>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab2pesertadidik">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <tr><td><div class="panel-title">
+                        Import Data Peserta Didik Menggunakan Format Excel atau CSV
+                      </div></td>
+                      <td><div class="" style="margin-top: 10px; margin-bottom: 10px"><button class="btn btn-complete btn-cons">UPLOAD DATA</button><button class="btn btn-primary btn-cons">DOWNLOAD TEMPLATE</button></div></td>
+                    </tr>
+                      <div class="tools">
+                        <a class="collapse" href="javascript:;"></a>
+                        <a class="config" data-toggle="modal" href="#grid-config"></a>
+                        <a class="reload" href="javascript:;"></a>
+                        <a class="remove" href="javascript:;"></a>
+                      </div>
+                    </div>
+                    <div class="panel-body no-scroll no-padding">
+                      <form action="/file-upload" class="dropzone no-margin">
+                        <div class="fallback">
+                          <input name="file" type="file" multiple/>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+              <!-- START PANEL -->
+
               <!-- END PANEL -->
 
               <div class="container-fluid bg-white">
@@ -177,160 +243,7 @@
                             <p>April 13,2014 10:13</p>
                           </td>
                         </tr>
-                        <tr>
-                          <td class="v-align-middle semi-bold">
-                            <p>Life’s sadness shared</p>
-                          </td>
-                          <td class="v-align-middle"><a href="#" class="btn btn-tag">United States</a><a href="#" class="btn btn-tag">India</a>
-                            <a href="#" class="btn btn-tag">China</a><a href="#" class="btn btn-tag">Africa</a>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>he world speaks English. Common law, Magna Carta and the Bill of Rights are its wonderful legacy
-                            </p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>Public</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>April 13,2014 10:13</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="v-align-middle semi-bold">
-                            <p>First Tour</p>
-                          </td>
-                          <td class="v-align-middle"><a href="#" class="btn btn-tag">United States</a><a href="#" class="btn btn-tag">India</a>
-                            <a href="#" class="btn btn-tag">China</a><a href="#" class="btn btn-tag">Africa</a>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>it is more then ONE nation/nationality as its fall name is The United Kingdom of Great Britain and North Ireland..</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>Public</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>April 13,2014 10:13</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="v-align-middle semi-bold">
-                            <p>First Tour</p>
-                          </td>
-                          <td class="v-align-middle"><a href="#" class="btn btn-tag">United States</a><a href="#" class="btn btn-tag">India</a>
-                            <a href="#" class="btn btn-tag">China</a><a href="#" class="btn btn-tag">Africa</a>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>it is more then ONE nation/nationality as its fall name is The United Kingdom of Great Britain and North Ireland..</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>Public</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>April 13,2014 10:13</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="v-align-middle semi-bold">
-                            <p>First Tour</p>
-                          </td>
-                          <td class="v-align-middle"><a href="#" class="btn btn-tag">United States</a><a href="#" class="btn btn-tag">India</a>
-                            <a href="#" class="btn btn-tag">China</a><a href="#" class="btn btn-tag">Africa</a>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>it is more then ONE nation/nationality as its fall name is The United Kingdom of Great Britain and North Ireland..</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>Public</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>April 13,2014 10:13</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="v-align-middle semi-bold">
-                            <p>First Tour</p>
-                          </td>
-                          <td class="v-align-middle"><a href="#" class="btn btn-tag">United States</a><a href="#" class="btn btn-tag">India</a>
-                            <a href="#" class="btn btn-tag">China</a><a href="#" class="btn btn-tag">Africa</a>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>it is more then ONE nation/nationality as its fall name is The United Kingdom of Great Britain and North Ireland..</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>Public</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>April 13,2014 10:13</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="v-align-middle semi-bold">
-                            <p>First Tour</p>
-                          </td>
-                          <td class="v-align-middle"><a href="#" class="btn btn-tag">United States</a><a href="#" class="btn btn-tag">India</a>
-                            <a href="#" class="btn btn-tag">China</a><a href="#" class="btn btn-tag">Africa</a>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>it is more then ONE nation/nationality as its fall name is The United Kingdom of Great Britain and North Ireland..</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>Public</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>April 13,2014 10:13</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="v-align-middle semi-bold">
-                            <p>First Tour</p>
-                          </td>
-                          <td class="v-align-middle"><a href="#" class="btn btn-tag">United States</a><a href="#" class="btn btn-tag">India</a>
-                            <a href="#" class="btn btn-tag">China</a><a href="#" class="btn btn-tag">Africa</a>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>it is more then ONE nation/nationality as its fall name is The United Kingdom of Great Britain and North Ireland..</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>Public</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>April 13,2014 10:13</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="v-align-middle semi-bold">
-                            <p>First Tour</p>
-                          </td>
-                          <td class="v-align-middle"><a href="#" class="btn btn-tag">United States</a><a href="#" class="btn btn-tag">India</a>
-                            <a href="#" class="btn btn-tag">China</a><a href="#" class="btn btn-tag">Africa</a>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>it is more then ONE nation/nationality as its fall name is The United Kingdom of Great Britain and North Ireland..</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>Public</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>April 13,2014 10:13</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="v-align-middle semi-bold">
-                            <p>First Tour</p>
-                          </td>
-                          <td class="v-align-middle"><a href="#" class="btn btn-tag">United States</a><a href="#" class="btn btn-tag">India</a>
-                            <a href="#" class="btn btn-tag">China</a><a href="#" class="btn btn-tag">Africa</a>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>it is more then ONE nation/nationality as its fall name is The United Kingdom of Great Britain and North Ireland..</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>Public</p>
-                          </td>
-                          <td class="v-align-middle">
-                            <p>April 13,2014 10:13</p>
-                          </td>
-                        </tr>
+                        
                       </tbody>
                     </table>
                   </div>
