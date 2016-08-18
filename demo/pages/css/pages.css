@@ -2053,7 +2053,7 @@ body.rtl [class*="col-"] {
 .panel-heading a:not(.btn) {
   color: #626262 !important;
   opacity: .4;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-bottom: 10px;
 }
 .panel-heading a:not(.btn).portlet-refresh {

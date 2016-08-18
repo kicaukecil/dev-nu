@@ -26,6 +26,7 @@
     <link href="assets/plugins/datatables-responsive/css/datatables.responsive.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+    <link class="main-stylesheet" href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <!--[if lte IE 9]>
 	<link href="assets/plugins/codrops-dialogFx/dialog.ie.css" rel="stylesheet" type="text/css" media="screen" />
 	<![endif]-->
@@ -90,39 +91,111 @@
                   <div class="panel-title">
                     <a href="input_user.html" class="btn btn-primary btn-cons" style="color:#fff;"><i class="fa fa-plus"></i> Tambah User</a>
                   </div>
-                  <div class="">
-                    <div class="input-group" style="float:left">
-                      <input type="text" id="tableUser-cari" class="form-control pull-right" placeholder="Nama">
+                  <div class="pull-right">
+                    <div class="col-xs-12 no-padding">
+                      <button type="button" class="btn btn-primary " data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" name="button"><i class="fa fa-filter"></i> Filter</button>
                     </div>
-                    <div class="input-group" style="float:left">
-                      <input type="text" id="tableUser-cari" class="form-control pull-right" placeholder="email">
-                    </div>
-                    <div class="input-group" style="float:left">
-                      <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                        <option value="Admin-Wilayah">Pengurus Cabang</option>
-                        <option value="Admin-Wilayah">Pengurus Kota</option>
-                        <option value="Admin-Wilayah">Pengurus Provinsi</option>
-                      </select>
-                    </div>
-                    <div class="input-group" style="float:left">
-                      <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                        <option value="Admin-Wilayah">Provinsi A</option>
-                        <option value="Admin-Wilayah">Provinsi B</option>
-                        <option value="Admin-Wilayah">Provinsi C</option>
-                      </select>
-                    </div>
-                    <div class="input-group" style="float:left">
-                      <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                        <option value="Admin-Wilayah">Kota A</option>
-                        <option value="Admin-Wilayah">Kota B</option>
-                        <option value="Admin-Wilayah">Kota C</option>
-                      </select>
-                    </div>
-                    <div class="input-group" style="float:left">
-                    <a href="#" class="btn btn-primary btn-cons" style="color:#fff;">Filter</a>
                   </div>
+                  <div class="pull-right">
+                    <div class="col-xs-12">
+                      <input id="tableUser-cari" class="form-control pull-right" placeholder="Cari data" type="text">
+                    </div>
                   </div>
                   <div class="clearfix"></div>
+                  <div class="panel-group filter-warrp m-t-20" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default ">
+                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                          <h4>Filter Data</h4>
+                          <form>
+                            <div class="row clearfix">
+                              <div class="col-sm-6">
+                                <div class="form-group form-group-default  ">
+                                  <label>Nama</label>
+                                  <input type="Nama" class="form-control" >
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group form-group-default">
+                                  <label>Email</label>
+                                  <input class="form-control" required="" type="email">
+                                  </div>
+                              </div>
+
+                            </div>
+                            <div class="row clearfix">
+                              <div class="col-sm-4">
+                                <div class="form-group form-group-default form-group-default-select2">
+                                  <label>Level</label>
+                                  <select class=" full-width" data-init-plugin="select2" multiple>
+                                    <option value="Jim">Pengurus Pusat</option>
+                                    <option value="John">Pengurus Wilayah Provinsi</option>
+                                    <option value="Lucy">Pengurus Cabang Kota/kab</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="form-group form-group-default form-group-default-select2 required">
+                                  <label>Provinsi</label>
+                                  <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
+                                    <optgroup label="Indonesi Bagian Barat">
+                                      <option value="AK">DKI Jakarta</option>
+                                      <option value="HI">Jawa Barat</option>
+                                      <option value="HI">Banten</option>
+                                    </optgroup>
+                                    <optgroup label="Indonesi Bagian Tengah">
+                                      <option value="CA">Bali</option>
+                                      <option value="NV">Sulawesi Selatan</option>
+                                      <option value="OR">Kalimantan Timur</option>
+                                    </optgroup>
+                                    <optgroup label="Indonesi Bagian Timur">
+                                      <option value="AZ">Maluku</option>
+                                      <option value="CO">Colorado</option>
+                                      <option value="ID">Idaho</option>
+                                      <option value="MT">Montana</option>
+                                      <option value="NE">Nebraska</option>
+                                      <option value="NM">New Mexico</option>
+                                      <option value="ND">North Dakota</option>
+                                      <option value="UT">Utah</option>
+                                      <option value="WY">Wyoming</option>
+                                    </optgroup>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="form-group form-group-default form-group-default-select2 required">
+                                  <label>Kota / Kabupaten</label>
+                                  <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
+                                    <optgroup label="DKI Jakarta">
+                                      <option value="AK">Jakarta Pusat</option>
+                                      <option value="HI">Jakarta Barat</option>
+                                      <option value="HI">Jakarta Selatan</option>
+                                    </optgroup>
+                                    <optgroup label="Jawa Barat">
+                                      <option value="CA">Bandung</option>
+                                      <option value="NV">Bogor</option>
+                                    </optgroup>
+                                    <optgroup label="Jawa Timur">
+                                      <option value="AZ">Surabaya</option>
+                                      <option value="CO">Kediri</option>
+                                      <option value="ID">Lamogan</option>
+                                      <option value="MT">Ponorogo</option>
+                                    </optgroup>
+                                  </select>
+                                </div>
+                              </div>
+
+                            </div>
+                            <div class="row clearfix">
+                              <div class="col-sm-4">
+                                <button type="button" class=" btn btn-lg btn-success"> Cari Data </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="panel-body">
                   <table class="table table-hover demo-table-search " id="tableUser">

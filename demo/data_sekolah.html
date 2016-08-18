@@ -19,6 +19,7 @@
     <link href="assets/plugins/jquery-datatable/media/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/datatables-responsive/css/datatables.responsive.css" rel="stylesheet" type="text/css" media="screen" />
+    <link class="main-stylesheet" href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <!-- ..... custom ..... -->
     <script src="header.js" type="text/javascript"></script>
     <!-- ... end custom ... -->
@@ -128,71 +129,135 @@
                 <div class="panel-title">
                   <button href="input_sekolah.html" class="btn btn-primary btn-cons"><i  class="fa fa-plus"></i> Tambah Data</button>
                 </div>
-                <div class="">
-                  <div class="input-group" style="float:left">
-                    <input type="text" id="tableUser-cari" class="form-control pull-right" placeholder="Nama sekolah">
+                <div class="pull-right">
+                  <div class="col-xs-12 no-padding">
+                    <button type="button" class="btn btn-primary " data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" name="button"><i class="fa fa-filter"></i> Filter</button>
                   </div>
-                  <div class="input-group" style="float:left">
-                    <input type="text" id="tableUser-cari" class="form-control pull-right" placeholder="No Telefon">
-                  </div>
-
-                  <div class="input-group" style="float:left">
-                    <input type="text" id="tableUser-cari" class="form-control pull-right" placeholder="Alamat">
-                  </div>
-                  <div class="input-group" style="float:left">
-                    <input type="text" id="tableUser-cari" class="form-control pull-right" placeholder="No SK Pendirian">
-                  </div>
-                  <div class="input-group" style="float:left">
-                    <input type="text" id="tableUser-cari" class="form-control pull-right" placeholder="No SK Operasional">
-                  </div>
-
-                  <div class="input-group" style="float:left">
-                    <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                      <option value="Admin-Wilayah">Admin</option>
-                      <option value="Admin-Wilayah">Fetching Data ..</option>
-                    </select>
-                  </div>
-                  <div class="input-group" style="float:left">
-                    <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                      <option value="Admin-Wilayah">Status</option>
-                      <option value="Admin-Wilayah">Disamakan</option>
-                      <option value="Admin-Wilayah">Diakui</option>
-                    </select>
-                  </div>
-                  <div class="input-group" style="float:left">
-                    <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                      <option value="Admin-Wilayah">Bentuk</option>
-                      <option value="Admin-Wilayah">Sekolah Terpadu</option>
-                      <option value="Admin-Wilayah">Sekolah Negeri</option>
-                    </select>
-                  </div>
-                  <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                    <option value="Admin-Wilayah">Status Kepemilikan</option>
-                    <option value="Admin-Wilayah">Negeri</option>
-                    <option value="Admin-Wilayah">Swasta</option>
-                  </select>
-                  <div class="input-group" style="float:left">
-                    <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                      <option value="Admin-Wilayah">Jumlah Kelas</option>
-                      <option value="Admin-Wilayah"> >100 </option>
-                      <option value="Admin-Wilayah"> <100 </option>
-                    </select>
-                  </div>
-                  <div class="input-group" style="float:left">
-                    <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                      <option value="Admin-Wilayah">Jumlah Fasilitas Penunjang</option>
-                      <option value="Admin-Wilayah">Cukup</option>
-                      <option value="Admin-Wilayah">Memadai</option>
-                        <option value="Admin-Wilayah">Kurang</option>
-                    </select>
-                  </div>
-                  <div class="input-group" >
-                  <a href="#" class="btn btn-primary btn-cons" style="color:#fff;">Filter</a>
                 </div>
+                <div class="pull-right">
+                  <div class="col-xs-12">
+                    <input id="tableUser-cari" class="form-control pull-right" placeholder="Search" type="text">
+                  </div>
                 </div>
+                <div class="row clearfix"></div>
+                <div class="panel-group filter-warrp m-t-20" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default ">
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <h4>Filter Data</h4>
+                        <form>
+                          <div class="row clearfix">
+                            <div class="col-sm-6">
+                              <div class="form-group form-group-default  ">
+                                <label>Nama Sekolah</label>
+                                <input type="Nama" class="form-control" >
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group form-group-default">
+                                <label>Alamat Sekolah</label>
+                                <input class="form-control" required="" type="text">
+                                </div>
+                            </div>
+
+                          </div>
+                          <div class="row clearfix">
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default  ">
+                                <label>No. SK Pendirian</label>
+                                <input type="text" class="form-control" >
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default">
+                                <label>No SK Operasional</label>
+                                <input class="form-control" required="" type="text">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default form-group-default-select2 required">
+                                <label>Bentuk Satuan Pendidikan</label>
+                                <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
+                                  <option value="Admin-Wilayah">Sekolah Terpadu</option>
+                                  <option value="Admin-Wilayah">Sekolah Negeri</option>
+                                </select>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="row clearfix">
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default">
+                                <label>No. Telepon</label>
+                                <input class="form-control" required="" type="text">
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default form-group-default-select2 required">
+                                <label>Admin</label>
+                                <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
+                                    <option value="WY">Admin Sekolah</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default form-group-default-select2 required">
+                                <label>Status</label>
+                                <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
+                                  <option>Dismakan</option>
+                                  <option>Diakui</option>
+                                </select>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="row clearfix">
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default form-group-default-select2 required">
+                                <label>Status Kepemilikan</label>
+                                <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
+                                  <option value="Admin-Wilayah">Negeri</option>
+                                  <option value="Admin-Wilayah">Swasta</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default form-group-default-select2 required">
+                                <label>Jumlah Kelas</label>
+                                <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
+                                  <option value="Admin-Wilayah"> &gt;100 </option>
+                                  <option value="Admin-Wilayah"> &lt;100 </option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default form-group-default-select2">
+                                  <label>Status Kepemilikan</label>
+                                  <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
+                                    <option value="Admin-Wilayah">Cukup</option>
+                                    <option value="Admin-Wilayah">Memadai</option>
+                                      <option value="Admin-Wilayah">Kurang</option>
+                                  </select>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="row clearfix">
+                            <div class="col-sm-4">
+                              <button type="button" class=" btn btn-lg btn-success"> Cari Data </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
                 <div class="clearfix"></div>
               </div>
               <div class="panel-body">
+
                 <table class="table table-hover demo-table-search far-table " id="tableSekolah">
                   <thead>
                     <tr>

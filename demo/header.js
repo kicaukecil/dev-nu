@@ -95,13 +95,13 @@ document.write('\
   <div class=" pull-right">\
     <div class="visible-lg visible-md m-t-10">\
       <div class="pull-left p-r-10 p-t-10 fs-16 font-heading">\
-        <span class="semi-bold">Nama</span> <span class="text-master">User</span>\
+        <span class="semi-bold"></span> <span class="text-master"></span>\
       </div>\
       <div class="dropdown pull-right">\
         <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">\
-          <span class="thumbnail-wrapper d32 circular inline m-t-5">\
-          <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">\
-      </span>\
+          <span class="thumbnail-wrapper  inline m-t-5">\
+          Nama User \
+          </span>\
         </button>\
         <ul class="dropdown-menu profile-dropdown" role="menu">\
         <li><a href="activity.html"><i class="pg-clock"></i> Aktivitas</a></li>\

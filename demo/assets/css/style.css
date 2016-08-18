@@ -3,3 +3,29 @@
 * Override Pages default styles or create your own styles here
 
 */
+.btn-success, .bg-success, .pace .pace-progress{
+  background: #009B36;
+}
+.btn-success:hover{
+  background: #2ecc71;
+}
+.text-success{
+  color: #2ecc71 !important;
+}
+.filter-warrp, .filter-warrp .panel{
+  margin-bottom: 0px;
+  border: none;
+  border-radius: 1px;
+}
+.filter-warrp .panel .panel-body{
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.panel-heading a:not(.btn){
+  padding-top: opx !important;
+}
+
+.form-group label{
+  text-transform: none ! important;
+  font-weight: normal;: "Segoe UI", Arial, sans-serif !important;
+}
