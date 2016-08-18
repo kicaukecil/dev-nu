@@ -16,9 +16,6 @@ document.write('\
         <li class="">\
           <a href="input_user.html">Buat Users</a>\
         </li>\
-        <li class="">\
-          <a href="users.html">Users</a>\
-        </li>\
       </ul>\
     </li>\
     <li class="">\
@@ -94,6 +91,9 @@ document.write('\
       <a href="#"><span class="title">Master Admin</span>\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
+      <li class="">\
+        <a href="edit_berita_home.html">Ubah Berita</a>\
+      </li>\
         <li class="">\
         <a href="#">Data Provinsi</a>\
         </li>\
