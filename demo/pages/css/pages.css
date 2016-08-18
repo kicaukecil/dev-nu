@@ -6266,11 +6266,11 @@ body.rtl .checkbox label::after {
   padding-left: 0 !important;
 }
 .form-group-attached > div.row > [class*='col-']:not(:only-child):not(:last-child) > .form-group-default {
-  border-right-color: transparent;
+  /*border-right-color: transparent;*/
 }
 .form-group-attached > div:not(:last-child) .form-group-default,
 .form-group-attached > div:not(:last-child).form-group-default {
-  border-bottom-color: transparent;
+  /*border-bottom-color: transparent;*/
 }
 /* Form layouts  : Responsive Handlers
 --------------------------------------------------
@@ -7963,7 +7963,7 @@ table.dataTable thead .sorting_desc_disabled:after {
 }
 /* Demo classes */
 .demo-table-search thead th:nth-child(1) {
-  width: 20%;
+  width: 15%;
 }
 .demo-table-search thead th:nth-child(2) {
   width: 22%;
