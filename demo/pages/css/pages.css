@@ -7727,6 +7727,7 @@ div.cs-skin-slide .cs-options ul li.cs-selected span {
   border-top: 0px;
   padding: 20px;
   font-size: 13.5px;
+  height: 50px;
 }
 .table tbody tr td .btn-tag {
   background: rgba(44, 44, 44, 0.07);

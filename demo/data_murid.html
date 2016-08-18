@@ -34,7 +34,7 @@
       }
       .far-table{
         background: #fff ! important;
-        margin-left: 200px;
+        margin-left: 100px;
         border-collapse:none ! important;
       }
       .far-table thead th {
@@ -127,36 +127,59 @@
                 <div class="panel-title">
                   <button href="input_sekolah.html" class="btn btn-primary btn-cons"><i  class="fa fa-plus"></i> Tambah Data</button>
                 </div>
-                <div class="pull-right">
-                  <div class="col-xs-12">
-                    <input type="text" id="tableSekolah-cari" class="form-control pull-right" placeholder="Search">
+                <div class="">
+                  <div class="input-group" style="float:left">
+                    <input type="text" id="tableUser-cari" class="form-control pull-right" placeholder="Nama Murid">
                   </div>
+                  <div class="input-group" style="float:left">
+                    <input type="text" id="tableUser-cari" class="form-control pull-right" placeholder="No Telefon">
+                  </div>
+
+                  <div class="input-group" style="float:left">
+                    <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
+                      <option value="Admin-Wilayah">Jenis Kelamin</option>
+                      <option value="Admin-Wilayah">Laki - Laki</option>
+                      <option value="Admin-Wilayah">Perempuan</option>
+                    </select>
+                  </div>
+                  <div class="input-group" style="float:left">
+                    <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
+                      <option value="Admin-Wilayah">Kelas</option>
+                      <option value="Admin-Wilayah">Fetching Kelas ..</option>
+
+                    </select>
+                  </div>
+                  <div class="input-group" style="float:left">
+                    <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
+                      <option value="Admin-Wilayah">Nama Sekolah</option>
+                      <option value="Admin-Wilayah">Fetching Sekolah</option>
+
+                    </select>
+                  </div>
+                  <div class="input-group" style="float:left">
+                    <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
+                      <option value="Admin-Wilayah">Prestasi</option>
+                      <option value="Admin-Wilayah"> >10 </option>
+                      <option value="Admin-Wilayah"> <10 </option>
+                    </select>
+                  </div>
+                  <div class="input-group" style="float:left">
+                  <a href="#" class="btn btn-primary btn-cons" style="color:#fff;">Filter</a>
                 </div>
                 <div class="clearfix"></div>
               </div>
+            </div>
               <div class="panel-body">
                 <table class="table table-hover demo-table-search far-table" id="tableSekolah">
                   <thead>
                     <tr>
                       <th class="sorting-non far-sticky-col" ><button class="btn clickDelete"><i class="pg-trash"></i>
                       </button></th>
-                      <th style="width:20%">Nama Sekolah</th>
-                      <th style="width:19%;">Status</th>
-                      <th style="width:20%;">Bentuk</th>
-                      <th style="width:15%;">Alamat</th>
-                      <th style="width:10%;">Admin</th>
-                      <th style="width:10%;">No Telepon</th>
-                      <th style="width:10%;">No SK Pendirian</th>
-                      <th style="width:10%;">Tgl SK Pendirian</th>
-                      <th style="width:10%;">Dokumen SK Pendirian</th>
-                      <th style="width:10%;">No SK Izin Operasional</th>
-                      <th style="width:10%;">Tgl SK Izin Operasional</th>
-                      <th style="width:10%;">Dokumen SK Izin Operasional</th>
-                      <th style="width:15%;">Status Kepemilikan</th>
-                      <th style="width:10%;">Jumlah Kelas</th>
-                      <th style="width:10%;">Jumlah Ruang Pendidik</th>
-                      <th style="width:15%;">Jumlah Fasilitas Penunjang</th>
-                      <th style="width:15%;">Waktu Penyelenggaraan</th>
+                      <th style="width:20%">Nama Lengkap</th>
+                      <th style="width:19%;">Jenis Kelamin</th>
+                      <th style="width:20%;">Kelas</th>
+                      <th style="width:15%;">Nama Sekolah</th>
+                      <th style="width:10%;">Prestasi</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -190,41 +213,6 @@
                       <td class="v-align-middle">
                         <p>Admin Sekolah</p>
                       </td>
-                      <td class="v-align-middle">
-                        <p>087771653425</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>SK.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p>SO.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 13/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p> Swasta</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 20</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 15</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 16</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
-
                     </tr></a>
                     <tr>
                       <td class="v-align-middle far-sticky-col">
@@ -256,40 +244,7 @@
                       <td class="v-align-middle">
                         <p>Admin Sekolah</p>
                       </td>
-                      <td class="v-align-middle">
-                        <p>087771653425</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>SK.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p>SO.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 17/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p> Negeri</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 10</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 14</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
+
 
                     </tr>
                     <tr>
@@ -322,40 +277,7 @@
                       <td class="v-align-middle">
                         <p>Admin Sekolah</p>
                       </td>
-                      <td class="v-align-middle">
-                        <p>087771653425</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>SK.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p>SO.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 17/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p> Swasta</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 23</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 19</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 16</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
+
 
                     </tr>
                     <tr>
@@ -388,39 +310,7 @@
                       <td class="v-align-middle">
                         <p>Admin Sekolah</p>
                       </td>
-                      <td class="v-align-middle">
-                        <p>087771653425</p>
-                      </td><td class="v-align-middle">
-                        <p>SK.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p>SO.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 16/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p> Negeri</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 18</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 13</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 10</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
+
 
                     </tr>
                     <tr>
@@ -453,40 +343,7 @@
                       <td class="v-align-middle">
                         <p>Admin Sekolah</p>
                       </td>
-                      <td class="v-align-middle">
-                        <p>087771653425</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>SK.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p>SO.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 13/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p> Swasta</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 13</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 18</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 16</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
+
 
                     </tr>
                     <tr>
@@ -519,40 +376,7 @@
                       <td class="v-align-middle">
                         <p>Admin Sekolah</p>
                       </td>
-                      <td class="v-align-middle">
-                        <p>087771653425</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>SK.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p>SO.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p> Swasta</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 20</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 15</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 16</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
+
 
                     </tr>
                     <tr>
@@ -585,40 +409,7 @@
                       <td class="v-align-middle">
                         <p>Admin Sekolah</p>
                       </td>
-                      <td class="v-align-middle">
-                        <p>087771653425</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>SK.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p>SO.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 15/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p> Swasta</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 20</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 15</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 16</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
+
 
                     </tr>
                     <tr>
@@ -651,40 +442,7 @@
                       <td class="v-align-middle">
                         <p>Admin Sekolah</p>
                       </td>
-                      <td class="v-align-middle">
-                        <p>087771653425</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>SK.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p>SO.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p> Swasta</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 20</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 15</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 16</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
+
 
                     </tr>
                     <tr>
@@ -717,45 +475,9 @@
                       <td class="v-align-middle">
                         <p>Admin Sekolah</p>
                       </td>
-                      <td class="v-align-middle">
-                        <p>087771653425</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>SK.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p>SO.002.987.231</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
-                      <td class="sorting-non v-align-middle" style="width:0.1%;" ><button class="btn">Download
-                      </button></td>
-                      <td class="v-align-middle">
-                        <p> Swasta</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 20</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 15</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 16</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p> 12/08/1988</p>
-                      </td>
+
 
                     </tr>
-
-
-
                   </tbody>
                 </table>
               </div>
