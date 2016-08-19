@@ -94,20 +94,9 @@ document.write('\
   </div>\
   <div class=" pull-right">\
     <div class="visible-lg visible-md m-t-10">\
-<<<<<<< HEAD
-      <div class="pull-left p-r-10 p-t-10 fs-16 font-heading">\
-        <span class="semi-bold"></span> <span class="text-master"></span>\
-      </div>\
-      <div class="dropdown pull-right">\
-        <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">\
-          <span class="thumbnail-wrapper  inline m-t-5">\
-          Nama User \
-          </span>\
-=======
       <div class="dropdown pull-right p-r-10 p-t-10 fs-16 font-heading">\
         <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">\
           <span class="semi-bold">Nama</span> <span class="text-master">User</span>\
->>>>>>> c47151337157e52a4bd4be71c3691883fe690a16
         </button>\
         <ul class="dropdown-menu profile-dropdown" role="menu">\
         <li><a href="activity.html"><i class="pg-clock"></i> Aktivitas</a></li>\

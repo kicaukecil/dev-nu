@@ -19,64 +19,13 @@
     <link href="assets/plugins/jquery-datatable/media/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/datatables-responsive/css/datatables.responsive.css" rel="stylesheet" type="text/css" media="screen" />
+    <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
     <link class="main-stylesheet" href="assets/css/style.css" rel="stylesheet" type="text/css" />
 
     <!-- ..... custom ..... -->
     <script src="header.js" type="text/javascript"></script>
     <!-- ... end custom ... -->
-    <style media="screen">
-      .sorting-non::after{
-        content:none ! important;
 
-      }
-      .sorting-non{
-        /*width: 200px ! important;*/
-        crusor:default ! important;
-      }
-      .far-table{
-        background: #fff ! important;
-        margin-left: 47px;
-        border-collapse:none ! important;
-      }
-      .far-table thead th {
-          /*background-color: #DDEFEF;*/
-          /*border: none;*/
-          /*color: #336B6B;*/
-          /*padding: 10px;*/
-          /*text-align: left;*/
-          /*text-shadow: 1px 1px 1px #fff;*/
-          white-space: nowrap;
-      }
-      .far-table tbody td {
-          /*border-bottom: solid 1px #DDEFEF;*/
-          /*color: #333;*/
-          /*padding: 10px;*/
-          /*text-shadow: 1px 1px 1px #fff;*/
-          white-space: nowrap;
-      }
-      .dataTables_wrapper {
-          position: relative;
-      }
-      .table-responsive {
-          /*margin-left: 220px;*/
-          overflow-x: scroll;
-          overflow-y: visible;
-          /*padding-bottom: 5px;*/
-          /*width: 300px;*/
-      }
-      .far-table .far-sticky-col {
-          /*border-left: solid 1px #DDEFEF;*/
-          /*border-right: solid 1px #DDEFEF;*/
-          left: 0;
-          position: absolute ! important;
-          top: auto;
-          border: none;
-          background: #fff;
-          z-index: 10;
-          /*width: 120px;*/
-
-      }
-    </style>
 
     <!--[if lte IE 9]>
 	<link href="assets/plugins/codrops-dialogFx/dialog.ie.css" rel="stylesheet" type="text/css" media="screen" />
@@ -611,58 +560,7 @@
     <script src="assets/js/scripts.js" type="text/javascript"></script>
     <script src="assets/js/datatables.js" type="text/javascript"></script>
     <script src="assets/js/tables.js" type="text/javascript"></script>
-    <script type="text/javascript">
-    //Custum script
-    $(document).ready(function() {
-      // Apply the plugin to the body
-      $('body').pgNotification(options).show();
-    });
-
-    (function($) {
-
-        'use strict';
-
-        var responsiveHelper = undefined;
-        var breakpointDefinition = {
-            tablet: 1024,
-            phone: 480
-        };
-        var initTableWithSearch = function() {
-            var table = $('#tableSekolah');
-
-            var settings = {
-                "sDom": "<'table-responsive't><'row'<p i>>",
-                "destroy": true,
-                "scrollCollapse": true,
-                "oLanguage": {
-                    "sLengthMenu": "_MENU_ ",
-                    "sInfo": "Menampilkan <b>_START_ - _END_</b> dari _TOTAL_ data."
-                },
-                "iDisplayLength": 7 //jumlah data tampil per page
-            };
-
-            table.dataTable(settings);
-
-            // search box for table
-            $('#tableSekolah-cari').keyup(function() {table.fnFilter($(this).val());});
-            $('#tableSekolah input[type=checkbox]').click(function() {
-                if ($(this).is(':checked')) {
-                    $(this).closest('tr').addClass('selected');
-                } else {
-                    $(this).closest('tr').removeClass('selected');
-                }
-
-            });
-        }
-
-
-
-        initTableWithSearch();
-        initTableWithDynamicRows();
-        initTableWithExportOptions();
-
-    })(window.jQuery);
-    </script>
+    <script src="assets/js/style.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS -->
   </body>
 </html>
