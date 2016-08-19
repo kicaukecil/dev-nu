@@ -19,6 +19,7 @@
     <link href="assets/plugins/jquery-datatable/media/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/datatables-responsive/css/datatables.responsive.css" rel="stylesheet" type="text/css" media="screen" />
+    <link class="main-stylesheet" href="assets/css/style.css" rel="stylesheet" type="text/css" />
 
     <!-- ..... custom ..... -->
     <script src="header.js" type="text/javascript"></script>
@@ -125,50 +126,97 @@
             <div class="panel panel-transparent">
               <div class="panel-heading">
                 <div class="panel-title">
-                  <button href="input_sekolah.html" class="btn btn-primary btn-cons"><i  class="fa fa-plus"></i> Tambah Data</button>
+                  <a href="input_murid.html" style="color:#fff;" class="btn btn-primary btn-cons"><i  class="fa fa-plus"></i> Tambah Data</a>
                 </div>
-                <div class="">
-                  <div class="input-group" style="float:left">
-                    <input type="text" id="tableUser-cari" class="form-control pull-right" placeholder="Nama Murid">
+                <div class="pull-right">
+                  <div class="col-xs-12 no-padding">
+                    <button type="button" class="btn btn-primary " data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" name="button"><i class="fa fa-filter"></i> Filter</button>
                   </div>
-                  <div class="input-group" style="float:left">
-                    <input type="text" id="tableUser-cari" class="form-control pull-right" placeholder="No Telefon">
+                </div>
+                <div class="pull-right">
+                  <div class="col-xs-12">
+                    <input id="tableUser-cari" class="form-control pull-right" placeholder="Cari data" type="text">
                   </div>
-
-                  <div class="input-group" style="float:left">
-                    <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                      <option value="Admin-Wilayah">Jenis Kelamin</option>
-                      <option value="Admin-Wilayah">Laki - Laki</option>
-                      <option value="Admin-Wilayah">Perempuan</option>
-                    </select>
-                  </div>
-                  <div class="input-group" style="float:left">
-                    <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                      <option value="Admin-Wilayah">Kelas</option>
-                      <option value="Admin-Wilayah">Fetching Kelas ..</option>
-
-                    </select>
-                  </div>
-                  <div class="input-group" style="float:left">
-                    <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                      <option value="Admin-Wilayah">Nama Sekolah</option>
-                      <option value="Admin-Wilayah">Fetching Sekolah</option>
-
-                    </select>
-                  </div>
-                  <div class="input-group" style="float:left">
-                    <select class="cs-select cs-skin-slide" data-init-plugin="cs-select">
-                      <option value="Admin-Wilayah">Prestasi</option>
-                      <option value="Admin-Wilayah"> >10 </option>
-                      <option value="Admin-Wilayah"> <10 </option>
-                    </select>
-                  </div>
-                  <div class="input-group" style="float:left">
-                  <a href="#" class="btn btn-primary btn-cons" style="color:#fff;">Filter</a>
                 </div>
                 <div class="clearfix"></div>
+                <div class="panel-group filter-warrp m-t-20" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default ">
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <h4>Filter Data</h4>
+                        <form>
+                          <div class="row clearfix">
+                            <div class="col-sm-8">
+                              <div class="form-group form-group-default  ">
+                                <label>Nama</label>
+                                <input type="Nama" class="form-control" >
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <label>Jenis Kelamin</label>
+                                <div class="row clearfix">
+                                  <div class="radio radio-success">
+                                      <input value="laki-laki" name="optionyes" id="laki-laki" type="radio">
+                                      <label for="laki-laki">Laki-laki</label>
+                                      <input checked="checked" value="perempuan" name="optionyes" id="perempuan" type="radio">
+                                      <label for="perempuan">Perempuan</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                          </div>
+                          <div class="row clearfix">
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default ">
+                                <label>Kelas</label>
+                                <input type="Nama" class="form-control" >
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default form-group-default-select2 required">
+                                <label>Nama Sekolah</label>
+                                <select class="full-width " placeholder="" data-init-plugin="select2" multiple>
+                                  <optgroup label="DKI Jakarta">
+                                    <option value="AK">Satuan Pendidikan A</option>
+                                    <option value="HI">Satuan Pendidikan D</option>
+                                    <option value="HI">Satuan Pendidikan C</option>
+                                  </optgroup>
+                                  <optgroup label="Jawa Barat">
+                                    <option value="CA">Satuan Pendidikan E</option>
+                                    <option value="NV">Satuan Pendidikan G</option>
+                                  </optgroup>
+                                  <optgroup label="Jawa Timur">
+                                    <option value="AZ">Satuan Pendidikan M</option>
+                                    <option value="CO">Satuan Pendidikan K</option>
+                                    <option value="ID">Satuan Pendidikan T</option>
+                                    <option value="MT">Satuan Pendidikan Q</option>
+                                  </optgroup>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default">
+                                <label>Prestasi</label>
+                                <input type="Nama" class="form-control" >
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="row clearfix">
+                            <div class="col-sm-4">
+                              <button type="button" class=" btn btn-lg btn-success"> Cari Data </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="clearfix"></div>
               </div>
-            </div>
               <div class="panel-body">
                 <table class="table table-hover demo-table-search far-table" id="tableSekolah">
                   <thead>
