@@ -80,3 +80,39 @@
     /*width: 120px;*/
 
 }
+
+@media only screen and (min-width: 980px) {
+  .notification-panel{
+    width: 500px;
+  }
+  .nav-border-list{
+    max-height: 200px;
+    overflow: auto;
+  }
+  .nav-border-list li{
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 0px;
+  }
+  .nav-border-list p{
+    margin: 0px;
+    /*font-size: 16px;*/
+  }
+  .nav-border-list li:last-child{
+    border-bottom: none;
+  }
+  .status-ver, .status-ver .notification-footer, .status-ver .option{
+    width: auto;
+    height: auto;
+    border: none;
+  }
+}
+.page-container .page-content-wrapper .footer{
+  position: inherit;
+  background: #fff;
+  border-top: 1px solid rgba(230, 230, 230, 0.7);
+  /*color: #fff;*/
+  bottom: -1px;
+}
+.copyright{
+  border-top: 1px solid rgba(230, 230, 230, 0.7);
+}

@@ -15,6 +15,7 @@
     <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+    <link class="main-stylesheet" href="assets/css/style.css" rel="stylesheet" type="text/css" />
 
     <!--[if lte IE 9]>
 	<link href="assets/plugins/codrops-dialogFx/dialog.ie.css" rel="stylesheet" type="text/css" media="screen" />
@@ -61,14 +62,13 @@
           </script>
           <!-- END JUMBOTRON -->
           <!-- START CONTAINER FLUID -->
-          <div class="container-fluid container-fixed-lg">
+          <div class="container-fluid container-fixed-lg p-t-10 p-b-20">
             <!-- BEGIN PlACE PAGE CONTENT HERE -->
 
-            <div class="container-fluid">
               <div class="row">
-                <div class="col-sm-10">
+                <div class="col-sm-12">
                   <!-- START PANEL -->
-                  <div class="panel container-fluid container-fixed-lg bg-white">
+                  <div class="panel panel-transparent">
                     <div class="panel-body">
                       <form id="form-project" role="form" autocomplete="off">
 
@@ -84,10 +84,22 @@
                               <div class="form-group form-group-default required">
                                 <label>Jenis Kelamin</label>
 
-                                <select class="cs-select cs-skin-slide form-control" data-init-plugin="cs-select">
+                                <!-- <select class="full-width" data-init-plugin="select2">
                                   <option value="Laki-Laki">Laki-Laki</option>
                                   <option value="Perempuan">Perempuan</option>
-                                </select>
+                                </select> -->
+                                <div class="radio radio-success" style="margin-top:1px;">
+                                  <div class="col-xs-6">
+                                    <input class="ng-untouched ng-valid ng-dirty" value="male" name="optionyes" id="male" ng-model="work_.gender" type="radio">
+                                    <label for="male">Laki - laki</label>
+                                  </div>
+                                  <div class="col-xs-6">
+                                    <input class="ng-untouched ng-valid ng-dirty ng-valid-parse" checked="checked" value="female" name="optionyes" id="female" ng-model="work_.gender" type="radio">
+                                    <label for="female">Perempuan</label>
+                                  </div>
+
+
+                                </div>
                               </div>
                             </div>
                             <div class="col-sm-6">
@@ -101,6 +113,7 @@
 
                             </div>
                         </div>
+                        <div class="form-group-attached m-b-10 m-t-10">
                         <div class="form-group form-group-default">
                           <label>Nama Satuan Pendidikan <i class="fa fa-info text-complete m-l-5"></i>
                           </label>
@@ -111,15 +124,13 @@
                             <label>Prestasi Peserta Didik <i class=""></i>
                             </label>
                             <input type="multitext" class="form-control" name="investor">
-
                           </div>
-                        </div>
-                        <br>
-                        <div class="pull-left">
+
+
 
                         </div>
-                        <br>
-                        <button class="btn btn-lg btn-rounded btn-primary m-r-20 m-b-10" type="submit" style="margin-left:100px;">Submit</button>
+                        <button class="btn btn-md btn-success " type="submit">Submit</button>
+                        <button class="btn btn-default "><i class="pg-close"></i> Bersih</button>
 
                       </form>
                     </div>
@@ -127,30 +138,16 @@
                   <!-- END PANEL -->
                 </div>
 
-              </div>
             </div>
 
             <!-- END PLACE PAGE CONTENT HERE -->
           </div>
           <!-- END CONTAINER FLUID -->
+          <script type="text/javascript" src="footer.js"></script>
         </div>
         <!-- END PAGE CONTENT -->
         <!-- START COPYRIGHT -->
         <!-- START CONTAINER FLUID -->
-        <div class="container-fluid container-fixed-lg footer">
-          <div class="copyright sm-text-center">
-            <p class="small no-margin pull-left sm-pull-reset">
-              <span class="hint-text">Copyright &copy; 2016 </span>
-              <span class="font-montserrat">Indonesia</span>.
-              <span class="hint-text">All rights reserved. </span>
-              <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
-            </p>
-            <p class="small no-margin pull-right sm-pull-reset">
-              <a href="#">Hand-crafted</a> <span class="hint-text">&amp; Made with Love ®</span>
-            </p>
-            <div class="clearfix"></div>
-          </div>
-        </div>
         <!-- END COPYRIGHT -->
       </div>
       <!-- END PAGE CONTENT WRAPPER -->

@@ -22,10 +22,10 @@ document.write('\
                     <div class="heading">\
                       <a href="#" class="text-danger">\
                         <i class="fa fa-exclamation-triangle m-r-10"></i>\
-                        <span class="bold">98% Server Load</span>\
-                        <span class="fs-12 m-l-10">Take Action</span>\
+                        <span class="bold">Data kepegawaian</span>\
+                        <span class="fs-12 m-l-10">Belum diverivikasi</span>\
                       </a>\
-                      <span class="pull-right time">2 mins ago</span>\
+                      <span class="pull-right time">2 menit yang lalu</span>\
                     </div>\
                     <!-- START Notification Item Right Side-->\
                     <div class="option">\
@@ -39,10 +39,10 @@ document.write('\
                     <div class="heading">\
                       <a href="#" class="text-warning-dark">\
                         <i class="fa fa-exclamation-triangle m-r-10"></i>\
-                        <span class="bold">Warning Notification</span>\
-                        <span class="fs-12 m-l-10">Buy Now</span>\
+                        <span class="bold">Surat kepemilikan</span>\
+                        <span class="fs-12 m-l-10">Belum diverivikasi</span>\
                       </a>\
-                      <span class="pull-right time">yesterday</span>\
+                      <span class="pull-right time">kemarin</span>\
                     </div>\
                     <!-- START Notification Item Right Side-->\
                     <div class="option">\
@@ -52,29 +52,12 @@ document.write('\
                   </div>\
                   <!-- END Notification Item-->\
                   <!-- START Notification Item-->\
-                  <div class="notification-item unread clearfix">\
-                    <div class="heading">\
-                      <div class="thumbnail-wrapper d24 circular b-white m-r-5 b-a b-white m-t-10 m-r-10">\
-                        <img width="30" height="30" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" alt="" src="assets/img/profiles/1.jpg">\
-                      </div>\
-                      <a href="#" class="text-complete">\
-                        <span class="bold">Revox Design Labs</span>\
-                        <span class="fs-12 m-l-10">Owners</span>\
-                      </a>\
-                      <span class="pull-right time">11:00pm</span>\
-                    </div>\
-                    <!-- START Notification Item Right Side-->\
-                    <div class="option" data-toggle="tooltip" data-placement="left" title="mark as read">\
-                      <a href="#" class="mark"></a>\
-                    </div>\
-                    <!-- END Notification Item Right Side-->\
-                  </div>\
                   <!-- END Notification Item-->\
                 </div>\
                 <!-- END Notification Body-->\
                 <!-- START Notification Footer-->\
                 <div class="notification-footer text-center">\
-                  <a href="#" class="">Read all notifications</a>\
+                  <a href="activity.html" class="">Lihat semua notifikasi</a>\
                   <a data-toggle="refresh" class="portlet-refresh text-black pull-right" href="#">\
                     <i class="pg-refresh_new"></i>\
                   </a>\
