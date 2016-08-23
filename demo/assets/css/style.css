@@ -80,6 +80,23 @@
     /*width: 120px;*/
 
 }
+#widget-area{
+  position: absolute;
+top: 80px;
+width: 40%;
+right: 0px;
+
+}
+#widget-area .bg-success{
+  opacity: 0.8;
+}
+#widget-area .bg-success:hover{
+  opacity: 1;
+}
+#mapplic .mapplic-container .mapplic-fullscreen-button {
+  right: 14px;
+  bottom: 60px;
+}
 
 @media only screen and (min-width: 980px) {
   .notification-panel{
@@ -115,4 +132,9 @@
 }
 .copyright{
   border-top: 1px solid rgba(230, 230, 230, 0.7);
+}
+.far-par{
+  font-size: 14px;
+  letter-spacing:  0.02em;
+  line-height: 27px;
 }
