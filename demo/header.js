@@ -6,7 +6,7 @@ document.write('\
 <div class="header " >\
   <div class="pull-center sm-table">\
     <div class="header-inner">\
-      <ul class="notification-list no-margin hidden-sm hidden-xs b-grey b-l b-r no-style p-l-30 p-r-20">\
+      <ul class="notification-list no-margin b-grey b-l b-r no-style p-l-30 p-r-20">\
         <li class="p-r-15 inline">\
           <div class="dropdown">\
             <a href="javascript:;" id="notification-center" class="icon-set globe-fill" data-toggle="dropdown">\
@@ -70,13 +70,13 @@ document.write('\
           </div>\
         </li>\
       </ul>\
-      <ul class="breadcrumb notification-list no-margin hidden-sm hidden-xs no-style p-l-30 p-r-20">\
+      <ul class="breadcrumb notification-list no-margin no-style p-l-30 p-r-20">\
         <li><a href="#" class="active">' + pageTitle + '</a></li>\
       </ul>\
     </div>\
   </div>\
   <div class=" pull-right">\
-    <div class="visible-lg visible-md m-t-10">\
+    <div class=" m-t-10">\
       <div class="dropdown pull-right p-r-10 p-t-10 fs-16 font-heading">\
         <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">\
           <span class="semi-bold">Nama</span> <span class="text-master">User</span>\

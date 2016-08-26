@@ -3,6 +3,14 @@
 * Override Pages default styles or create your own styles here
 
 */
+
+  /*header area*/
+.header .header-inner{
+  text-align: inherit;
+}
+
+  /*-=-=-=-=-=-=-*/
+
 .btn-success, .bg-success, .pace .pace-progress{
   background: #009B36;
 }
@@ -82,9 +90,9 @@
 }
 #widget-area{
   position: absolute;
-top: 80px;
+top: 70px;
 width: 40%;
-right: 0px;
+right: 2%;
 
 }
 #widget-area .bg-success{
@@ -98,7 +106,39 @@ right: 0px;
   bottom: 60px;
 }
 
-@media only screen and (min-width: 980px) {
+
+.page-container .page-content-wrapper .footer{
+  position: inherit;
+  background: #fff;
+  border-top: 1px solid rgba(230, 230, 230, 0.7);
+  /*color: #fff;*/
+  bottom: -1px;
+}
+.copyright{
+  border-top: 1px solid rgba(230, 230, 230, 0.7);
+}
+.far-par{
+  font-size: 14px;
+  letter-spacing:  0.02em;
+  line-height: 27px;
+}
+.map-controls{
+  top: 70px;
+  left:2%;
+}
+#footerDashboard{
+  padding-left:274px; width:100%
+}
+
+@media (max-width: 991px) {
+
+  /*header area*/
+  .header .notification-list, .header .search-link{
+    display: inline-block;
+  }
+  .header-inner{
+    padding-left: 0 !important;
+  }
   .notification-panel{
     width: 500px;
   }
@@ -122,19 +162,32 @@ right: 0px;
     height: auto;
     border: none;
   }
+  /*=-=-=-=-=-=-=-=-=-*/
+
+  body.menu-pin .page-container .page-content-wrapper .content{padding-left: 0px;}
+
+  .page-sidebar{
+    /*display: inherit;*/
+    /*z-index: 1000;*/
+  }
+  .map-controls, #widget-area{
+    top:70px;
+  }
+
+  #footerDashboard{
+    padding-left: 0px;
+  }
+
 }
-.page-container .page-content-wrapper .footer{
-  position: inherit;
-  background: #fff;
-  border-top: 1px solid rgba(230, 230, 230, 0.7);
-  /*color: #fff;*/
-  bottom: -1px;
-}
-.copyright{
-  border-top: 1px solid rgba(230, 230, 230, 0.7);
-}
-.far-par{
-  font-size: 14px;
-  letter-spacing:  0.02em;
-  line-height: 27px;
+
+@media (max-width:480px) {
+  body .header .notification-list, body .header .search-link{
+    display: inline-block;
+  }
+  body .header .header-inner{
+    text-align: inherit;
+  }
+  .map-controls, #widget-area{
+    top: 20px;
+  }
 }
