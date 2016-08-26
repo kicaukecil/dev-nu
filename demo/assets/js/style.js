@@ -1,5 +1,10 @@
 (function($) {
-
+      $('.openSidebar').click(function(){
+          $('.page-sidebar').animate({width:'200px'},500);
+      });
+      $('.closeSidebar').click(function(){
+          $('.page-sidebar').animate({width:'0px'},500);
+      });
 
     'use strict';
 

@@ -166,16 +166,19 @@ right: 2%;
 
   body.menu-pin .page-container .page-content-wrapper .content{padding-left: 0px;}
 
-  .page-sidebar{
-    /*display: inherit;*/
-    /*z-index: 1000;*/
-  }
   .map-controls, #widget-area{
     top:70px;
   }
+  .page-container .page-content-wrapper .content{padding-top: 0px;}
+
 
   #footerDashboard{
     padding-left: 0px;
+  }
+  .page-sidebar{
+    width: 0px;
+    display: block;
+    z-index: 1000;
   }
 
 }
@@ -187,7 +190,14 @@ right: 2%;
   body .header .header-inner{
     text-align: inherit;
   }
+  .table-responsive{
+    border: none;
+  }
+  .page-container .page-content-wrapper .content{padding-top: 0px;}
   .map-controls, #widget-area{
     top: 20px;
+  }
+  .cariForm{
+    width: 100%;
   }
 }

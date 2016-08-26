@@ -8,6 +8,9 @@ document.write('\
     <div class="header-inner">\
       <ul class="notification-list no-margin b-grey b-l b-r no-style p-l-30 p-r-20">\
         <li class="p-r-15 inline">\
+          <a href="#" class="icon-set globe-fill openSidebar" ></a>\
+        </li>\
+        <li class="p-r-15 inline">\
           <div class="dropdown">\
             <a href="javascript:;" id="notification-center" class="icon-set globe-fill" data-toggle="dropdown">\
               <span class="bubble"></span>\

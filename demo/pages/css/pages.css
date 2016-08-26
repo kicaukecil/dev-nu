@@ -12798,12 +12798,12 @@ Main components
     content: "\f192";
   }
   body.menu-pin .page-sidebar {
-    transform: translate(210px, 0) !important;
+    /*transform: translate(210px, 0) !important;*/
     -webkit-transform: translate(210px, 0) !important;
     -ms-transform: translate(210px, 0) !important;
   }
   body.menu-pin .page-sidebar {
-    width: 250px;
+    /*width: 250px;*/
   }
   body.menu-pin .page-sidebar .sidebar-header .sidebar-header-controls {
     -webkit-transform: translateX(18px);
