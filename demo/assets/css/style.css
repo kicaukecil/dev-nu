@@ -126,6 +126,23 @@ right: 2%;
   top: 70px;
   left:2%;
 }
+.page-sidebar{
+  width: 250px;
+  /*display: block;
+  z-index: 1000;*/
+}
+.closeSidebar{
+  position: absolute;
+  top: 0;
+  left: 259px;
+  font-size: 27px;
+}
+.openSidebar, .closeSidebar{
+  display: none;
+}
+body.menu-pin .page-sidebar{
+  transform: translate(210px, 0) !important;
+}
 #footerDashboard{
   padding-left:274px; width:100%
 }
@@ -179,6 +196,12 @@ right: 2%;
     width: 0px;
     display: block;
     z-index: 1000;
+  }
+  .openSidebar, .closeSidebar{
+    display: inherit;
+  }
+  body.menu-pin .page-sidebar{
+    transform: translate(0, 0) !important;
   }
 
 }
