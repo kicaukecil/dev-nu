@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
-    <title>Data Sekolah (Satuan Pendidikan) NU</title>
+    <title>Data Peserta Didik</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
     <meta content="" name="description" />
     <meta content="" name="author" />
@@ -66,7 +66,7 @@
         <div class="content">
           <!-- START JUMBOTRON -->
           <script type="text/javascript">
-            header('Data Perserta Didik');
+            header('Data Peserta Didik');
           </script>
           <!-- END JUMBOTRON -->
           <!-- START CONTAINER FLUID -->
@@ -96,13 +96,20 @@
                         <h4>Filter Data</h4>
                         <form>
                           <div class="row clearfix">
-                            <div class="col-sm-8">
+                            <div class="col-sm-4">
                               <div class="form-group form-group-default  ">
                                 <label>Nama</label>
                                 <input type="Nama" class="form-control" >
                               </div>
                             </div>
                             <div class="col-sm-4">
+                              <div class="form-group form-group-default  ">
+                                <label>Nomor Induk</label>
+                                <input type="NISN" class="form-control" >
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+
                                 <label>Jenis Kelamin</label>
                                 <div class="row clearfix">
                                   <div class="radio radio-success">
@@ -111,7 +118,8 @@
                                       <input checked="checked" value="perempuan" name="optionyes" id="perempuan" type="radio">
                                       <label for="perempuan">Perempuan</label>
                                     </div>
-                                </div>
+                                  </div>
+
                             </div>
 
                           </div>
@@ -123,7 +131,7 @@
                               </div>
                             </div>
                             <div class="col-sm-4">
-                              <div class="form-group form-group-default form-group-default-select2 required">
+                              <div class="form-group form-group-default form-group-default-select2">
                                 <label>Nama Sekolah</label>
                                 <select class="full-width " placeholder="" data-init-plugin="select2" multiple>
                                   <optgroup label="DKI Jakarta">
@@ -168,12 +176,13 @@
                 <div class="clearfix"></div>
               </div>
               <div class="panel-body">
-                <table class="table table-hover demo-table-search far-table" id="tableUser" style="margin-left:80px">
+                <table class="table table-hover demo-table-search far-table" id="tableUser">
                   <thead>
                     <tr>
                       <th class="sorting-non far-sticky-col" ><button class="btn clickDelete"><i class="pg-trash"></i>
                       </button></th>
                       <th style="width:20%">Nama Lengkap</th>
+                      <th style="width:20%">Nomor Induk</th>
                       <th style="width:19%;">Jenis Kelamin</th>
                       <th style="width:20%;">Kelas</th>
                       <th style="width:15%;">Nama Sekolah</th>
@@ -197,10 +206,13 @@
                         </div>
                       </td>
                       <td class="v-align-middle">
-                        <p>Yanto SLTP 2 Admin Sekolah</p>
+                        <p>Mahmudin</p>
                       </td>
                       <td class="v-align-middle">
-                        <p>Disamakan / Diakui</p>
+                        <p>1090298390280</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Laki - Laki</p>
                       </td>
                       <td class="v-align-middle semi-bold">
                         <p>Sekolah Terpadu</p>
@@ -228,43 +240,13 @@
                         </div>
                       </td>
                       <td class="v-align-middle">
-                        <p>yadi SLTP 2 Admin Sekolah</p>
+                        <p>Sueb</p>
                       </td>
                       <td class="v-align-middle">
-                        <p>Disamakan / Diakui</p>
+                        <p>1090298390280</p>
                       </td>
                       <td class="v-align-middle">
-                        <p>Sekolah Terpadu</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Jawa Timur</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Admin Sekolah</p>
-                      </td>
-
-
-                    </tr>
-                    <tr>
-                      <td class="v-align-middle far-sticky-col">
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <input type="checkbox" value="1" id="checkbox1">
-                          </span>
-                          <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                                <ul style="width: 141px;" class="dropdown-menu ">
-                                    <li><a href="#">Lihat</a></li>
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#" class="clickDelete">Hapus</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>SLTP 2 Admin Sekolah</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Disamakan / Diakui</p>
+                        <p>Laki - Laki</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Sekolah Terpadu</p>
@@ -294,43 +276,13 @@
                         </div>
                       </td>
                       <td class="v-align-middle">
-                        <p>SLTP 2 Admin Sekolah</p>
+                        <p>Joko Warsito</p>
                       </td>
                       <td class="v-align-middle">
-                        <p>Disamakan / Diakui</p>
+                        <p>1090298390280</p>
                       </td>
                       <td class="v-align-middle">
-                        <p>Sekolah Terpadu</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Jawa Timur</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Admin Sekolah</p>
-                      </td>
-
-
-                    </tr>
-                    <tr>
-                      <td class="v-align-middle far-sticky-col">
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <input type="checkbox" value="1" id="checkbox1">
-                          </span>
-                          <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                                <ul style="width: 141px;" class="dropdown-menu ">
-                                    <li><a href="#">Lihat</a></li>
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#" class="clickDelete">Hapus</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Joko SLTP 2 Admin Sekolah</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Disamakan / Diakui</p>
+                        <p>Laki - Laki</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Sekolah Terpadu</p>
@@ -360,43 +312,13 @@
                         </div>
                       </td>
                       <td class="v-align-middle">
-                        <p>SLTP 2 Admin Sekolah</p>
+                        <p>Siti Romlah</p>
                       </td>
                       <td class="v-align-middle">
-                        <p>Disamakan / Diakui</p>
+                        <p>1090298390280</p>
                       </td>
                       <td class="v-align-middle">
-                        <p>Sekolah Terpadu</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Jawa Timur</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Admin Sekolah</p>
-                      </td>
-
-
-                    </tr>
-                    <tr>
-                      <td class="v-align-middle far-sticky-col">
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <input type="checkbox" value="1" id="checkbox1">
-                          </span>
-                          <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                                <ul style="width: 141px;" class="dropdown-menu ">
-                                    <li><a href="#">Lihat</a></li>
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#" class="clickDelete">Hapus</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>SLTP 2 Admin Sekolah</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Disamakan / Diakui</p>
+                        <p>Laki - Laki</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Sekolah Terpadu</p>
@@ -426,10 +348,121 @@
                         </div>
                       </td>
                       <td class="v-align-middle">
-                        <p>Rosyid SLTP 2 Admin Sekolah</p>
+                        <p>Tukil Arwani</p>
                       </td>
                       <td class="v-align-middle">
-                        <p>Disamakan / Diakui</p>
+                        <p>1090298390280</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Laki - Laki</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Sekolah Terpadu</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jawa Timur</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Admin Sekolah</p>
+                      </td>
+
+
+                    </tr>
+                    <tr>
+                      <td class="v-align-middle far-sticky-col">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                <ul style="width: 141px;" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Mbah Darmo</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>1090298390280</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Laki - Laki</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Sekolah Terpadu</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jawa Timur</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Admin Sekolah</p>
+                      </td>
+
+
+                    </tr>
+                    <tr>
+                      <td class="v-align-middle far-sticky-col">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                <ul style="width: 141px;" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Suketi</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>1090298390280</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Laki - Laki</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Sekolah Terpadu</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jawa Timur</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Admin Sekolah</p>
+                      </td>
+
+
+                    </tr>
+                    <tr>
+                      <td class="v-align-middle far-sticky-col">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                <ul style="width: 141px;" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Maemunah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>1090298390280</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Laki - Laki</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Sekolah Terpadu</p>
@@ -462,7 +495,10 @@
                         <p>Kurniawan SLTP 2 Admin Sekolah</p>
                       </td>
                       <td class="v-align-middle">
-                        <p>Disamakan / Diakui</p>
+                        <p>1090298390280</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Laki - Laki</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Sekolah Terpadu</p>
