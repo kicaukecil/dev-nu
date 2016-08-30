@@ -14,8 +14,17 @@
 .btn-success, .bg-success, .pace .pace-progress{
   background: #009B36;
 }
-.btn-success:hover{
+.datepicker table tr td.active{
+  background: #009B36 !important;
+}
+
+.btn-success{
+  border-color: #009B36;
+}
+.btn-success:hover, .btn-success.active, .btn-success.active:hover{
   background: #2ecc71;
+  border-color: #009B36;
+
 }
 .text-success{
   color: #2ecc71 !important;
@@ -145,6 +154,12 @@ body.menu-pin .page-sidebar{
 }
 #footerDashboard{
   padding-left:274px; width:100%
+}
+.datepicker thead tr .dow, .datepicker thead tr .next::before, .datepicker thead tr .prev::before{
+  color: #009B36;
+}
+.remove_field{
+  cursor: pointer;
 }
 
 @media (max-width: 991px) {

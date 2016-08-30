@@ -13,7 +13,7 @@ document.write('\
         <li class="p-r-15 inline">\
           <div class="dropdown">\
             <a href="javascript:;" id="notification-center" class="icon-set globe-fill" data-toggle="dropdown">\
-              <span class="bubble"></span>\
+              <span class="bubble bg-success"></span>\
             </a>\
             <!-- START Notification Dropdown -->\
             <div class="dropdown-menu notification-toggle" role="menu" aria-labelledby="notification-center">\
@@ -74,7 +74,7 @@ document.write('\
         </li>\
       </ul>\
       <ul class="breadcrumb notification-list no-margin no-style p-l-30 p-r-20">\
-        <li><a href="#" class="active">' + pageTitle + '</a></li>\
+        <li><a class="text-master">' + pageTitle + '</a></li>\
       </ul>\
     </div>\
   </div>\

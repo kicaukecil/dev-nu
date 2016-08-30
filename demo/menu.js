@@ -3,18 +3,17 @@ document.write('\
     <li class="m-t-30">\
       <a href="dashboard.html" class="detailed">\
         <span class="title">Dashboard</span>\
-        <span class="details">12 New Updates</span>\
       </a>\
     </li>\
     <li class="">\
-      <a href="javascript:;"><span class="title">Users</span>\
+      <a href="javascript:;"><span class="title">User</span>\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
         <li class="">\
           <a href="data_user.html">Tampilkan</a>\
         </li>\
         <li class="">\
-          <a href="input_user.html">Buat Users</a>\
+          <a href="input_user.html">Buat User</a>\
         </li>\
       </ul>\
     </li>\

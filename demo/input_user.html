@@ -80,45 +80,45 @@
                         <h3>Formulir User Baru</h3>
                         <div class="form-group-attached">
                           <div class="row clearfix">
-                            <div class="col-sm-6">
+                            <div class="col-sm-4">
                               <div class="form-group form-group-default required">
-                                <label>Nama depan</label>
+                                <label>Nama user</label>
                                 <input type="text" class="form-control" name="nama" required>
                               </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-8">
                               <div class="form-group form-group-default">
-                                <label>Nama belakang</label>
+                                <label>Nama Lengkap</label>
                                 <input type="text" class="form-control" name="nama-belakang">
                               </div>
                             </div>
                           </div>
-                          <div class="form-group form-group-default required">
-                            <label>Email <i class="fa fa-email text-complete m-l-5"></i>
+                          <div class="form-group form-group-default ">
+                            <label>Email User<i class="fa fa-email text-complete m-l-5"></i>
                             </label>
-                            <input type="email" class="form-control" name="email" required>
+                            <input type="email" class="form-control" name="email" >
                           </div>
                           <div class="form-group form-group-default required">
-                            <label>Password
+                            <label>Kata sandi
                             </label>
                             <input type="password" class="form-control" name="password" required>
                           </div>
                           <div class="form-group form-group-default required">
-                            <label>Ulangi password
+                            <label>Ulangi Kata sandi
                             </label>
                             <input type="password" class="form-control" name="re-password" required>
                           </div>
                         </div>
                         <div class="form-group-attached m-t-10 m-b-20">
                           <div class="form-group form-group-default">
-                            <label>No. Telepon <i class="fa fa-phone text-complete m-l-5"></i>
+                            <label>No. Telepon
                             </label>
                             <input type="text" class="form-control" name="telepon" placeholder="">
                           </div>
-                          <div class="form-group form-group-default">
-                            <label>Alamat
+                          <div class="form-group form-group-default required">
+                            <label>Alamat User
                             </label>
-                            <textarea rows="7" type="text" class="form-control" name="alamat"></textarea>
+                            <textarea rows="7" type="text" class="form-control" name="alamat" required></textarea>
                           </div>
                           <div class="row clearfix">
                             <div class="col-sm-4">
@@ -172,21 +172,22 @@
                               </div>
                             </div>
                             <div class="col-sm-4">
-                                <div class="form-group form-group-default required">
-                                  <label>Kode Pos</label>
-                                  <input type="text" class="form-control" name="kodepos_user" required>
+                                <div class="form-group form-group-default">
+                                  <label>Kode Pos user</label>
+                                  <input type="text" class="form-control" name="kodepos_user">
                                 </div>
                             </div>
                           </div>
-                          <div class="row">
+                          <div class="row clearfix">
                             <div class="col-sm-6">
                               <div class="form-group form-group-default form-group-default-select2 required">
-                                <label class="">Level user</label>
+                                <label class="">Tipe user</label>
                                 <!-- <div class="col-sm-6"> -->
                                   <select class="full-width" data-init-plugin="select2">
                                     <option value="sightseeing">Pengurus Pusat</option>
                                     <option value="business">Pengurus Wilayah (Provinsi)</option>
-                                    <option value="honeymoon">Pengurus cabang (Kota/Kab)</option>
+                                    <option value="honeymoon">Pengurus Cabang (Kota/Kab)</option>
+                                    <option value="honeymoon">Pengurus Satuan Pendidikan</option>
                                   </select>
                                 <!-- </div> -->
                               </div>
@@ -202,7 +203,7 @@
                           </div>
                         </div>
                         <button class="btn btn-success" type="submit">Simpan</button>
-                        <button class="btn btn-default"><i class="pg-close"></i> Bersih</button>
+                        <button class="btn btn-default" type="clear"><i class="pg-close"></i> Bersih</button>
                       </form>
                     </div>
                   </div>

@@ -2,14 +2,8 @@ document.write('\
 <div class="container-fluid footer p-r-60 p-l-60">\
   <div class="row p-t-20 p-b-20 ">\
     <div class="col-sm-3 p-t-10 p-b-10">\
-      <h2 class="text-master" style="margin-bottom: 51px;margin-top: 0px;"><span class="bold">Nahdlatul</span><br> Ulama</h2>\
-      <ul class="no-style fs-12 no-padding xs-pull-left xs-m-t-20">\
-<li class="inline no-padding"><a href="#" class="text-black fs-16 xs-no-padding"><i class="fa fa-facebook"></i></a></li>\
-<li class="inline no-padding"><a href="#" class="text-black p-l-30 fs-16"><i class="fa fa-twitter"></i></a></li>\
-<li class="inline no-padding"><a href="#" class="text-black p-l-30 fs-16"><i class="fa fa-dribbble"></i></a></li>\
-<li class="inline no-padding"><a href="#" class="text-black p-l-30 fs-16"><i class="fa fa-rss"></i></a></li>\
-<li class="inline no-padding"><a href="#" class="text-black p-l-30 fs-16"><i class="fa fa-linkedin"></i></a></li>\
-</ul>\
+      <h2 class="text-master" style="margin-top: 0px;"><span class="bold">Nahdlatul</span><br> Ulama</h2>\
+      <p class="hint-text">Jl. Kemerdekaan No.40 <br> 18632 <br> Jakarta, Indonesia</p>\
     </div>\
     <div class="col-sm-3 p-t-10 p-b-10  ">\
       <h6 class="font-montserrat text-uppercase fs-14 text-master p-b-10">Company </h6>\

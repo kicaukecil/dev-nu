@@ -87,6 +87,10 @@
                                 <label>Nama Lengkap</label>
                                 <input type="text" class="form-control" name="nama" required>
                               </div>
+                              <div class="form-group form-group-default required">
+                                <label>Nomor Induk Karyawan</label>
+                                <input type="text" class="form-control" name="nama" required>
+                              </div>
                           <div class="form-group form-group-default">
                             <label>Jenis kelamain</label>
                             <div class="radio radio-success" style="margin-top:1px;">
@@ -108,48 +112,46 @@
 
                         <div class="form-group-attached m-t-10 m-b-20">
                           <div class="form-group form-group-default form-group-default-select2 required">
-                            <label>Nama Satuan Pendidikan</label>
-                            <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
-                              <optgroup label="DKI Jakarta">
-                                <option value="AK">Satuan Pendidikan A</option>
-                                <option value="HI">Satuan Pendidikan D</option>
-                                <option value="HI">Satuan Pendidikan C</option>
-                              </optgroup>
-                              <optgroup label="Jawa Barat">
-                                <option value="CA">Satuan Pendidikan E</option>
-                                <option value="NV">Satuan Pendidikan G</option>
-                              </optgroup>
-                              <optgroup label="Jawa Timur">
-                                <option value="AZ">Satuan Pendidikan M</option>
-                                <option value="CO">Satuan Pendidikan K</option>
-                                <option value="ID">Satuan Pendidikan T</option>
-                                <option value="MT">Satuan Pendidikan Q</option>
-                              </optgroup>
-                            </select>
-                          </div>
-                          <div class="form-group form-group-default form-group-default-select2 required">
                             <label>Jenis Tenaga Kerja</label>
-                            <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2" onclick="inputPendidik(this)">
-                              <option value="sightseeing">Tenaga Pendidik</option>
-                              <option value="business">Tenaga Kependidikan Adminitrasi</option>
-                              <option value="honeymoon">Pendukung</option>
+                            <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2" id="inputPendidik">
+                              <option value="1">Tenaga Pendidik (Guru / Pengajar)</option>
+                              <option value="2">Tenaga Kependidikan ( Administrasi )</option>
+                              <option value="3">Tenaga Pendukung</option>
                             </select>
                           </div>
-                          <div class="form-group form-group-default">
-                            <label>Bidang Ajar Tenaga Pendidik</label>
-                            <input id="bidangPendidik" type="text" class="form-control" name="telepon" placeholder="">
+                          <div id="bidangPendidik" class="form-group form-group-default">
+                            <label>Bidang Ajar Tenaga Pendidik ( Mata pelajaran)</label>
+                            <input  type="text" class="form-control" name="telepon" placeholder="">
                           </div>
-                          <div class="form-group form-group-default">
-                            <label>Bidang Tenaga kependidikan</label>
-                            <input id="bidangKependidikan" type="text" class="form-control" name="telepon" placeholder="">
+                          <div id="bidangKependidikan" class="form-group form-group-default form-group-default-select2">
+                            <label>Bidang Tenaga Kependidikan</label>
+                            <select class="full-width" placeholder="Pilih Kota"  data-init-plugin="select2">
+                              <option value="sightseeing">Tata usaha</option>
+                              <option value="business">Laboran</option>
+                              <option value="honeymoon">Staff</option>
+                              <option value="honeymoon">Penjaga sekolah</option>
+                            </select>
                           </div>
                           <div class="form-group form-group-default">
                             <label>Status Kepegawaian</label>
-                            <input type="text" class="form-control" name="telepon" placeholder="">
+                            <div class="radio radio-success" id="statusHukum" style="margin-top:1px;">
+                              <div class="col-xs-4">
+                                <input class="ng-untouched ng-valid ng-dirty" value="tetap" name="optionyes" id="tetap" ng-model="work_.gender" type="radio" checked="checked">
+                                <label for="tetap">Pegawai tetap yayasan</label>
+                              </div>
+                              <div class="col-xs-4">
+                                <input class="ng-untouched ng-valid ng-dirty ng-valid-parse"  value="honorer" name="optionyes" id="honorer" ng-model="work_.gender" type="radio">
+                                <label for="honorer">Pegawai honorer</label>
+                              </div>
+                              <div class="col-xs-4">
+                                <input class="ng-untouched ng-valid ng-dirty ng-valid-parse"  value="dpk" name="optionyes" id="dpk" ng-model="work_.gender" type="radio">
+                                <label for="dpk">DPK</label>
+                              </div>
+                            </div>
                           </div>
                         </div>
                         <input class="btn btn-success" type="submit" value="Simpan">
-                        <input class="btn btn-default" type="reset" value='Bersih'>
+                        <button class="btn btn-default"><i class="pg-close" type="reset"></i> Bersih</button>
                       </form>
                     </div>
                   </div>
@@ -194,29 +196,6 @@
     <script src="assets/js/style.js" charset="utf-8"></script>
     <!-- END CORE TEMPLATE JS -->
     <!-- BEGIN PAGE LEVEL JS -->
-    <script>
-    function addDs(a) {
-      a.disabled=true;
-      a.addClass("disabled");
-    }
-
-    function remDs(b) {
-      b.disabled=false;
-      b.removeClass("disabled");
-    }
-
-    function inputPendidik(x){
-      var y = x.selectedIndex;
-
-      if(y != 0){
-        addDs(document.getElementById("bidangPendidik"));
-        remDs(document.getElementById("bidangKependidikan"));
-      }else{
-        remDs(document.getElementById("bidangPendidik"));
-        addDs(document.getElementById("bidangKependidikan"));
-      }
-    }
-    </script>
     <script src="assets/js/scripts.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS -->
   </body>

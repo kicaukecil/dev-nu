@@ -6760,7 +6760,7 @@ https://github.com/eternicode/bootstrap-datepicker
   background: #f0f0f0;
 }
 .datepicker table tr td.active {
-  background-color: #6d5cae !important;
+  /*background-color: #6d5cae !important;*/
 }
 .datepicker table tr td.active,
 .datepicker table tr td.active:hover,

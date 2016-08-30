@@ -13,6 +13,13 @@
     <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="assets/plugins/bootstrap-tag/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/dropzone/css/dropzone.css" rel="stylesheet" type="text/css" /> -->
+    <link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="assets/plugins/summernote/css/summernote.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" media="screen">
     <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
     <link class="main-stylesheet" href="assets/css/style.css" rel="stylesheet" type="text/css" />
@@ -74,75 +81,129 @@
                   <div class="panel container-fluid container-fixed-lg bg-white">
                     <div class="panel-body">
                       <form id="form-project" role="form" autocomplete="off">
-                        <h1>Formulir Input Satuan Pendidikan</h1>
+                        <h1>Formulir Satuan Pendidikan Baru</h1>
                         <p>Halaman ini untuk input data Satuan Pendidikan langsung ke dalam sistem dengan mengisi form data di bawah.</p>
                         <div class="form-group-attached">
                           <div class="form-group form-group-default required">
                             <label>Nama Satuan Pendidikan</label>
                             <input type="text" class="form-control" name="projectName" required>
                           </div>
+                          <div class="form-group form-group-default required">
+                            <label>Nomor Induk Sekolah / Madrasah</label>
+                            <input type="text" class="form-control" name="projectName" >
+                          </div>
                           <div class="row clearfix">
                             <div class="col-sm-6">
-                              <div class="form-group form-group-default required">
+                              <div class="form-group form-group-default form-group-default-select2 ">
                                 <label>Status Satuan Pendidikan</label>
-                                <input type="text" class="form-control" name="firstName" required>
+                                <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
+                                  <option>A</option>
+                                  <option>B</option>
+                                  <option>B</option>
+                                  <option>TT <span class="text-hit small">(Tidak Terakreditasi)</span></option>
+                                </select>
                               </div>
                             </div>
                             <div class="col-sm-6">
-                              <div class="form-group form-group-default">
+                              <div class="form-group form-group-default form-group-default-select2 required">
                                 <label>Bentuk Satuan Pendidikan</label>
-                                <input type="text" class="form-control" name="lastName">
+                                <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
+                                  <option>TK</option>
+                                  <option>SD</option>
+                                  <option>SMP</option>
+                                  <option>MA</option>
+                                  <option>MI</option>
+                                </select>
                               </div>
                             </div>
                           </div>
                           <div class="form-group-attached">
                             <div class="form-group form-group-default">
                               <label>Alamat Satuan Pendidikan</label>
-                              <input type="text" class="form-control" name="projectName" required>
+                              <textarea class="form-control" name="projectName" style="height:100px;"></textarea>
                             </div>
                             <div class="row clearfix">
                               <div class="col-sm-4">
-                                <div class="form-group form-group-default required">
-                                  <label>Kecamatan</label>
-                                  <input type="text" class="form-control" name="firstName" required>
-                                </div>
-                              </div>
-                              <div class="col-sm-4">
-                                <div class="form-group form-group-default">
-                                  <label>Kabupaten</label>
-                                  <input type="text" class="form-control" name="lastName">
-                                </div>
-                              </div>
-                              <div class="col-sm-4">
-                                <div class="form-group form-group-default">
-                                  <label>Kode Pos</label>
-                                  <input type="text" class="form-control" name="lastName">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row clearfix">
-                              <div class="col-sm-6">
-                                <div class="form-group form-group-default required">
+                                <div class="form-group form-group-default form-group-default-select2 required">
                                   <label>Provinsi</label>
-                                  <input type="text" class="form-control" name="firstName" required>
+                                  <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
+                                    <optgroup label="Indonesi Bagian Barat">
+                                      <option value="AK">DKI Jakarta</option>
+                                      <option value="HI">Jawa Barat</option>
+                                      <option value="HI">Banten</option>
+                                    </optgroup>
+                                    <optgroup label="Indonesi Bagian Tengah">
+                                      <option value="CA">Bali</option>
+                                      <option value="NV">Sulawesi Selatan</option>
+                                      <option value="OR">Kalimantan Timur</option>
+                                    </optgroup>
+                                    <optgroup label="Indonesi Bagian Timur">
+                                      <option value="AZ">Maluku</option>
+                                      <option value="CO">Colorado</option>
+                                      <option value="ID">Idaho</option>
+                                      <option value="MT">Montana</option>
+                                      <option value="NE">Nebraska</option>
+                                      <option value="NM">New Mexico</option>
+                                      <option value="ND">North Dakota</option>
+                                      <option value="UT">Utah</option>
+                                      <option value="WY">Wyoming</option>
+                                    </optgroup>
+                                  </select>
                                 </div>
                               </div>
+                              <div class="col-sm-4">
+                                <div class="form-group form-group-default form-group-default-select2 required">
+                                  <label>Kota / Kabupaten</label>
+                                  <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
+                                    <optgroup label="DKI Jakarta">
+                                      <option value="AK">Jakarta Pusat</option>
+                                      <option value="HI">Jakarta Barat</option>
+                                      <option value="HI">Jakarta Selatan</option>
+                                    </optgroup>
+                                    <optgroup label="Jawa Barat">
+                                      <option value="CA">Bandung</option>
+                                      <option value="NV">Bogor</option>
+                                    </optgroup>
+                                    <optgroup label="Jawa Timur">
+                                      <option value="AZ">Surabaya</option>
+                                      <option value="CO">Kediri</option>
+                                      <option value="ID">Lamogan</option>
+                                      <option value="MT">Ponorogo</option>
+                                    </optgroup>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="form-group form-group-default form-group-default-select2 required">
+                                  <label>Kecamatan</label>
+                                  <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
+                                    <option>Sari rejo</option>
+                                    <option>Wungu</option>
+                                    <option>Taman Sari</option>
+                                  </select>
+                                </div>
+                              </div>
+
+                            </div>
+                            <div class="row clearfix">
                               <div class="col-sm-6">
                                 <div class="form-group form-group-default">
                                   <label>No. Telepon</label>
                                   <input type="text" class="form-control" name="lastName">
                                 </div>
                               </div>
+                              <div class="col-sm-6">
+                                <div class="form-group form-group-default">
+                                  <label>Kode Pos</label>
+                                  <input type="text" class="form-control" name="lastName">
+                                </div>
+                              </div>
                             </div>
+
                         </div>
                       </div>
                         <p class="m-t-10">Informasi Lengkap Satuan Pendidikan</p>
                         <div class="form-group-attached">
-                          <div class="form-group form-group-default">
-                            <label>Admin Satuan Pendidikan <i class="fa fa-info text-complete m-l-5"></i>
-                            </label>
-                            <input type="text" class="form-control" name="investor">
-                          </div>
                           <div class="row clearfix">
                             <div class="col-sm-6">
                               <div class="form-group form-group-default required">
@@ -151,9 +212,12 @@
                               </div>
                             </div>
                             <div class="col-sm-6">
-                              <div class="form-group form-group-default">
+                              <div class="form-group form-group-default input-group col-sm-10">
                                 <label>Tanggal SK Pendirian</label>
-                                <input type="text" class="form-control date" name="lastName">
+                                <input type="email" class="form-control" placeholder="" id="datepicker_1">
+                                <span class="input-group-addon">
+                                                    <i class="fa fa-calendar"></i>
+                                                  </span>
                               </div>
                             </div>
                           </div>
@@ -178,15 +242,26 @@
                           </div>
 
 
-                          <div class="row">
-                            <div class="col-sm-8">
-                              <div class="form-group form-group-default input-group">
-                                <label>Status Kepemilikan</label>
-                                <input type="text" class="form-control usd" required>
-                              </div>
+
+                              <div class="form-group form-group-default">
+                                <label>Status Badan Hukum</label>
+                                <div class="radio radio-success" id="statusHukum" style="margin-top:1px;">
+                                  <div class="col-xs-6">
+                                    <input class="ng-untouched ng-valid ng-dirty" value="yes" name="optionyes" id="yes" ng-model="work_.gender" type="radio" checked="checked">
+                                    <label for="yes">Badan Hukum Perkumpulan NU</label>
+                                  </div>
+                                  <div class="col-xs-6">
+                                    <input class="ng-untouched ng-valid ng-dirty ng-valid-parse"  value="no" name="optionyes" id="no" ng-model="work_.gender" type="radio">
+                                    <label for="no">Yayasan</label>
+                                  </div>
+                                </div>
+                                </div>
+                                <div class="form-group form-group-default" id="namaYayasan">
+                                  <label>Nama Yayasan</label>
+                                  <input type="hiden" class="form-control" name="" >
+                                </div>
                             </div>
-                          </div>
-                        </div>
+
 
                         <p class="m-t-10">SK Izin Operasional</p>
                         <div class="form-group-attached">
@@ -199,13 +274,14 @@
                               </div>
                             </div>
                             <div class="col-sm-6">
-                              <div class="form-group form-group-default">
+                              <div class="form-group form-group-default input-group col-sm-10">
                                 <label>Tanggal SK Izin Operasional</label>
-                                <input type="text" class="form-control date" name="lastName">
+                                <input type="email" class="form-control" placeholder="" id="datepicker_2">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                               </div>
                             </div>
                           </div>
-                          <div class="form-group form-group-default required">
+                          <div class="form-group form-group-default required panel">
                             <label>Dokumen SK izin Operasional</label>
                             <div class="panel-heading">
                               <div class="tools">
@@ -215,55 +291,100 @@
                                 <a class="remove" href="javascript:;"></a>
                               </div>
                             </div>
-                            <div class="panel-body no-scroll no-padding">
+                          <div class="panel-body no-scroll no-padding">
                             <form action="/file-upload" class="dropzone no-margin">
                             <div class="fallback">
-                              <input type="file" class="form-control" name="projectName" multiple required>
+                              <input type="file" class="form-control" name="projectName" multiple >
                             </div>
-                          </form>
-                        </div>
+                            </form>
+                          </div>
+
 
                           </div>
 
                           <div class="row clearfix">
-                            <div class="col-sm-6">
+                            <div class="col-sm-4">
                               <div class="form-group form-group-default required">
-                                <label>Jumlah Fasilitas Kelas</label>
-                                <input type="text" class="form-control" name="firstName" required>
+                                <label>Jumlah Ruang Kelas</label>
+                                <input type="number" class="form-control" name="firstName" required>
                               </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default">
+                                <label>Jumlah Rombongan Belajar</label>
+                                <input type="number" class="form-control" name="lastName">
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
                               <div class="form-group form-group-default">
                                 <label>Jumlah Ruang Tenaga Pendidik</label>
-                                <input type="text" class="form-control" name="lastName">
+                                <input type="number" class="form-control" name="lastName">
                               </div>
                             </div>
                             <div class="col-sm-6">
                               <div class="form-group form-group-default">
-                                <label>Jumlah Fasilitas Penunjang</label>
-                                <input type="text" class="form-control" name="lastName">
+                                <label>Waktu Penyelengaran</label>
+                                <div class="radio radio-success" id="statusHukum" style="margin-top:1px;">
+                                  <div class="col-xs-6">
+                                    <input class="ng-untouched ng-valid ng-dirty" value="pagi" name="optionyes" id="pagi" ng-model="work_.gender" type="radio" checked="checked">
+                                    <label for="pagi">Pagi</label>
+                                  </div>
+                                  <div class="col-xs-6">
+                                    <input class="ng-untouched ng-valid ng-dirty ng-valid-parse"  value="siang" name="optionyes" id="siang" ng-model="work_.gender" type="radio">
+                                    <label for="siang">Siang</label>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                             <div class="col-sm-6">
                               <div class="form-group form-group-default">
-                                <label>Waktu Penyelenggaraan</label>
-                                <input type="text" class="form-control" name="lastName">
+                                <label>Jumlah Fasilitas Penunjang lainya</label>
+                                <input type="number" class="form-control" name="lastName">
                               </div>
                             </div>
                           </div>
                           <div class="form-group form-group-default">
-                            <label>Prestasi Satuan Pendidikan <i class="fa fa-info text-complete m-l-5"></i>
+                            <label>Apa Fasilitas Penunjang ?
                             </label>
-                            <input type="text" class="form-control" name="investor">
+                            <textarea class="form-control" style="height:100px;"></textarea>
                           </div>
+                          <div class="row clearfix p-t-10">
+                            <div class="col-sm-6">
+                              <label>Prestasi Satuan Pendidikan
+                              </label>
+                              <div class="input_fields_wrap">
+                              </div>
+
+                                <button type="button" class="btn btn-default add_field_button">
+                                  <span class="pull-right"><i class="pg-plus"></i>
+                                  </span>Tambah Perstasi</button>
+
+                            </div>
+                            <div class="col-sm-6">
+                              <label>Karya Unggulan
+                              </label>
+                              <div class="input_fields_wrap">
+                              </div>
+
+                                <button type="button" class="btn btn-default add_field_button">
+                                  <span class="pull-right"><i class="pg-plus"></i>
+                                  </span>Tambah Karya Unggulan</button>
+
+                            </div>
+                          </div>
+
+
+                          <!-- <div class="input_fields_wrap">
+                            <button class="add_field_button">Add More Fields</button>
+                            <div><input type="text" name="mytext[]"></div>
+                          </div> -->
                         </div>
                         <br>
                         <div class="pull-left">
                           <button class="btn btn-success" type="submit">Submit</button>
-                        </div>
+                          <button class="btn btn-default"><i class="pg-close" type="reset"></i> Bersih</button>
+                          </div>
                         <br>
-
-
                       </form>
                     </div>
                   </div>
@@ -302,12 +423,25 @@
     <script type="text/javascript" src="assets/plugins/bootstrap-select2/select2.min.js"></script>
     <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
     <script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-autonumeric/autoNumeric.js"></script>
+    <script type="text/javascript" src="assets/plugins/dropzone/dropzone.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-inputmask/jquery.inputmask.min.js"></script>
+    <script src="assets/plugins/bootstrap-form-wizard/js/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="assets/plugins/summernote/js/summernote.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/moment/moment.min.js"></script>
+    <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
     <!-- END VENDOR JS -->
     <!-- BEGIN CORE TEMPLATE JS -->
     <script src="pages/js/pages.min.js"></script>
-    <script src="assets/js/style.js" charset="utf-8"></script>
+    <script src="assets/js/style.js"></script>
     <!-- END CORE TEMPLATE JS -->
     <!-- BEGIN PAGE LEVEL JS -->
+    <!-- <script src="assets/js/form_elements.js" type="text/javascript"></script> -->
     <script src="assets/js/scripts.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS -->
   </body>

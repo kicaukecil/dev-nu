@@ -98,15 +98,53 @@
                             </div>
 
                           <div class="col-sm-6">
-                            <div class="form-group form-group-default">
+                            <div class="form-group form-group-default form-group-default-select2 required">
                               <label>Provinsi Kantor Wilayah</label>
-                              <input type="text" class="form-control" name="nama-belakang">
+                              <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2" required>
+                                <optgroup label="Indonesi Bagian Barat">
+                                  <option value="AK">DKI Jakarta</option>
+                                  <option value="HI">Jawa Barat</option>
+                                  <option value="HI">Banten</option>
+                                </optgroup>
+                                <optgroup label="Indonesi Bagian Tengah">
+                                  <option value="CA">Bali</option>
+                                  <option value="NV">Sulawesi Selatan</option>
+                                  <option value="OR">Kalimantan Timur</option>
+                                </optgroup>
+                                <optgroup label="Indonesi Bagian Timur">
+                                  <option value="AZ">Maluku</option>
+                                  <option value="CO">Colorado</option>
+                                  <option value="ID">Idaho</option>
+                                  <option value="MT">Montana</option>
+                                  <option value="NE">Nebraska</option>
+                                  <option value="NM">New Mexico</option>
+                                  <option value="ND">North Dakota</option>
+                                  <option value="UT">Utah</option>
+                                  <option value="WY">Wyoming</option>
+                                </optgroup>
+                              </select>
                             </div>
                           </div>
                           <div class="col-sm-6">
-                            <div class="form-group form-group-default">
+                            <div class="form-group form-group-default form-group-default-select2 required">
                               <label>Kabupaten / Kotamadya Kantor Wilayah</label>
-                              <input type="text" class="form-control" name="nama-belakang">
+                              <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
+                                <optgroup label="DKI Jakarta">
+                                  <option value="AK">Jakarta Pusat</option>
+                                  <option value="HI">Jakarta Barat</option>
+                                  <option value="HI">Jakarta Selatan</option>
+                                </optgroup>
+                                <optgroup label="Jawa Barat">
+                                  <option value="CA">Bandung</option>
+                                  <option value="NV">Bogor</option>
+                                </optgroup>
+                                <optgroup label="Jawa Timur">
+                                  <option value="AZ">Surabaya</option>
+                                  <option value="CO">Kediri</option>
+                                  <option value="ID">Lamogan</option>
+                                  <option value="MT">Ponorogo</option>
+                                </optgroup>
+                              </select>
                             </div>
                           </div>
                           <div class="col-sm-6">
@@ -123,7 +161,7 @@
                           </div>
                           <div class="row">
                             <div class="col-sm-6">
-                              <div class="form-group form-group-default form-group-default-select2 required">
+                              <div class="form-group form-group-default form-group-default-select2">
                                 <label class="">Admin Wilayah</label>
                                 <!-- <div class="col-sm-6"> -->
                                   <select class="full-width" data-init-plugin="select2">
