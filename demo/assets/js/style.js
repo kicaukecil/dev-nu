@@ -1,5 +1,8 @@
 (function($) {
-    $('#bidangKependidikan, #namaYayasan').hide();
+    'use strict';
+  $( document ).ready(function() {
+
+    $('#bidangKependidikan').hide();
 
 
     $('#inputPendidik').click(function(e){
@@ -13,28 +16,25 @@
       }
     });
 
-    var x = 1; //initlal text box count
+
     $('.add_field_button').click(function(e){ //on add input button click
         e.preventDefault();
-        if(x < max_fields){ //max input box allowed
-            x++; //text box increment
+
+
              $(this).parent('div').children('.input_fields_wrap').append('\
             <div class="input-group p-r-5 p-l-5 m-b-5">\
-<input class="form-control" type="text">\
-<span class="input-group-addon danger remove_field"><i class="pg-close"></i></span>\
-</div>\
+            <input class="form-control" type="text">\
+            <span class="input-group-addon danger remove_field"><i class="pg-close"></i></span>\
+            </div>\
             '); //add input box
-        }
       });
 
-      $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-        e.preventDefault(); $(this).parent('div').remove(); x--;
-      })
+      $('.input_fields_wrap').on("click",".remove_field", function(e){e.preventDefault(); $(this).parent('div').remove(); x--;});
 
 
 
 
-    // $("#namaYayasan" ).hide();
+     $("#namaYayasan" ).hide();
     $("#statusHukum input").on( "click", function() {
       var x = $( "#statusHukum input:checked" ).val();
       if ( x == 'yes'){
@@ -60,7 +60,9 @@
           }
       });
 
-    'use strict';
+    });
+
+
 
     var responsiveHelper = undefined;
     var breakpointDefinition = {
@@ -133,5 +135,7 @@
     initTableWithSearch();
     initTableWithDynamicRows();
     initTableWithExportOptions();
+
+
 
 })(window.jQuery);
