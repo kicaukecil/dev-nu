@@ -1,6 +1,19 @@
 (function($) {
-    'use strict';
+  var width = screen.width;
+
+  $('.openSidebar').click(function(){
+      $('.page-sidebar').animate({width:'300px'},500);
+  });
+  $('.closeSidebar').click(function(){
+      $('.page-sidebar').animate({width:'0px'},500);
+  });
+  $('.container-fluid').click(function(){
+      if ( screen.width < 992) {
+        $('.page-sidebar').animate({width:'0px'},500);
+      }
+  });
   $( document ).ready(function() {
+
 
     $('#bidangKependidikan').hide();
 
@@ -46,23 +59,11 @@
 
       $('#datepicker_1, #datepicker_2').datepicker();
 
-      var width = screen.width;
 
-      $('.openSidebar').click(function(){
-          $('.page-sidebar').animate({width:'300px'},500);
-      });
-      $('.closeSidebar').click(function(){
-          $('.page-sidebar').animate({width:'0px'},500);
-      });
-      $('.container-fluid').click(function(){
-          if ( screen.width < 992) {
-            $('.page-sidebar').animate({width:'0px'},500);
-          }
-      });
 
     });
 
-
+    'use strict';
 
     var responsiveHelper = undefined;
     var breakpointDefinition = {

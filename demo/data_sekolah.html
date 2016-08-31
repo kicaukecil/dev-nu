@@ -96,19 +96,83 @@
                         <h4>Filter Data</h4>
                         <form>
                           <div class="row clearfix">
-                            <div class="col-sm-6">
+
                               <div class="form-group form-group-default  ">
-                                <label>Nama Sekolah</label>
+                                <label>Nama Satauan Pendidikan</label>
                                 <input type="Nama" class="form-control" >
                               </div>
-                            </div>
-                            <div class="col-sm-6">
-                              <div class="form-group form-group-default">
-                                <label>Alamat Sekolah</label>
-                                <input class="form-control" required="" type="text">
-                                </div>
+
+                            <div class="form-group form-group-default  ">
+                              <label>Nomor Induk Sekolah / Madrasah</label>
+                              <input type="Nama" class="form-control" >
                             </div>
 
+                              <div class="form-group form-group-default">
+                                <label>Alamat Satauan Pendidikan</label>
+                                <input class="form-control" ="" type="text">
+                                </div>
+                          </div>
+                          <div class="row clearfix">
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default form-group-default-select2 ">
+                                <label>Provinsi</label>
+                                <select class="full-width" data-placeholder="" multiple data-init-plugin="select2">
+                                  <optgroup label="Indonesi Bagian Barat">
+                                    <option value="AK">DKI Jakarta</option>
+                                    <option value="HI">Jawa Barat</option>
+                                    <option value="HI">Banten</option>
+                                  </optgroup>
+                                  <optgroup label="Indonesi Bagian Tengah">
+                                    <option value="CA">Bali</option>
+                                    <option value="NV">Sulawesi Selatan</option>
+                                    <option value="OR">Kalimantan Timur</option>
+                                  </optgroup>
+                                  <optgroup label="Indonesi Bagian Timur">
+                                    <option value="AZ">Maluku</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="WY">Wyoming</option>
+                                  </optgroup>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default form-group-default-select2 ">
+                                <label>Kota / Kabupaten</label>
+                                <select class="full-width" placeholder="" multiple data-init-plugin="select2">
+                                  <optgroup label="DKI Jakarta">
+                                    <option value="AK">Jakarta Pusat</option>
+                                    <option value="HI">Jakarta Barat</option>
+                                    <option value="HI">Jakarta Selatan</option>
+                                  </optgroup>
+                                  <optgroup label="Jawa Barat">
+                                    <option value="CA">Bandung</option>
+                                    <option value="NV">Bogor</option>
+                                  </optgroup>
+                                  <optgroup label="Jawa Timur">
+                                    <option value="AZ">Surabaya</option>
+                                    <option value="CO">Kediri</option>
+                                    <option value="ID">Lamogan</option>
+                                    <option value="MT">Ponorogo</option>
+                                  </optgroup>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default form-group-default-select2 ">
+                                <label>Kecamatan</label>
+                                <select class="full-width" placeholder="" multiple data-init-plugin="select2">
+                                  <option>Sari rejo</option>
+                                  <option>Wungu</option>
+                                  <option>Taman Sari</option>
+                                </select>
+                              </div>
+                            </div>
                           </div>
                           <div class="row clearfix">
                             <div class="col-sm-4">
@@ -119,67 +183,81 @@
                             </div>
                             <div class="col-sm-4">
                               <div class="form-group form-group-default">
-                                <label>No SK Operasional</label>
-                                <input class="form-control" required="" type="text">
+                                <label>No SK Ijin Operasional</label>
+                                <input class="form-control" ="" type="text">
                                 </div>
                             </div>
                             <div class="col-sm-4">
-                              <div class="form-group form-group-default form-group-default-select2 required">
-                                <label>Bentuk Satuan Pendidikan</label>
-                                <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
-                                  <option value="Admin-Wilayah">Sekolah Terpadu</option>
-                                  <option value="Admin-Wilayah">Sekolah Negeri</option>
-                                </select>
-                              </div>
-                            </div>
-
-                          </div>
-                          <div class="row clearfix">
-                            <div class="col-sm-4">
                               <div class="form-group form-group-default">
                                 <label>No. Telepon</label>
-                                <input class="form-control" required="" type="text">
-                              </div>
-                            </div>
-                            <div class="col-sm-4">
-                              <div class="form-group form-group-default form-group-default-select2 required">
-                                <label>Admin</label>
-                                <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
-                                    <option value="WY">Admin Sekolah</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-sm-4">
-                              <div class="form-group form-group-default form-group-default-select2 required">
-                                <label>Status</label>
-                                <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
-                                  <option>Dismakan</option>
-                                  <option>Diakui</option>
-                                </select>
+                                <input class="form-control" ="" type="text">
                               </div>
                             </div>
 
                           </div>
                           <div class="row clearfix">
                             <div class="col-sm-4">
-                              <div class="form-group form-group-default form-group-default-select2 required">
-                                <label>Status Kepemilikan</label>
-                                <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
-                                  <option value="Admin-Wilayah">Negeri</option>
-                                  <option value="Admin-Wilayah">Swasta</option>
+
+                              <div class="form-group form-group-default form-group-default-select2 ">
+                                <label>Bentuk Satuan Pendidikan</label>
+                                <select class="full-width" placeholder="" multiple data-init-plugin="select2">
+                                  <option>TK</option>
+                                  <option>SD</option>
+                                  <option>SMP</option>
+                                  <option>MA</option>
+                                  <option>MI</option>
                                 </select>
                               </div>
                             </div>
                             <div class="col-sm-4">
-                              <div class="form-group form-group-default form-group-default-select2 required">
-                                <label>Jumlah Kelas</label>
-                                <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
-                                  <option value="Admin-Wilayah"> &gt;100 </option>
-                                  <option value="Admin-Wilayah"> &lt;100 </option>
+                              <div class="form-group form-group-default form-group-default-select2 ">
+                                <label>Status Satuan Pendidikan</label>
+                                <select class="full-width" placeholder="" multiple data-init-plugin="select2">
+                                  <option>A</option>
+                                  <option>B</option>
+                                  <option>C</option>
+                                  <option>TT <span class="text-hit small">(Tidak Terakreditasi)</span></option>
                                 </select>
                               </div>
                             </div>
                             <div class="col-sm-4">
+
+                              <div class="form-group form-group-default">
+                                <label>Jumlah Ruang Kelas</label>
+                                <input class="form-control" type="number" min="0" >
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="row clearfix">
+                            <div class="col-sm-8">
+
+                              <label>Status Badan Hukum</label>
+                              <div class="radio radio-success"  style="margin-top:1px;">
+                                <div class="col-xs-6">
+                                  <input class="ng-untouched ng-valid ng-dirty" value="yes" name="statusbadanhukum" id="yes" ng-model="work_.gender" type="radio" checked="checked">
+                                  <label for="yes">Badan Hukum Perkumpulan NU</label>
+                                </div>
+                                <div class="col-xs-6">
+                                  <input class="ng-untouched ng-valid ng-dirty ng-valid-parse"  value="no" name="statusbadanhukum" id="no" ng-model="work_.gender" type="radio">
+                                  <label for="no">Yayasan</label>
+                                </div>
+                              </div>
+                          </div>
+                            <div class="col-sm-4">
+                              <label>Waktu Penyelengaran</label>
+                              <div class="radio radio-success"  style="margin-top:1px;">
+                                <div class="col-xs-6">
+                                  <input class="ng-untouched ng-valid ng-dirty" value="pagi" name="optionyes" id="pagi" ng-model="work_.gender" type="radio" checked="checked">
+                                  <label for="pagi">Pagi</label>
+                                </div>
+                                <div class="col-xs-6">
+                                  <input class="ng-untouched ng-valid ng-dirty ng-valid-parse"  value="siang" name="optionyes" id="siang" ng-model="work_.gender" type="radio">
+                                  <label for="siang">Siang</label>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="col-sm-4">
                                 <div class="form-group form-group-default form-group-default-select2">
                                   <label>Status Kepemilikan</label>
                                   <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
@@ -188,12 +266,12 @@
                                       <option value="Admin-Wilayah">Kurang</option>
                                   </select>
                               </div>
-                            </div>
+                            </div> -->
 
                           </div>
                           <div class="row clearfix">
                             <div class="col-sm-4">
-                              <button type="button" class=" btn btn-lg btn-success"> Cari Data </button>
+                              <button type="button" class=" btn btn-success"> Cari Data </button>
                             </div>
                           </div>
                         </form>

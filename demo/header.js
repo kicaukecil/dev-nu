@@ -74,7 +74,7 @@ document.write('\
         </li>\
       </ul>\
       <ul class="breadcrumb notification-list no-margin no-style p-l-30 p-r-20">\
-        <li><a class="text-master">' + pageTitle + '</a></li>\
+        <li><a class="text-master pageTitle">' + pageTitle + '</a></li>\
       </ul>\
     </div>\
   </div>\

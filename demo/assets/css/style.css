@@ -11,7 +11,7 @@
 
   /*-=-=-=-=-=-=-*/
 
-.btn-success, .bg-success, .pace .pace-progress{
+.btn-success, .bg-success:focus, .pace .pace-progress{
   background: #009B36;
 }
 .datepicker table tr td.active{
@@ -161,10 +161,32 @@ body.menu-pin .page-sidebar{
 .remove_field{
   cursor: pointer;
 }
-
+.nav-border-list{
+  max-height: 200px;
+  overflow: auto;
+}
+.nav-border-list li{
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 0px;
+}
+.nav-border-list p{
+  margin: 0px;
+  /*font-size: 16px;*/
+}
+.nav-border-list li:last-child{
+  border-bottom: none;
+}
+.status-ver, .status-ver .notification-footer, .status-ver .option{
+  width: auto;
+  height: auto;
+  border: none;
+}
 @media (max-width: 991px) {
 
   /*header area*/
+  .header{
+    position: fixed;
+  }
   .header .notification-list, .header .search-link{
     display: inline-block;
   }
@@ -174,25 +196,10 @@ body.menu-pin .page-sidebar{
   .notification-panel{
     width: 500px;
   }
-  .nav-border-list{
-    max-height: 200px;
-    overflow: auto;
-  }
-  .nav-border-list li{
-    border-bottom: 1px solid #e6e6e6;
-    padding: 10px 0px;
-  }
-  .nav-border-list p{
-    margin: 0px;
-    /*font-size: 16px;*/
-  }
-  .nav-border-list li:last-child{
-    border-bottom: none;
-  }
-  .status-ver, .status-ver .notification-footer, .status-ver .option{
-    width: auto;
-    height: auto;
-    border: none;
+
+
+  .header .pull-right{
+    /*padding: 0 !important;*/
   }
   /*=-=-=-=-=-=-=-=-=-*/
 
@@ -237,5 +244,11 @@ body.menu-pin .page-sidebar{
   }
   .cariForm{
     width: 100%;
+  }
+  .pageTitle{
+    display: none;
+  }
+  .header .pull-right{
+    padding: 0 !important;
   }
 }
