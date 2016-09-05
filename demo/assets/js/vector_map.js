@@ -13,7 +13,7 @@
         // Apply mapplic plugin
         $('#mapplic').mapplic({
             source: 'assets/js/indonesia.json',
-            height: '100%',
+            height: '500px',
             search: false,
             sidebar: false,
             minimap: false,
