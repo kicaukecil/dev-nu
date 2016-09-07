@@ -21,6 +21,17 @@
      type: 'success'
    }).show();
  };
+ function notifGree() {
+   // Apply the plugin to the body
+
+   $('body').pgNotification({
+     style: 'flip',
+     message: 'Data berhasil diupdate',
+     position: 'top-right',
+     timeout: 0,
+     type: 'success'
+   }).show();
+ };
 
 (function($) {
 

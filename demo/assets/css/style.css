@@ -11,7 +11,7 @@
 
   /*-=-=-=-=-=-=-*/
 
-.btn-success, .bg-success:focus, .pace .pace-progress{
+.btn-success,.label-success, .bg-success:focus, .pace .pace-progress{
   background: #009B36;
 }
 .datepicker table tr td.active{
