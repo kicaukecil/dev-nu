@@ -113,7 +113,7 @@
     }
 
     /** @function getColor
-    * @description Get Color from CSS 
+    * @description Get Color from CSS
     * @param {string} color - pages color class eg: primary,master,master-light etc.
     * @param {int} opacity
     * @returns {rgba}
@@ -228,7 +228,7 @@
             for(var i = 1; i <= drop.children("li").length; i++){
                 var li = drop.children("li:nth-child("+i+")");
                 var selected ="";
-                if(li.hasClass("active")){    
+                if(li.hasClass("active")){
                     selected="selected";
                 }
                 content +='<option value="'+ li.children('a').attr('href')+'" '+selected+'>';
@@ -241,7 +241,7 @@
             $(select).on('change', function (e) {
                 var optionSelected = $("option:selected", this);
                 var valueSelected = this.value;
-                drop.find('a[href="'+valueSelected+'"]').tab('show') 
+                drop.find('a[href="'+valueSelected+'"]').tab('show')
             })
             $(select).wrap('<div class="nav-tab-dropdown cs-wrapper full-width p-t-10 visible-xs visible-sm"></div>');
             new SelectFx(select);
@@ -295,8 +295,8 @@
             } else {
                 $(this).parent().html(log);
             }
-        });        
-    }   
+        });
+    }
     /** @function initHorizontalMenu
     * @description Initialize Horizontal Dropdown Menu
     */
@@ -304,7 +304,7 @@
         $(document).on('click', '.horizontal-menu .bar-inner > ul > li', function(){
             $(this).toggleClass('open').siblings().removeClass('open');
         });
-       
+
         $('.content').on('click', function () {
             $('.horizontal-menu .bar-inner > ul > li').removeClass('open');
         });
@@ -486,7 +486,7 @@
 
     $.Pages = new Pages();
     $.Pages.Constructor = Pages;
-    
+
 })(window.jQuery);
 
 /**
@@ -495,7 +495,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
@@ -1210,7 +1210,7 @@
 
         self.notification.append(self.alert);
 
-        // bind to Bootstrap closed event for alerts 
+        // bind to Bootstrap closed event for alerts
         self.alert.on('closed.bs.alert', function() {
             self.notification.remove();
             self.options.onClosed();
@@ -1221,7 +1221,7 @@
     };
 
     Notification.VERSION = "1.0.0";
-    
+
     Notification.prototype.show = function() {
 
         // TODO: add fadeOut animation on show as option
@@ -1762,7 +1762,7 @@
 
     // PARALLAX NO CONFLICT
     // ====================
-    
+
     $.fn.parallax.noConflict = function() {
         $.fn.parallax = old;
         return this;
@@ -1809,11 +1809,11 @@
          this.sideBarWidth = 280;
          this.sideBarWidthCondensed = 280 - 70;
 
-         
+
 
          this.$sidebarMenu = this.$element.find('.sidebar-menu > ul');
          this.$pageContainer = $(this.options.pageContainer);
-         
+
 
          if (!this.$sidebarMenu.length) return;
 
@@ -1844,9 +1844,9 @@
              if(li.hasClass("open active")){
                 el.children('.arrow').removeClass("open active");
                 sub.slideUp(200, function() {
-                    li.removeClass("open active"); 
+                    li.removeClass("open active");
                 });
-                
+
              }else{
                 parent.children('li.open').children('.sub-menu').slideUp(200);
                 parent.children('li.open').children('a').children('.arrow').removeClass('open active');
@@ -1874,7 +1874,7 @@
 
          function sidebarMouseEnter(e) {
             var _sideBarWidthCondensed = _this.$body.hasClass("rtl") ? -_this.sideBarWidthCondensed : _this.sideBarWidthCondensed;
-           
+
              var menuOpenCSS = (this.css3d == true ? 'translate3d(' + _sideBarWidthCondensed + 'px, 0,0)' : 'translate(' + _sideBarWidthCondensed + 'px, 0)');
 
              if ($.Pages.isVisibleSm() || $.Pages.isVisibleXs()) {
@@ -1948,7 +1948,7 @@
      }
 
 
-     // Toggle sidebar for mobile view   
+     // Toggle sidebar for mobile view
      Sidebar.prototype.toggleSidebar = function(toggle) {
          var timer;
          var bodyColor = $('body').css('background-color');
