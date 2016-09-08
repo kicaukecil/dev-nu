@@ -75,193 +75,251 @@
         <!-- START PAGE CONTENT -->
         <div class="content">
           <script type="text/javascript">
-            header('Detail Data');
+            header('Perstujuan');
           </script>
           <div class="container-fluid container-fixed-lg p-t-20 m-b-10">
             <!-- BEGIN PlACE PAGE CONTENT HERE -->
 
+            <div class="panel panel-transparent">
+              <div class="panel-body">
 
-              <!-- data user =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
-              <div class="panel panel-transparent">
-                <div class="panel-body">
-                  <h3>Data
-                    <span class="semi-bold"> Satuan Pendidikan</span>
-                  </h3>
-                  <p><span class="bold">Dini Wahyuni</span> pengurus cabang kota B </p>
+                <div class="row clearfix">
+                  <div class="col-sm-6">
+                    <h3>Daftar
+                      <span class="semi-bold"> User</span>
+                    </h3>
+                    <p>User disini adalah user <span class="bold">dibawah kepengurusan</span> anda </p>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="pull-right cariForm">
+                      <div class="col-xs-12">
+                        <input id="tableUser-cari" class="form-control pull-right" placeholder="Cari data" type="text">
+                      </div>
+                    </div>
                   </div>
                 </div>
-              <!-- end data user =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
+              </div>
+            </div>
 
 
             <!-- END PLACE PAGE CONTENT HERE -->
           </div>
-          <div class="container-fluid container-fixed-lg bg-white ">
+          <div class="container-fluid container-fixed-lg bg-white p-t-20">
             <div class="panel panel-transparent">
               <div class="panel-body">
-                <table class="table table-hover demo-table-search link-table" style="text-transform: none;" id="tableUser">
+                <table class="table table-hover demo-table-search " id="tableUser">
                   <thead>
                     <tr>
-                      <th class="sorting-non" style="width:1%;" >
-                        <button class="btn btn-success clickDelete">Setuju</button>
-                      </th>
-                      <th>Nama satuan pendidikan</th>
-                      <th>Nomor induk sekolah</th>
-                      <th>Status pendidikan</th>
-                      <th>Bnetuk Satuan pendidikan</th>
-                      <th>Verifikasi</th>
+
+                      <th style="width:30%">Nama user</th>
+                      <th style="width:10%;">Tipe user</th>
+                      <th style="width:10%;">Provinsi</th>
+                      <th style="width:10%;">Kota/Kab</th>
+                      <th class="">Staus</th>
+
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <input type="checkbox" value="1" id="checkbox1">
-                        </span>
-                        <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
-                              <ul style="" class="dropdown-menu ">
-                                <li><a href="#" class="clickDelete">Setuju</a></li>
-                                <li><a href="#" class="clickDelete" class="clickDelete">Tolak</a></li>
-                              </ul>
-                        </div>
-                      </div>
+                    <tr class="warning">
+                      <td class="v-align-middle">
+                        <p>Kurniawan Hermansyah</p>
                       </td>
-                      <td>
-                        MTs Al Hikmah
+                      <td class="v-align-middle semi-bold">
+                        <p>Pengurus Wilayah Provinsi</p>
                       </td>
-                      <td>
-                        123445623
+                      <td class="v-align-middle">
+                        <p>Jawa Timur</p>
                       </td>
-                      <td class="text-center">
-                        <label class="label label-default">A</label>
+                      <td class="v-align-middle">
+                        <p>Kediri</p>
                       </td>
-                      <td class="text-center">
-                        MTs
-                      </td>
-                      <td class="text-center">
-                        <label class="label label-danger">Belum terverifikasi</label>
+                      <td class="">
+                        <label class="label label-danger">12 Data belum diverifikasi</label><br>
+                        <p>Dari total 35 data yang telah dimasukan.</p>
                       </td>
                     </tr>
                     <tr>
-                      <td>
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <input type="checkbox" value="1" id="checkbox1">
-                        </span>
-                        <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
-                              <ul style="" class="dropdown-menu ">
-                                <li><a href="#" class="clickDelete">Setuju</a></li>
-                                <li><a href="#" class="clickDelete">Tolak</a></li>
-                              </ul>
-                        </div>
-                      </div>
+                      <td class="v-align-middle">
+                        <p>Kurniawan Hermansyah</p>
                       </td>
-                      <td>
-                        MTs Al Hikmah
+                      <td class="v-align-middle">
+                        <p>Pengurus Wilayah Provinsi</p>
                       </td>
-                      <td>
-                        123445623
+                      <td class="v-align-middle">
+                        <p>Jawa Timur</p>
                       </td>
-                      <td class="text-center">
-                        <label class="label label-default">A</label>
+                      <td class="v-align-middle">
+                        <p>Kediri</p>
                       </td>
-                      <td class="text-center">
-                        MTs
-                      </td>
-                      <td class="text-center">
-                        <label class="label label-danger">Belum terverifikasi</label>
+                      <td class="">
+                        <label class="label label-success">Semua Data Terverifikasi</label>
+                        <p>Dari total 65 data yang telah dimasukan.</p>
                       </td>
                     </tr>
                     <tr>
-                      <td>
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <input type="checkbox" value="1" id="checkbox1">
-                        </span>
-                        <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
-                              <ul style="" class="dropdown-menu ">
-                                <li><a href="#" class="clickDelete">Setuju</a></li>
-                                <li><a href="#" class="clickDelete">Tolak</a></li>
-                              </ul>
-                        </div>
-                      </div>
+                      <td class="v-align-middle">
+                        <p>Kurniawan Hermansyah</p>
                       </td>
-                      <td>
-                        MTs Al Hikmah
+                      <td class="v-align-middle">
+                        <p>Pengurus Wilayah Provinsi</p>
                       </td>
-                      <td>
-                        123445623
+                      <td class="v-align-middle">
+                        <p>Jawa Timur</p>
                       </td>
-                      <td class="text-center">
-                        <label class="label label-default">A</label>
+                      <td class="v-align-middle">
+                        <p>Kediri</p>
                       </td>
-                      <td class="text-center">
-                        MTs
-                      </td>
-                      <td class="text-center">
-                        <label class="label label-danger">Belum terverifikasi</label>
+                      <td class="">
+                        <label class="label label-success">Semua Data Terverifikasi</label>
+                        <p>Dari total 65 data yang telah dimasukan.</p>
                       </td>
                     </tr>
                     <tr>
-                      <td>
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <input type="checkbox" value="1" id="checkbox1">
-                        </span>
-                        <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
-                              <ul style="" class="dropdown-menu ">
-                                <li><a href="#" class="clickDelete">Setuju</a></li>
-                                <li><a href="#" class="clickDelete">Tolak</a></li>
-                              </ul>
-                        </div>
-                      </div>
+                      <td class="v-align-middle">
+                        <p>Kurniawan Hermansyah</p>
                       </td>
-                      <td>
-                        MI Al Nur
+                      <td class="v-align-middle">
+                        <p>Pengurus Wilayah Provinsi</p>
                       </td>
-                      <td>
-                        123445623
+                      <td class="v-align-middle">
+                        <p>Jawa Timur</p>
                       </td>
-                      <td class="text-center">
-                        <label class="label label-default">A</label>
+                      <td class="v-align-middle">
+                        <p>Kediri</p>
                       </td>
-                      <td class="text-center">
-                        MI
-                      </td>
-                      <td class="text-center">
-                        <label class="label label-danger">Belum terverifikasi</label>
+                      <td class="">
+                        <label class="label label-success">Semua Data Terverifikasi</label>
+                        <p>Dari total 65 data yang telah dimasukan.</p>
                       </td>
                     </tr>
                     <tr>
-                      <td>
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <input type="checkbox" value="1" id="checkbox1">
-                        </span>
-                        <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
-                              <ul style="" class="dropdown-menu ">
-                                <li><a href="#" class="clickDelete">Setuju</a></li>
-                                <li><a href="#" class="clickDelete">Tolak</a></li>
-                              </ul>
-                        </div>
-                      </div>
+                      <td class="v-align-middle">
+                        <p>Kurniawan Hermansyah</p>
                       </td>
-                      <td>
-                        MTs Al Hikmah
+                      <td class="v-align-middle">
+                        <p>Pengurus Wilayah Provinsi</p>
                       </td>
-                      <td>
-                        123445623
+                      <td class="v-align-middle">
+                        <p>Jawa Timur</p>
                       </td>
-                      <td class="text-center">
-                        <label class="label label-default">A</label>
+                      <td class="v-align-middle">
+                        <p>Kediri</p>
                       </td>
-                      <td class="text-center">
-                        MTs
-                      </td>
-                      <td class="text-center">
-                        <label class="label label-danger">Belum terverifikasi</label>
+                      <td class="">
+                        <label class="label label-success">Semua Data Terverifikasi</label>
+                        <p>Dari total 65 data yang telah dimasukan.</p>
                       </td>
                     </tr>
+                    <tr>
+                      <td class="v-align-middle">
+                        <p>Kurniawan Hermansyah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Pengurus Wilayah Provinsi</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jawa Timur</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Kediri</p>
+                      </td>
+                      <td class="">
+                        <label class="label label-success">Semua Data Terverifikasi</label>
+                        <p>Dari total 65 data yang telah dimasukan.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="v-align-middle">
+                        <p>Kurniawan Hermansyah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Pengurus Wilayah Provinsi</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jawa Timur</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Kediri</p>
+                      </td>
+                      <td class="">
+                        <label class="label label-success">Semua Data Terverifikasi</label>
+                        <p>Dari total 65 data yang telah dimasukan.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="v-align-middle">
+                        <p>Kurniawan Hermansyah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Pengurus Wilayah Provinsi</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jawa Timur</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Kediri</p>
+                      </td>
+                      <td class="">
+                        <label class="label label-success">Semua Data Terverifikasi</label>
+                        <p>Dari total 65 data yang telah dimasukan.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="v-align-middle">
+                        <p>Indra Lesmana</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Pengurus Cabang Kota / Kab</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Banten</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Tangerang</p>
+                      </td>
+                      <td class="">
+                        <label class="label label-success">Semua Data Terverifikasi</label>
+                        <p>Dari total 65 data yang telah dimasukan.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="v-align-middle">
+                        <p>Indra Lesmana</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Pengurus Cabang Kota / Kab</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Banten</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Tangerang</p>
+                      </td>
+                      <td class="">
+                        <label class="label label-success">Semua Data Terverifikasi</label>
+                        <p>Dari total 65 data yang telah dimasukan.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="v-align-middle">
+                        <p>Indra Lesmana</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Pengurus Cabang Kota / Kab</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Banten</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Tangerang</p>
+                      </td>
+                      <td class="">
+                        <label class="label label-success">Semua Data Terverifikasi</label>
+                        <p>Dari total 65 data yang telah dimasukan.</p>
+                      </td>
+                    </tr>
+
+
                   </tbody>
                 </table>
               </div>

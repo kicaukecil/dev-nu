@@ -1,4 +1,9 @@
 (function($) {
+
+  // $(".link-table").click(function() {
+  //       window.document.location = $(this).data("href");
+  //   });
+
   var width = screen.width;
 
   $('.openSidebar').click(function(){
