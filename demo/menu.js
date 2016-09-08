@@ -94,9 +94,6 @@ document.write('\
         <a href="edit_berita_home.html">Ubah Berita</a>\
       </li>\
         <li class="">\
-        <a href="#">Data Provinsi</a>\
-        </li>\
-        <li class="">\
           <a href="edit_user.html">User Akses</a>\
         </li>\
       </ul>\
