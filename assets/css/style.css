@@ -184,6 +184,7 @@ body.menu-pin .page-sidebar{
 .form-group-default label.fade{
   opacity: 1;
 }
+
 @media (max-width: 991px) {
 
   /*header area*/

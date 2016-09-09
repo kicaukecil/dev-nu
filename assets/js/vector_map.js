@@ -21,7 +21,7 @@
             deeplinking: true,
             fullscreen: true,
             hovertip: false,
-            maxscale: 4,
+            maxscale: 1,
             animate: true
         });
 

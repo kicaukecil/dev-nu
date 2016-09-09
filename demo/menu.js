@@ -1,4 +1,14 @@
 document.write('\
+<nav class="page-sidebar" data-pages="sidebar">\
+  <div class="sidebar-header p-t-25 p-b-25" style="height: auto; background:#498547;">\
+    <div class="logo-area" style="padding-left:33px;">\
+      <img src="logo.png" alt="logo" data-src="logo.png" width="130" height="80">\
+    </div>\
+    <p class="text-center text-white">Sistem Informasi Satuan Pendidikan\
+    <span class="bold">LP Ma\'arif NU</span></p>\
+    <a href="javascript:;" class="closeSidebar"><i class="pg-close_line"></i></a>\
+  </div>\
+  <div class="sidebar-menu" style="padding-top: 10px">\
 <ul class="menu-items">\
     <li class="m-t-30">\
       <a href="dashboard.html" class="detailed">\
@@ -99,4 +109,7 @@ document.write('\
       </ul>\
     </li>\
   </ul>\
+  <div class="clearfix"></div>\
+</div>\
+</nav>\
 ');
