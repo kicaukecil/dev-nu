@@ -1,5 +1,5 @@
 document.write('\
-<div class="container-fluid footer p-r-60 p-l-60">\
+<div class="container-fluid footer p-r-60 p-l-60" style="background-color:green;">\
   <div class="row p-t-20 p-b-20 ">\
     <div class="col-sm-3 p-t-10 p-b-10">\
       <h2 class="text-master" style="margin-top: 0px;"><span class="bold">LP Ma\'arif </span><br>Nahdlatul Ulama</h2>\
