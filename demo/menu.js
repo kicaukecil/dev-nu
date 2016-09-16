@@ -1,6 +1,6 @@
 document.write('\
 <nav class="page-sidebar" data-pages="sidebar">\
-  <div class="sidebar-header p-t-25 p-b-25" style="height: auto; background:#008F42;">\
+  <div class="sidebar-header p-t-25 p-b-25" style="height: auto; background:#498547;">\
     <div class="logo-area" style="padding-left:33px;">\
       <img src="logo.png" alt="logo" data-src="logo.png" width="130" height="80">\
     </div>\
