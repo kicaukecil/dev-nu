@@ -30,16 +30,17 @@
 
     <style media="screen">
       body{
-        background: #2E3D50;
+        background: #498547;
       }
-      h3, p.text-center{
-        color: #fff;
-      }
+
       .form-group label{
         text-transform: none ! important;
         font-weight: normal;: "Segoe UI", Arial, sans-serif !important;
       }
-
+      .img-thumbnail{
+        background-color: transparent;
+border: 0px solid #ddd;
+      }
     </style>
 
     <script type="text/javascript">
@@ -57,23 +58,24 @@
         <div class="row row-sm-height">
           <div class="col-sm-12 col-sm-height col-middle">
 
-            <div class="row" style="padding:20px">
+            <div class="row">
               <div class="col-sm-12 p-l-80 p-r-80">
               <img src="logo-home.png" alt="logo" data-src="logo-home.png" data-src-retina="logo-home.png" class="img-thumbnail" height="100%">
             </div>
             <div class="col-md-12">
-              <h3 class="text-center">Sistem Informasi Satuan Pendidikan</h3>
+              <h3 class="text-center text-white">Sistem Informasi Satuan Pendidikan <span class="bold">LP Ma'arif NU</span></h3>
+
             </div>
             </div>
           <div class="panel panel-default">
             <div class="panel-body">
-              <h4>Masuk dengan User Akun Anda</h4>
+              <h4>Masuk dengan Akun Anda</h4>
               <form id="form-login" class="form sm-p-t-20" role="form" action="demo/dashboard.html">
               <!-- START Form Control-->
                 <div class="form-group form-group-default">
-                  <label>Masuk</label>
+                  <label>Nama Akun</label>
                   <div class="controls">
-                    <input type="text" name="username" placeholder="User Akun" class="form-control" required>
+                    <input type="text" name="username" placeholder="Nama Akun" class="form-control" required>
                   </div>
                 </div>
                 <!-- END Form Control-->
@@ -98,7 +100,7 @@
               </form>
             </div>
             </div>
-            <p class="text-center"><a class="text-success" href="lost_pass.html">Lupa Kata Sandi?</a></p>
+            <p class="text-center"><a class=" hint-text text-white" href="lost_pass.html">Lupa Kata Sandi?</a></p>
         </div>
       </div>
     </div>

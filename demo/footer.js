@@ -2,7 +2,7 @@ document.write('\
 <div class="container-fluid footer p-r-60 p-l-60">\
   <div class="row p-t-20 p-b-20 ">\
     <div class="col-sm-3 p-t-10 p-b-10">\
-      <h3 class="text-master" style="margin-top: 0px;">LP <span class="bold">Ma\'arif</span> Nahdlatul Ulama</h3>\
+      <h3 class="text-master" style="margin-top: 0px;">Lembaga Pendidikan <span class="bold">Ma\'arif</span> Nahdlatul Ulama</h3>\
       <p class="hint-text">Jl. Kemerdekaan No.40 <br> 18632 <br> Jakarta, Indonesia</p>\
     </div>\
     <div class="col-sm-3 p-t-10 p-b-10  ">\

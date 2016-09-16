@@ -12,18 +12,18 @@
   /*-=-=-=-=-=-=-*/
 
 .btn-success,.label-success, .bg-success:focus, .pace .pace-progress{
-  background: #009B36;
+  background: #498547;
 }
 .datepicker table tr td.active{
-  background: #009B36 !important;
+  background: #498547 !important;
 }
 
 .btn-success{
-  border-color: #009B36;
+  border-color: #498547;
 }
 .btn-success:hover, .btn-success.active, .btn-success.active:hover{
-  background: #2ecc71;
-  border-color: #009B36;
+  background: #6BA068;
+  border-color: #498547;
 
 }
 .text-success{
