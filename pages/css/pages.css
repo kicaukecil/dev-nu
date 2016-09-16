@@ -152,7 +152,7 @@ body.rtl [class*="col-"] {
   padding: 0 20px 0 0;
   z-index: 800;
   background-color: #fff;
-  border-bottom: 1px solid rgba(230, 230, 230, 0.7);
+  border-bottom: none;
 }
 .header a {
   color: #ffffff;
@@ -2258,13 +2258,13 @@ h6.block {
 */
 a {
   text-shadow: none !important;
-  color: #059827;
+  color: #ffffff;
   transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.2s linear 0s !important;
 }
 a:focus,
 a:hover,
 a:active {
-  color: #48b0f7;
+  color: #ffffff;
 }
 a,
 a:focus,
@@ -10808,7 +10808,7 @@ Main components
   bottom: 0;
   position: absolute;
   z-index: 0;
-  opacity: .69;
+
 }
 .widget-1:after {
   background-image: url("../../assets/img/dashboard/pages_hero.jpg");
@@ -10820,7 +10820,7 @@ Main components
   bottom: 0;
   position: absolute;
   z-index: 0;
-  opacity: .69;
+
 }
 .widget-1:before {
   background-image: url('../img/linear_gradient.png');
@@ -10852,7 +10852,16 @@ Main components
   background: rgba(255, 255, 255, 0.3);
 }
 .widget-2:after {
-  background-image: url("../../assets/img/social/person-cropped.jpg");
+  background-image: url("../../assets/img/dashboard/hompage-nu-4.jpg");
+}
+.widget-3:after {
+  background-image: url("../../assets/img/dashboard/hompage-nu-3.jpg");
+}
+.widget-4:after {
+  background-image: url("../../assets/img/dashboard/hompage-nu-5.jpg");
+}
+.widget-5:after {
+  background-image: url("../../assets/img/dashboard/hompage-nu-1.jpg");
 }
 .widget-3 a {
   text-decoration: none;
