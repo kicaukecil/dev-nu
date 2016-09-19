@@ -11,8 +11,12 @@
 
   /*-=-=-=-=-=-=-*/
 .page-sidebar{
-  /*overflow-y: scroll;*/
+  overflow-y: scroll;
 }
+::-webkit-scrollbar {
+    display: none;
+}
+
 .page-sidebar .sidebar-menu{
   height: auto;
 }
