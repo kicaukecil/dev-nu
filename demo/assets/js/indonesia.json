@@ -323,6 +323,6 @@
 		}
 	],
 	"minimap":"false",
-	"sidebar":"true",
+	"sidebar":"false",
 	"zoomlimit":"3"
 }
