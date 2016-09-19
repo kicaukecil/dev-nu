@@ -12,7 +12,7 @@ document.write('\
         </li>\
         <li class="p-r-15 inline">\
           <div class="dropdown">\
-            <a href="javascript:;" id="notification-center" class="icon-set globe-fill" data-toggle="dropdown">\
+            <a href="javascript:;" id="notification-center" class="icon-set menu-hambuger" data-toggle="dropdown">\
               <span class="bubble bg-success"></span>\
             </a>\
             <!-- START Notification Dropdown -->\
@@ -82,18 +82,18 @@ document.write('\
     <div class=" m-t-10">\
       <div class="dropdown pull-right p-r-10 p-t-10 fs-16 font-heading">\
         <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">\
-          <span class="semi-bold">Nama</span> <span class="text-master">User</span>\
+          <span class="semi-bold">Assalamu\'alaikum Nama</span> <span class="text-master">User </span><span class="caret"></span>\
         </button>\
         <ul class="dropdown-menu profile-dropdown" role="menu">\
         <li><a href="activity.html"><i class="pg-clock"></i> Aktivitas</a></li>\
-        <li><a href="users.html"><i class="pg-clock"></i> Kepengurusan</a></li>\
+        <li><a href="users.html"><i class="fa fa-users"></i> Kepengurusan</a></li>\
           <li><a href="pengaturan_akun.html"><i class="pg-settings_small"></i> Pengaturan</a>\
           </li>\
           <li><a href="#"><i class="pg-signals"></i> Pusat bantuan</a>\
           </li>\
           <li class="bg-master-lighter">\
             <a href="#" class="clearfix">\
-              <span class="pull-left">Logout</span>\
+              <span class="pull-left">Keluar</span>\
               <span class="pull-right"><i class="pg-power"></i></span>\
             </a>\
           </li>\
