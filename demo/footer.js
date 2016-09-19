@@ -2,8 +2,14 @@ document.write('\
 <div class="container-fluid footer p-r-60 p-l-60">\
   <div class="row p-t-20 p-b-20 ">\
     <div class="col-sm-5 p-t-10 p-b-10">\
-      <h3 class="text-master" style="margin-top: 0px;">Lembaga Pendidikan Ma\'arif <span class="bold">Nahdlatul Ulama</span> </h3>\
-      <p class="hint-text">Jl. Kemerdekaan No.40 <br> 18632 <br> Jakarta, Indonesia</p>\
+      <h3 class="text-master" style="margin-top: 0px;line-height:1;">Lembaga Pendidikan Ma\'arif <span class="bold">Nahdlatul Ulama</span> </h3>\
+      <address class="text-master" style="line-height:1;opacity: .7 ;">\
+      <strong>Pengurus Pusat Lembaga Pendidikan<br>Ma\'arif Nahdlatul Ulama</strong>\
+      <br>Gedung PBNU II Lt. 2 Jl. Taman Amir Hamzah No. 5 <br>Jakarta Pusat 10320 \
+      <br>Telp. 021-3904115 \
+      <br>Fax. 021-31906679 \
+      <br>E-mail: sekretariat@maarif-nu.or.id\
+      </address>\
     </div>\
     <div class="col-sm-7">\
     <div class="col-sm-4 p-t-10 p-b-10  ">\
@@ -12,7 +18,7 @@ document.write('\
           <li class="m-b-5 no-padding"><a href="#" class="link text-master">Design</a></li>\
           <li class="m-b-5 no-padding"><a href="#" class="link text-master">Features</a></li>\
           <li class="m-b-5 no-padding"><a href="#" class="link text-master">Team</a></li>\
-          <li class="m-b-5 no-padding"><a href="term_of_use.html" class="link text-master">Term of Use</a></li>\
+          <li class="m-b-5 no-padding"><a href="#" class="link text-master">Work Station</a></li>\
       </ul>\
     </div>\
     <div class="col-sm-4 p-t-10 p-b-10 ">\
