@@ -2419,7 +2419,7 @@ hr.dotted {
   color: #e2e2e2;
 }
 .hint-text {
-  opacity: .7;
+  opacity: 1;
   color: white;
 }
 .no-decoration {
@@ -2808,8 +2808,8 @@ hr.dotted {
     line-height: 40px;
   }
   h3 {
-    font-size: 24px;
-    line-height: 35.88px;
+    font-size: 20px;
+    line-height: 20px;
   }
   h4 {
     font-size: 18px;
@@ -11440,6 +11440,7 @@ Main components
 }
 .padding-5 {
   padding: 5px !important;
+  margin-top: 5px;
 }
 .p-t-10 {
   padding-top: 9px !important; /* Diubah oleh aris sebelumnya 10px */
