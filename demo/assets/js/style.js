@@ -3,6 +3,9 @@
   // $(".link-table").click(function() {
   //       window.document.location = $(this).data("href");
   //   });
+  // $('[data-init-plugin="select2"]').select2({
+  // placeholder: "Select a state"
+  // });
 
   var width = screen.width;
 

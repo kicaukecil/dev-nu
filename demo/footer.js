@@ -38,7 +38,7 @@ document.write('\
   <div class="copyright sm-text-center">\
     <p class="small no-margin pull-left sm-pull-reset">\
       <span class="hint-text">Copyright &copy; 2011-2016 </span>\
-      <span class="font-montserrat"><a class="text-success" href="http://www.nu.or.id/">PP LP Maarif NU.</a></span>\
+      <span class="font-montserrat"><a class="text-success" href="http://www.maarif-nu.or.id/">PP LP Maarif NU.</a></span>\
       <span class="hint-text"> All rights reserved. </span>\
     </p>\
     <div class="clearfix"></div>\

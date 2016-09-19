@@ -81,102 +81,91 @@
                   <div class="panel panel-transparent">
                     <div class="panel-body">
                       <form id="form-project" role="form" autocomplete="off">
-                        <h3>Formulir Buat Wilayah</h3>
-                        <div class="form-group-attached m-b-20">
+                        <h3>Formulir Kantor Wilayah</h3>
+                        <div class="form-group-attached">
                           <div class="row clearfix">
-                            <div class="col-sm-6">
                               <div class="form-group form-group-default required">
                                 <label>Nama Kantor Wilayah</label>
                                 <input type="text" class="form-control" name="nama" required>
                               </div>
-                            </div>
-                            <div class="col-sm-6">
-                              <div class="form-group form-group-default">
-                                <label>Alamat Kantor Wilayah</label>
-                                <input type="text" class="form-control" name="nama-belakang">
+                          </div>
+                        </div>
+                        <div class="form-group-attached m-t-10 m-b-20">
+                          <div class="form-group form-group-default">
+                            <label>Alamat
+                            </label>
+                            <textarea rows="7" type="text" class="form-control" style="height:100px" name="alamat"></textarea>
+                          </div>
+                          <div class="form-group form-group-default">
+                            <label>Nomor Telepon </i>
+                            </label>
+                            <input type="text" class="form-control" name="telepon" placeholder=" ">
+                          </div>
+                          <div class="row clearfix">
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default form-group-default-select2 required">
+                                <label>Provinsi</label>
+                                <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2" required>
+                                  <optgroup label="Indonesia Bagian Barat">
+                                    <option value="AK">DKI Jakarta</option>
+                                    <option value="HI">Jawa Barat</option>
+                                    <option value="HI">Banten</option>
+                                  </optgroup>
+                                  <optgroup label="Indonesia Bagian Tengah">
+                                    <option value="CA">Bali</option>
+                                    <option value="NV">Sulawesi Selatan</option>
+                                    <option value="OR">Kalimantan Timur</option>
+                                  </optgroup>
+                                  <optgroup label="Indonesia Bagian Timur">
+                                    <option value="AZ">Maluku</option>
+                                    <option value="CO">Papua</option>
+                                    <option value="ID">Papua Barat</option>
+                                  </optgroup>
+                                </select>
                               </div>
                             </div>
-
-                          <div class="col-sm-6">
-                            <div class="form-group form-group-default form-group-default-select2 required">
-                              <label>Provinsi Kantor Wilayah</label>
-                              <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2" required>
-                                <optgroup label="Indonesi Bagian Barat">
-                                  <option value="AK">DKI Jakarta</option>
-                                  <option value="HI">Jawa Barat</option>
-                                  <option value="HI">Banten</option>
-                                </optgroup>
-                                <optgroup label="Indonesi Bagian Tengah">
-                                  <option value="CA">Bali</option>
-                                  <option value="NV">Sulawesi Selatan</option>
-                                  <option value="OR">Kalimantan Timur</option>
-                                </optgroup>
-                                <optgroup label="Indonesi Bagian Timur">
-                                  <option value="AZ">Maluku</option>
-                                  <option value="CO">Colorado</option>
-                                  <option value="ID">Idaho</option>
-                                  <option value="MT">Montana</option>
-                                  <option value="NE">Nebraska</option>
-                                  <option value="NM">New Mexico</option>
-                                  <option value="ND">North Dakota</option>
-                                  <option value="UT">Utah</option>
-                                  <option value="WY">Wyoming</option>
-                                </optgroup>
-                              </select>
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default form-group-default-select2 required">
+                                <label>Kabupaten / Kotamadya</label>
+                                <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2" required>
+                                  <optgroup label="DKI Jakarta">
+                                    <option value="AK">Jakarta Pusat</option>
+                                    <option value="HI">Jakarta Barat</option>
+                                    <option value="HI">Jakarta Selatan</option>
+                                  </optgroup>
+                                  <optgroup label="Jawa Barat">
+                                    <option value="CA">Bandung</option>
+                                    <option value="NV">Bogor</option>
+                                  </optgroup>
+                                  <optgroup label="Jawa Timur">
+                                    <option value="AZ">Surabaya</option>
+                                    <option value="CO">Kediri</option>
+                                    <option value="ID">Lamogan</option>
+                                    <option value="MT">Ponorogo</option>
+                                  </optgroup>
+                                </select>
+                              </div>
                             </div>
-                          </div>
-                          <div class="col-sm-6">
-                            <div class="form-group form-group-default form-group-default-select2 required">
-                              <label>Kabupaten / Kotamadya Kantor Wilayah</label>
-                              <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
-                                <optgroup label="DKI Jakarta">
-                                  <option value="AK">Jakarta Pusat</option>
-                                  <option value="HI">Jakarta Barat</option>
-                                  <option value="HI">Jakarta Selatan</option>
-                                </optgroup>
-                                <optgroup label="Jawa Barat">
-                                  <option value="CA">Bandung</option>
-                                  <option value="NV">Bogor</option>
-                                </optgroup>
-                                <optgroup label="Jawa Timur">
-                                  <option value="AZ">Surabaya</option>
-                                  <option value="CO">Kediri</option>
-                                  <option value="ID">Lamogan</option>
-                                  <option value="MT">Ponorogo</option>
-                                </optgroup>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-sm-6">
-                            <div class="form-group form-group-default">
-                              <label>Kode POS Kantor Wilayah</label>
-                              <input type="text" class="form-control" name="nama-belakang">
-                            </div>
-                          </div>
-                          <div class="col-sm-6">
-                            <div class="form-group form-group-default">
-                              <label>Nomer Telepon Kantor</label>
-                              <input type="text" class="form-control" name="nama-belakang">
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default ">
+                                  <label>Kode Pos</label>
+                                  <input type="text" class="form-control" name="kodepos_user" >
+                                </div>
                             </div>
                           </div>
                           <div class="row">
-                            <div class="col-sm-6">
-                              <div class="form-group form-group-default form-group-default-select2">
-                                <label class="">Admin Wilayah</label>
-                                <!-- <div class="col-sm-6"> -->
-                                  <select class="full-width" data-init-plugin="select2">
-                                    <option value="sightseeing">Check Admin </option>
-                                    <option value="business">Rahmad Winarto</option>
-                                    <option value="honeymoon">Ahmad Effendi</option>
-                                  </select>
-                                <!-- </div> -->
+                              <div class="form-group form-group-default form-group-default-select2 required">
+                                <label>Admin Kantor Wilayah</label>
+                                <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2" required>
+                                    <option value="AK">Surdono (ID)</option>
+                                    <option value="HI">Daimas Andir (ID)</option>
+                                    <option value="HI">Jimmy diandri (ID)</option>
+                                </select>
                               </div>
-                            </div>
 
                           </div>
                         </div>
-                      </div>
-                        <button class="btn btn-success ">Simpan</button>
+                        <button class="btn btn-success" type="submit">Simpan</button>
                         <button class="btn btn-default" type="reset"><i class="pg-close"></i> Bersih</button>
                       </form>
                     </div>

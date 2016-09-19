@@ -83,7 +83,7 @@
               <div class="panel panel-transparent">
                 <div class="panel-heading">
                   <div class="panel-title">
-                    <a href="input_user.html" class="btn btn-success" style="color:#fff;"><i class="fa fa-plus"></i> Tambah Kantor Cabang</a>
+                    <a href="input_kantor_cabang.html" class="btn btn-success" style="color:#fff;"><i class="fa fa-plus"></i> Tambah Kantor Cabang</a>
                   </div>
                   <div class="pull-right">
                     <div class="col-xs-12 no-padding">
@@ -92,7 +92,7 @@
                   </div>
                   <div class="pull-right">
                     <div class="col-xs-12">
-                      <input id="tableUser-cari" class="form-control pull-right" placeholder="Search" type="text">
+                      <input id="tableUser-cari" class="form-control pull-right" placeholder="Cari Data" type="text">
                     </div>
                   </div>
                   <div class="row clearfix"></div>
@@ -111,53 +111,52 @@
                               </div>
                               <div class="col-sm-6">
                                 <div class="form-group form-group-default">
-                                  <label>Alamat Kantor</label>
-                                  <input class="form-control" required="" type="text">
+                                  <label>Alamat</label>
+                                  <input class="form-control"  type="text">
                                   </div>
                               </div>
 
                             </div>
                             <div class="row clearfix">
-                              <div class="col-sm-4">
+                              <div class="col-sm-6">
                                 <div class="form-group form-group-default">
-                                  <label>No. Telepon</label>
-                                  <input class="form-control" required="" type="text">
+                                  <label>Nomor Telepon</label>
+                                  <input class="form-control"  type="text">
                                 </div>
                               </div>
+                              <div class="col-sm-6">
+                                <div class="form-group form-group-default form-group-default-select2 ">
+                                  <label>Admin Wilayah</label>
+                                  <select class="full-width" data-init-plugin="select2" multiple="">
+
+                                    <option value="Joko">Joko</option>
+                                    <option value="Waluyo">Waluyo</option>
+                                    <option value="Indah">Indah Kurmaningsih</option>
+                                    <option value="Winda">Winda</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row clearfix">
                               <div class="col-sm-4">
-                                <div class="form-group form-group-default form-group-default-select2 required">
+                                <div class="form-group form-group-default form-group-default-select2 ">
                                   <label>Provinsi</label>
                                   <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
-                                    <optgroup label="Indonesi Bagian Barat">
-                                      <option value="AK">DKI Jakarta</option>
-                                      <option value="HI">Jawa Barat</option>
-                                      <option value="HI">Banten</option>
-                                    </optgroup>
-                                    <optgroup label="Indonesi Bagian Tengah">
-                                      <option value="CA">Bali</option>
-                                      <option value="NV">Sulawesi Selatan</option>
-                                      <option value="OR">Kalimantan Timur</option>
-                                    </optgroup>
-                                    <optgroup label="Indonesi Bagian Timur">
-                                      <option value="AZ">Maluku</option>
-                                      <option value="CO">Colorado</option>
-                                      <option value="ID">Idaho</option>
-                                      <option value="MT">Montana</option>
-                                      <option value="NE">Nebraska</option>
-                                      <option value="NM">New Mexico</option>
-                                      <option value="ND">North Dakota</option>
-                                      <option value="UT">Utah</option>
-                                      <option value="WY">Wyoming</option>
-                                    </optgroup>
+                                      <option value="AK">Jakarta </option>
+                                      <option value="CA">Jawa Barat</option>
+                                      <option value="NV">Jawa Tengah</option>
+                                      <option value="AZ">Jawa Timur</option>
+                                      <option value="CO">Banten</option>
+                                      <option value="ID">Bali</option>
+                                      <option value="MT">Bengkulu</option>
                                   </select>
                                 </div>
                               </div>
                               <div class="col-sm-4">
-                                <div class="form-group form-group-default form-group-default-select2 required">
+                                <div class="form-group form-group-default form-group-default-select2 ">
                                   <label>Kota / Kabupaten</label>
                                   <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
                                     <optgroup label="DKI Jakarta">
-                                      <option selected value="AK">Pilih ..</option>
                                       <option value="AK">Jakarta Pusat</option>
                                       <option value="HI">Jakarta Barat</option>
                                       <option value="HI">Jakarta Selatan</option>
@@ -175,11 +174,16 @@
                                   </select>
                                 </div>
                               </div>
-
+                              <div class="col-sm-4">
+                                <div class="form-group form-group-default">
+                                  <label>Kode Pos</label>
+                                  <input class="form-control"  type="text">
+                                </div>
+                              </div>
                             </div>
                             <div class="row clearfix">
                               <div class="col-sm-4">
-                                <button type="button" class=" btn btn-success"> Cari Data </button><button type="button" class=" btn btn-default m-l-10"><i class=" pg-download"></i> Export </button>
+                                <button type="button" class=" btn btn-success"> Filter </button><button type="button" class=" btn btn-default m-l-10"><i class=" pg-download"></i> Export </button>
                               </div>
                             </div>
                           </form>
@@ -189,17 +193,18 @@
                   </div>
                 </div>
                 <div class="panel-body">
-                  <table class="table table-hover demo-table-search " id="tableUser">
+                  <table class="table table-hover demo-table-search  " id="tableUser">
                     <thead>
                       <tr>
-                        <th class="sorting-non" style="width:1%;" ><button class="btn clickDelete"><i class="pg-trash"></i>
+                        <th class="sorting-non far-sticky-col" style="width:1%;" ><button class="btn clickDelete"><i class="pg-trash"></i>
                         </button></th>
-                        <th style="width:20%">Nama Kantor</th>
-                        <th style="width:19%;">Tlp</th>
-                        <th style="width:20%;">Alamat</th>
-                        <th style="width:15%;">Provinsi</th>
-                        <th style="width:10%;">Kota/Kab</th>
-
+                        <th style="width:30%" >Nama Kantor</th>
+                        <th >Alamat</th>
+                        <th >Nomor Telepon</th>
+                        <th >Admin Cabang</th>
+                        <th >Provinsi</th>
+                        <th >Kabupaten/ Kotamadya</th>
+                        <th >Kode Pos</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -209,7 +214,7 @@
                             <span class="input-group-addon">
                               <input type="checkbox" value="1" id="checkbox1">
                             </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
+                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
                                   <ul style="" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
@@ -219,13 +224,16 @@
                           </div>
                         </td>
                         <td class="v-align-middle">
-                          <p>Kantor Cabang Kediri</p>
+                          <p>IPNU Cabang Kediri</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>021-98738134</p>
+                          <p>Jl. Kulonprogo no 13</p>
                         </td>
-                        <td class="v-align-middle semi-bold">
-                          <p>Jl. Sejahter no. 50</p>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
@@ -233,6 +241,9 @@
                         <td class="v-align-middle">
                           <p>Kediri</p>
                         </td>
+                        <td class="v-align-middle">
+                          <p>15492</p>
+                        </td>
 
                       </tr>
                       <tr>
@@ -241,7 +252,7 @@
                             <span class="input-group-addon">
                               <input type="checkbox" value="1" id="checkbox1">
                             </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
+                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
                                   <ul style="" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
@@ -251,13 +262,16 @@
                           </div>
                         </td>
                         <td class="v-align-middle">
-                          <p>Kantor Cabang Kediri</p>
+                          <p>IPNU Cabang Kediri</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>021-98738134</p>
+                          <p>Jl. Kulonprogo no 13</p>
                         </td>
-                        <td class="v-align-middle semi-bold">
-                          <p>Jl. Sejahter no. 50</p>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
@@ -265,6 +279,9 @@
                         <td class="v-align-middle">
                           <p>Kediri</p>
                         </td>
+                        <td class="v-align-middle">
+                          <p>15492</p>
+                        </td>
 
                       </tr>
                       <tr>
@@ -273,7 +290,7 @@
                             <span class="input-group-addon">
                               <input type="checkbox" value="1" id="checkbox1">
                             </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
+                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
                                   <ul style="" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
@@ -283,13 +300,16 @@
                           </div>
                         </td>
                         <td class="v-align-middle">
-                          <p>Kantor Cabang Kediri</p>
+                          <p>IPNU Cabang Kediri</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>021-98738134</p>
+                          <p>Jl. Kulonprogo no 13</p>
                         </td>
-                        <td class="v-align-middle semi-bold">
-                          <p>Jl. Sejahter no. 50</p>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
@@ -297,37 +317,8 @@
                         <td class="v-align-middle">
                           <p>Kediri</p>
                         </td>
-
-                      </tr>
-                      <tr>
-                        <td class="v-align-middle far-sticky-col">
-                          <div class="input-group">
-                            <span class="input-group-addon">
-                              <input type="checkbox" value="1" id="checkbox1">
-                            </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
-                                  <ul style="" class="dropdown-menu ">
-                                    <li><a href="#">Lihat</a></li>
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#" class="clickDelete">Hapus</a></li>
-                                  </ul>
-                              </div>
-                          </div>
-                        </td>
                         <td class="v-align-middle">
-                          <p>Kantor Cabang Jakarta Barat</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>021-98738134</p>
-                        </td>
-                        <td class="v-align-middle semi-bold">
-                          <p>Jl. Sejahter no. 50</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Jakarta</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Jakarta Barat</p>
+                          <p>15492</p>
                         </td>
 
                       </tr>
@@ -337,7 +328,7 @@
                             <span class="input-group-addon">
                               <input type="checkbox" value="1" id="checkbox1">
                             </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
+                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
                                   <ul style="" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
@@ -347,55 +338,409 @@
                           </div>
                         </td>
                         <td class="v-align-middle">
-                          <p>Kantor Cabang Jakarta Barat</p>
+                          <p>IPNU Cabang Kediri</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>021-98738134</p>
-                        </td>
-                        <td class="v-align-middle semi-bold">
-                          <p>Jl. Sejahter no. 50</p>
+                          <p>Jl. Kulonprogo no 13</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Jakarta</p>
+                          <p>081726389273</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Jakarta Barat</p>
-                        </td>
-
-                      </tr>
-                      <tr>
-                        <td class="v-align-middle far-sticky-col">
-                          <div class="input-group">
-                            <span class="input-group-addon">
-                              <input type="checkbox" value="1" id="checkbox1">
-                            </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
-                                  <ul style="" class="dropdown-menu ">
-                                    <li><a href="#">Lihat</a></li>
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#" class="clickDelete">Hapus</a></li>
-                                  </ul>
-                              </div>
-                          </div>
+                          <p>Ahmad Effendi</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Kantor Cabang Jakarta Barat</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>021-98738134</p>
-                        </td>
-                        <td class="v-align-middle semi-bold">
-                          <p>Jl. Sejahter no. 50</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Jakarta</p>
+                          <p>Jawa Timur</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Kediri</p>
                         </td>
+                        <td class="v-align-middle">
+                          <p>15492</p>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td class="v-align-middle far-sticky-col">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <input type="checkbox" value="1" id="checkbox1">
+                            </span>
+                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                  <ul style="" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>IPNU Cabang Kediri</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl. Kulonprogo no 13</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jawa Timur</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Kediri</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>15492</p>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td class="v-align-middle far-sticky-col">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <input type="checkbox" value="1" id="checkbox1">
+                            </span>
+                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                  <ul style="" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>IPNU Cabang Kediri</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl. Kulonprogo no 13</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jawa Timur</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Kediri</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>15492</p>
+                        </td>
 
                       </tr>
 
+                      <tr>
+                        <td class="v-align-middle far-sticky-col">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <input type="checkbox" value="1" id="checkbox1">
+                            </span>
+                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                  <ul style="" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>IPNU Cabang Tangerang</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl. Cisadane no 9</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Banten</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Tangerang</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>15153</p>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td class="v-align-middle far-sticky-col">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <input type="checkbox" value="1" id="checkbox1">
+                            </span>
+                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                  <ul style="" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>IPNU Cabang Tangerang</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl. Cisadane no 9</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Banten</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Tangerang</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>15153</p>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td class="v-align-middle far-sticky-col">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <input type="checkbox" value="1" id="checkbox1">
+                            </span>
+                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                  <ul style="" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>IPNU Cabang Tangerang</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl. Cisadane no 9</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Banten</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Tangerang</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>15153</p>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td class="v-align-middle far-sticky-col">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <input type="checkbox" value="1" id="checkbox1">
+                            </span>
+                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                  <ul style="" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>IPNU Cabang Tangerang</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl. Cisadane no 9</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Banten</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Tangerang</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>15153</p>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td class="v-align-middle far-sticky-col">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <input type="checkbox" value="1" id="checkbox1">
+                            </span>
+                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                  <ul style="" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>IPNU Cabang Bandung</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl. Kembang Wangi no 33</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jarwo</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jawa Barat</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Bandung</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>13492</p>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td class="v-align-middle far-sticky-col">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <input type="checkbox" value="1" id="checkbox1">
+                            </span>
+                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                  <ul style="" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>IPNU Cabang Bandung</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl. Kembang Wangi no 33</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jarwo</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jawa Barat</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Bandung</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>13492</p>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td class="v-align-middle far-sticky-col">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <input type="checkbox" value="1" id="checkbox1">
+                            </span>
+                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                  <ul style="" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>IPNU Cabang Bandung</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl. Kembang Wangi no 33</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jarwo</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jawa Barat</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Bandung</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>13492</p>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td class="v-align-middle far-sticky-col">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <input type="checkbox" value="1" id="checkbox1">
+                            </span>
+                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                  <ul style="" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>IPNU Cabang Bandung</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl. Kembang Wangi no 33</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jarwo</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jawa Barat</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Bandung</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>13492</p>
+                        </td>
+
+                      </tr>
                     </tbody>
                   </table>
                 </div>

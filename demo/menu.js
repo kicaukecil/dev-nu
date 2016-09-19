@@ -2,7 +2,7 @@ document.write('\
 <nav class="page-sidebar" data-pages="sidebar">\
   <div class="sidebar-header p-t-25 p-b-25" style="height: auto; background:#498547;">\
     <div class="logo-area" style="padding-left:33px;">\
-      <img src="logo.png" alt="logo" data-src="logo.png" width="130" height="80">\
+      <img src="../assets/img/logo-home.png" alt="logo" data-src="../assets/img/logo-home.png" width="130" height="80">\
     </div>\
     <p class="text-center text-white">Sistem Informasi Satuan Pendidikan\
     <span class="bold">LP Ma\'arif NU</span></p>\

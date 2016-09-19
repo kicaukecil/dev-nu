@@ -16,7 +16,7 @@
 						"title":"Jawa Tengah",
 						"description":"<strong>JT</strong> Jawa Tengah",
 						"action": "tooltip",
-						"pin": "marker green",
+						"pin": "marker yellow",
 						"x":"0.3233100",
 						"y":"0.68444"
 					},
@@ -25,7 +25,7 @@
 							"title":"Aceh",
 							"description":"<strong>AC</strong> Aceh",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.0400000",
 							"y":"0.28111"
 					},
@@ -34,7 +34,7 @@
 							"title":"Jawa Timur",
 							"description":"<strong>JI</strong> Jawa Timur",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.3733100",
 							"y":"0.69444"
 					},
@@ -43,7 +43,7 @@
 							"title":"Sulawesi Selatan",
 							"description":"<strong>JI</strong> Sulawesi Selatan",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.5371200",
 							"y":"0.56444"
 					},
@@ -52,7 +52,7 @@
 							"title":"Bali",
 							"description":"<strong>BA</strong> Bali",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.4332",
 							"y":"0.71444"
 					},
@@ -61,7 +61,7 @@
 							"title":"Bangka Belitung",
 							"description":"<strong>BB</strong> Bangka Belitung",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.23312",
 							"y":"0.501231"
 					},
@@ -70,7 +70,7 @@
 							"title":"Bengkulu",
 							"description":"<strong>BB</strong> Bengkulu",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.16312",
 							"y":"0.56123"
 					},
@@ -79,7 +79,7 @@
 							"title":"Banten",
 							"description":"<strong>BT</strong> Banten",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.24312",
 							"y":"0.65123"
 					},
@@ -88,7 +88,7 @@
 							"title":"Gorontalo",
 							"description":"<strong>BB</strong> Gorontalo",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.59312",
 							"y":"0.41123"
 					},
@@ -97,7 +97,7 @@
 							"title":"Jambi",
 							"description":"<strong>JA</strong> Jambi",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.16312",
 							"y":"0.49123"
 					},
@@ -106,7 +106,7 @@
 							"title":"Kepulauan Riau",
 							"description":"<strong>KR</strong> Kepulauan Riau",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.20312",
 							"y":"0.43123"
 					},
@@ -115,7 +115,7 @@
 							"title":"Jakarta",
 							"description":"<strong>JK</strong> Jakarta",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.25312",
 							"y":"0.64123"
 					},
@@ -124,7 +124,7 @@
 							"title":"Kalimatan Barat",
 							"description":"<strong>KB</strong> Kalimatan Barat",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.34312",
 							"y":"0.44123"
 					},
@@ -133,7 +133,7 @@
 							"title":"Kalimatan Timur",
 							"description":"<strong>KI</strong> Kalimatan Timur",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.46312",
 							"y":"0.42123"
 					},
@@ -142,7 +142,7 @@
 							"title":"Kalimatan Utara",
 							"description":"<strong>KU</strong> Kalimatan Utara",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.46312",
 							"y":"0.32123"
 					},
@@ -151,7 +151,7 @@
 							"title":"Kalimatan Tengah",
 							"description":"<strong>JA</strong> Kalimatan Tengah",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.39312",
 							"y":"0.49123"
 					},
@@ -160,7 +160,7 @@
 							"title":"Kalimatan Selatan",
 							"description":"<strong>JA</strong> Kalimatan Selatan",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.44312",
 							"y":"0.54123"
 					},
@@ -169,7 +169,7 @@
 							"title":"Yogyakarta",
 							"description":"<strong>YO</strong> Yogyakarta",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.33331",
 							"y":"0.70444"
 					},
@@ -178,7 +178,7 @@
 							"title":"Jawa Barat",
 							"description":"<strong>JB</strong> Jawa Barat",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.27312",
 							"y":"0.67123"
 					},
@@ -187,7 +187,7 @@
 							"title":"Sumatra Utara",
 							"description":"<strong>SU</strong> Sumatra Utara",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.09",
 							"y":"0.36111"
 					},
@@ -196,7 +196,7 @@
 							"title":"Sumatra Barat",
 							"description":"<strong>SB</strong> Sumatra Barat",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.12",
 							"y":"0.45111"
 					},
@@ -205,7 +205,7 @@
 							"title":"Riau",
 							"description":"<strong>RI</strong> Riau",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.14",
 							"y":"0.42111"
 					},
@@ -214,7 +214,7 @@
 							"title":"Sumatra Selatan",
 							"description":"<strong>SS</strong> Sumatra Selatan",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.20",
 							"y":"0.55111"
 					},
@@ -223,7 +223,7 @@
 							"title":"Lampung",
 							"description":"<strong>LA</strong> Lampung",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.22",
 							"y":"0.60111"
 					},
@@ -232,7 +232,7 @@
 							"title":"Nusa Tenggara Barat",
 							"description":"<strong>NB</strong> Nusa Tenggara Barat",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.476",
 							"y":"0.73444"
 					},
@@ -241,7 +241,7 @@
 							"title":"Nusa Tenggara Timur",
 							"description":"<strong>NT</strong> Nusa Tenggara Timur",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.556",
 							"y":"0.72444"
 					},
@@ -250,7 +250,7 @@
 							"title":"Maluku",
 							"description":"<strong>MA</strong> Maluku",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.736",
 							"y":"0.53444"
 					},
@@ -259,7 +259,7 @@
 							"title":"Maluku Utara",
 							"description":"<strong>MU</strong> Maluku Utara",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.706",
 							"y":"0.41444"
 					},
@@ -268,7 +268,7 @@
 							"title":"Papua Barat",
 							"description":"<strong>PB</strong> Papua Barat",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.806",
 							"y":"0.48444"
 					},
@@ -277,7 +277,7 @@
 							"title":"Papua",
 							"description":"<strong>PA</strong> Papua",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.906",
 							"y":"0.56444"
 					},
@@ -286,7 +286,7 @@
 							"title":"Sulawesi Barat",
 							"description":"<strong>SR</strong> Sulawesi Barat",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.51912",
 							"y":"0.52444"
 					},
@@ -295,7 +295,7 @@
 							"title":"Sulawesi Utara",
 							"description":"<strong>SA</strong> Sulawesi Utara",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.62912",
 							"y":"0.40444"
 					},
@@ -304,7 +304,7 @@
 							"title":"Sulawesi Tenggara",
 							"description":"<strong>SG</strong> Sulawesi Tenggara",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.57612",
 							"y":"0.56444"
 					},
@@ -313,7 +313,7 @@
 							"title":"Sulawesi Tengah",
 							"description":"<strong>ST</strong> Sulawesi Tengah",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.54912",
 							"y":"0.48444"
 					}

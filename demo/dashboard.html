@@ -13,8 +13,11 @@
     <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/plugins/nvd3/nv.d3.min.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/plugins/mapplic/css/mapplic.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/rickshaw/rickshaw.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
     <link class="main-stylesheet" href="assets/css/style.css" rel="stylesheet" type="text/css" />
 
@@ -55,15 +58,18 @@
       <div class="page-content-wrapper ">
         <div class="content">
           <script type="text/javascript">
-            header('Blank-Template');
+            header('Dashboard');
           </script>
-          <div class="container-fluid container-fixed-lg m-b-30">
+          <div class="container-fluid container-fixed-lg m-b-20 m-t-20">
             <!-- BEGIN PlACE PAGE CONTENT HERE -->
             <div class="inner full-height ">
                 <div class="map-container full-width full-height relative">
                   <div class="map-controls">
 
-                    <div class="pull-left m-l-15">
+                    <div class="pull-left">
+                      <a href="#" class="btn btn-xs m-b-10 clear-map">
+                        <i class="fa fa-arrows"></i>
+                      </a>
                       <form role="form">
                         <div class="form-group form-group-default input-group">
                           <label>Provinsi</label>
@@ -72,9 +78,7 @@
                           </div>
                         </div>
                       </form>
-                      <a href="#" class="btn btn-xs m-t-10 clear-map">
-                        <i class="fa fa-arrows"></i>
-                      </a>
+
                     </div>
                   </div>
                   <div id="mapplic"></div>
@@ -85,9 +89,9 @@
                 </div>
             </div>
           </div>
-          <div id="main-dash" class="container-fluid container-fixed-lg p-t-20">
-            <div class="row" >
-              <div class="col-md-8 m-b-10">
+          <div id="main-dash" class="container-fluid container-fixed-lg p-t-25">
+            <div class="row m-b-20">
+              <div class="col-md-8 p-r-10">
                 <div class="row">
                   <div class="col-md-12">
                     <!-- START WIDGET D3 widget_graphWidget-->
@@ -229,7 +233,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-lg-4 hidden-xlg m-b-10">
+              <div class="col-md-6 col-lg-4 hidden-xlg p-l-10">
                 <!-- START WIDGET widget_tableWidgetBasic-->
                 <div class="widget-11-2 panel no-border panel-condensed no-margin widget-loader-circle">
                   <div class="panel-heading top-right">
@@ -461,8 +465,8 @@
 
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-4 visible-lg hidden-xlg">
+            <div class="row m-b-30">
+              <div class="col-lg-4 visible-lg hidden-xlg p-r-10">
                 <!-- START WIDGET D3 widget_stackedBarWidgetBasic-->
                 <div class="widget-15-2 panel no-margin no-border widget-loader-circle">
                   <div class="panel-heading top-right">
@@ -524,7 +528,7 @@
                 </div>
                 <!-- END WIDGET -->
               </div>
-              <div class="col-md-4 col-lg-3 col-xlg-3 m-b-10">
+              <div class="col-md-4 col-lg-3 col-xlg-3 p-r-10 p-l-10">
                 <!-- START WIDGET D3 widget_graphOptionsWidget-->
                 <div class="widget-16 panel no-border no-margin widget-loader-circle">
                   <div class="panel-heading">
@@ -590,7 +594,7 @@
                 </div>
                 <!-- END WIDGET -->
               </div>
-              <div class="col-md-8 col-lg-5 col-xlg-5 m-b-10">
+              <div class="col-md-8 col-lg-5 col-xlg-5 p-l-10">
                 <!-- START WIDGET widget_weatherWidget-->
                 <div class="widget-17 panel  no-border no-margin widget-loader-circle">
                   <div class="panel-heading">

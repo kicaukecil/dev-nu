@@ -20,7 +20,7 @@
 	 }
 
 	 svg a .country {
-	 	fill: #cce08f;
+	 	fill: #99C297;
 	 	opacity: 1;
 	 	transition: opacity .15s;
 	 }

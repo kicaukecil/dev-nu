@@ -10,9 +10,15 @@
 }
 
   /*-=-=-=-=-=-=-*/
-
-.btn-success,.label-success, .bg-success:focus, .pace .pace-progress{
+.page-sidebar{
+  overflow-y: scroll;
+}
+.page-sidebar .sidebar-menu{
+  height: auto;
+}
+.btn-success, .btn-success:focus ,.label-success, .bg-success:focus, .pace .pace-progress{
   background: #498547;
+  border-color: #498547;
 }
 .datepicker table tr td.active{
   background: #498547 !important;
@@ -97,22 +103,9 @@
     /*width: 120px;*/
 
 }
-#widget-area{
-  position: absolute;
-top: 70px;
-width: 40%;
-right: 2%;
 
-}
-#widget-area .bg-success{
-  opacity: 0.8;
-}
-#widget-area .bg-success:hover{
-  opacity: 1;
-}
 #mapplic .mapplic-container .mapplic-fullscreen-button {
-  right: 14px;
-  bottom: 60px;
+  display: none;
 }
 
 
@@ -132,8 +125,8 @@ right: 2%;
   line-height: 27px;
 }
 .map-controls{
-  top: 70px;
-  left:2%;
+  top: 76%;
+  left: 1%;
 }
 .page-sidebar{
   width: 250px;
