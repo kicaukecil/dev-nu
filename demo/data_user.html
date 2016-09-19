@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
-    <title>Pages - Admin Dashboard UI Kit - Blank Page</title>
+    <title>Data User</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
     <link rel="apple-touch-icon" href="pages/ico/60.png">
     <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
@@ -107,19 +107,38 @@
                           <h4>Filter Data</h4>
                           <form>
                             <div class="row clearfix">
-                              <div class="col-sm-6">
+                              <div class="col-sm-4">
                                 <div class="form-group form-group-default  ">
-                                  <label>Nama user</label>
+                                  <label>Nama User</label>
                                   <input type="Nama" class="form-control" >
                                 </div>
                               </div>
-                              <div class="col-sm-6">
+                              <div class="col-sm-4">
+                                <div class="form-group form-group-default  ">
+                                  <label>Nomor Telepon</label>
+                                  <input type="Nama" class="form-control" >
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
                                 <div class="form-group form-group-default">
                                   <label>Email</label>
                                   <input class="form-control" required="" type="email">
                                   </div>
                               </div>
-
+                            </div>
+                            <div class="row clearfix">
+                              <div class="col-sm-6">
+                                <div class="form-group form-group-default  ">
+                                  <label>Nama Lengkap</label>
+                                  <input type="Nama" class="form-control" >
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group form-group-default  ">
+                                  <label>Alamat</label>
+                                  <input type="Nama" class="form-control" >
+                                </div>
+                              </div>
                             </div>
                             <div class="row clearfix">
                               <div class="col-sm-4">
@@ -186,7 +205,7 @@
 
                             </div>
                             <div class="row clearfix">
-                                <button type="button" class=" btn btn-success "> Cari Data </button><button type="button" class=" btn btn-default m-l-10"><i class=" pg-download"></i> Export </button>
+                                <button type="button" class=" btn btn-success "> Filter Data </button><button type="button" class=" btn btn-default m-l-10"><i class=" pg-download"></i> Ekspor </button>
                             </div>
                           </form>
                         </div>
@@ -195,27 +214,29 @@
                   </div>
                 </div>
                 <div class="panel-body">
-                  <table class="table table-hover demo-table-search " id="tableUser">
+                  <table class="table table-hover demo-table-search far-table" id="tableUser">
                     <thead>
                       <tr>
-                        <th class="sorting-non" style="width:1%;" ><button class="btn btn-default clickDelete"><i class="pg-trash"></i>
+                        <th class="sorting-non far-sticky-col" ><button class="btn btn-default clickDelete"><i class="pg-trash"></i>
                         </button></th>
-                        <th style="width:20%">Nama user</th>
+                        <th style="width:20%">Nama User</th>
+                        <th style="width:20%">Nama Lengkap</th>
                         <th style="width:19%;">Email</th>
-                        <th style="width:20%;">Level</th>
+                        <th style="width:19%;">Nomor Telepon</th>
+                        <th style="width:15%;">Alamat</th>
+                        <th style="width:20%;">Tipe User</th>
                         <th style="width:15%;">Provinsi</th>
                         <th style="width:10%;">Kota/Kab</th>
-
                       </tr>
                     </thead>
                     <tbody>
-                      <a href="#"><tr>
+                      <tr>
                         <td class="v-align-middle far-sticky-col">
                           <div class="input-group">
                             <span class="input-group-addon">
                               <input type="checkbox" value="1" id="checkbox1">
                             </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
+                            <div class="btn-group dropdown-default dropup"> <a  style="width:141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
                                   <ul style="" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
@@ -225,13 +246,22 @@
                           </div>
                         </td>
                         <td class="v-align-middle">
+                          <p>Kurniawan</p>
+                        </td>
+                        <td class="v-align-middle">
                           <p>Kurniawan Hermansyah</p>
                         </td>
                         <td class="v-align-middle">
                           <p>kurniawan@email.com</p>
                         </td>
+                        <td class="v-align-middle">
+                          <p>08170928378</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl.Karangetan</p>
+                        </td>
                         <td class="v-align-middle semi-bold">
-                          <p>Pengurus Wilayah Provinsi</p>
+                          <p>Pengurus Provinsi</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
@@ -247,7 +277,7 @@
                             <span class="input-group-addon">
                               <input type="checkbox" value="1" id="checkbox1">
                             </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
+                            <div class="btn-group dropdown-default "> <a  style="width:141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
                                   <ul style="" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
@@ -257,13 +287,22 @@
                           </div>
                         </td>
                         <td class="v-align-middle">
-                          <p>Kurniawan Hermansyah</p>
+                          <p>Yanto</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Yanto Hermansyah</p>
                         </td>
                         <td class="v-align-middle">
                           <p>kurniawan@email.com</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Wilayah Provinsi</p>
+                          <p>08170928378</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl.Karangetan</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Provinsi</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
@@ -279,7 +318,7 @@
                             <span class="input-group-addon">
                               <input type="checkbox" value="1" id="checkbox1">
                             </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
+                            <div class="btn-group dropdown-default "> <a  style="width:141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
                                   <ul style="" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
@@ -289,13 +328,22 @@
                           </div>
                         </td>
                         <td class="v-align-middle">
-                          <p>Kurniawan Hermansyah</p>
+                          <p>Ridwan</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ridwan Mukti</p>
                         </td>
                         <td class="v-align-middle">
                           <p>kurniawan@email.com</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Wilayah Provinsi</p>
+                          <p>08170928378</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl.Karangetan</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Provinsi</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
@@ -311,7 +359,7 @@
                             <span class="input-group-addon">
                               <input type="checkbox" value="1" id="checkbox1">
                             </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
+                            <div class="btn-group dropdown-default "> <a  style="width:141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
                                   <ul style="" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
@@ -321,13 +369,22 @@
                           </div>
                         </td>
                         <td class="v-align-middle">
+                          <p>Sapri</p>
+                        </td>
+                        <td class="v-align-middle">
                           <p>Kurniawan Hermansyah</p>
                         </td>
                         <td class="v-align-middle">
                           <p>kurniawan@email.com</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Wilayah Provinsi</p>
+                          <p>08170928378</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl.Karangetan</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Provinsi</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
@@ -343,7 +400,7 @@
                             <span class="input-group-addon">
                               <input type="checkbox" value="1" id="checkbox1">
                             </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
+                            <div class="btn-group dropdown-default "> <a  style="width:141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
                                   <ul style="" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
@@ -353,13 +410,22 @@
                           </div>
                         </td>
                         <td class="v-align-middle">
+                          <p>Joko</p>
+                        </td>
+                        <td class="v-align-middle">
                           <p>Kurniawan Hermansyah</p>
                         </td>
                         <td class="v-align-middle">
                           <p>kurniawan@email.com</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Wilayah Provinsi</p>
+                          <p>08170928378</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl.Karangetan</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Provinsi</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
@@ -375,7 +441,7 @@
                             <span class="input-group-addon">
                               <input type="checkbox" value="1" id="checkbox1">
                             </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
+                            <div class="btn-group dropdown-default "> <a  style="width:141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
                                   <ul style="" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
@@ -385,13 +451,22 @@
                           </div>
                         </td>
                         <td class="v-align-middle">
+                          <p>Ahmad </p>
+                        </td>
+                        <td class="v-align-middle">
                           <p>Kurniawan Hermansyah</p>
                         </td>
                         <td class="v-align-middle">
                           <p>kurniawan@email.com</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Wilayah Provinsi</p>
+                          <p>08170928378</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl.Karangetan</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Provinsi</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
@@ -407,7 +482,7 @@
                             <span class="input-group-addon">
                               <input type="checkbox" value="1" id="checkbox1">
                             </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
+                            <div class="btn-group dropdown-default "> <a  style="width:141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
                                   <ul style="" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
@@ -417,13 +492,22 @@
                           </div>
                         </td>
                         <td class="v-align-middle">
+                          <p>Bustomi</p>
+                        </td>
+                        <td class="v-align-middle">
                           <p>Kurniawan Hermansyah</p>
                         </td>
                         <td class="v-align-middle">
                           <p>kurniawan@email.com</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Wilayah Provinsi</p>
+                          <p>08170928378</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl.Karangetan</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Provinsi</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
@@ -439,7 +523,7 @@
                             <span class="input-group-addon">
                               <input type="checkbox" value="1" id="checkbox1">
                             </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
+                            <div class="btn-group dropdown-default "> <a  style="width:141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
                                   <ul style="" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
@@ -449,13 +533,22 @@
                           </div>
                         </td>
                         <td class="v-align-middle">
+                          <p>Syaipul</p>
+                        </td>
+                        <td class="v-align-middle">
                           <p>Kurniawan Hermansyah</p>
                         </td>
                         <td class="v-align-middle">
                           <p>kurniawan@email.com</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Wilayah Provinsi</p>
+                          <p>08170928378</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl.Karangetan</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Provinsi</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
@@ -471,7 +564,7 @@
                             <span class="input-group-addon">
                               <input type="checkbox" value="1" id="checkbox1">
                             </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
+                            <div class="btn-group dropdown-default "> <a  style="width:141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
                                   <ul style="" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
@@ -479,12 +572,21 @@
                                   </ul>
                               </div>
                           </div>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Leles</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Indra Lesmana</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Indra@email.com</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>08170928378</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl.Karangetan</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Pengurus Cabang Kota / Kab</p>
@@ -503,7 +605,7 @@
                             <span class="input-group-addon">
                               <input type="checkbox" value="1" id="checkbox1">
                             </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
+                            <div class="btn-group dropdown-default "> <a  style="width:141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
                                   <ul style="" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
@@ -513,10 +615,19 @@
                           </div>
                         </td>
                         <td class="v-align-middle">
+                          <p>Indra</p>
+                        </td>
+                        <td class="v-align-middle">
                           <p>Indra Lesmana</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Indra@email.com</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>08170928378</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl.Karangetan</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Pengurus Cabang Kota / Kab</p>
@@ -535,7 +646,7 @@
                             <span class="input-group-addon">
                               <input type="checkbox" value="1" id="checkbox1">
                             </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
+                            <div class="btn-group dropdown-default "> <a  style="width:141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
                                   <ul style="" class="dropdown-menu ">
                                     <li><a href="#">Lihat</a></li>
                                     <li><a href="#">Edit</a></li>
@@ -545,10 +656,19 @@
                           </div>
                         </td>
                         <td class="v-align-middle">
+                          <p>Mana</p>
+                        </td>
+                        <td class="v-align-middle">
                           <p>Indra Lesmana</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Indra@email.com</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>08170928378</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl.Karangetan</p>
                         </td>
                         <td class="v-align-middle">
                           <p>Pengurus Cabang Kota / Kab</p>
