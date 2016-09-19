@@ -20,7 +20,7 @@ document.write('\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
         <li class="">\
-          <a href="data_user.html">Tampilkan</a>\
+          <a href="data_user.html">Tampilkan Data</a>\
         </li>\
         <li class="">\
           <a href="input_user.html">Buat User</a>\
@@ -32,7 +32,7 @@ document.write('\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
         <li class="">\
-          <a href="data_wilayah.html">Tampilkan</a>\
+          <a href="data_wilayah.html">Tampilkan Data</a>\
         </li>\
         <li class="">\
           <a href="input_wilayah.html">Buat Kantor Wilayah</a>\
@@ -44,7 +44,7 @@ document.write('\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
         <li class="">\
-          <a href="data_kantor_cabang.html">Tampilkan</a>\
+          <a href="data_kantor_cabang.html">Tampilkan Data</a>\
         </li>\
         <li class="">\
           <a href="input_kantor_cabang.html">Buat Kantor Cabang</a>\
@@ -56,7 +56,7 @@ document.write('\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
       <li class="">\
-        <a href="data_sekolah.html">Tampilkan</a>\
+        <a href="data_sekolah.html">Tampilkan Data</a>\
       </li>\
         <li class="">\
           <a href="input_sekolah.html">Buat Satuan Pendidikan</a>\
@@ -71,7 +71,7 @@ document.write('\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
         <li class="">\
-        <a href="data_tenaga_kerja.html">Tampilkan</a>\
+        <a href="data_tenaga_kerja.html">Tampilkan Data</a>\
         </li>\
         <li class="">\
           <a href="input_tenaga_kerja.html">Buat Tenaga Kerja</a>\
@@ -86,7 +86,7 @@ document.write('\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
         <li class="">\
-        <a href="data_murid.html">Tampilkan</a>\
+        <a href="data_murid.html">Tampilkan Data</a>\
         </li>\
         <li class="">\
           <a href="input_murid.html">Buat Peserta Didik</a>\
