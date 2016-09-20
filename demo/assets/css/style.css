@@ -184,6 +184,9 @@ body.menu-pin .page-sidebar{
 .sidebar-header{
   box-shadow: inset 0px -10px 8px -7px rgba(0, 0, 0, 0.5);;
 }
+.mapplic-tooltip::before{
+  content: '';
+}
 @media (max-width: 991px) {
 
   /*header area*/

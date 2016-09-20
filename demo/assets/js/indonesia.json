@@ -14,7 +14,7 @@
 					{
 						"id":"ID-JT",
 						"title":"Jawa Tengah",
-						"description":"<strong>JT</strong> Jawa Tengah",
+						"description":"Jawa Tengah",
 						"action": "tooltip",
 						"pin": "marker yellow",
 						"x":"0.3233100",
@@ -23,7 +23,7 @@
 					{
 							"id":"ID-AC",
 							"title":"Aceh",
-							"description":"<strong>AC</strong> Aceh",
+							"description":"Aceh",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.0400000",
@@ -32,7 +32,7 @@
 					{
 							"id":"ID-JI",
 							"title":"Jawa Timur",
-							"description":"<strong>JI</strong> Jawa Timur",
+							"description":"Jawa Timur",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.3733100",
@@ -41,7 +41,7 @@
 					{
 							"id":"ID-SN",
 							"title":"Sulawesi Selatan",
-							"description":"<strong>JI</strong> Sulawesi Selatan",
+							"description":"Sulawesi Selatan",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.5371200",
@@ -50,7 +50,7 @@
 					{
 							"id":"ID-BA",
 							"title":"Bali",
-							"description":"<strong>BA</strong> Bali",
+							"description":"Bali",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.4332",
@@ -59,7 +59,7 @@
 					{
 							"id":"ID-BB",
 							"title":"Bangka Belitung",
-							"description":"<strong>BB</strong> Bangka Belitung",
+							"description":"Bangka Belitung",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.23312",
@@ -68,7 +68,7 @@
 					{
 							"id":"ID-BE",
 							"title":"Bengkulu",
-							"description":"<strong>BB</strong> Bengkulu",
+							"description":"Bengkulu",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.16312",
@@ -77,7 +77,7 @@
 					{
 							"id":"ID-BT",
 							"title":"Banten",
-							"description":"<strong>BT</strong> Banten",
+							"description":"Banten",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.24312",
@@ -86,7 +86,7 @@
 					{
 							"id":"ID-GO",
 							"title":"Gorontalo",
-							"description":"<strong>BB</strong> Gorontalo",
+							"description":"Gorontalo",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.59312",
@@ -95,7 +95,7 @@
 					{
 							"id":"ID-JA",
 							"title":"Jambi",
-							"description":"<strong>JA</strong> Jambi",
+							"description":"Jambi",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.16312",
@@ -104,7 +104,7 @@
 					{
 							"id":"ID-KR",
 							"title":"Kepulauan Riau",
-							"description":"<strong>KR</strong> Kepulauan Riau",
+							"description":"Kepulauan Riau",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.20312",
@@ -113,7 +113,7 @@
 					{
 							"id":"ID-JK",
 							"title":"Jakarta",
-							"description":"<strong>JK</strong> Jakarta",
+							"description":"Jakarta",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.25312",
@@ -122,7 +122,7 @@
 					{
 							"id":"ID-KB",
 							"title":"Kalimatan Barat",
-							"description":"<strong>KB</strong> Kalimatan Barat",
+							"description":"Kalimatan Barat",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.34312",
@@ -131,7 +131,7 @@
 					{
 							"id":"ID-KI",
 							"title":"Kalimatan Timur",
-							"description":"<strong>KI</strong> Kalimatan Timur",
+							"description":"Kalimatan Timur",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.46312",
@@ -140,7 +140,7 @@
 					{
 							"id":"ID-KU",
 							"title":"Kalimatan Utara",
-							"description":"<strong>KU</strong> Kalimatan Utara",
+							"description":"Kalimatan Utara",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.46312",
@@ -149,7 +149,7 @@
 					{
 							"id":"ID-KT",
 							"title":"Kalimatan Tengah",
-							"description":"<strong>JA</strong> Kalimatan Tengah",
+							"description":"Kalimatan Tengah",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.39312",
@@ -158,7 +158,7 @@
 					{
 							"id":"ID-KS",
 							"title":"Kalimatan Selatan",
-							"description":"<strong>JA</strong> Kalimatan Selatan",
+							"description":"Kalimatan Selatan",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.44312",
@@ -167,7 +167,7 @@
 					{
 							"id":"ID-YO",
 							"title":"Yogyakarta",
-							"description":"<strong>YO</strong> Yogyakarta",
+							"description":"Yogyakarta",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.33331",
@@ -176,7 +176,7 @@
 					{
 							"id":"ID-JB",
 							"title":"Jawa Barat",
-							"description":"<strong>JB</strong> Jawa Barat",
+							"description":"Jawa Barat",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.27312",
@@ -185,7 +185,7 @@
 					{
 							"id":"ID-SU",
 							"title":"Sumatra Utara",
-							"description":"<strong>SU</strong> Sumatra Utara",
+							"description":"Sumatra Utara",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.09",
@@ -194,7 +194,7 @@
 					{
 							"id":"ID-SB",
 							"title":"Sumatra Barat",
-							"description":"<strong>SB</strong> Sumatra Barat",
+							"description":"Sumatra Barat",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.12",
@@ -203,7 +203,7 @@
 					{
 							"id":"ID-RI",
 							"title":"Riau",
-							"description":"<strong>RI</strong> Riau",
+							"description":"Riau",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.14",
@@ -212,7 +212,7 @@
 					{
 							"id":"ID-SS",
 							"title":"Sumatra Selatan",
-							"description":"<strong>SS</strong> Sumatra Selatan",
+							"description":"Sumatra Selatan",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.20",
@@ -221,7 +221,7 @@
 					{
 							"id":"ID-LA",
 							"title":"Lampung",
-							"description":"<strong>LA</strong> Lampung",
+							"description":"Lampung",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.22",
@@ -230,7 +230,7 @@
 					{
 							"id":"ID-NB",
 							"title":"Nusa Tenggara Barat",
-							"description":"<strong>NB</strong> Nusa Tenggara Barat",
+							"description":"Nusa Tenggara Barat",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.476",
@@ -239,7 +239,7 @@
 					{
 							"id":"ID-NT",
 							"title":"Nusa Tenggara Timur",
-							"description":"<strong>NT</strong> Nusa Tenggara Timur",
+							"description":"Nusa Tenggara Timur",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.556",
@@ -248,7 +248,7 @@
 					{
 							"id":"ID-MA",
 							"title":"Maluku",
-							"description":"<strong>MA</strong> Maluku",
+							"description":"Maluku",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.736",
@@ -257,7 +257,7 @@
 					{
 							"id":"ID-MU",
 							"title":"Maluku Utara",
-							"description":"<strong>MU</strong> Maluku Utara",
+							"description":"Maluku Utara",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.706",
@@ -266,7 +266,7 @@
 					{
 							"id":"ID-PB",
 							"title":"Papua Barat",
-							"description":"<strong>PB</strong> Papua Barat",
+							"description":"Papua Barat",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.806",
@@ -275,7 +275,7 @@
 					{
 							"id":"ID-PA",
 							"title":"Papua",
-							"description":"<strong>PA</strong> Papua",
+							"description":"Papua",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.906",
@@ -284,7 +284,7 @@
 					{
 							"id":"ID-SR",
 							"title":"Sulawesi Barat",
-							"description":"<strong>SR</strong> Sulawesi Barat",
+							"description":"Sulawesi Barat",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.51912",
@@ -293,7 +293,7 @@
 					{
 							"id":"ID-SA",
 							"title":"Sulawesi Utara",
-							"description":"<strong>SA</strong> Sulawesi Utara",
+							"description":"Sulawesi Utara",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.62912",
@@ -302,7 +302,7 @@
 					{
 							"id":"ID-SG",
 							"title":"Sulawesi Tenggara",
-							"description":"<strong>SG</strong> Sulawesi Tenggara",
+							"description":"Sulawesi Tenggara",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.57612",
@@ -311,7 +311,7 @@
 					{
 							"id":"ID-ST",
 							"title":"Sulawesi Tengah",
-							"description":"<strong>ST</strong> Sulawesi Tengah",
+							"description":"Sulawesi Tengah",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.54912",
