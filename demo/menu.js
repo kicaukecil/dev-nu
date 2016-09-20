@@ -62,7 +62,7 @@ document.write('\
           <a href="input_sekolah.html">Buat Satuan Pendidikan</a>\
         </li>\
         <li class="">\
-          <a href="import.html">Import</a>\
+          <a href="import.html">Impor</a>\
         </li>\
       </ul>\
     </li>\
@@ -77,7 +77,7 @@ document.write('\
           <a href="input_tenaga_kerja.html">Buat Tenaga Kerja</a>\
         </li>\
         <li class="">\
-          <a href="import.html">Import</a>\
+          <a href="import.html#tab2naker">Impor</a>\
         </li>\
       </ul>\
     </li>\
@@ -92,19 +92,19 @@ document.write('\
           <a href="input_murid.html">Buat Peserta Didik</a>\
         </li>\
         <li class="">\
-          <a href="import.html">Import</a>\
+          <a href="import.html#tab2pesertadidik">Impor</a>\
         </li>\
       </ul>\
     </li>\
     <li class="">\
-      <a href="#"><span class="title">Master Admin</span>\
+      <a href="#"><span class="title">Administrasi</span>\
       <span class="arrow"></span></a>\
       <ul class="sub-menu">\
       <li class="">\
         <a href="edit_berita_home.html">Ubah Berita</a>\
       </li>\
         <li class="">\
-          <a href="edit_user.html">User Akses</a>\
+          <a href="import.html">Impor Data</a>\
         </li>\
       </ul>\
     </li>\
