@@ -7,6 +7,20 @@
   // placeholder: "Select a state"
   // });
 
+
+  $('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+
   var width = screen.width;
 
   $('.openSidebar').click(function(){
@@ -22,6 +36,8 @@
   });
   $( document ).ready(function() {
 
+    //var hTd = $('.v-align-middle').outerHeight( true );
+    //$('td.far-sticky-col').height(hTd);
 
     $('#bidangKependidikan').hide();
 
@@ -78,6 +94,16 @@
         tablet: 1024,
         phone: 480
     };
+
+    // var initTableFarSticky = function() {
+    //   var heightTd = $('td.far-sticky-col');
+    //    //var heightTdVal = $('.v-align-middle').outerHeight( true );
+    //   var heightTdVal =  heightTd.parent('tbody').children('.v-align-middle').outerHeight( true );
+    //
+    //   $('td.far-sticky-col').height(heightTdVal);
+    //
+    // }
+
     var initTableWithSearch = function() {
         var table = $('#tableUser');
 
@@ -190,7 +216,7 @@
     }
 
 
-
+    // initTableFarSticky();
     initTableWithSearch();
     initDetailedViewTable();
     initTableWithDynamicRows();
