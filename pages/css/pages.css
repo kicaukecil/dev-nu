@@ -49,6 +49,25 @@ html {
 /* Body Triggers for layout options
 ------------------------------------------------------------------
 */
+
+
+
+hr.style2 {
+	border-top: 1px solid #498547;
+	text-align: center;
+}
+hr.style2:after {
+	content: 'Mitra Kami';
+	display: inline-block;
+	position: relative;
+	top: -14px;
+	padding: 0 10px;
+	background: #f0f0f0;
+	color: #8c8b8b;
+	font-size: 18px;
+
+}
+
 body {
   height: 100%;
   margin: 0;
