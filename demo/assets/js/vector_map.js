@@ -17,17 +17,19 @@
             search: false,
             sidebar: false,
             minimap: false,
-            locations: true,
-            deeplinking: true,
-            fullscreen: false,
+            //locations: true,
+            //deeplinking: false,
+            // fullscreen: true,
             hovertip: false,
-            maxscale: 4,
-            animate: true
+            //maxscale: 4,
+            //animate: true
         });
 
         // Resets map to default zoom
         $('.clear-map').click(function() {
             $('.mapplic-clear-button').trigger('click');
+            $('.mapplic-tooltip-close').trigger('click');
+
         });
 
         // Load country list into select2
