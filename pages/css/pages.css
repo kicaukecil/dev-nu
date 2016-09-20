@@ -62,9 +62,10 @@ hr.style2:after {
 	position: relative;
 	top: -14px;
 	padding: 0 10px;
-	background: #f0f0f0;
+	background: #f5f5f5;
 	color: #8c8b8b;
-	font-size: 18px;
+	font-size: 20px;
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 
