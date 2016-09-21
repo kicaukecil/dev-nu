@@ -3,7 +3,9 @@
     plugins used in the widget) go here
 */
 
-$(document).ready(function() {
+(function($) {
+
+    'use strict';
 
     $('#rankingDatepicker').daterangepicker({
         timePicker: true,
@@ -13,23 +15,36 @@ $(document).ready(function() {
         console.log(start.toISOString(), end.toISOString(), label);
     });
 
-    var table = $('#rankingTable');
+        var initTableWithSearch = function() {
+            var table = $('#rankingTable');
 
-        var settings = {
-            "sDom": "<'table-responsive't><'row'<p i>>",
-            "destroy": true,
-            "autoWidth" : false,
-            "scrollCollapse": true,
-            "oLanguage": {
-                "sLengthMenu": "_MENU_ ",
-                "sInfo": "Showing <b>_START_ to _END_</b> of _TOTAL_ entries"
-            },
-            "iDisplayLength": 5
-        };
+            var settings = {
+              "sDom": "<'table-responsive't><'row'<p i>>",
+              "destroy": true,
+              "scrollCollapse": true,
+              "oLanguage": {
+                  "sLengthMenu": "",
+                  "sInfo": ""
+              },
+              "iDisplayLength": 6
+            };
 
-        table.dataTable(settings);
 
-});
+
+            table.dataTable(settings);
+
+            // search box for table
+            $('#tableUser-cari').keyup(function() {table.fnFilter($(this).val());});
+            $('#tableUser input[type=checkbox]').click(function() {
+                if ($(this).is(':checked')) {
+                    $(this).closest('tr').addClass('selected');
+                } else {
+                    $(this).closest('tr').removeClass('selected');
+                }
+
+            });
+        }
+        initTableWithSearch();
 
 var json = [
       {
@@ -68,3 +83,4 @@ nv.addGraph(function() {
 
   return chart;
 });
+})(window.jQuery);
