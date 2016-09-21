@@ -710,18 +710,18 @@
 				zoomTo(x, y, z, 600);
 			});
 
-			// Mousewheel
-			// $('.mapplic-layer', this.el).bind('mousewheel DOMMouseScroll', function(event, delta) {
-			// 	event.preventDefault();
-			//
-			// 	var scale = self.scale;
-			// 	self.scale = normalizeScale(scale + scale * delta/5);
-			//
-			// 	self.x = normalizeX(self.x - (event.pageX - self.container.offset().left - self.x) * (self.scale/scale - 1));
-			// 	self.y = normalizeY(self.y - (event.pageY - self.container.offset().top - self.y) * (self.scale/scale - 1));
-			//
-			// 	moveTo(self.x, self.y, self.scale, 100);
-			// });
+		//	Mousewheel
+			$('.mapplic-layer', this.el).bind('mousewheel DOMMouseScroll', function(event, delta) {
+				event.preventDefault();
+
+				var scale = self.scale;
+				self.scale = normalizeScale(scale + scale * delta/5);
+
+				self.x = normalizeX(self.x - (event.pageX - self.container.offset().left - self.x) * (self.scale/scale - 1));
+				self.y = normalizeY(self.y - (event.pageY - self.container.offset().top - self.y) * (self.scale/scale - 1));
+
+				moveTo(self.x, self.y, self.scale, 100);
+			});
 
 			// Touch support
 			if (!('ontouchstart' in window || 'onmsgesturechange' in window)) return true;

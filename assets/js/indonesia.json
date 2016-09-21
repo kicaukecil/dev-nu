@@ -1,6 +1,6 @@
 {
-	"mapwidth":"1600",
-	"mapheight":"1000",
+	"mapwidth":"1000",
+	"mapheight":"500",
 	"categories":[
 
 	],
@@ -323,6 +323,6 @@
 		}
 	],
 	"minimap":"false",
-	"sidebar":"true",
+	"sidebar":"false",
 	"zoomlimit":"3"
 }

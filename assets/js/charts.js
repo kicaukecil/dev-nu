@@ -58,7 +58,7 @@
                 graph: graph
             });
 
-            // Update the graph with realtime data. 
+            // Update the graph with realtime data.
             setInterval(function() {
                 random.removeData(seriesData);
                 random.addData(seriesData);
@@ -444,7 +444,7 @@
 
         }
 
-        // Renders a line chart 
+        // Renders a line chart
         var drawSparklineLine = function() {
             $("#sparkline-line").sparkline([0, 10, 8, 20, 15, 10, 15, 5], {
                 type: 'line',

@@ -19,7 +19,7 @@
             minimap: false,
             //locations: true,
             //deeplinking: false,
-            // fullscreen: true,
+            fullscreen: false,
             hovertip: false,
             //maxscale: 4,
             //animate: true
