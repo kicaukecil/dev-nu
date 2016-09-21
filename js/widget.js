@@ -48,18 +48,29 @@
 
 var json = [
       {
-        "label": "Shares",
-        "value" : 60
+        "label": "Laki - Laki",
+        "value" : 5783
       } ,
       {
-        "label": "Likes",
-        "value" : 20
+        "label": "Perempuan",
+        "value" : 4613
       } ,
-      {
-        "label": "Comments",
-        "value" : 20
-      }
     ];
+
+    var json2 = [
+          {
+            "label": "Perkumpulan NU",
+            "value" : 783
+          } ,
+          {
+            "label": "Yayasan",
+            "value" : 613
+          } ,
+          {
+            "label": "Boarding School",
+            "value" : 13
+          } ,
+        ];
 
 nv.addGraph(function() {
   var chart = nv.models.pieChart()
@@ -80,6 +91,14 @@ nv.addGraph(function() {
 
     d3.select(".nv-legendWrap")
   		.attr("transform", "translate(-30,330)");
+
+      d3.select("#nvd3-pie-status svg")
+          .datum(json2)
+          .transition().duration(350)
+          .call(chart);
+
+      d3.select(".nv-legendWrap")
+    		.attr("transform", "translate(-30,330)");
 
   return chart;
 });
