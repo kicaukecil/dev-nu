@@ -124,7 +124,7 @@ nv.addGraph(function() {
 		    $.Pages.getColor('menu'),
 		    $.Pages.getColor('primary')
 		])
-      .tooltipContent(function(key, y, e, graph) { return '<div><p class="key font-montserrat hint-text">'+key+'</p><p class="value semi-bold">'+y+'</p></div>' });
+      .tooltipContent(function(key, y, e, graph) { return '<div><p class="key font-montserrat hint-text">'+key+'</p><p class="value semi-bold">'+y+'</p>'+d.value+'</div>' });
 
     d3.select("#nvd3-pie svg")
         .datum(json)
@@ -148,7 +148,7 @@ nv.addGraph(function() {
 
 (function() {
 
-    d3.json('http://revox.io/json/charts.json', function(data) {
+    d3.json('js/charts.json', function(data) {
 
         var container = '.widget-15-chart';
 
