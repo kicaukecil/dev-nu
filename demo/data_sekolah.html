@@ -96,21 +96,72 @@
                         <h4>Filter Data</h4>
                         <form>
                           <div class="row clearfix">
-
+                              <div class="col-md-6">
+                                <div class="form-group form-group-default  ">
+                                  <label>Nama Satuan Pendidikan</label>
+                                  <input type="Nama" class="form-control" >
+                                </div>
+                              </div>
+                              <div class="col-md-6">
                               <div class="form-group form-group-default  ">
-                                <label>Nama Satauan Pendidikan</label>
+                                <label>Nomor Induk Sekolah / Madrasah</label>
                                 <input type="Nama" class="form-control" >
                               </div>
-
-                            <div class="form-group form-group-default  ">
-                              <label>Nomor Induk Sekolah / Madrasah</label>
-                              <input type="Nama" class="form-control" >
+                              </div>
                             </div>
+                            <div class="row clearfix">
+                              <div class="col-md-6">
 
-                              <div class="form-group form-group-default">
-                                <label>Alamat Satauan Pendidikan</label>
-                                <input class="form-control" ="" type="text">
-                                </div>
+                                  <div class="form-group form-group-default">
+                                    <label>Alamat Satuan Pendidikan</label>
+                                    <input class="form-control" ="" type="text">
+                                    </div>
+                              </div>
+                              <div class="col-md-6">
+
+                                  <div class="form-group form-group-default">
+                                    <label>Tahun Pembukaan</label>
+                                    <input class="form-control" ="" type="text">
+                                    </div>
+                              </div>
+                          </div>
+                          <div class="row clearfix">
+                            <div class="col-sm-3">
+                              <div class="form-group form-group-default form-group-default-select2 ">
+                                <label>Terintegrasi Pesantren</label>
+                                <select class="full-width" placeholder="" multiple data-init-plugin="select2">
+                                  <option>Ya</option>
+                                  <option>Tidak</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-3">
+                              <div class="form-group form-group-default form-group-default-select2 ">
+                                <label>Status Koneksi Internet</label>
+                                <select class="full-width" placeholder="" multiple data-init-plugin="select2">
+                                  <option>Ada</option>
+                                  <option>Tidak Ada</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-3">
+                              <div class="form-group form-group-default form-group-default-select2 ">
+                                <label>Mapel Aswaja dan Ke-NU-an</label>
+                                <select class="full-width" placeholder="" multiple data-init-plugin="select2">
+                                  <option>Ada</option>
+                                  <option>Tidak Ada</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-3">
+                              <div class="form-group form-group-default form-group-default-select2 ">
+                                <label>Tempat Praktek</label>
+                                <select class="full-width" placeholder="" multiple data-init-plugin="select2">
+                                  <option>Milik Sendiri</option>
+                                  <option>Kerja Sama</option>
+                                </select>
+                              </div>
+                            </div>
                           </div>
                           <div class="row clearfix">
                             <div class="col-sm-4">
@@ -230,7 +281,7 @@
 
                           </div>
                           <div class="row clearfix">
-                            <div class="col-sm-8">
+                            <div class="col-sm-6">
 
                               <label>Status Badan Hukum</label>
                               <div class="radio radio-success"  style="margin-top:1px;">
@@ -244,16 +295,20 @@
                                 </div>
                               </div>
                           </div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-6">
                               <label>Waktu Penyelengaran</label>
                               <div class="radio radio-success"  style="margin-top:1px;">
-                                <div class="col-xs-6">
+                                <div class="col-xs-4">
                                   <input class="ng-untouched ng-valid ng-dirty" value="pagi" name="optionyes" id="pagi" ng-model="work_.gender" type="radio" checked="checked">
                                   <label for="pagi">Pagi</label>
                                 </div>
-                                <div class="col-xs-6">
+                                <div class="col-xs-4">
                                   <input class="ng-untouched ng-valid ng-dirty ng-valid-parse"  value="siang" name="optionyes" id="siang" ng-model="work_.gender" type="radio">
                                   <label for="siang">Siang</label>
+                                </div>
+                                <div class="col-xs-4">
+                                  <input class="ng-untouched ng-valid ng-dirty ng-valid-parse"  value="siang" name="optionyes" id="siang" ng-model="work_.gender" type="radio">
+                                  <label for="siang">Kombinasi</label>
                                 </div>
                               </div>
                             </div>
@@ -293,14 +348,27 @@
 
                       <th style="width:20%">Nama Satuan Pendidikan</th>
                       <th style="width:19%;">Nomor Induk</th>
-                      <th style="width:20%;">Status</th>
                       <th style="width:15%;">Bentuk</th>
+                      <th style="width:15%;">Terintegrasi Dengan Pesantren</th>
+                      <th style="width:10%;">Tahun Pembukaan Sekolah</th>
                       <th style="width:10%;">Alamat</th>
                       <th style="width:10%;">Provinsi</th>
                       <th style="width:10%;">Kabupaten / Kotamadya</th>
                       <th style="width:10%;">Kecamatan</th>
                       <th style="width:10%;">Nomor Telepon</th>
+                      <th style="width:10%;">Nomor Faksimili</th>
+                      <th style="width:10%;">E-mail</th>
+                      <th style="width:10%;">Website</th>
                       <th style="width:10%;">Kode Pos</th>
+                      <th style="width:10%;">Tempat Praktek</th>
+                      <th style="width:10%;">Status Koneksi Internet</th>
+                      <th style="width:10%;">Mapel Aswaja dan Ke-NU-an</th>
+                      <th style="width:10%;">Klasifikasi Geografis</th>
+                      <th style="width:10%;">Nomor Registrasi Maarif</th>
+                      <th style="width:10%;">Nama Kepala Sekolah/Madrasah</th>
+                      <th style="width:10%;">Nomor Handphone</th>
+                      <th style="width:10%;">Status Akreditasi</th>
+                      <th style="width:10%;">Nomor SK Akreditasi Terakhir</th>
                       <th style="width:10%;">Nomor SK Pendirian</th>
                       <th style="width:10%;">Tanggal SK Pendirian</th>
                       <th class="sorting-non" style="width:1.5%;">Dokumen SK Pendirian</th>
@@ -341,11 +409,15 @@
                       <td class="v-align-middle">
                         <p>123445777234566432</p>
                       </td>
-                      <td class="v-align-middle semi-bold">
-                        <p>A</p>
-                      </td>
+
                       <td class="v-align-middle">
                         <p>MTs</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ya</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>1990</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Jl. Darma Bakti No. 43</p>
@@ -363,7 +435,43 @@
                         <p>(024) 334 993</p>
                       </td>
                       <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif@maarifnu.or.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif.sch.id</p>
+                      </td>
+                      <td class="v-align-middle">
                         <p>50275</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Kerja Sama</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Perkotaan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>01019876-A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>KH. Shiradjuddin</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>08761928378</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Akreditasi A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>161/BAP-SM/LPG/XXI/2014</p>
                       </td>
                       <td class="v-align-middle">
                         SK.00523.12331.21
@@ -446,11 +554,15 @@
                       <td class="v-align-middle">
                         <p>123445777234566432</p>
                       </td>
-                      <td class="v-align-middle semi-bold">
-                        <p>A</p>
-                      </td>
+
                       <td class="v-align-middle">
                         <p>MTs</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ya</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>1993</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Jl. Darma Bakti No. 43</p>
@@ -468,7 +580,43 @@
                         <p>(024) 334 993</p>
                       </td>
                       <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif@maarifnu.or.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif.sch.id</p>
+                      </td>
+                      <td class="v-align-middle">
                         <p>50275</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Kerja Sama</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Perkotaan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>01019876-A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>KH. Shiradjuddin</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>08761928378</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Akreditasi A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>161/BAP-SM/LPG/XXI/2014</p>
                       </td>
                       <td class="v-align-middle">
                         SK.00523.12331.21
@@ -551,11 +699,15 @@
                       <td class="v-align-middle">
                         <p>123445777234566432</p>
                       </td>
-                      <td class="v-align-middle semi-bold">
-                        <p>A</p>
-                      </td>
+
                       <td class="v-align-middle">
                         <p>MTs</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ya</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>1997</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Jl. Darma Bakti No. 43</p>
@@ -573,7 +725,43 @@
                         <p>(024) 334 993</p>
                       </td>
                       <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif@maarifnu.or.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif.sch.id</p>
+                      </td>
+                      <td class="v-align-middle">
                         <p>50275</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Milik Sendiri</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Perkotaan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>01019876-A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>KH. Shiradjuddin</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>08761928378</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Akreditasi A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>161/BAP-SM/LPG/XXI/2014</p>
                       </td>
                       <td class="v-align-middle">
                         SK.00523.12331.21
@@ -656,11 +844,15 @@
                       <td class="v-align-middle">
                         <p>123445777234566432</p>
                       </td>
-                      <td class="v-align-middle semi-bold">
-                        <p>A</p>
-                      </td>
+
                       <td class="v-align-middle">
                         <p>MTs</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ya</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>1995</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Jl. Darma Bakti No. 43</p>
@@ -678,7 +870,43 @@
                         <p>(024) 334 993</p>
                       </td>
                       <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif@maarifnu.or.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif.sch.id</p>
+                      </td>
+                      <td class="v-align-middle">
                         <p>50275</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Kerja Sama</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Pedesaan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>01019876-A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>KH. Shiradjuddin</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>08761928378</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Akreditasi A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>161/BAP-SM/LPG/XXI/2014</p>
                       </td>
                       <td class="v-align-middle">
                         SK.00523.12331.21
@@ -761,11 +989,15 @@
                       <td class="v-align-middle">
                         <p>123445777234566432</p>
                       </td>
-                      <td class="v-align-middle semi-bold">
-                        <p>A</p>
-                      </td>
+
                       <td class="v-align-middle">
                         <p>MTs</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ya</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>1999</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Jl. Darma Bakti No. 43</p>
@@ -783,7 +1015,43 @@
                         <p>(024) 334 993</p>
                       </td>
                       <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif@maarifnu.or.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif.sch.id</p>
+                      </td>
+                      <td class="v-align-middle">
                         <p>50275</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Milik Sendiri</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Perkotaan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>01019876-A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>KH. Shiradjuddin</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>08761928378</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Akreditasi A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>161/BAP-SM/LPG/XXI/2014</p>
                       </td>
                       <td class="v-align-middle">
                         SK.00523.12331.21

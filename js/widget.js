@@ -108,10 +108,6 @@ var json = [
             "label": "Yayasan",
             "value" : 613
           } ,
-          {
-            "label": "Boarding School",
-            "value" : 13
-          } ,
         ];
 
 nv.addGraph(function() {
@@ -124,7 +120,7 @@ nv.addGraph(function() {
 		    $.Pages.getColor('menu'),
 		    $.Pages.getColor('primary')
 		])
-      .tooltipContent(function(key, y, e, graph) { return '<div><p class="key font-montserrat hint-text">'+key+'</p><p class="value semi-bold">'+y+'</p>'+d.value+'</div>' });
+      .tooltipContent(function(key, y, e, graph) { return '<div><p class="key font-montserrat hint-text">'+key+'</p><p class="value semi-bold">'+y+d.value+'</p> </div>' });
 
     d3.select("#nvd3-pie svg")
         .datum(json)
