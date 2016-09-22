@@ -7,6 +7,18 @@
 
     'use strict';
 
+//     var provinsi = new Bloodhound({
+//       datumTokenizer: Bloodhound.tokenizers.whitespace,
+//       queryTokenizer: Bloodhound.tokenizers.whitespace,
+//       prefetch: 'js/provinsi.json'
+//     });
+//
+// $('.sample-typehead').typeahead(null, {
+//       name: 'provinsi',
+//       source: provinsi
+//     });
+
+
     $('#rankingDatepicker').daterangepicker({
         timePicker: true,
         timePickerIncrement: 30,
@@ -44,48 +56,8 @@
 
             });
         }
-        var initPaiCart1 = function() {
-
-          var json = [
-                {
-                  "label": "Perkumpulan NU",
-                  "value" : 60
-                } ,
-                {
-                  "label": "Yayasan",
-                  "value" : 40
-                }
-
-              ];
-
-          nv.addGraph(function() {
-            var chart = nv.models.pieChart()
-                .x(function(d) { return d.label })
-                .y(function(d) { return d.value })
-                .showLabels(false)
-                .color([
-          		    $.Pages.getColor('info'),
-          		    // $.Pages.getColor('menu')
-          		    $.Pages.getColor('warning')
-          		])
-                .tooltipContent(function(key, y, e, graph) { return '<div><p class="key font-montserrat hint-text">'+key+'</p><p class="value semi-bold">'+y+'</p></div>' });
-
-              d3.select("#nvd3-pie svg")
-                  .datum(json)
-                  .transition().duration(350)
-                  .call(chart);
-
-              d3.select(".nv-legendWrap")
-            		.attr("transform", "translate(-30,330)");
-
-            return chart;
-          });
-
-
-        }
 
         initTableWithSearch();
-        initPaiCart1();
 
 
 var json = [
@@ -95,7 +67,7 @@ var json = [
       } ,
       {
         "label": "Perempuan",
-        "value" : 4613
+        "value" : 6532
       } ,
     ];
 
@@ -107,40 +79,32 @@ var json = [
           {
             "label": "Yayasan",
             "value" : 613
-          } ,
-          {
-            "label": "Boarding School",
-            "value" : 13
-          } ,
+          }
         ];
 
 nv.addGraph(function() {
   var chart = nv.models.pieChart()
       .x(function(d) { return d.label })
       .y(function(d) { return d.value })
-      .showLabels(true)
+      .showLabels(false)
       .color([
 		    $.Pages.getColor('complete'),
-		    $.Pages.getColor('menu'),
-		    $.Pages.getColor('primary')
+		    $.Pages.getColor('menu')
 		])
-      .tooltipContent(function(key, y, e, graph) { return '<div><p class="key font-montserrat hint-text">'+key+'</p><p class="value semi-bold">'+y+'</p>'+d.value+'</div>' });
+      .tooltipContent(function(x, y, e, graph) { return '<div><p class="key font-montserrat hint-text">'+x+'</p><p class="value semi-bold">'+y+'</p></div>' });
 
     d3.select("#nvd3-pie svg")
-        .datum(json)
-        .transition().duration(350)
-        .call(chart);
-
-    d3.select(".nv-legendWrap")
-  		.attr("transform", "translate(-30,330)");
-
-      d3.select("#nvd3-pie-status svg")
-          .datum(json2)
-          .transition().duration(350)
-          .call(chart);
-
-      d3.select(".nv-legendWrap")
-    		.attr("transform", "translate(-30,330)");
+      .datum(json)
+      .transition().duration(350)
+      .call(chart);
+    d3.select("#nvd3-pie-status svg")
+      .datum(json2)
+      .transition().duration(350)
+      .call(chart);
+    d3.select("#nvd3-pie .nv-legendWrap")
+      .attr("transform", "translate(-30,330)");
+    d3.select("nvd3-pie-status .nv-legendWrap")
+    	.attr("transform", "translate(-30,330)");
 
   return chart;
 });

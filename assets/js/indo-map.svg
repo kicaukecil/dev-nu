@@ -13,14 +13,14 @@
 	 opacity:0.6;
 	 }
 	 svg .ocean{
-	 	fill : #FAFAFA;
+	 	fill : transparent;
 	 }
 	 svg .border{
 	 	fill: #7C7C7C;
 	 }
 
 	 svg a .country {
-	 	fill: #cce08f;
+	 	fill: #99C297;
 	 	opacity: 1;
 	 	transition: opacity .15s;
 	 }

@@ -13,21 +13,22 @@
         // Apply mapplic plugin
         $('#mapplic').mapplic({
             source: 'assets/js/indonesia.json',
-            height: '500px',
-            search: false,
+            height: 500,
             sidebar: false,
             minimap: false,
             locations: true,
             deeplinking: true,
-            fullscreen: true,
-            hovertip: false,
-            maxscale: 1,
-            animate: true
+            fullscreen: false,
+            developer: false,
+            hovertip:false,
+            maxscale: 1
+            //animate: true
         });
-
         // Resets map to default zoom
         $('.clear-map').click(function() {
             $('.mapplic-clear-button').trigger('click');
+            $('.mapplic-tooltip-close').trigger('click');
+
         });
 
         // Load country list into select2

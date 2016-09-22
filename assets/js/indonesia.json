@@ -1,6 +1,6 @@
 {
-	"mapwidth":"1000",
-	"mapheight":"500",
+	"mapwidth":"1600",
+	"mapheight":"1000",
 	"categories":[
 
 	],
@@ -14,306 +14,306 @@
 					{
 						"id":"ID-JT",
 						"title":"Jawa Tengah",
-						"description":"<strong>JT</strong> Jawa Tengah",
+						"description":"Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 						"action": "tooltip",
-						"pin": "marker green",
+						"pin": "marker yellow",
 						"x":"0.3233100",
 						"y":"0.68444"
 					},
 					{
 							"id":"ID-AC",
 							"title":"Aceh",
-							"description":"<strong>AC</strong> Aceh",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.0400000",
 							"y":"0.28111"
 					},
 					{
 							"id":"ID-JI",
 							"title":"Jawa Timur",
-							"description":"<strong>JI</strong> Jawa Timur",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.3733100",
 							"y":"0.69444"
 					},
 					{
 							"id":"ID-SN",
 							"title":"Sulawesi Selatan",
-							"description":"<strong>JI</strong> Sulawesi Selatan",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.5371200",
 							"y":"0.56444"
 					},
 					{
 							"id":"ID-BA",
 							"title":"Bali",
-							"description":"<strong>BA</strong> Bali",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.4332",
 							"y":"0.71444"
 					},
 					{
 							"id":"ID-BB",
 							"title":"Bangka Belitung",
-							"description":"<strong>BB</strong> Bangka Belitung",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.23312",
 							"y":"0.501231"
 					},
 					{
 							"id":"ID-BE",
 							"title":"Bengkulu",
-							"description":"<strong>BB</strong> Bengkulu",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.16312",
 							"y":"0.56123"
 					},
 					{
 							"id":"ID-BT",
 							"title":"Banten",
-							"description":"<strong>BT</strong> Banten",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.24312",
 							"y":"0.65123"
 					},
 					{
 							"id":"ID-GO",
 							"title":"Gorontalo",
-							"description":"<strong>BB</strong> Gorontalo",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.59312",
 							"y":"0.41123"
 					},
 					{
 							"id":"ID-JA",
 							"title":"Jambi",
-							"description":"<strong>JA</strong> Jambi",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.16312",
 							"y":"0.49123"
 					},
 					{
 							"id":"ID-KR",
 							"title":"Kepulauan Riau",
-							"description":"<strong>KR</strong> Kepulauan Riau",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.20312",
 							"y":"0.43123"
 					},
 					{
 							"id":"ID-JK",
 							"title":"Jakarta",
-							"description":"<strong>JK</strong> Jakarta",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.25312",
 							"y":"0.64123"
 					},
 					{
 							"id":"ID-KB",
 							"title":"Kalimatan Barat",
-							"description":"<strong>KB</strong> Kalimatan Barat",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.34312",
 							"y":"0.44123"
 					},
 					{
 							"id":"ID-KI",
 							"title":"Kalimatan Timur",
-							"description":"<strong>KI</strong> Kalimatan Timur",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.46312",
 							"y":"0.42123"
 					},
 					{
 							"id":"ID-KU",
 							"title":"Kalimatan Utara",
-							"description":"<strong>KU</strong> Kalimatan Utara",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.46312",
 							"y":"0.32123"
 					},
 					{
 							"id":"ID-KT",
 							"title":"Kalimatan Tengah",
-							"description":"<strong>JA</strong> Kalimatan Tengah",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.39312",
 							"y":"0.49123"
 					},
 					{
 							"id":"ID-KS",
 							"title":"Kalimatan Selatan",
-							"description":"<strong>JA</strong> Kalimatan Selatan",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.44312",
 							"y":"0.54123"
 					},
 					{
 							"id":"ID-YO",
 							"title":"Yogyakarta",
-							"description":"<strong>YO</strong> Yogyakarta",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.33331",
 							"y":"0.70444"
 					},
 					{
 							"id":"ID-JB",
 							"title":"Jawa Barat",
-							"description":"<strong>JB</strong> Jawa Barat",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.27312",
 							"y":"0.67123"
 					},
 					{
 							"id":"ID-SU",
 							"title":"Sumatra Utara",
-							"description":"<strong>SU</strong> Sumatra Utara",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.09",
 							"y":"0.36111"
 					},
 					{
 							"id":"ID-SB",
 							"title":"Sumatra Barat",
-							"description":"<strong>SB</strong> Sumatra Barat",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.12",
 							"y":"0.45111"
 					},
 					{
 							"id":"ID-RI",
 							"title":"Riau",
-							"description":"<strong>RI</strong> Riau",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.14",
 							"y":"0.42111"
 					},
 					{
 							"id":"ID-SS",
 							"title":"Sumatra Selatan",
-							"description":"<strong>SS</strong> Sumatra Selatan",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.20",
 							"y":"0.55111"
 					},
 					{
 							"id":"ID-LA",
 							"title":"Lampung",
-							"description":"<strong>LA</strong> Lampung",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.22",
 							"y":"0.60111"
 					},
 					{
 							"id":"ID-NB",
 							"title":"Nusa Tenggara Barat",
-							"description":"<strong>NB</strong> Nusa Tenggara Barat",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.476",
 							"y":"0.73444"
 					},
 					{
 							"id":"ID-NT",
 							"title":"Nusa Tenggara Timur",
-							"description":"<strong>NT</strong> Nusa Tenggara Timur",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.556",
 							"y":"0.72444"
 					},
 					{
 							"id":"ID-MA",
 							"title":"Maluku",
-							"description":"<strong>MA</strong> Maluku",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.736",
 							"y":"0.53444"
 					},
 					{
 							"id":"ID-MU",
 							"title":"Maluku Utara",
-							"description":"<strong>MU</strong> Maluku Utara",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.706",
 							"y":"0.41444"
 					},
 					{
 							"id":"ID-PB",
 							"title":"Papua Barat",
-							"description":"<strong>PB</strong> Papua Barat",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.806",
 							"y":"0.48444"
 					},
 					{
 							"id":"ID-PA",
 							"title":"Papua",
-							"description":"<strong>PA</strong> Papua",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.906",
 							"y":"0.56444"
 					},
 					{
 							"id":"ID-SR",
 							"title":"Sulawesi Barat",
-							"description":"<strong>SR</strong> Sulawesi Barat",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.51912",
 							"y":"0.52444"
 					},
 					{
 							"id":"ID-SA",
 							"title":"Sulawesi Utara",
-							"description":"<strong>SA</strong> Sulawesi Utara",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.62912",
 							"y":"0.40444"
 					},
 					{
 							"id":"ID-SG",
 							"title":"Sulawesi Tenggara",
-							"description":"<strong>SG</strong> Sulawesi Tenggara",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.57612",
 							"y":"0.56444"
 					},
 					{
 							"id":"ID-ST",
 							"title":"Sulawesi Tengah",
-							"description":"<strong>ST</strong> Sulawesi Tengah",
+							"description": "Jumlah satuan pendidikan:<br> <strong class='text-success'>723</strong><br><br>Jumlah peserta didik pendidikan:<br> <strong class='text-success'>12021</strong><br><br>Jumlah tenaga pendik:<br> <strong class='text-success'>5021</strong>",
 							"action": "tooltip",
-							"pin": "marker green",
+							"pin": "marker yellow",
 							"x":"0.54912",
 							"y":"0.48444"
 					}
@@ -324,5 +324,5 @@
 	],
 	"minimap":"false",
 	"sidebar":"false",
-	"zoomlimit":"3"
+	"zoomlimit":"1"
 }
