@@ -92,305 +92,277 @@
           </div>
           <div id="main-dash" class="container-fluid container-fixed-lg p-t-25">
             <div class="row m-b-20">
-              <div class="col-md-8 p-r-10">
-                <div class="row">
-                  <div class="col-md-12">
-                    <!-- START WIDGET D3 widget_graphWidget-->
-                    <div class="widget-12 panel no-border widget-loader-circle no-margin">
-                      <div class="row">
-                        <div class="col-xlg-8 ">
-                          <div class="panel-heading pull-up top-right ">
-                            <div class="panel-controls">
-                              <ul>
-                                <li class="hidden-xlg">
-                                  <div class="dropdown">
-                                    <a data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-                                      <i class="portlet-icon portlet-icon-settings"></i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right" role="menu">
-                                      <li><a href="#">AAPL</a>
-                                      </li>
-                                      <li><a href="#">YHOO</a>
-                                      </li>
-                                      <li><a href="#">GOOG</a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </li>
-                                <li>
-                                  <a data-toggle="refresh" class="portlet-refresh text-black" href="#"><i class="portlet-icon portlet-icon-refresh"></i></a>
-                                </li>
-                              </ul>
-                            </div>
+              <div class="col-md-12">
+                <div class="panel no-border panel-default no-margin widget-loader-circle">
+                    <div class="panel-heading p-l-30 p-t-30 p-r-30">
+                      <div class="pull-left">
+                        <div class="panel-title">Tabel Rasio Tenaga Pendidik
                           </div>
-                        </div>
+
                       </div>
-                      <div class="panel-body">
-                        <div class="row">
-                          <div class="col-xlg-8 ">
-                            <div class="p-l-10">
-                              <h2 class="pull-left">Apple Inc.</h2>
-                              <h2 class="pull-left m-l-50 text-danger">
-							<span class="bold">448.97</span>
-							<span class="text-danger fs-12">-318.24</span>
-						</h2>
-                              <div class="clearfix"></div>
-                              <div class="full-width">
-                                <ul class="list-inline">
-                                  <li><a href="#" class="font-montserrat text-master">1D</a>
-                                  </li>
-                                  <li class="active"><a href="#" class="font-montserrat  bg-master-light text-master">5D</a>
-                                  </li>
-                                  <li><a href="#" class="font-montserrat text-master">1M</a>
-                                  </li>
-                                  <li><a href="#" class="font-montserrat text-master">1Y</a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="nvd3-line line-chart text-center" data-x-grid="false">
-                                <svg></svg>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xlg-4 visible-xlg">
-                            <div class="widget-12-search">
-                              <p class="pull-left">Company
-                                <span class="bold">List</span>
-                              </p>
-                              <button class="btn btn-default btn-xs pull-right">
-                                <span class="bold">+</span>
-                              </button>
-                              <div class="clearfix"></div>
-                              <input type="text" placeholder="Search list" class="form-control m-t-5">
-                            </div>
-                            <div class="company-stat-boxes">
-                              <div data-index="0" class="company-stat-box m-t-15 active padding-20 bg-master-lightest">
-                                <div>
-                                  <button type="button" class="close" data-dismiss="modal">
-                                    <i class="pg-close fs-12"></i>
-                                  </button>
-                                  <p class="company-name pull-left text-uppercase bold no-margin">
-                                    <span class="fa fa-circle text-success fs-11"></span> AAPL
-                                  </p>
-                                  <small class="hint-text m-l-10">Yahoo Inc.</small>
-                                  <div class="clearfix"></div>
-                                </div>
-                                <div class="m-t-10">
-                                  <p class="pull-left small hint-text no-margin p-t-5">9:42AM ET</p>
-                                  <div class="pull-right">
-                                    <p class="small hint-text no-margin inline">37.73</p>
-                                    <span class=" label label-important p-t-5 m-l-5 p-b-5 inline fs-12">+ 0.09</span>
-                                  </div>
-                                  <div class="clearfix"></div>
-                                </div>
-                              </div>
-                              <div data-index="1" class="company-stat-box m-t-15  padding-20 bg-master-lightest">
-                                <div>
-                                  <button type="button" class="close" data-dismiss="modal">
-                                    <i class="pg-close fs-12"></i>
-                                  </button>
-                                  <p class="company-name pull-left text-uppercase bold no-margin">
-                                    <span class="fa fa-circle text-primary fs-11"></span> YHOO
-                                  </p>
-                                  <small class="hint-text m-l-10">Yahoo Inc.</small>
-                                  <div class="clearfix"></div>
-                                </div>
-                                <div class="m-t-10">
-                                  <p class="pull-left small hint-text no-margin p-t-5">9:42AM ET</p>
-                                  <div class="pull-right">
-                                    <p class="small hint-text no-margin inline">37.73</p>
-                                    <span class=" label label-success p-t-5 m-l-5 p-b-5 inline fs-12">+ 0.09</span>
-                                  </div>
-                                  <div class="clearfix"></div>
-                                </div>
-                              </div>
-                              <div data-index="2" class="company-stat-box m-t-15  padding-20 bg-master-lightest">
-                                <div>
-                                  <button type="button" class="close" data-dismiss="modal">
-                                    <i class="pg-close fs-12"></i>
-                                  </button>
-                                  <p class="company-name pull-left text-uppercase bold no-margin">
-                                    <span class="fa fa-circle text-complete fs-11"></span> GOOG
-                                  </p>
-                                  <small class="hint-text m-l-10">Yahoo Inc.</small>
-                                  <div class="clearfix"></div>
-                                </div>
-                                <div class="m-t-10">
-                                  <p class="pull-left small hint-text no-margin p-t-5">9:42AM ET</p>
-                                  <div class="pull-right">
-                                    <p class="small hint-text no-margin inline">37.73</p>
-                                    <span class=" label label-success p-t-5 m-l-5 p-b-5 inline fs-12">+ 0.09</span>
-                                  </div>
-                                  <div class="clearfix"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                        <div class="input-prepend input-group pull-right col-sm-4">
+                            <input type="text" style="width: 100%" name="reservation" id="rankingDatepicker" class="form-control" value="08/01/2013 1:00 PM - 08/01/2013 1:30 PM" />
                         </div>
-                      </div>
+                        <div class="clearfix"></div>
                     </div>
-                    </template>
-                    <!-- END WIDGET -->
-                  </div>
+                    <div class="p-l-30 p-r-30 p-b-30">
+                        <table class="table table-hover " id="rankingTable">
+                            <thead>
+                                <tr>
+                                    <th class="hint-text fs-11 col-xs-4">Satuan Pendidikan</th>
+                                    <th class="hint-text fs-11">Peserta Didik</th>
+                                    <th class="hint-text fs-11">Pengajar</th>
+                                    <th class="hint-text fs-11">Ruang Kelas</th>
+                                    <th class="hint-text fs-11">Rasio Pengajar</th>
+                                    <th class="hint-text fs-11">Rasio Ruang Kelas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>MTs Al-Iklas</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>763</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>37</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>18</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 42 <i class="pg-arrow_down text-danger"></i></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>MAN 4 Surabaya</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1102</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>38</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>28</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 29 <i class="pg-arrow_down text-danger"></i></p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 39 <i class="pg-arrow_up text-success"></i></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>MAN 1 Surabaya</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1102</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>38</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>28</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 29 <i class="pg-arrow_down text-danger"></i></p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 39 <i class="pg-arrow_up text-success"></i></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>MAN 6 Surabaya</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1102</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>38</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>28</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 29 <i class="pg-arrow_down text-danger"></i></p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 39 <i class="pg-arrow_up text-success"></i></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>MAN 4 Surabaya</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1102</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>38</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>28</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 29 <i class="pg-arrow_down text-danger"></i></p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 39 <i class="pg-arrow_up text-success"></i></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>MTs Al-Iman</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>763</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>37</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>18</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 42 <i class="pg-arrow_down text-danger"></i></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>MTs Al-Iklas</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>763</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>37</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>18</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 42 <i class="pg-arrow_down text-danger"></i></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>MTs Al-Iklas</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>763</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>37</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>18</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 42 <i class="pg-arrow_down text-danger"></i></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>MTs Al-Iman</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>763</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>37</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>18</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 42 <i class="pg-arrow_down text-danger"></i></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>MTs Al-Iman</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>763</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>37</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>18</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 42 <i class="pg-arrow_down text-danger"></i></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>MTs Al-Iman</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>655</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>24</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>18</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 42 <i class="pg-arrow_down text-danger"></i></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>MTs Al-Iman</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>743</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>23</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>12</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1 : 42 <i class="pg-arrow_down text-danger"></i></p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-lg-4 hidden-xlg p-l-10">
-                <!-- START WIDGET widget_tableWidgetBasic-->
-                <div class="widget-11-2 panel no-border panel-condensed no-margin widget-loader-circle">
-                  <div class="panel-heading top-right">
-                    <div class="panel-controls">
-                      <ul>
-                        <li><a data-toggle="refresh" class="portlet-refresh text-black" href="#"><i
-							class="portlet-icon portlet-icon-refresh"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="padding-25">
-                    <div class="pull-left">
-                      <h2 class="text-success no-margin">webarch</h2>
-                      <p class="no-margin">Today's sales</p>
-                    </div>
-                    <h3 class="pull-right semi-bold"><sup>
-				<small class="semi-bold">$</small>
-			</sup> 102,967
-			</h3>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="auto-overflow widget-11-2-table">
-                    <table class="table table-condensed table-hover">
-                      <tbody>
-                        <tr>
-                          <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
-                          <td class="text-right hidden-lg">
-                            <span class="hint-text small">dewdrops</span>
-                          </td>
-                          <td class="text-right b-r b-dashed b-grey col-lg-3">
-                            <span class="hint-text small">Qty 1</span>
-                          </td>
-                          <td class="col-lg-3">
-                            <span class="font-montserrat fs-18">$27</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
-                          <td class="text-right hidden-lg">
-                            <span class="hint-text small">dewdrops</span>
-                          </td>
-                          <td class="text-right b-r b-dashed b-grey col-lg-3">
-                            <span class="hint-text small">Qty 1</span>
-                          </td>
-                          <td class="col-lg-3">
-                            <span class="font-montserrat fs-18">$27</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
-                          <td class="text-right hidden-lg">
-                            <span class="hint-text small">dewdrops</span>
-                          </td>
-                          <td class="text-right b-r b-dashed b-grey col-lg-3">
-                            <span class="hint-text small">Qty 1</span>
-                          </td>
-                          <td class="col-lg-3">
-                            <span class="font-montserrat fs-18">$27</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
-                          <td class="text-right hidden-lg">
-                            <span class="hint-text small">dewdrops</span>
-                          </td>
-                          <td class="text-right b-r b-dashed b-grey col-lg-3">
-                            <span class="hint-text small">Qty 1</span>
-                          </td>
-                          <td class="col-lg-3">
-                            <span class="font-montserrat fs-18">$27</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
-                          <td class="text-right hidden-lg">
-                            <span class="hint-text small">dewdrops</span>
-                          </td>
-                          <td class="text-right b-r b-dashed b-grey col-lg-3">
-                            <span class="hint-text small">Qty 1</span>
-                          </td>
-                          <td class="col-lg-3">
-                            <span class="font-montserrat fs-18">$27</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
-                          <td class="text-right hidden-lg">
-                            <span class="hint-text small">dewdrops</span>
-                          </td>
-                          <td class="text-right b-r b-dashed b-grey col-lg-3">
-                            <span class="hint-text small">Qty 1</span>
-                          </td>
-                          <td class="col-lg-3">
-                            <span class="font-montserrat fs-18">$27</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
-                          <td class="text-right hidden-lg">
-                            <span class="hint-text small">dewdrops</span>
-                          </td>
-                          <td class="text-right b-r b-dashed b-grey col-lg-3">
-                            <span class="hint-text small">Qty 1</span>
-                          </td>
-                          <td class="col-lg-3">
-                            <span class="font-montserrat fs-18">$27</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
-                          <td class="text-right hidden-lg">
-                            <span class="hint-text small">dewdrops</span>
-                          </td>
-                          <td class="text-right b-r b-dashed b-grey col-lg-3">
-                            <span class="hint-text small">Qty 1</span>
-                          </td>
-                          <td class="col-lg-3">
-                            <span class="font-montserrat fs-18">$27</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
-                          <td class="text-right hidden-lg">
-                            <span class="hint-text small">dewdrops</span>
-                          </td>
-                          <td class="text-right b-r b-dashed b-grey col-lg-3">
-                            <span class="hint-text small">Qty 1</span>
-                          </td>
-                          <td class="col-lg-3">
-                            <span class="font-montserrat fs-18">$27</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="font-montserrat all-caps fs-12 col-lg-6">Purchase CODE #2345</td>
-                          <td class="text-right hidden-lg">
-                            <span class="hint-text small">dewdrops</span>
-                          </td>
-                          <td class="text-right b-r b-dashed b-grey col-lg-3">
-                            <span class="hint-text small">Qty 1</span>
-                          </td>
-                          <td class="col-lg-3">
-                            <span class="font-montserrat fs-18">$27</span>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="padding-25">
-                    <p class="small no-margin">
-                      <a href="#"><i class="fa fs-16 fa-arrow-circle-o-down text-success m-r-10"></i></a>
-                      <span class="hint-text ">Show more details of APPLE . INC</span>
-                    </p>
-                  </div>
-                </div>
-                <!-- END WIDGET -->
               </div>
               <div class="col-md-6 hidden-lg visible-md visible-xlg col-xlg-4 m-b-10">
                 <!-- START WIDGET D3 widget_stackedBarWidget-->
