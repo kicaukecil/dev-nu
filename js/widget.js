@@ -156,8 +156,8 @@ nv.addGraph(function() {
             [],
             []
         ];
-        var random = new Rickshaw.Fixtures.RandomData(40);
-        for (var i = 0; i < 40; i++) {
+        var random = new Rickshaw.Fixtures.RandomData(4);
+        for (var i = 0; i < 4; i++) {
             random.addData(seriesData);
         }
 
@@ -172,11 +172,6 @@ nv.addGraph(function() {
                 data: seriesData[0],
                 color: $.Pages.getColor('complete-light'),
                 name: "New users"
-            }, {
-                data: seriesData[1],
-                color: $.Pages.getColor('master-lighter'),
-                name: "Returning users"
-
             }]
 
         });
