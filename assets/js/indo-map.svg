@@ -13,7 +13,7 @@
 	 opacity:0.6;
 	 }
 	 svg .ocean{
-	 	fill : transparent;
+	 	fill : #FAFAFA;
 	 }
 	 svg .border{
 	 	fill: #7C7C7C;
@@ -29,7 +29,7 @@
 	 	opacity: 0.5;
 	 }
 	 </style>
-<rect id="Ocean" x="600" y="-299.754" class="ocean" width="1600" height="1000"/>
+<!-- <rect id="Ocean" x="600" y="-299.754" class="ocean" width="1600" height="1000"/> -->
 <g>
 <a xlink:href="#ID-AC">
 	<path id="ID-AC" class="country" d="M685.479,65.971l-0.338,0.199l-1.411-2.166l-2.484-2.663l-1.947-0.914l-1.172-0.199

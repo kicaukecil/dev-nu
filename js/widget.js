@@ -4,19 +4,15 @@
 */
 
 (function($) {
+  var body = document.body,
+  html = document.documentElement;
+var height = Math.max( body.scrollHeight, body.offsetHeight,
+                 html.clientHeight, html.scrollHeight, html.offsetHeight );
+  $('[id=ID-]').animate({
+  scrollTop: height/3 - window.innerHeight/2
+  }, 200);
 
     'use strict';
-
-//     var provinsi = new Bloodhound({
-//       datumTokenizer: Bloodhound.tokenizers.whitespace,
-//       queryTokenizer: Bloodhound.tokenizers.whitespace,
-//       prefetch: 'js/provinsi.json'
-//     });
-//
-// $('.sample-typehead').typeahead(null, {
-//       name: 'provinsi',
-//       source: provinsi
-//     });
 
 
     $('#rankingDatepicker').daterangepicker({
@@ -35,8 +31,39 @@
               "destroy": true,
               "scrollCollapse": true,
               "oLanguage": {
-                  "sLengthMenu": "",
-                  "sInfo": ""
+                  "sLengthMenu": "_MENU_ ",
+                  "sInfo": "<span>Jumlah data perhalaman: </span><div class='btn-group' data-toggle='buttons'>\
+                    <label class='btn btn-success btn-xs active'>\
+                      <input type='radio' value='10' name='options' id='perpage1' checked> 10\
+                    </label>\
+                    <label class='btn btn-success btn-xs'>\
+                      <input type='radio' value='20' name='options' id='perpage2'> 20\
+                    </label>\
+                    <label class='btn btn-success btn-xs'>\
+                      <input type='radio' value='50' name='options' id='perpage3'> 50\
+                    </label>\
+                    <label class='btn btn-success btn-xs'>\
+                      <input type='radio' value='100' name='options' id='perpage3'> 100\
+                    </label>\
+                  </div>\
+                  <span>Ditemukan _TOTAL_ data.</span>",
+                  "sInfoFiltered":"<span>Jumlah data perhalaman: </span><div class='btn-group' data-toggle='buttons'>\
+                    <label class='btn btn-success btn-xs active'>\
+                      <input type='radio' value='10' name='options' id='perpage1' checked> 10\
+                    </label>\
+                    <label class='btn btn-success btn-xs'>\
+                      <input type='radio' value='20' name='options' id='perpage2'> 20\
+                    </label>\
+                    <label class='btn btn-success btn-xs'>\
+                      <input type='radio' value='50' name='options' id='perpage3'> 50\
+                    </label>\
+                    <label class='btn btn-success btn-xs'>\
+                      <input type='radio' value='100' name='options' id='perpage3'> 100\
+                    </label>\
+                  </div>\
+                  <span>Ditemukan _TOTAL_ data.</span>",
+                  "sInfoEmpty":"",
+                  "sZeroRecords":"Data tidak ditemukan"
               },
               "iDisplayLength": 5
             };

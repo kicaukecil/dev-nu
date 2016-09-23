@@ -18,6 +18,9 @@
     <link href="assets/plugins/rickshaw/rickshaw.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" media="screen">
     <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/plugins/jquery-datatable/media/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/datatables-responsive/css/datatables.responsive.css" rel="stylesheet" type="text/css" media="screen" />
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
     <link class="main-stylesheet" href="assets/css/style.css" rel="stylesheet" type="text/css" />
 
@@ -86,9 +89,9 @@
                           </div>
 
                       </div>
-                        <div class="input-prepend input-group pull-right col-sm-4">
+                        <!-- <div class="input-prepend input-group pull-right col-sm-4">
                             <input type="text" style="width: 100%" name="reservation" id="rankingDatepicker" class="form-control" value="08/01/2013 1:00 PM - 08/01/2013 1:30 PM" />
-                        </div>
+                        </div> -->
                         <div class="clearfix"></div>
                     </div>
                     <div class="p-l-30 p-r-30 p-b-30">
@@ -98,8 +101,9 @@
                                     <th class="hint-text fs-11 col-xs-4">Satuan Pendidikan</th>
                                     <th class="hint-text fs-11">Peserta Didik</th>
                                     <th class="hint-text fs-11">Pengajar</th>
-                                    <th class="hint-text fs-11">Ruang Kelas</th>
                                     <th class="hint-text fs-11">Rasio Pengajar</th>
+                                    <th class="hint-text fs-11">Rombongan Belajar</th>
+                                    <th class="hint-text fs-11">Ruang Kelas</th>
                                     <th class="hint-text fs-11">Rasio Ruang Kelas</th>
                                 </tr>
                             </thead>
@@ -115,10 +119,13 @@
                                         <p>37</p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>18</p>
+                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
+                                        <p>34</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>18</p>
                                     </td>
                                     <td class="v-align-middle">
                                         <p>1 : 42 <i class="pg-arrow_down text-danger"></i></p>
@@ -135,10 +142,13 @@
                                         <p>38</p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>28</p>
+                                        <p>1 : 29 <i class="pg-arrow_down text-danger"></i></p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>1 : 29 <i class="pg-arrow_down text-danger"></i></p>
+                                        <p>37</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>28</p>
                                     </td>
                                     <td class="v-align-middle">
                                         <p>1 : 39 <i class="pg-arrow_up text-success"></i></p>
@@ -155,10 +165,13 @@
                                         <p>38</p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>28</p>
+                                        <p>1 : 29 <i class="pg-arrow_down text-danger"></i></p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>1 : 29 <i class="pg-arrow_down text-danger"></i></p>
+                                        <p>32</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>28</p>
                                     </td>
                                     <td class="v-align-middle">
                                         <p>1 : 39 <i class="pg-arrow_up text-success"></i></p>
@@ -175,10 +188,13 @@
                                         <p>38</p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>28</p>
+                                        <p>1 : 29 <i class="pg-arrow_down text-danger"></i></p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>1 : 29 <i class="pg-arrow_down text-danger"></i></p>
+                                        <p>34</i></p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>28</p>
                                     </td>
                                     <td class="v-align-middle">
                                         <p>1 : 39 <i class="pg-arrow_up text-success"></i></p>
@@ -195,10 +211,13 @@
                                         <p>38</p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>28</p>
+                                        <p>1 : 29 <i class="pg-arrow_down text-danger"></i></p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>1 : 29 <i class="pg-arrow_down text-danger"></i></p>
+                                        <p>32</i></p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>28</p>
                                     </td>
                                     <td class="v-align-middle">
                                         <p>1 : 39 <i class="pg-arrow_up text-success"></i></p>
@@ -215,10 +234,13 @@
                                         <p>37</p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>18</p>
+                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
+                                        <p>45</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>18</p>
                                     </td>
                                     <td class="v-align-middle">
                                         <p>1 : 42 <i class="pg-arrow_down text-danger"></i></p>
@@ -235,10 +257,13 @@
                                         <p>37</p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>18</p>
+                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
+                                        <p>42</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>18</p>
                                     </td>
                                     <td class="v-align-middle">
                                         <p>1 : 42 <i class="pg-arrow_down text-danger"></i></p>
@@ -255,10 +280,13 @@
                                         <p>37</p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>18</p>
+                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
+                                        <p>42</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>18</p>
                                     </td>
                                     <td class="v-align-middle">
                                         <p>1 : 42 <i class="pg-arrow_down text-danger"></i></p>
@@ -275,10 +303,13 @@
                                         <p>37</p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>18</p>
+                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
+                                        <p>42</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>18</p>
                                     </td>
                                     <td class="v-align-middle">
                                         <p>1 : 42 <i class="pg-arrow_down text-danger"></i></p>
@@ -295,10 +326,13 @@
                                         <p>37</p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>18</p>
+                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
+                                        <p>42</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>18</p>
                                     </td>
                                     <td class="v-align-middle">
                                         <p>1 : 42 <i class="pg-arrow_down text-danger"></i></p>
@@ -315,10 +349,13 @@
                                         <p>24</p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>18</p>
+                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
+                                        <p>42</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>18</p>
                                     </td>
                                     <td class="v-align-middle">
                                         <p>1 : 42 <i class="pg-arrow_down text-danger"></i></p>
@@ -335,10 +372,13 @@
                                         <p>23</p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>12</p>
+                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
                                     </td>
                                     <td class="v-align-middle">
-                                        <p>1 : 20 <i class="pg-arrow_up text-success"></i></p>
+                                        <p>42</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>12</p>
                                     </td>
                                     <td class="v-align-middle">
                                         <p>1 : 42 <i class="pg-arrow_down text-danger"></i></p>
@@ -764,7 +804,46 @@
     <script type="text/javascript" src="assets/plugins/bootstrap-select2/select2.min.js"></script>
     <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
     <script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
+    <!-- <script src="assets/plugins/mapplic/js/mapplic.js"></script> -->
+
+    <script src="assets/plugins/nvd3/lib/d3.v3.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/nv.d3.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/utils.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/tooltip.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/interactiveLayer.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/models/axis.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/models/line.js" type="text/javascript"></script>
+    <script src="assets/plugins/nvd3/src/models/lineWithFocusChart.js" type="text/javascript"></script>
+    <script src="assets/plugins/mapplic/js/hammer.js"></script>
+    <script src="assets/plugins/mapplic/js/jquery.mousewheel.js"></script>
     <script src="assets/plugins/mapplic/js/mapplic.js"></script>
+    <script src="assets/plugins/rickshaw/rickshaw.min.js"></script>
+    <script src="assets/plugins/jquery-metrojs/MetroJs.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/skycons/skycons.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <!-- <script src="assets/js/icon.js" type="text/javascript"></script> -->
+
+    <script src="assets/plugins/moment/moment.min.js"></script>
+    <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="assets/plugins/jquery-datatable/media/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-datatable/media/js/dataTables.bootstrap.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/plugins/datatables-responsive/js/datatables.responsive.js"></script>
+    <script type="text/javascript" src="assets/plugins/datatables-responsive/js/lodash.min.js"></script>
+
+
+
+    <!-- BEGIN CORE TEMPLATE JS
+<script src="assets/js/scripts.js" type="text/javascript"></script>
+  -->
+    <script src="../js/canvasjs.min.js"></script>
+    <script src="pages/js/pages.js"></script>
+    <!-- END CORE TEMPLATE JS -->
+    <!-- BEGIN PAGE LEVEL JS -->
+
+
     <!-- END VENDOR JS -->
     <!-- BEGIN CORE TEMPLATE JS -->
     <script src="pages/js/pages.min.js"></script>
@@ -772,6 +851,9 @@
     <!-- END CORE TEMPLATE JS -->
     <!-- BEGIN PAGE LEVEL JS -->
     <script src="assets/js/scripts.js" type="text/javascript"></script>
-    <!-- END PAGE LEVEL JS -->
+
+
+    <script src="assets/js/tables.js"></script>
+    <script src="../js/widget.js"></script>
   </body>
 </html>
