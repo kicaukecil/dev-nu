@@ -57,6 +57,47 @@
     background-color: transparent;
   }
   </style>
+  <script type="text/javascript">
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer",
+	{
+		theme: "theme1",
+		data: [
+		{
+			type: "pie",
+			showInLegend: true,
+			toolTipContent: "{y} - #percent %",
+			yValueFormatString: "#",
+			legendText: "{y}"+" "+"{indexLabel}",
+			dataPoints: [
+				{  y: 48153, indexLabel: "Laki-Laki" },
+				{  y: 27553, indexLabel: "Perempuan" },
+			]
+		}
+		]
+	});
+  chart.render();
+  var chart = new CanvasJS.Chart("chartContainer2",
+	{
+		theme: "theme1",
+		data: [
+		{
+			type: "pie",
+			showInLegend: true,
+			toolTipContent: "{y} - #percent %",
+			yValueFormatString: "#",
+			legendText: "{y}"+" "+"{indexLabel}",
+			dataPoints: [
+				{  y: 18153, indexLabel: "Yayasan" },
+				{  y: 7553, indexLabel: "Jamiah NU" },
+			]
+		}
+		]
+	});
+	chart.render();
+}
+	</script>
+  <script src="js/canvasjs.min.js"></script>
   </head>
   <body class="fixed-header dashboard sm-gutter">
     <!-- START PAGE-CONTAINER -->
@@ -596,15 +637,13 @@
                                           <div class="panel-title">Status Badan Hukum</div>
                                         </div>
                                         <div class="panel-body p-t-30">
-                                            <div id="nvd3-pie-status" class="text-center">
-                                                <svg style="width:100%;height:400px; margin:0 auto"></svg>
-                                            </div>
+                                            <div id="chartContainer2" style="height: 400px; width: 100%;"></div>
                                         </div>
                                     </div>
                 <!-- END WIDGET -->
               </div>
               <div class="col-md-4 m-b-10">
-                <div class="widget-15 panel panel-condensed  no-margin no-border widget-loader-circle">
+                <div class="widget-15 panel panel-condensed  no-margin no-border ">
               		<div class="panel-heading">
               			<div class="panel-controls">
               				<ul>
@@ -653,18 +692,10 @@
               			<div class="p-t-20 p-l-20 p-r-20 p-b-30">
               				<div class="row">
               					<div class="col-md-9">
-              						<p class="fs-16 text-black">Apple’s Motivation - Innovation
-              							<br>distinguishes between A leader and a follower.
-              						</p>
 
-              						<p class="small hint-text">VIA Apple Store (Consumer and Education Individuals)
-              							<br>(800) MY-APPLE (800-692-7753)
-              						</p>
               					</div>
               					<div class="col-md-3 text-right">
-              						<p class="font-montserrat bold text-success m-r-20 fs-16">+0.94</p>
-
-              						<p class="font-montserrat bold text-danger m-r-20 fs-16">-0.63</p>
+              						s
               					</div>
               				</div>
               			</div>
@@ -680,9 +711,7 @@
                                           <div class="panel-title">Jenis Kelamin Peserta Didik</div>
                                         </div>
                                         <div class="panel-body p-t-30">
-                                            <div id="nvd3-pie" class="text-center">
-                                                <svg style="width:100%;height:400px; margin:0 auto"></svg>
-                                            </div>
+                                            <div id="chartContainer" style="height: 400px; width: 100%;"></div>
                                         </div>
                                     </div>
                 <!-- END WIDGET -->
