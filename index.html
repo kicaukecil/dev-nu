@@ -61,7 +61,7 @@ window.onload = function () {
 		{
 			type: "pie",
 			showInLegend: true,
-			toolTipContent: "{y} - #percent %",
+			toolTipContent: "{y} {indexLabel} - #percent %",
 			yValueFormatString: "#",
 			legendText: "{y}"+" "+"{indexLabel}",
 			dataPoints: [
@@ -79,12 +79,12 @@ window.onload = function () {
 		{
 			type: "pie",
 			showInLegend: true,
-			toolTipContent: "{y} - #percent %",
+			toolTipContent: "{y} {indexLabel} - #percent %",
 			yValueFormatString: "#",
 			legendText: "{y}"+" "+"{indexLabel}",
 			dataPoints: [
-				{  y: 18153, indexLabel: "Yayasan" },
-				{  y: 7553, indexLabel: "Perkumpulan NU" },
+				{  y: 18153, indexLabel: "Perkumpulan NU" },
+				{  y: 7553, indexLabel: "Yayasan" },
 			]
 		}
 		]
@@ -94,21 +94,23 @@ window.onload = function () {
     {
 
       animationEnabled: true,
-
-      legend: {
-        verticalAlign: "bottom",
-        horizontalAlign: "center"
-      },
       theme: "theme1",
       data: [
       {
         type: "column",
 
+        showInLegend: false,
+        indexLabel: "{y}",
+        legendText: "{y}"+" Akreditasi "+"{Label}",
+        toolTipContent: "Akreditasi {label} - {y} Sekolah",
+
+        indexLabelPlacement: "outside",
+        indexLabelOrientation: "horizontal",
         dataPoints: [
-        {y: 2975, label: "Akreditasi A"},
-        {y: 2670,  label: "Akreditasi B" },
-        {y: 1752,  label: "Akreditasi C"},
-        {y: 1545,  label: "TT (Tidak Terakreditasi)"},
+        {y: 2375, label: "A"},
+        {y: 2970,  label: "B" },
+        {y: 1752,  label: "C"},
+        {y: 1545,  label: "TT"},
         ]
       }
       ]
