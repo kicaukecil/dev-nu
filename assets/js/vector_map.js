@@ -21,8 +21,8 @@
             fullscreen: false,
             developer: false,
             hovertip:false,
-            maxscale: 1
-            //animate: true
+            maxscale: 1,
+            animate: true
         });
         // Resets map to default zoom
         $('.clear-map').click(function() {
