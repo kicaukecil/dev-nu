@@ -26,7 +26,7 @@
     <link href="assets/plugins/datatables-responsive/css/datatables.responsive.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
-    <link class="main-stylesheet" href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <!-- <link class="main-stylesheet" href="assets/css/style.css" rel="stylesheet" type="text/css" /> -->
     <!--[if lte IE 9]>
 	<link href="assets/plugins/codrops-dialogFx/dialog.ie.css" rel="stylesheet" type="text/css" media="screen" />
 	<![endif]-->
@@ -41,23 +41,23 @@
     <!-- add sidebar -->
     <script src="menu.js"></script>
 
-    <div class="page-container ">
+    <div class="page-container">
+      <div class="page-content-wrapper ">
         <div class="content">
 
-          <!-- add Header  -->
+          <!--  Header  -->
           <script type="text/javascript">
             header('Data Kantor Cabang');
           </script>
+          <!-- end Header -->
 
           <div class="container-fluid container-fixed-lg p-t-20">
-
             <div class="row">
-
-              <div class="table-responsive">
-              <div class="panel panel-transparent">
+              <div class="table-responsive ">
+                <div class="panel panel-transparent">
                 <div class="panel-heading">
                   <div class="panel-title">
-                    <a href="input_kantor_cabang.html" class="btn btn-success" style="color:#fff;"><i class="fa fa-plus"></i> Tambah Kantor Cabang</a>
+                    <a href="input_kantor_cabang.html" class="btn btn-success" style="color:#fff;"><i class="fa fa-plus"></i>Tambah Kantor Cabang</a>
                   </div>
                   <div class="pull-right">
                     <div class="col-xs-12 no-padding">
@@ -115,7 +115,7 @@
                               <div class="col-sm-4">
                                 <div class="form-group form-group-default form-group-default-select2 ">
                                   <label>Provinsi</label>
-                                  <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
+                                  <select class="full-width" data-init-plugin="select2" multiple="">
                                       <option value="AK">Jakarta </option>
                                       <option value="CA">Jawa Barat</option>
                                       <option value="NV">Jawa Tengah</option>
@@ -129,7 +129,7 @@
                               <div class="col-sm-4">
                                 <div class="form-group form-group-default form-group-default-select2 ">
                                   <label>Kota / Kabupaten</label>
-                                  <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
+                                  <select class="full-width" data-init-plugin="select2" multiple="">
                                     <optgroup label="DKI Jakarta">
                                       <option value="AK">Jakarta Pusat</option>
                                       <option value="HI">Jakarta Barat</option>
@@ -167,7 +167,7 @@
                   </div>
                 </div>
                 <div class="panel-body">
-                  <table class="table table-hover demo-table-search  " id="tableUser">
+                  <table class="table table-hover demo-table-search bg-white" id="tableUser" >
                     <thead>
                       <tr>
                         <th class="sorting-non far-sticky-col" style="width:1%;" ><button class="btn clickDelete"><i class="pg-trash"></i>
