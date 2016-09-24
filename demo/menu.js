@@ -61,9 +61,6 @@ document.write('\
         <li class="">\
           <a href="input_sekolah.html">Buat Satuan Pendidikan</a>\
         </li>\
-        <li class="">\
-          <a href="import.html">Impor</a>\
-        </li>\
       </ul>\
     </li>\
     <li class="">\
@@ -76,9 +73,6 @@ document.write('\
         <li class="">\
           <a href="input_tenaga_kerja.html">Buat Tenaga Kerja</a>\
         </li>\
-        <li class="">\
-          <a href="import.html#tab2naker">Impor</a>\
-        </li>\
       </ul>\
     </li>\
     <li class="">\
@@ -90,9 +84,6 @@ document.write('\
         </li>\
         <li class="">\
           <a href="input_murid.html">Buat Peserta Didik</a>\
-        </li>\
-        <li class="">\
-          <a href="import.html#tab2pesertadidik">Impor</a>\
         </li>\
       </ul>\
     </li>\
