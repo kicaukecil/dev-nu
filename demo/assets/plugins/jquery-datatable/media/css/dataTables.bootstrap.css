@@ -1,7 +1,7 @@
 table.dataTable {
   clear: both;
-  margin-top: 6px !important;
-  margin-bottom: 6px !important;
+  /*margin-top: 6px !important;
+  margin-bottom: 6px !important;*/
   max-width: none !important;
 }
 table.dataTable td,
@@ -30,6 +30,11 @@ div.dataTables_wrapper div.dataTables_length select {
 }
 div.dataTables_wrapper div.dataTables_filter {
   text-align: right;
+  display: none;
+}
+div.dataTables_wrapper div.dataTables_length {
+
+  display: none;
 }
 div.dataTables_wrapper div.dataTables_filter label {
   font-weight: normal;
@@ -44,6 +49,7 @@ div.dataTables_wrapper div.dataTables_filter input {
 div.dataTables_wrapper div.dataTables_info {
   padding-top: 8px;
   white-space: nowrap;
+  /*display: none;*/
 }
 div.dataTables_wrapper div.dataTables_paginate {
   margin: 0;
