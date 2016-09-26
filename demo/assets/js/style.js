@@ -105,7 +105,7 @@
     // }
 
     var initTableWithSearch = function() {
-        var table = $('#tableUser');
+        var table = $('#example');
 
         var settings = {
             "sDom": "<'table-responsive't><'row'<p i>>",
