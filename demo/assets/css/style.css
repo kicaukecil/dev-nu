@@ -204,6 +204,7 @@ display: inherit;
     font-size: 18px;
     line-height: 20px;
 }
+
 @media (max-width: 991px) {
 
   /*header area*/

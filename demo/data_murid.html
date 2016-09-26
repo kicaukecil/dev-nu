@@ -33,28 +33,10 @@
   </head>
   <body class=" menu-pin">
     <!-- BEGIN SIDEBPANEL-->
-    <nav class="page-sidebar" data-pages="sidebar">
-      <!-- BEGIN SIDEBAR MENU TOP TRAY CONTENT-->
-      <div class="sidebar-overlay-slide from-top" id="appMenu">
-      </div>
-      <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
-      <!-- BEGIN SIDEBAR MENU HEADER-->
-      <div class="sidebar-header" style="padding-left: 70px; height: auto">
-        <img src="logo.png" alt="logo" data-src="logo.png" width="110" height="110">
-        <a href="javascript:;" class="closeSidebar"><i class="pg-close_line"></i></a>
-      </div>
-      <!-- END SIDEBAR MENU HEADER-->
-      <!-- START SIDEBAR MENU -->
-      <div class="sidebar-menu" style="padding-top: 10px">
-        <!-- BEGIN SIDEBAR MENU ITEMS-->
 
       <script src="menu.js"></script>
 
-        <div class="clearfix"></div>
-      </div>
-      <!-- END SIDEBAR MENU -->
-    </nav>
-    <!-- END SIDEBAR -->
+
     <!-- END SIDEBPANEL-->
     <!-- START PAGE-CONTAINER -->
     <div class="page-container ">
@@ -70,7 +52,7 @@
           </script>
           <!-- END JUMBOTRON -->
           <!-- START CONTAINER FLUID -->
-          <div class="container-fluid container-fixed-lg p-t-20">
+          <div class="container-fluid container-fixed-lg p-t-20 m-b-20">
             <!-- BEGIN PlACE PAGE CONTENT HERE -->
             <div class="table-responsive bg-white">
             <div class="panel panel-transparent">
@@ -84,9 +66,9 @@
                   </div>
                 </div>
                 <div class="pull-right">
-                  <div class="col-xs-12">
+                  <!-- <div class="col-xs-12">
                     <input id="tableUser-cari" class="form-control pull-right" placeholder="Cari data" type="text">
-                  </div>
+                  </div> -->
                 </div>
                 <div class="clearfix"></div>
                 <div class="panel-group filter-warrp m-t-20" id="accordion" role="tablist" aria-multiselectable="true">
@@ -112,12 +94,28 @@
                           </div>
                           <div class="row clearfix">
                             <div class="col-sm-3">
-                              <div class="form-group form-group-default ">
+                              <div class="form-group form-group-default form-group-default-select2">
                                 <label>Kelas</label>
-                                <input type="Nama" class="form-control" >
+                                <select class="full-width " placeholder="" data-init-plugin="select2" multiple>
+                                  <optgroup label="DKI Jakarta">
+                                    <option value="AK">Satuan Pendidikan A</option>
+                                    <option value="HI">Satuan Pendidikan D</option>
+                                    <option value="HI">Satuan Pendidikan C</option>
+                                  </optgroup>
+                                  <optgroup label="Jawa Barat">
+                                    <option value="CA">Satuan Pendidikan E</option>
+                                    <option value="NV">Satuan Pendidikan G</option>
+                                  </optgroup>
+                                  <optgroup label="Jawa Timur">
+                                    <option value="AZ">Satuan Pendidikan M</option>
+                                    <option value="CO">Satuan Pendidikan K</option>
+                                    <option value="ID">Satuan Pendidikan T</option>
+                                    <option value="MT">Satuan Pendidikan Q</option>
+                                  </optgroup>
+                                </select>
                               </div>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-6">
                               <div class="form-group form-group-default form-group-default-select2">
                                 <label>Nama Satuan Pendidikan</label>
                                 <select class="full-width " placeholder="" data-init-plugin="select2" multiple>
@@ -139,12 +137,7 @@
                                 </select>
                               </div>
                             </div>
-                            <div class="col-sm-3">
-                              <div class="form-group form-group-default">
-                                <label>Prestasi</label>
-                                <input type="Nama" class="form-control" >
-                              </div>
-                            </div>
+
                             <div class="col-sm-3">
                               <div class="form-group form-group-default">
                                 <label>Tahun Pelajaran</label>
@@ -169,6 +162,17 @@
                                     </div>
                                   </div>
                             </div>
+                            <div class="col-sm-4">
+                                <label>Prestasi</label>
+                                <div class="row clearfix">
+                                  <div class="radio radio-success">
+                                      <input value="ada" name="prestasi" id="ada" type="radio">
+                                      <label for="laki-laki">Ada</label>
+                                      <input checked="checked" value="tidak" name="prestasi" id="tidak" type="radio">
+                                      <label for="perempuan">Tidak</label>
+                                    </div>
+                                  </div>
+                            </div>
                           </div>
                           <div class="row clearfix">
                             <div class="col-sm-4">
@@ -189,10 +193,10 @@
                 <table class="table table-hover " id="tableUser">
                   <thead>
                     <tr>
-                      <th class="sorting-non  " ><button class="btn clickDelete"><i class="pg-trash"></i>
+                      <th class="sorting-non"><button class="btn clickDelete"><i class="pg-trash"></i>
                       </button></th>
-                      <th> Nama Lengkap</th>
-                      <th> Nomor Induk</th>
+                      <th>Nama Lengkap</th>
+                      <th>Nomor Induk Siswa</th>
                       <th>Jenis Kelamin</th>
                       <th>Kelas</th>
                       <th>Nama Sekolah</th>
