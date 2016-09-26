@@ -328,6 +328,7 @@
     Pages.prototype.initSelect2Plugin = function() {
         $.fn.select2 && $('[data-init-plugin="select2"]').each(function() {
             $(this).select2({
+                placeholder: "Select a state",
                 minimumResultsForSearch: ($(this).attr('data-disable-search') == 'true' ? -1 : 1)
             }).on('select2-opening', function() {
                 $.fn.scrollbar && $('.select2-results').scrollbar({

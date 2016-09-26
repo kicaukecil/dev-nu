@@ -146,6 +146,7 @@
                 "sInfoEmpty":"",
                 "sZeroRecords":"Data tidak ditemukan"
             },
+            "scrollX":false,
             "iDisplayLength": 8 //jumlah data tampil per page
         };
 

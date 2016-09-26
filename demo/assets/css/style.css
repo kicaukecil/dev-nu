@@ -16,6 +16,7 @@
 ::-webkit-scrollbar {
     display: none;
 }
+#example th, #example td{white-space: nowrap;}
 
 .page-sidebar .sidebar-menu{
   height: auto;
