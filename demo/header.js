@@ -89,8 +89,6 @@ document.write('\
         <li><a href="users.html"><i class="fa fa-users"></i> Kepengurusan</a></li>\
           <li><a href="pengaturan_akun.html"><i class="pg-settings_small"></i> Pengaturan</a>\
           </li>\
-          <li><a href="#"><i class="pg-signals"></i> Pusat bantuan</a>\
-          </li>\
           <li class="bg-master-lighter">\
             <a href="#" class="clearfix">\
               <span class="pull-left">Keluar</span>\

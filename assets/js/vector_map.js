@@ -18,10 +18,10 @@
             minimap: false,
             locations: true,
             deeplinking: true,
-            fullscreen: false,
+            fullscreen: true,
             developer: false,
             hovertip:false,
-            maxscale: 1,
+            maxscale: 4,
             animate: true
         });
         // Resets map to default zoom

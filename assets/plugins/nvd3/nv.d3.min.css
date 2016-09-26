@@ -104,7 +104,11 @@ svg {
     user-select: none;
     display: block;
     width: 100%;
+<<<<<<< HEAD
     /*height: 350px;*/
+=======
+    /*height: 350px; custum */ 
+>>>>>>> 499fda5b8d3128f1e549b54a8d4c8584ff8f8ab2
 }
 svg text { font: 400 12px Arial }
 svg .title { font: 700 14px Arial }
