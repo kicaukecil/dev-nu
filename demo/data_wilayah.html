@@ -38,6 +38,9 @@
   <body class=" menu-pin">
     <!-- BEGIN SIDEBPANEL-->
 
+    
+        <!-- BEGIN SIDEBAR MENU ITEMS-->
+
 
       <script src="menu.js"></script>
 
@@ -88,13 +91,15 @@
                           <h4>Filter Data</h4>
                           <form>
                             <div class="row clearfix">
-                              <div class="col-sm-6">
+                              <div class="col-sm-12">
                                 <div class="form-group    ">
                                   <label>Nama Kantor</label>
                                   <input type="Nama" class="form-control" >
                                 </div>
                               </div>
-                              <div class="col-sm-6">
+                            </div>
+                            <div class="row clearfix">
+                              <div class="col-sm-12">
                                 <div class="form-group  ">
                                   <label>Alamat</label>
                                   <input class="form-control"  type="text">
@@ -102,26 +107,7 @@
                               </div>
 
                             </div>
-                            <div class="row clearfix">
-                              <div class="col-sm-6">
-                                <div class="form-group  ">
-                                  <label>Nomor Telepon</label>
-                                  <input class="form-control"  type="text">
-                                </div>
-                              </div>
-                              <div class="col-sm-6">
-                                <div class="form-group   form-group-default-select2 ">
-                                  <label>Admin Wilayah</label>
-                                  <select class="full-width" data-init-plugin="select2" multiple="">
 
-                                    <option value="Joko">Joko</option>
-                                    <option value="Waluyo">Waluyo</option>
-                                    <option value="Indah">Indah Kurmaningsih</option>
-                                    <option value="Winda">Winda</option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
                             <div class="row clearfix">
                               <div class="col-sm-4">
                                 <div class="form-group   form-group-default-select2 ">
@@ -139,7 +125,7 @@
                               </div>
                               <div class="col-sm-4">
                                 <div class="form-group   form-group-default-select2 ">
-                                  <label>Kota / Kabupaten</label>
+                                  <label>Kabupaten / Kotamadya</label>
                                   <select class="full-width" multiple="" data-init-plugin="select2">
                                     <optgroup label="DKI Jakarta">
                                       <option value="AK">Jakarta Pusat</option>
@@ -167,6 +153,26 @@
                               </div>
                             </div>
                             <div class="row clearfix">
+                              <div class="col-sm-6">
+                                <div class="form-group  ">
+                                  <label>Nomor Telepon</label>
+                                  <input class="form-control"  type="text">
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="form-group   form-group-default-select2 ">
+                                  <label>Nama Admin Wilayah</label>
+                                  <select class="full-width" data-init-plugin="select2" multiple="">
+
+                                    <option value="Joko">Joko</option>
+                                    <option value="Waluyo">Waluyo</option>
+                                    <option value="Indah">Indah Kurmaningsih</option>
+                                    <option value="Winda">Winda</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row clearfix">
                               <div class="col-sm-4">
                                 <button type="button" class=" btn btn-success"> Filter </button><button type="button" class=" btn btn-default m-l-10"><i class=" pg-download"></i> Export </button>
                               </div>
@@ -186,11 +192,12 @@
                         </button></th>
                         <th >Nama Kantor</th>
                         <th >Alamat</th>
-                        <th >Nomor Telepon</th>
-                        <th >Admin Wilayah</th>
+
                         <th >Provinsi</th>
                         <th >Kabupaten/ Kotamadya</th>
                         <th >Kode Pos</th>
+                        <th >Nomor Telepon</th>
+                        <th >Nama Admin Wilayah</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -215,12 +222,7 @@
                         <td class="v-align-middle">
                           <p>Jl. Kulonprogo no 13</p>
                         </td>
-                        <td class="v-align-middle">
-                          <p>081726389273</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Ahmad Effendi</p>
-                        </td>
+
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
                         </td>
@@ -229,6 +231,12 @@
                         </td>
                         <td class="v-align-middle">
                           <p>15492</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
                         </td>
 
                       </tr>
@@ -253,12 +261,7 @@
                         <td class="v-align-middle">
                           <p>Jl. Kulonprogo no 13</p>
                         </td>
-                        <td class="v-align-middle">
-                          <p>081726389273</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Ahmad Effendi</p>
-                        </td>
+
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
                         </td>
@@ -267,6 +270,12 @@
                         </td>
                         <td class="v-align-middle">
                           <p>15492</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
                         </td>
 
                       </tr>
@@ -291,12 +300,7 @@
                         <td class="v-align-middle">
                           <p>Jl. Kulonprogo no 13</p>
                         </td>
-                        <td class="v-align-middle">
-                          <p>081726389273</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Ahmad Effendi</p>
-                        </td>
+
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
                         </td>
@@ -305,6 +309,12 @@
                         </td>
                         <td class="v-align-middle">
                           <p>15492</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
                         </td>
 
                       </tr>
@@ -329,12 +339,7 @@
                         <td class="v-align-middle">
                           <p>Jl. Kulonprogo no 13</p>
                         </td>
-                        <td class="v-align-middle">
-                          <p>081726389273</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Ahmad Effendi</p>
-                        </td>
+
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
                         </td>
@@ -343,6 +348,12 @@
                         </td>
                         <td class="v-align-middle">
                           <p>15492</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
                         </td>
 
                       </tr>
@@ -367,12 +378,7 @@
                         <td class="v-align-middle">
                           <p>Jl. Kulonprogo no 13</p>
                         </td>
-                        <td class="v-align-middle">
-                          <p>081726389273</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Ahmad Effendi</p>
-                        </td>
+
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
                         </td>
@@ -381,6 +387,12 @@
                         </td>
                         <td class="v-align-middle">
                           <p>15492</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
                         </td>
 
                       </tr>
@@ -405,12 +417,7 @@
                         <td class="v-align-middle">
                           <p>Jl. Kulonprogo no 13</p>
                         </td>
-                        <td class="v-align-middle">
-                          <p>081726389273</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Ahmad Effendi</p>
-                        </td>
+
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
                         </td>
@@ -419,6 +426,12 @@
                         </td>
                         <td class="v-align-middle">
                           <p>15492</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
                         </td>
 
                       </tr>
@@ -444,12 +457,7 @@
                         <td class="v-align-middle">
                           <p>Jl. Cisadane no 9</p>
                         </td>
-                        <td class="v-align-middle">
-                          <p>081726389273</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Ahmad Effendi</p>
-                        </td>
+
                         <td class="v-align-middle">
                           <p>Banten</p>
                         </td>
@@ -458,6 +466,12 @@
                         </td>
                         <td class="v-align-middle">
                           <p>15153</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
                         </td>
 
                       </tr>
@@ -482,12 +496,7 @@
                         <td class="v-align-middle">
                           <p>Jl. Cisadane no 9</p>
                         </td>
-                        <td class="v-align-middle">
-                          <p>081726389273</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Ahmad Effendi</p>
-                        </td>
+
                         <td class="v-align-middle">
                           <p>Banten</p>
                         </td>
@@ -496,6 +505,12 @@
                         </td>
                         <td class="v-align-middle">
                           <p>15153</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
                         </td>
 
                       </tr>
@@ -520,12 +535,7 @@
                         <td class="v-align-middle">
                           <p>Jl. Cisadane no 9</p>
                         </td>
-                        <td class="v-align-middle">
-                          <p>081726389273</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Ahmad Effendi</p>
-                        </td>
+
                         <td class="v-align-middle">
                           <p>Banten</p>
                         </td>
@@ -535,7 +545,12 @@
                         <td class="v-align-middle">
                           <p>15153</p>
                         </td>
-
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Ahmad Effendi</p>
+                        </td>
                       </tr>
                       <tr>
                         <td class="v-align-middle far-sticky-col">
@@ -558,12 +573,7 @@
                         <td class="v-align-middle">
                           <p>Jl. Cisadane no 9</p>
                         </td>
-                        <td class="v-align-middle">
-                          <p>081726389273</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Ahmad Effendi</p>
-                        </td>
+
                         <td class="v-align-middle">
                           <p>Banten</p>
                         </td>
@@ -573,43 +583,11 @@
                         <td class="v-align-middle">
                           <p>15153</p>
                         </td>
-
-                      </tr>
-                      <tr>
-                        <td class="v-align-middle far-sticky-col">
-                          <div class="input-group">
-                            <span class="input-group-addon">
-                              <input type="checkbox" value="1" id="checkbox1">
-                            </span>
-                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                                  <ul style="" class="dropdown-menu ">
-                                    <li><a href="#">Lihat</a></li>
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#" class="clickDelete">Hapus</a></li>
-                                  </ul>
-                              </div>
-                          </div>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>IPNU Wilayah Jawa Barat</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Jl. Kembang Wangi no 33</p>
-                        </td>
                         <td class="v-align-middle">
                           <p>081726389273</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Jarwo</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Jawa Barat</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Bandung</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>13492</p>
+                          <p>Ahmad Effendi</p>
                         </td>
 
                       </tr>
@@ -634,12 +612,7 @@
                         <td class="v-align-middle">
                           <p>Jl. Kembang Wangi no 33</p>
                         </td>
-                        <td class="v-align-middle">
-                          <p>081726389273</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Jarwo</p>
-                        </td>
+
                         <td class="v-align-middle">
                           <p>Jawa Barat</p>
                         </td>
@@ -648,6 +621,12 @@
                         </td>
                         <td class="v-align-middle">
                           <p>13492</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jarwo</p>
                         </td>
 
                       </tr>
@@ -672,12 +651,7 @@
                         <td class="v-align-middle">
                           <p>Jl. Kembang Wangi no 33</p>
                         </td>
-                        <td class="v-align-middle">
-                          <p>081726389273</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Jarwo</p>
-                        </td>
+
                         <td class="v-align-middle">
                           <p>Jawa Barat</p>
                         </td>
@@ -686,6 +660,12 @@
                         </td>
                         <td class="v-align-middle">
                           <p>13492</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jarwo</p>
                         </td>
 
                       </tr>
@@ -710,12 +690,7 @@
                         <td class="v-align-middle">
                           <p>Jl. Kembang Wangi no 33</p>
                         </td>
-                        <td class="v-align-middle">
-                          <p>081726389273</p>
-                        </td>
-                        <td class="v-align-middle">
-                          <p>Jarwo</p>
-                        </td>
+
                         <td class="v-align-middle">
                           <p>Jawa Barat</p>
                         </td>
@@ -724,6 +699,51 @@
                         </td>
                         <td class="v-align-middle">
                           <p>13492</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jarwo</p>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td class="v-align-middle far-sticky-col">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <input type="checkbox" value="1" id="checkbox1">
+                            </span>
+                            <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                                  <ul style="" class="dropdown-menu ">
+                                    <li><a href="#">Lihat</a></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#" class="clickDelete">Hapus</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>IPNU Wilayah Jawa Barat</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jl. Kembang Wangi no 33</p>
+                        </td>
+
+                        <td class="v-align-middle">
+                          <p>Jawa Barat</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Bandung</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>13492</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>081726389273</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Jarwo</p>
                         </td>
 
                       </tr>

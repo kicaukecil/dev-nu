@@ -34,16 +34,17 @@
     //$('td.far-sticky-col').height(hTd);
 
     $('#bidangKependidikan').hide();
-
+    $('#bidangPendidik').hide();
 
     $('#inputPendidik').click(function(e){
       var intPend = $(this).val();
+      if (intPend == 2){
+        $('#bidangPendidik').hide();
+        $('#bidangKependidikan').show();
+      }
       if (intPend == 1){
         $('#bidangPendidik').show();
         $('#bidangKependidikan').hide();
-      }else{
-        $('#bidangPendidik').hide();
-        $('#bidangKependidikan').show();
       }
     });
 
