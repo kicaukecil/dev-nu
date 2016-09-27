@@ -81,13 +81,13 @@
                   <div class="panel panel-transparent">
                     <div class="panel-body">
                       <form id="form-project" role="form" autocomplete="off">
-                        <h3>Formulir Tenaga Kerja Baru</h3>
+                        <h3>Formulir Tenaga Kerja</h3>
                         <div class="form-group-attached m-b-20">
                               <div class="form-group form-group-default required">
                                 <label>Nama Lengkap</label>
                                 <input type="text" class="form-control" name="nama" required>
                               </div>
-                              <div class="form-group form-group-default required">
+                              <div class="form-group form-group-default">
                                 <label>Nomor Induk Karyawan</label>
                                 <input type="text" class="form-control" name="nama" required>
                               </div>
@@ -102,39 +102,31 @@
                                 <input class="ng-untouched ng-valid ng-dirty ng-valid-parse" checked="checked" value="female" name="optionyes" id="female" ng-model="work_.gender" type="radio">
                                 <label for="female">Perempuan</label>
                               </div>
-
-
                             </div>
                             </div>
                           <div class="form-group form-group-default form-group-default-select2 required">
                             <label>Jenis Tenaga Kerja</label>
-                            <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2" id="inputPendidik">
-                              <option selected>Pilih Jenis Tenaga Kerja</option>
+                            <select class="full-width" placeholder="Pilih" data-init-plugin="select2" id="inputPendidik">
+                              <option placeholder value=""></option>
                               <option value="1">Tenaga Pendidik (Guru / Pengajar)</option>
                               <option value="2">Tenaga Kependidikan (Administrasi) dan Pendukung</option>
                             </select>
                           </div>
+                          <div id="bidangPendidik" class="form-group form-group-default">
+                            <label>Bidang Ajar (Mata Pelajaran)</label>
+                            <input  type="text" class="form-control" name="mata-pelajaran" placeholder="Contoh: Sejarah, Biologi, dan lainnya">
+                          </div>
+                          <div id="bidangKependidikan" class="form-group form-group-default">
+                            <label>Bidang Tenaga Kerja</label>
+                            <input  type="text" class="form-control" name="bidang-tenaga-kerja" placeholder="Contoh: Tata Usaha, Keamanan, Kebersihan, dan lainnya">
+                          </div>
                           <div class="form-group form-group-default form-group-default-select2 required">
                             <label>Satuan Pendidikan</label>
-                            <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2" id="inputPendidik">
-                              <option selected>Pilih Satuan Pendidikan</option>
+                            <select class="full-width" placeholder="Pilih Satuan Pendidikan" data-init-plugin="select2" id="inputPendidik">
+                              <option placeholder value=""></option>
                               <option value="1">Sekolah Terpadu Kota Banyuwangi</option>
                               <option value="2">Satuan Pendidikan A Mojokerto</option>
                               <option value="3">Madrasah Tsanawiyah 7 Jogjakarta</option>
-                            </select>
-                          </div>
-                          <div id="bidangPendidik" class="form-group form-group-default">
-                            <label>Bidang Ajar Tenaga Pendidik (Mata pelajaran)</label>
-                            <input  type="text" class="form-control" name="telepon" placeholder="">
-                          </div>
-                          <div id="bidangKependidikan" class="form-group form-group-default">
-                            <label>Bidang Tenaga Kependidikan</label>
-                            <select class="selectpicker form-control" placeholder="Pilih Kota"  >
-                              <option selected>Pilih Bidang Tenaga Kependidikan</option>
-                              <option value="sightseeing">Tata Usaha</option>
-                              <option value="business">Laboran</option>
-                              <option value="honeymoon">Staff</option>
-                              <option value="honeymoon">Penjaga Sekolah</option>
                             </select>
                           </div>
                           <div class="row clearfix">
@@ -157,18 +149,16 @@
                               </div>
                             </div>
                           </div>
-                            <div class="col-md-4">
-                              <div id="bidangPendidik" class="form-group form-group-default">
-                                <label>Tahun Pelajaran</label>
-                                <select class="selectpicker form-control" placeholder=""  >
-                                  <option selected>Pilih Tahun Pelajaran</option>
-
-                                  <option value="">2015-2016</option>
-                                  <option value="">2016-2017</option>
-
-                                </select>
-                              </div>
+                          <div class="col-sm-4">
+                            <div class="form-group form-group-default form-group-default-select2">
+                              <label>Tahun Pelajaran</label>
+                              <select class="full-width" placeholder="Pilih" data-init-plugin="select2">
+                                <option placeholder value=""></option>
+                                <option>2015-2016</option>
+                                <option>2016-2017</option>
+                              </select>
                             </div>
+                          </div>
                           </div>
                         </div>
                         <input class="btn btn-success" type="submit" value="Simpan">
