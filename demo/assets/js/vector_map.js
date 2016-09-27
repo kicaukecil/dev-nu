@@ -17,44 +17,46 @@
             search: false,
             sidebar: false,
             minimap: false,
-            //locations: true,
-            //deeplinking: false,
+            locations: true,
+            clearbutton:true,
+            deeplinking: false,
             fullscreen: false,
             hovertip: false,
-            //maxscale: 4,
-            //animate: true
+            maxscale: 4,
+            smartip:true,
+            animate: true
         });
 
         // Resets map to default zoom
-        $('.clear-map').click(function() {
-            $('.mapplic-clear-button').trigger('click');
-            $('.mapplic-tooltip-close').trigger('click');
-
-        });
+        // $('.clear-map').click(function() {
+        //     $('.mapplic-clear-button').trigger('click');
+        //     $('.mapplic-tooltip-close').trigger('click');
+        //
+        // });
 
         // Load country list into select2
-        $.getJSON('assets/js/indonesia.json', function(data) {
-            var countryList = [];
+        // $.getJSON('assets/js/indonesia.json', function(data) {
+        //     var countryList = [];
+        //
+        //     $.each(data.levels[0].locations, function(key, val) {
+        //         countryList.push({
+        //             id: val.id,
+        //             text: val.title
+        //         });
+        //     });
+        //
+        //     $("#country-list").select2({
+        //         data: countryList,
+        //         width: "240px"
+        //     });
 
-            $.each(data.levels[0].locations, function(key, val) {
-                countryList.push({
-                    id: val.id,
-                    text: val.title
-                });
-            });
-
-            $("#country-list").select2({
-                data: countryList,
-                width: "240px"
-            });
-
-        });
+        // });
 
         // jump to country on select2 change
-        $('#country-list').change(function() {
-            var sel = $('#country-list').select2('data');
-            window.location.hash = sel.id;
-        });
+        // $('#country-list').change(function() {
+        //     var sel = $('#country-list').select2('data');
+        //     window.location.hash = sel.id;
+        // });
 
     });
 })(window.jQuery);
