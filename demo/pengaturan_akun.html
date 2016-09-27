@@ -65,7 +65,7 @@
         <div class="content">
           <!-- START JUMBOTRON -->
           <script type="text/javascript">
-            header('Pengaturan');
+            header('Pengaturan Akun');
           </script>
           <!-- END JUMBOTRON -->
           <!-- START CONTAINER FLUID -->
@@ -78,21 +78,21 @@
                       <div class="tab-pane active" id="akun">
                         <div class="row column-seperation">
                           <div class="col-md-12">
-                            <h3 class="no-margin"><span class="semi-bold">Akun</span></h3>
-                            <p class="small">Ubah informasi dasar akun.</p>
+                            <h3 class="no-margin"><span class="semi-bold">Akun Anda</span></h3>
+                            <p class="small">Ubah Data dan Informasi Akun Anda melalui Formulir di Bawah ini.</p>
                               <form id="form-project" class="m-t-20" role="form" autocomplete="off">
                                 <div class="form-group-attached">
                                   <div class="row clearfix">
                                     <div class="col-sm-6">
                                       <div class="form-group form-group-default required">
-                                        <label>Nama depan</label>
+                                        <label>Nama Lengkap</label>
                                         <input type="text" class="form-control" name="nama" value="Andi" required>
                                       </div>
                                     </div>
                                     <div class="col-sm-6">
                                       <div class="form-group form-group-default">
-                                        <label>Nama belakang</label>
-                                        <input type="text" class="form-control" value="Priatna" name="nama-belakang">
+                                        <label>Nama User</label>
+                                        <input disabled="disabled" type="text" class="form-control" value="Priatna" name="nama-belakang">
                                       </div>
                                     </div>
                                   </div>
@@ -111,6 +111,59 @@
                                     </label>
                                     <textarea rows="7" type="text" class="form-control" name="alamat">Jl. Serui No. 40</textarea>
                                   </div>
+                                  <div class="">
+                                    <div class="form-group form-group-default form-group-default-select2 required">
+                                      <label>Provinsi</label>
+                                      <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
+                                        <option selected>Pilih Provinsi</option>
+                                        <optgroup label="Indonesi Bagian Barat">
+                                          <option value="AK">DKI Jakarta</option>
+                                          <option value="HI">Jawa Barat</option>
+                                          <option value="HI">Banten</option>
+                                        </optgroup>
+                                        <optgroup label="Indonesi Bagian Tengah">
+                                          <option value="CA">Bali</option>
+                                          <option value="NV">Sulawesi Selatan</option>
+                                          <option value="OR">Kalimantan Timur</option>
+                                        </optgroup>
+                                        <optgroup label="Indonesi Bagian Timur">
+                                          <option value="AZ">Maluku</option>
+                                          <option value="AZ">Papua</option>
+                                          <option value="AZ">Papua Barat</option>
+
+                                        </optgroup>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="">
+                                    <div class="form-group form-group-default form-group-default-select2 required">
+                                      <label>Kabupaten / Kotamadya</label>
+                                      <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
+                                        <option selected>Pilih Kabupaten / Kotamadya</option>
+                                        <optgroup label="DKI Jakarta">
+                                          <option value="AK">Jakarta Pusat</option>
+                                          <option value="HI">Jakarta Barat</option>
+                                          <option value="HI">Jakarta Selatan</option>
+                                        </optgroup>
+                                        <optgroup label="Jawa Barat">
+                                          <option value="CA">Bandung</option>
+                                          <option value="NV">Bogor</option>
+                                        </optgroup>
+                                        <optgroup label="Jawa Timur">
+                                          <option value="AZ">Surabaya</option>
+                                          <option value="CO">Kediri</option>
+                                          <option value="ID">Lamogan</option>
+                                          <option value="MT">Ponorogo</option>
+                                        </optgroup>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="">
+                                      <div class="form-group form-group-default">
+                                        <label>Kode Pos</label>
+                                        <input type="text" class="form-control" name="kodepos_user">
+                                      </div>
+                                  </div>
                                 </div>
                                 <div class="row text-center p-t-20">
                                   <button class="btn btn-success" type="submit">Simpan Perubahan</button>
@@ -122,29 +175,28 @@
                       <div class="tab-pane " id="gantiPassword">
                         <div class="row">
                           <div class="col-md-12">
-                            <h3 class="no-margin">Ganti <span class="semi-bold">Password</span></h3>
+                            <h3 class="no-margin">Ganti <span class="semi-bold"> Kata Sandi</span></h3>
                             <p class="small">Ubah kata sandi Anda atau pulihkan kata sandi yang sekarang.</p>
                             <form id="form-project" class="m-t-20" role="form" autocomplete="off">
                               <div class="form-group-attached">
                                 <div class="form-group form-group-default required">
-                                  <label>Password Lama
+                                  <label> Kata Sandi Lama
                                   </label>
-                                  <input type="password" class="form-control" name="password" required>
+                                  <input type=" Kata Sandi" class="form-control" name=" Kata Sandi" required>
 
                                 </div>
                               </div>
-                              <p class="m-t-10"><a href="#">Lupa password?</a><p>
 
                               <div class="form-group-attached m-t-20">
                                 <div class="form-group form-group-default required">
-                                  <label>Password Baru
+                                  <label> Kata Sandi Baru
                                   </label>
-                                  <input type="password" class="form-control" name="password" required>
+                                  <input type=" Kata Sandi" class="form-control" name=" Kata Sandi" required>
                                 </div>
                                 <div class="form-group form-group-default required">
-                                  <label>Ulangi password Baru
+                                  <label>Ulangi  Kata Sandi Baru
                                   </label>
-                                  <input type="password" class="form-control" name="re-password" required>
+                                  <input type=" Kata Sandi" class="form-control" name="re- Kata Sandi" required>
                                 </div>
                               </div>
                               <div class="row text-center p-t-20">
@@ -167,7 +219,7 @@
                                   <h3 class="no-margin text-white">Nama User</h3>
                                   <p class="no-margin fs-16 text-white">Pengurus Wilayah Provinsi A
                                   </p>
-                                  <p class="hint-text m-t-5 small text-white">Wakil ketua | Kantor kota a.
+                                  <p class="hint-text m-t-5 small text-white">
                                   </p>
                                 </div>
                               </div>
@@ -177,9 +229,9 @@
                 <ul class="nav nav-tabs nav-tabs-simple nav-tabs-right bg-white" id="tab-4" role="tablist">
                   <li class="active"><a href="#akun" data-toggle="tab" role="tab">akun</a>
                   </li>
-                  <li><a href="#gantiPassword" data-toggle="tab" role="tab">Ganti Password</a>
+                  <li><a href="#gantiPassword" data-toggle="tab" role="tab">Ganti  Kata Sandi</a>
                   </li>
-                  
+
                 </ul>
               </div>
             </div>

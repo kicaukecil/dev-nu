@@ -87,7 +87,7 @@ document.write('\
         <ul class="dropdown-menu profile-dropdown" role="menu">\
         <li><a href="activity.html"><i class="pg-clock"></i> Aktivitas</a></li>\
         <li><a href="users.html"><i class="fa fa-users"></i> Kepengurusan</a></li>\
-          <li><a href="pengaturan_akun.html"><i class="pg-settings_small"></i> Pengaturan</a>\
+          <li><a href="pengaturan_akun.html"><i class="pg-settings_small"></i> Pengaturan akun</a>\
           </li>\
           <li class="bg-master-lighter">\
             <a href="#" class="clearfix">\

@@ -50,7 +50,8 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 }
 .panel-heading a:not(.btn){
-  padding-top: opx !important;
+  padding-top: 4px !important;
+  opacity: 1;
 }
 
 .form-group label{
@@ -204,6 +205,7 @@ display: inherit;
     font-size: 18px;
     line-height: 20px;
 }
+
 @media (max-width: 991px) {
 
   /*header area*/
