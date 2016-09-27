@@ -25,10 +25,10 @@ document.write('\
                     <div class="heading">\
                       <a href="#" class="text-danger">\
                         <i class="fa fa-exclamation-triangle m-r-10"></i>\
-                        <span class="bold">Rudi Sasono Memasukan data satuan pendidikan</span>\
-                        <span class="fs-12 m-l-10">Belum diverivikasi</span>\
+                        <span class="bold">Rudi Sasono memasukan data satuan pendidikan</span>\
+                        <span class="fs-12 m-l-10">Belum Diverifikasi</span>\
                       </a>\
-                      <span class="pull-right time">Lakukan Verivikasi</span>\
+                      <span class="pull-right time">Lakukan Verifikasi</span>\
                     </div>\
                     <!-- START Notification Item Right Side-->\
                     <div class="option">\
@@ -43,9 +43,9 @@ document.write('\
                       <a href="#" class="text-warning-dark">\
                         <i class="fa fa-exclamation-triangle m-r-10"></i>\
                         <span class="bold">Sulis memasukan data murid</span>\
-                        <span class="fs-12 m-l-10">Belum diverivikasi</span>\
+                        <span class="fs-12 m-l-10">Belum Diverifikasi</span>\
                       </a>\
-                      <span class="pull-right time">lakukan Verifikasi</span>\
+                      <span class="pull-right time">Lakukan Verifikasi</span>\
                     </div>\
                     <!-- START Notification Item Right Side-->\
                     <div class="option">\
