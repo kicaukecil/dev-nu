@@ -46,6 +46,7 @@ Generated From LESS
 html {
   height: 100%;
 }
+
 /* Body Triggers for layout options
 ------------------------------------------------------------------
 */
@@ -7724,6 +7725,7 @@ div.cs-skin-slide .cs-options ul li.cs-selected span {
 .table tbody tr td {
   background: #fff;
   border-bottom: 1px solid rgba(230, 230, 230, 0.7);
+  /*border: 0px;*/
   border-top: 0px;
   padding: 20px;
   font-size: 13.5px;

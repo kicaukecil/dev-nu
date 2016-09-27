@@ -87,6 +87,30 @@
 
     });
 
+    $(document).ready(function() {
+      var countries = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.whitespace,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        prefetch: 'assets/js/alamat.json'
+      });
+
+        var bestPictures = new Bloodhound({
+          datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
+          queryTokenizer: Bloodhound.tokenizers.whitespace,
+          prefetch: 'http://revox.io/json/drop-countries.json',
+          remote: {
+            url: 'http://revox.io/json/drop-countries.json',
+            wildcard: '%QUERY'
+          }
+        });
+      // passing in `null` for the `options` arguments will result in the default
+      // options being used
+      $('.sample-typehead').typeahead(null, {
+        name: 'countries',
+        source: countries
+      });
+    });
+
     'use strict';
 
     var responsiveHelper = undefined;
@@ -94,15 +118,6 @@
         tablet: 1024,
         phone: 480
     };
-
-    // var initTableFarSticky = function() {
-    //   var heightTd = $('td.far-sticky-col');
-    //    //var heightTdVal = $('.v-align-middle').outerHeight( true );
-    //   var heightTdVal =  heightTd.parent('tbody').children('.v-align-middle').outerHeight( true );
-    //
-    //   $('td.far-sticky-col').height(heightTdVal);
-    //
-    // }
 
     var initTableWithSearch = function() {
         var table = $('#tableUser');
@@ -217,33 +232,12 @@
     }
 
 
-    // initTableFarSticky();
     initTableWithSearch();
     initDetailedViewTable();
     initTableWithDynamicRows();
     initTableWithExportOptions();
-    $(document).ready(function() {
-      var countries = new Bloodhound({
-        datumTokenizer: Bloodhound.tokenizers.whitespace,
-        queryTokenizer: Bloodhound.tokenizers.whitespace,
-        prefetch: 'assets/js/alamat.json'
-      });
 
-        var bestPictures = new Bloodhound({
-          datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
-          queryTokenizer: Bloodhound.tokenizers.whitespace,
-          prefetch: 'http://revox.io/json/drop-countries.json',
-          remote: {
-            url: 'http://revox.io/json/drop-countries.json',
-            wildcard: '%QUERY'
-          }
-        });
-      // passing in `null` for the `options` arguments will result in the default
-      // options being used
-      $('.sample-typehead').typeahead(null, {
-        name: 'countries',
-        source: countries
-      });
+
 
 
 
