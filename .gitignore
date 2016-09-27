@@ -1,3 +1,4 @@
 .DS_Store
+*.DS_Store
 .blank_template.html
 /demo/.DS_Store
