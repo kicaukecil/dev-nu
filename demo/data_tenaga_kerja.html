@@ -67,7 +67,7 @@
                   </div>
                   <div class="pull-right">
                     <div class="col-xs-12 no-padding">
-                      <button type="button" class="btn btn-success" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" name="button"><i class="fa fa-filter"></i> Filter</button>
+                      <button type="button" class="btn btn-success" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"   aria-controls="collapseThree" name="button"><i class="fa fa-filter"></i> Filter</button>
                     </div>
                   </div>
                   <div class="pull-right">
@@ -84,13 +84,13 @@
                           <form>
                             <div class="row clearfix">
                               <div class="col-sm-6">
-                                <div class="form-group form-group-default  ">
-                                  <label>Nama</label>
+                                <div class="form-group    ">
+                                  <label>Nama Lengkap</label>
                                   <input type="Nama" class="form-control" >
                                 </div>
                               </div>
                               <div class="col-sm-6">
-                                <div class="form-group form-group-default  ">
+                                <div class="form-group    ">
                                   <label>Nomor Induk Karyawan</label>
                                   <input type="Nama" class="form-control" >
                                 </div>
@@ -99,7 +99,7 @@
                             </div>
                             <div class="row clearfix">
                               <div class="col-md-4">
-                                <div class="form-group form-group-default form-group-default-select2">
+                                <div class="form-group   form-group-default-select2">
                                   <label>Satuan Pendidikan</label>
                                   <select class="full-width " placeholder="" data-init-plugin="select2" multiple>
                                     <optgroup label="DKI Jakarta">
@@ -121,7 +121,7 @@
                                   </div>
                               </div>
                               <div class="col-md-4">
-                                <div class="form-group form-group-default  form-group-default-select2">
+                                <div class="form-group    form-group-default-select2">
                                   <label>Jenis Tenaga Kerja</label>
                                   <select class=" full-width" data-init-plugin="select2" multiple>
                                     <option value="1">Tenaga Pendidik (Guru / Pengajar)</option>
@@ -152,23 +152,25 @@
                             </div>
                             <div class="row clearfix">
                               <div class="col-sm-4">
-                                <div class="form-group form-group-default">
-                                  <label>Bidang Pendidik</label>
+                                <div class="form-group  ">
+                                  <label>Bidang Ajar (Mata Pelajaran)</label>
                                   <input class="form-control" required="" type="text">
                                 </div>
                               </div>
                               <div class="col-sm-4">
-                                <div class="form-group form-group-default ">
+                                <div class="form-group   ">
                                   <label>Bidang Kependidikan</label>
                                   <input class="form-control" required="" type="text">
                                 </div>
                               </div>
                               <div class="col-sm-4">
-                                <div class="form-group form-group-default form-group-default-select2 ">
+                                <div class="form-group   form-group-default-select2 ">
                                   <label>Tahun Pelajaran</label>
-                                  <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
-                                    <option>2015-2016</option>
-                                    <option>2016-2017</option>
+                                  <select class="selectpicker form-control" placeholder=""  >
+
+                                    <option value="">2015-2016</option>
+                                    <option value="">2016-2017</option>
+
                                   </select>
                                 </div>
                               </div>
@@ -210,12 +212,12 @@
                 </div>
 
                 <div class="panel-body">
-                  <table class="table " id="tableUser">
+                  <table class="table table-hover demo-table-search " id="tableUser">
                 <thead>
                   <tr>
                     <th class="sorting-non" style="width:5%;"><button class="btn clickDelete"><i class="pg-trash"></i>
                     </button></th>
-                    <th>Nama</th>
+                    <th>Nama Lengkap</th>
                     <th>Nomor Induk Karyawan</th>
                     <th>Satuan Pendidikan</th>
                     <th>Jenis Tenaga Kerja</th>
@@ -232,8 +234,8 @@
                         <span class="input-group-addon">
                           <input type="checkbox" value="1" id="checkbox1">
                         </span>
-                        <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                              <ul style="width: 141px;" class="dropdown-menu ">
+                        <div class="btn-group dropdown-default  "> <a     class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu ">
                                 <li><a href="#">Lihat</a></li>
                                 <li><a href="#">Edit</a></li>
                                 <li><a href="#" class="clickDelete">Hapus</a></li>
@@ -272,8 +274,8 @@
                         <span class="input-group-addon">
                           <input type="checkbox" value="1" id="checkbox1">
                         </span>
-                        <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                              <ul style="width: 141px;" class="dropdown-menu ">
+                        <div class="btn-group dropdown-default  "> <a     class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu ">
                                 <li><a href="#">Lihat</a></li>
                                 <li><a href="#">Edit</a></li>
                                 <li><a href="#" class="clickDelete">Hapus</a></li>
@@ -312,8 +314,8 @@
                         <span class="input-group-addon">
                           <input type="checkbox" value="1" id="checkbox1">
                         </span>
-                        <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                              <ul style="width: 141px;" class="dropdown-menu ">
+                        <div class="btn-group dropdown-default  "> <a     class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu ">
                                 <li><a href="#">Lihat</a></li>
                                 <li><a href="#">Edit</a></li>
                                 <li><a href="#" class="clickDelete">Hapus</a></li>
@@ -352,8 +354,8 @@
                         <span class="input-group-addon">
                           <input type="checkbox" value="1" id="checkbox1">
                         </span>
-                        <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                              <ul style="width: 141px;" class="dropdown-menu ">
+                        <div class="btn-group dropdown-default  "> <a     class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu ">
                                 <li><a href="#">Lihat</a></li>
                                 <li><a href="#">Edit</a></li>
                                 <li><a href="#" class="clickDelete">Hapus</a></li>
@@ -392,8 +394,8 @@
                         <span class="input-group-addon">
                           <input type="checkbox" value="1" id="checkbox1">
                         </span>
-                        <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                              <ul style="width: 141px;" class="dropdown-menu ">
+                        <div class="btn-group dropdown-default  "> <a     class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu ">
                                 <li><a href="#">Lihat</a></li>
                                 <li><a href="#">Edit</a></li>
                                 <li><a href="#" class="clickDelete">Hapus</a></li>
@@ -432,8 +434,8 @@
                         <span class="input-group-addon">
                           <input type="checkbox" value="1" id="checkbox1">
                         </span>
-                        <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                              <ul style="width: 141px;" class="dropdown-menu ">
+                        <div class="btn-group dropdown-default  "> <a     class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu ">
                                 <li><a href="#">Lihat</a></li>
                                 <li><a href="#">Edit</a></li>
                                 <li><a href="#" class="clickDelete">Hapus</a></li>
@@ -472,8 +474,8 @@
                         <span class="input-group-addon">
                           <input type="checkbox" value="1" id="checkbox1">
                         </span>
-                        <div class="btn-group dropdown-default dropup"> <a aria-expanded="false" style="width: 141px;" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                              <ul style="width: 141px;" class="dropdown-menu ">
+                        <div class="btn-group dropdown-default  "> <a     class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu ">
                                 <li><a href="#">Lihat</a></li>
                                 <li><a href="#">Edit</a></li>
                                 <li><a href="#" class="clickDelete">Hapus</a></li>

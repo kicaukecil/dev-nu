@@ -91,37 +91,50 @@
                               </div>
                           </div>
 
-                          <div class="form-group form-group-default">
+                          <div class="form-group form-group-default required">
                             <label>Alamat
                             </label>
                             <textarea rows="7" type="text" class="form-control" style="height:100px" name="alamat"></textarea>
-                          </div>
-                          <div class="form-group form-group-default">
-                            <label>Nomor Telepon </i>
-                            </label>
-                            <input type="text" class="form-control" name="telepon" placeholder=" ">
                           </div>
                           <div class="row clearfix">
                             <div class="col-sm-4">
                               <div class="form-group form-group-default form-group-default-select2 required">
                                 <label>Provinsi</label>
                                 <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2" required>
-                                  <option selected>Pilih Provinsi</option>
-                                  <optgroup label="Indonesia Bagian Barat">
-                                    <option value="AK">DKI Jakarta</option>
-                                    <option value="HI">Jawa Barat</option>
-                                    <option value="HI">Banten</option>
-                                  </optgroup>
-                                  <optgroup label="Indonesia Bagian Tengah">
-                                    <option value="CA">Bali</option>
-                                    <option value="NV">Sulawesi Selatan</option>
-                                    <option value="OR">Kalimantan Timur</option>
-                                  </optgroup>
-                                  <optgroup label="Indonesia Bagian Timur">
-                                    <option value="AZ">Maluku</option>
-                                    <option value="CO">Papua</option>
-                                    <option value="ID">Papua Barat</option>
-                                  </optgroup>
+                                    <option>Aceh</option>
+                                    <option>Bali</option>
+                                    <option>Banten</option>
+                                    <option>Bengkulu</option>
+                                    <option>Gorontalo</option>
+                                    <option>Jakarta</option>
+                                    <option>Jambi</option>
+                                    <option>Jawa Barat</option>
+                                    <option>Jawa Tengah</option>
+                                    <option>Jawa Timur</option>
+                                    <option>Kalimantan Barat</option>
+                                    <option>Kalimantan Selatan</option>
+                                    <option>Kalimantan Tengah</option>
+                                    <option>Kalimantan Timur</option>
+                                    <option>Kalimantan Utara</option>
+                                    <option>Kepulauan Bangka Belitung</option>
+                                    <option>Kepulauan Riau</option>
+                                    <option>Lampung</option>
+                                    <option>Maluku</option>
+                                    <option>Maluku Utara</option>
+                                    <option>Nusa Tenggara Barat</option>
+                                    <option>Nusa Tenggara Timur</option>
+                                    <option>Papua</option>
+                                    <option>Papua Barat</option>
+                                    <option>Riau</option>
+                                    <option>Sulawesi Barat</option>
+                                    <option>Sulawesi Selatan</option>
+                                    <option>Sulawesi Tengah</option>
+                                    <option>Sulawesi Tenggara</option>
+                                    <option>Sulawesi Utara</option>
+                                    <option>Sumatera Barat</option>
+                                    <option>Sumatera Selatan</option>
+                                    <option>Sumatera Utara</option>
+                                    <option>Yogyakarta</option>
                                 </select>
                               </div>
                             </div>
@@ -129,43 +142,36 @@
                               <div class="form-group form-group-default form-group-default-select2 required">
                                 <label>Kabupaten / Kotamadya</label>
                                 <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2" required>
-                                  <option selected>Pilih Kabupaten/Kotamadya</option>
-                                  <optgroup label="DKI Jakarta">
-                                    <option value="AK">Jakarta Pusat</option>
-                                    <option value="HI">Jakarta Barat</option>
-                                    <option value="HI">Jakarta Selatan</option>
-                                  </optgroup>
-                                  <optgroup label="Jawa Barat">
-                                    <option value="CA">Bandung</option>
-                                    <option value="NV">Bogor</option>
-                                  </optgroup>
-                                  <optgroup label="Jawa Timur">
-                                    <option value="AZ">Surabaya</option>
-                                    <option value="CO">Kediri</option>
-                                    <option value="ID">Lamogan</option>
-                                    <option value="MT">Ponorogo</option>
-                                  </optgroup>
+                                    <option>Kabupaten A</option>
+                                    <option>Kabupaten B</option>
+                                    <option>Kabupaten C</option>
+                                    <option>Kotamadya C</option>
+                                    <option>Kotamadya B</option>
+                                    <option>Kotamadya A</option>
                                 </select>
                               </div>
                             </div>
                             <div class="col-sm-4">
-                                <div class="form-group form-group-default ">
+                                <div class="form-group form-group-default required">
                                   <label>Kode Pos</label>
                                   <input type="text" class="form-control" name="kodepos_user" >
                                 </div>
                             </div>
                           </div>
+                          <div class="form-group form-group-default">
+                            <label>Nomor Telepon </i>
+                            </label>
+                            <input type="text" class="form-control" name="telepon" placeholder=" ">
+                          </div>
                           <div class="row">
-                              <div class="form-group form-group-default form-group-default-select2 required">
+                              <div class="form-group form-group-default form-group-default-select2">
                                 <label>Admin Kantor Wilayah</label>
-                                <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2" required>
-                                  <option selected>Pilih Admin</option>
-                                    <option value="AK">Surdono (ID)</option>
-                                    <option value="HI">Daimas Andir (ID)</option>
-                                    <option value="HI">Jimmy diandri (ID)</option>
+                                <select class="full-width" placeholder="Pilih Admin" data-init-plugin="select2" required>
+                                    <option>Surdono</option>
+                                    <option>Daimas Andir</option>
+                                    <option>Jimmy Diandri</option>
                                 </select>
                               </div>
-
                           </div>
                         </div>
                         <button class="btn btn-success" type="submit">Simpan</button>
