@@ -40,7 +40,7 @@ document.write('\
                         <span class="bold">Sulis memasukan data murid</span>\
                         <span class="fs-12 m-l-10">Belum Diverifikasi</span>\
                       </a>\
-                      <a href="data_persetujuan.html"><span class="pull-right time">lakukan Verifikasi</span></a>\
+                      <a href="data_persetujuan.html"><span class="pull-right time">Lakukan Verifikasi</span></a>\
                     </div>\
                   </div>\
                   <!-- END Notification Item-->\
