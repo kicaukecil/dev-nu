@@ -51,9 +51,7 @@
             <div class="table-responsive bg-white">
             <div class="panel panel-transparent">
               <div class="panel-heading">
-                <div class="panel-title">
-                  <a href="input_sekolah.html" class="btn btn-success" style="color:#fff;"><i  class="fa fa-plus"></i> Tambah Data</a>
-                </div>
+                <a href="input_sekolah.html" class="btn btn-success"><i  class="fa fa-plus"></i> Tambah Data</a>
                 <div class="pull-right">
                   <div class="col-xs-12 no-padding">
                     <button type="button" class="btn btn-success" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" name="button"><i class="fa fa-filter"></i> Filter</button>
@@ -262,8 +260,14 @@
                                 <label>Jumlah Ruang Kelas</label>
                                 <select class="full-width" placeholder="" multiple data-init-plugin="select2">
                                   <option>< 10 Ruang Kelas</option>
-                                  <option>10 - 50 Ruang Kelas</option>
-                                  <option>50 - 100 Ruang Kelas</option>
+                                  <option>10 - 20 Ruang Kelas</option>
+                                  <option>21 - 30 Ruang Kelas</option>
+                                  <option>31 - 40 Ruang Kelas</option>
+                                  <option>41 - 50 Ruang Kelas</option>
+                                  <option>51 - 60 Ruang Kelas</option>
+                                  <option>61 - 70 Ruang Kelas</option>
+                                  <option>71 - 80 Ruang Kelas</option>
+                                  <option>91 - 100 Ruang Kelas</option>
                                   <option>> 100 Ruang Kelas</option>
                                 </select>
                               </div>
@@ -328,7 +332,7 @@
                           <div class="row clearfix m-b-10">
                             <div class="col-sm-6">
                               <label>Status Badan Hukum</label>
-                              <div class="radio radio-success"  style="margin-top:1px;">
+                              <div class="radio radio-success" >
                                 <div class="col-xs-8">
                                   <input class="ng-untouched ng-valid ng-dirty" value="yes" name="statusbadanhukum" id="yes" ng-model="work_.gender" type="radio" checked="checked">
                                   <label for="yes">Badan Hukum Perkumpulan NU</label>
@@ -341,7 +345,7 @@
                           </div>
                             <div class="col-sm-6">
                               <label>Waktu Penyelengaran</label>
-                              <div class="radio radio-success"  style="margin-top:1px;">
+                              <div class="radio radio-success" >
                                 <div class="col-xs-4">
                                   <input class="ng-untouched ng-valid ng-dirty" value="pagi" name="optionyes" id="pagi" ng-model="work_.gender" type="radio" checked="checked">
                                   <label for="pagi">Pagi</label>
@@ -351,26 +355,15 @@
                                   <label for="siang">Siang</label>
                                 </div>
                                 <div class="col-xs-4">
-                                  <input class="ng-untouched ng-valid ng-dirty ng-valid-parse"  value="siang" name="optionyes" id="siang" ng-model="work_.gender" type="radio">
-                                  <label for="siang">Kombinasi</label>
+                                  <input class="ng-untouched ng-valid ng-dirty ng-valid-parse"  value="siang" name="optionyes" id="kombinasi" ng-model="work_.gender" type="radio">
+                                  <label for="kombinasi">Kombinasi</label>
                                 </div>
                               </div>
                             </div>
-                            <!-- <div class="col-sm-4">
-                                <div class="form-group   form-group-default-select2">
-                                  <label>Status Kepemilikan</label>
-                                  <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
-                                    <option value="Admin-Wilayah">Cukup</option>
-                                    <option value="Admin-Wilayah">Memadai</option>
-                                      <option value="Admin-Wilayah">Kurang</option>
-                                  </select>
-                              </div>
-                            </div> -->
-
                           </div>
                           <div class="row clearfix">
                             <div class="col-sm-4">
-                              <button type="button" class=" btn btn-success"> Cari Data </button><button type="button" class=" btn btn-default m-l-10"><i class=" pg-download"></i> Export </button>
+                              <button type="button" class=" btn btn-success"> Filter</button><button type="button" class=" btn btn-default m-l-10"><i class=" pg-download"></i> Export </button>
                             </div>
                           </div>
                         </form>
@@ -399,15 +392,15 @@
                       <th>Provinsi</th>
                       <th>Kabupaten / Kotamadya</th>
                       <th>Kecamatan</th>
+                      <th>Kode Pos</th>
+                      <th>Klasifikasi Geografis</th>
                       <th>Nomor Telepon</th>
                       <th>Nomor Faksimili</th>
                       <th>E-mail</th>
                       <th>Website</th>
-                      <th>Kode Pos</th>
                       <th>Tempat Praktek</th>
                       <th>Status Koneksi Internet</th>
                       <th>Mapel Aswaja dan Ke-NU-an</th>
-                      <th>Klasifikasi Geografis</th>
                       <th>Nomor Registrasi Maarif</th>
                       <th>Tahun Pelajaran</th>
                       <th>Nama Kepala Sekolah/Madrasah</th>
@@ -440,12 +433,12 @@
                             <input type="checkbox" value="1" id="checkbox1">
                           </span>
                           <div class="btn-group dropdown-default"> <a aria-expanded="false"   class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                                <ul   class="dropdown-menu">
-                                  <li><a href="#">Lihat</a></li>
-                                  <li><a href="#">Edit</a></li>
-                                  <li><a href="#" class="clickDelete">Hapus</a></li>
-                                </ul>
-                            </div>
+                              <ul   class="dropdown-menu">
+                                <li><a href="#">Lihat</a></li>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#" class="clickDelete">Hapus</a></li>
+                              </ul>
+                          </div>
                         </div>
                       </td>
                       <td class="v-align-middle">
@@ -477,6 +470,12 @@
                         <p>Tembalang</p>
                       </td>
                       <td class="v-align-middle">
+                        <p>50275</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Perkotaan</p>
+                      </td>
+                      <td class="v-align-middle">
                         <p>(024) 334 993</p>
                       </td>
                       <td class="v-align-middle">
@@ -487,9 +486,6 @@
                       </td>
                       <td class="v-align-middle">
                         <p>LPNUmaarif.sch.id</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>50275</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Kerja Sama</p>
@@ -500,9 +496,7 @@
                       <td class="v-align-middle">
                         <p>Ada</p>
                       </td>
-                      <td class="v-align-middle">
-                        <p>Perkotaan</p>
-                      </td>
+
                       <td class="v-align-middle">
                         <p>01019876-A</p>
                       </td>
@@ -587,13 +581,13 @@
                           <span class="input-group-addon">
                             <input type="checkbox" value="1" id="checkbox1">
                           </span>
-                          <div class="btn-group dropdown-default  "> <a aria-expanded="false"   class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                                <ul   class="dropdown-menu">
-                                  <li><a href="#">Lihat</a></li>
-                                  <li><a href="#">Edit</a></li>
-                                  <li><a href="#" class="clickDelete">Hapus</a></li>
-                                </ul>
-                            </div>
+                          <div class="btn-group dropdown-default"> <a aria-expanded="false"   class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu">
+                                <li><a href="#">Lihat</a></li>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#" class="clickDelete">Hapus</a></li>
+                              </ul>
+                          </div>
                         </div>
                       </td>
                       <td class="v-align-middle">
@@ -610,7 +604,7 @@
                         <p>Ya</p>
                       </td>
                       <td class="v-align-middle">
-                        <p>1993</p>
+                        <p>1990</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Jl. Darma Bakti No. 43</p>
@@ -625,6 +619,12 @@
                         <p>Tembalang</p>
                       </td>
                       <td class="v-align-middle">
+                        <p>50275</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Perkotaan</p>
+                      </td>
+                      <td class="v-align-middle">
                         <p>(024) 334 993</p>
                       </td>
                       <td class="v-align-middle">
@@ -635,9 +635,6 @@
                       </td>
                       <td class="v-align-middle">
                         <p>LPNUmaarif.sch.id</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>50275</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Kerja Sama</p>
@@ -648,9 +645,7 @@
                       <td class="v-align-middle">
                         <p>Ada</p>
                       </td>
-                      <td class="v-align-middle">
-                        <p>Perkotaan</p>
-                      </td>
+
                       <td class="v-align-middle">
                         <p>01019876-A</p>
                       </td>
@@ -735,13 +730,13 @@
                           <span class="input-group-addon">
                             <input type="checkbox" value="1" id="checkbox1">
                           </span>
-                          <div class="btn-group dropdown-default   "> <a aria-expanded="false"   class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                                <ul   class="dropdown-menu">
-                                  <li><a href="#">Lihat</a></li>
-                                  <li><a href="#">Edit</a></li>
-                                  <li><a href="#" class="clickDelete">Hapus</a></li>
-                                </ul>
-                            </div>
+                          <div class="btn-group dropdown-default"> <a aria-expanded="false"   class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu">
+                                <li><a href="#">Lihat</a></li>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#" class="clickDelete">Hapus</a></li>
+                              </ul>
+                          </div>
                         </div>
                       </td>
                       <td class="v-align-middle">
@@ -758,7 +753,7 @@
                         <p>Ya</p>
                       </td>
                       <td class="v-align-middle">
-                        <p>1997</p>
+                        <p>1990</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Jl. Darma Bakti No. 43</p>
@@ -773,154 +768,12 @@
                         <p>Tembalang</p>
                       </td>
                       <td class="v-align-middle">
-                        <p>(024) 334 993</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>(024) 334 993</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>LPNUmaarif@maarifnu.or.id</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>LPNUmaarif.sch.id</p>
-                      </td>
-                      <td class="v-align-middle">
                         <p>50275</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Milik Sendiri</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Ada</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Ada</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Perkotaan</p>
                       </td>
                       <td class="v-align-middle">
-                        <p>01019876-A</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>2015-2016</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>KH. Shiradjuddin</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>08761928378</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Akreditasi A</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>161/BAP-SM/LPG/XXI/2014</p>
-                      </td>
-                      <td class="v-align-middle">
-                        SK.00523.12331.21
-                      </td>
-                      <td class="v-align-middle">
-                        <p>06/21/2005</p>
-                      </td>
-                      <td class="sorting-non v-align-middle">
-                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Yayasan</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Al-Islah</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>SK.0009231.1231.223.1</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>06/21/2005</p>
-                      </td>
-                      <td class="sorting-non v-align-middle">
-                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>21</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>32</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>3</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Pagi</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>3</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>
-                          <ul>
-                            <li>Ruang Kesenian</li>
-                            <li>Lab Komputer</li>
-                            <li>Lab IPA</li>
-                          </ul>
-                        </p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>
-                          -
-                        </p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>
-                          -
-                        </p>
-                      </td>
-
-                    </tr>
-                    <tr>
-                      <td class="v-align-middle  ">
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <input type="checkbox" value="1" id="checkbox1">
-                          </span>
-                          <div class="btn-group dropdown-default   "> <a aria-expanded="false"   class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                                <ul   class="dropdown-menu">
-                                  <li><a href="#">Lihat</a></li>
-                                  <li><a href="#">Edit</a></li>
-                                  <li><a href="#" class="clickDelete">Hapus</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>SMP Al Islah</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>123445777234566432</p>
-                      </td>
-
-                      <td class="v-align-middle">
-                        <p>MTs</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Ya</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>1995</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Jl. Darma Bakti No. 43</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Jawa Tengah</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Semarang</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Tembalang</p>
-                      </td>
-                      <td class="v-align-middle">
                         <p>(024) 334 993</p>
                       </td>
                       <td class="v-align-middle">
@@ -931,9 +784,6 @@
                       </td>
                       <td class="v-align-middle">
                         <p>LPNUmaarif.sch.id</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>50275</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Kerja Sama</p>
@@ -944,9 +794,7 @@
                       <td class="v-align-middle">
                         <p>Ada</p>
                       </td>
-                      <td class="v-align-middle">
-                        <p>Pedesaan</p>
-                      </td>
+
                       <td class="v-align-middle">
                         <p>01019876-A</p>
                       </td>
@@ -1031,13 +879,13 @@
                           <span class="input-group-addon">
                             <input type="checkbox" value="1" id="checkbox1">
                           </span>
-                          <div class="btn-group dropdown-default   "> <a aria-expanded="false"   class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
-                                <ul   class="dropdown-menu">
-                                  <li><a href="#">Lihat</a></li>
-                                  <li><a href="#">Edit</a></li>
-                                  <li><a href="#" class="clickDelete">Hapus</a></li>
-                                </ul>
-                            </div>
+                          <div class="btn-group dropdown-default"> <a aria-expanded="false"   class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu">
+                                <li><a href="#">Lihat</a></li>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#" class="clickDelete">Hapus</a></li>
+                              </ul>
+                          </div>
                         </div>
                       </td>
                       <td class="v-align-middle">
@@ -1054,7 +902,7 @@
                         <p>Ya</p>
                       </td>
                       <td class="v-align-middle">
-                        <p>1999</p>
+                        <p>1990</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Jl. Darma Bakti No. 43</p>
@@ -1069,6 +917,12 @@
                         <p>Tembalang</p>
                       </td>
                       <td class="v-align-middle">
+                        <p>50275</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Perkotaan</p>
+                      </td>
+                      <td class="v-align-middle">
                         <p>(024) 334 993</p>
                       </td>
                       <td class="v-align-middle">
@@ -1081,10 +935,7 @@
                         <p>LPNUmaarif.sch.id</p>
                       </td>
                       <td class="v-align-middle">
-                        <p>50275</p>
-                      </td>
-                      <td class="v-align-middle">
-                        <p>Milik Sendiri</p>
+                        <p>Kerja Sama</p>
                       </td>
                       <td class="v-align-middle">
                         <p>Ada</p>
@@ -1092,9 +943,7 @@
                       <td class="v-align-middle">
                         <p>Ada</p>
                       </td>
-                      <td class="v-align-middle">
-                        <p>Perkotaan</p>
-                      </td>
+
                       <td class="v-align-middle">
                         <p>01019876-A</p>
                       </td>
@@ -1172,6 +1021,303 @@
                         </p>
                       </td>
 
+                    </tr>
+                    <tr>
+                      <td class="v-align-middle  ">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default"> <a aria-expanded="false"   class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu">
+                                <li><a href="#">Lihat</a></li>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#" class="clickDelete">Hapus</a></li>
+                              </ul>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>SMP Al Islah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>123445777234566432</p>
+                      </td>
+
+                      <td class="v-align-middle">
+                        <p>MTs</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ya</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>1990</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jl. Darma Bakti No. 43</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jawa Tengah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Semarang</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Tembalang</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>50275</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Perkotaan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif@maarifnu.or.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif.sch.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Kerja Sama</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+
+                      <td class="v-align-middle">
+                        <p>01019876-A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>2015-2016</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>KH. Shiradjuddin</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>08761928378</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Akreditasi A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>161/BAP-SM/LPG/XXI/2014</p>
+                      </td>
+                      <td class="v-align-middle">
+                        SK.00523.12331.21
+                      </td>
+                      <td class="v-align-middle">
+                        <p>06/21/2005</p>
+                      </td>
+                      <td class="sorting-non v-align-middle">
+                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Yayasan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Al-Islah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>SK.0009231.1231.223.1</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>06/21/2005</p>
+                      </td>
+                      <td class="sorting-non v-align-middle">
+                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>21</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>32</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>3</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Pagi</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>3</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          <ul>
+                            <li>Ruang Kesenian</li>
+                            <li>Lab Komputer</li>
+                            <li>Lab IPA</li>
+                          </ul>
+                        </p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          -
+                        </p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          -
+                        </p>
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <td class="v-align-middle  ">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default"> <a aria-expanded="false"   class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu">
+                                <li><a href="#">Lihat</a></li>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#" class="clickDelete">Hapus</a></li>
+                              </ul>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>SMP Al Islah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>123445777234566432</p>
+                      </td>
+
+                      <td class="v-align-middle">
+                        <p>MTs</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ya</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>1990</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jl. Darma Bakti No. 43</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jawa Tengah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Semarang</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Tembalang</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>50275</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Perkotaan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif@maarifnu.or.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif.sch.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Kerja Sama</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+
+                      <td class="v-align-middle">
+                        <p>01019876-A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>2015-2016</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>KH. Shiradjuddin</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>08761928378</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Akreditasi A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>161/BAP-SM/LPG/XXI/2014</p>
+                      </td>
+                      <td class="v-align-middle">
+                        SK.00523.12331.21
+                      </td>
+                      <td class="v-align-middle">
+                        <p>06/21/2005</p>
+                      </td>
+                      <td class="sorting-non v-align-middle">
+                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Yayasan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Al-Islah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>SK.0009231.1231.223.1</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>06/21/2005</p>
+                      </td>
+                      <td class="sorting-non v-align-middle">
+                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>21</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>32</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>3</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Pagi</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>3</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          <ul>
+                            <li>Ruang Kesenian</li>
+                            <li>Lab Komputer</li>
+                            <li>Lab IPA</li>
+                          </ul>
+                        </p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          -
+                        </p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          -
+                        </p>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -1235,18 +1381,15 @@
     <script src="assets/plugins/jquery-datatable/media/js/dataTables.bootstrap.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js" type="text/javascript"></script>
 
-    <!-- END VENDOR JS -->
-    <!-- BEGIN CORE TEMPLATE JS -->
     <script src="pages/js/pages.min.js"></script>
-    <!-- END CORE TEMPLATE JS
+
     <script type="text/javascript" src="/assets/plugins/datatables-responsive/js/datatables.responsive.js"></script>
     <script type="text/javascript" src="/assets/plugins/datatables-responsive/js/lodash.min.js"></script>
     <script src="assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.js" type="text/javascript"></script>
 
-    <script src="assets/js/style.js" type="text/javascript"></script>
     <script src="assets/js/scripts.js" type="text/javascript"></script>
     <script src="assets/js/datatables.js" type="text/javascript"></script>
-    <script src="assets/js/tables.js" type="text/javascript"></script>-->
+    <script src="assets/js/tables.js" type="text/javascript"></script>
     <!-- <script src="assets/js/style.js" type="text/javascript"></script> -->
 
 

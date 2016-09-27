@@ -26,15 +26,10 @@ document.write('\
                       <a href="#" class="text-danger">\
                         <i class="fa fa-exclamation-triangle m-r-10"></i>\
                         <span class="bold">Rudi Sasono Memasukan data satuan pendidikan</span>\
-                        <span class="fs-12 m-l-10">Belum diverivikasi</span>\
+                        <span class="fs-12 m-l-10">Belum Diverifikasi</span>\
                       </a>\
-                      <span class="pull-right time">Lakukan Verivikasi</span>\
+                      <a href="data_persetujuan.html"><span class="pull-right time">Lakukan Verifikasi</span></a>\
                     </div>\
-                    <!-- START Notification Item Right Side-->\
-                    <div class="option">\
-                      <a href="#" class="mark"></a>\
-                    </div>\
-                    <!-- END Notification Item Right Side-->\
                   </div>\
                   <!-- END Notification Item-->\
                   <!-- START Notification Item-->\
@@ -43,15 +38,10 @@ document.write('\
                       <a href="#" class="text-warning-dark">\
                         <i class="fa fa-exclamation-triangle m-r-10"></i>\
                         <span class="bold">Sulis memasukan data murid</span>\
-                        <span class="fs-12 m-l-10">Belum diverivikasi</span>\
+                        <span class="fs-12 m-l-10">Belum Diverifikasi</span>\
                       </a>\
-                      <span class="pull-right time">lakukan Verifikasi</span>\
+                      <a href="data_persetujuan.html"><span class="pull-right time">lakukan Verifikasi</span></a>\
                     </div>\
-                    <!-- START Notification Item Right Side-->\
-                    <div class="option">\
-                      <a href="#" class="mark"></a>\
-                    </div>\
-                    <!-- END Notification Item Right Side-->\
                   </div>\
                   <!-- END Notification Item-->\
                   <!-- START Notification Item-->\
@@ -61,9 +51,6 @@ document.write('\
                 <!-- START Notification Footer-->\
                 <div class="notification-footer text-center">\
                   <a href="activity.html" class="">Lihat semua notifikasi</a>\
-                  <a data-toggle="refresh" class="portlet-refresh text-black pull-right" href="#">\
-                    <i class="pg-refresh_new"></i>\
-                  </a>\
                 </div>\
                 <!-- START Notification Footer-->\
               </div>\
@@ -90,7 +77,7 @@ document.write('\
           <li><a href="pengaturan_akun.html"><i class="pg-settings_small"></i> Pengaturan akun</a>\
           </li>\
           <li class="bg-master-lighter">\
-            <a href="#" class="clearfix">\
+            <a href="../index.html" class="clearfix">\
               <span class="pull-left">Keluar</span>\
               <span class="pull-right"><i class="pg-power"></i></span>\
             </a>\

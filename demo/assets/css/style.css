@@ -40,6 +40,8 @@
 .text-success{
   color: #2ecc71 !important;
 }
+
+/*panel*/
 .filter-warrp, .filter-warrp .panel{
   margin-bottom: 0px;
   border: none;
@@ -50,9 +52,15 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 }
 .panel-heading a:not(.btn){
-  padding-top: 4px !important;
+  padding-top: 0px !important;
   opacity: 1;
 }
+.panel_title  a.btn{
+  color: #fff ! important;
+}
+/*end panel*/
+
+
 
 .form-group label{
   text-transform: none ! important;
