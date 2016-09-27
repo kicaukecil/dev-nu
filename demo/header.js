@@ -23,24 +23,24 @@ document.write('\
                 <div class="notification-body scrollable">\
                   <div class="notification-item  clearfix">\
                     <div class="heading">\
-                      <a href="#" class="text-danger">\
+                      <a  href="data_persetujuan.html" class="text-danger">\
                         <i class="fa fa-exclamation-triangle m-r-10"></i>\
                         <span class="bold">Rudi Sasono Memasukan data satuan pendidikan</span>\
                         <span class="fs-12 m-l-10">Belum Diverifikasi</span>\
                       </a>\
-                      <a href="data_persetujuan.html"><span class="pull-right time">Lakukan Verifikasi</span></a>\
+                      <a href="data_persetujuan.html"><span class="pull-right time">Lakukan Verifikasi <i class="fa fa-arrow-circle-right"></i></span></a>\
                     </div>\
                   </div>\
                   <!-- END Notification Item-->\
                   <!-- START Notification Item-->\
                   <div class="notification-item  clearfix">\
                     <div class="heading">\
-                      <a href="#" class="text-warning-dark">\
+                      <a href="data_persetujuan.html" class="text-warning-dark">\
                         <i class="fa fa-exclamation-triangle m-r-10"></i>\
                         <span class="bold">Sulis memasukan data murid</span>\
                         <span class="fs-12 m-l-10">Belum Diverifikasi</span>\
                       </a>\
-                      <a href="data_persetujuan.html"><span class="pull-right time">Lakukan Verifikasi</span></a>\
+                      <a href="data_persetujuan.html"><span class="pull-right time">Lakukan Verifikasi <i class="fa fa-arrow-circle-right"></i></span></a>\
                     </div>\
                   </div>\
                   <!-- END Notification Item-->\
