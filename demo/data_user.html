@@ -81,30 +81,27 @@
                           <form>
                             <div class="row clearfix">
                               <div class="col-sm-4">
-                                <div class="form-group    ">
+                                <div class="form-group">
                                   <label>Nama User</label>
                                   <input type="Nama" class="form-control" >
                                 </div>
                               </div>
                               <div class="col-sm-8">
-                                <div class="form-group    ">
+                                <div class="form-group">
                                   <label>Nama Lengkap</label>
                                   <input type="Nama" class="form-control" >
                                 </div>
                               </div>
-
-
                             </div>
                             <div class="row clearfix">
                               <div class="col-sm-4">
-                                <div class="form-group  ">
+                                <div class="form-group">
                                   <label>Email</label>
                                   <input class="form-control" required="" type="email">
                                   </div>
                               </div>
                               <div class="col-sm-8">
-
-                                <div class="form-group  ">
+                                <div class="form-group">
                                   <div class="tools">
                                     <a href="javascript:;" class="collapse"></a>
                                     <a href="#grid-config" data-toggle="modal" class="config"></a>
@@ -112,7 +109,11 @@
                                     <a href="javascript:;" class="remove"></a>
                                   </div>
                                   <label>Alamat</label>
-                                  <input class="typeahead form-control sample-typehead" type="text" placeholder="Alamat">
+                                  <select class="full-width" data-init-plugin="select2" placeholder="">
+                                    <option placeholder value=""></option>
+                                    <option value="">Ada Data</option>
+                                    <option value="">Tidak Ada Data</option>
+                                  </select>
                                 </div>
                               </div>
                             </div>
@@ -124,13 +125,13 @@
                                 </div>
                               </div>
                               <div class="col-sm-6">
-                                <div class="form-group   form-group-default-select2">
+                                <div class="form-group form-group-default-select2">
                                   <label>Tipe User</label>
-                                  <select class=" full-width" data-init-plugin="select2" multiple>
-                                    <option value="sightseeing">Pengurus Pusat</option>
-                                    <option value="business">Pengurus Wilayah (Provinsi)</option>
-                                    <option value="honeymoon">Pengurus Cabang (Kota/Kab)</option>
-                                    <option value="honeymoon">Pengurus Satuan Pendidikan</option>
+                                  <select class="full-width" data-init-plugin="select2" multiple>
+                                    <option value="">Pengurus Pusat</option>
+                                    <option value="">Pengurus Wilayah (Provinsi)</option>
+                                    <option value="">Pengurus Cabang (Kota/Kab)</option>
+                                    <option value="">Pengurus Satuan Pendidikan</option>
                                   </select>
                                 </div>
                               </div>
@@ -214,10 +215,10 @@
                         <th>Email</th>
                         <th>Nomor Telepon</th>
                         <th>Alamat</th>
-                        <th>Tipe User</th>
                         <th>Provinsi</th>
                         <th>Kabupaten / Kotamadya</th>
                         <th>Kode Pos</th>
+                        <th>Tipe User</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -251,9 +252,6 @@
                         <td class="v-align-middle">
                           <p>Jl.Karangetan</p>
                         </td>
-                        <td class="v-align-middle semi-bold">
-                          <p>Pengurus Provinsi</p>
-                        </td>
                         <td class="v-align-middle">
                           <p>Jawa Timur</p>
                         </td>
@@ -262,6 +260,9 @@
                         </td>
                         <td class="v-align-middle">
                           <p>14592</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Wilayah</p>
                         </td>
                       </tr>
                       <tr>
@@ -295,9 +296,6 @@
                           <p>Jl.Karangetan</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Provinsi</p>
-                        </td>
-                        <td class="v-align-middle">
                           <p>Jawa Timur</p>
                         </td>
                         <td class="v-align-middle">
@@ -305,6 +303,9 @@
                         </td>
                         <td class="v-align-middle">
                           <p>14592</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Wilayah</p>
                         </td>
                       </tr>
                       <tr>
@@ -338,9 +339,6 @@
                           <p>Jl.Karangetan</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Provinsi</p>
-                        </td>
-                        <td class="v-align-middle">
                           <p>Jawa Timur</p>
                         </td>
                         <td class="v-align-middle">
@@ -348,6 +346,9 @@
                         </td>
                         <td class="v-align-middle">
                           <p>14592</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Wilayah</p>
                         </td>
                       </tr>
                       <tr>
@@ -381,9 +382,6 @@
                           <p>Jl.Karangetan</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Provinsi</p>
-                        </td>
-                        <td class="v-align-middle">
                           <p>Jawa Timur</p>
                         </td>
                         <td class="v-align-middle">
@@ -391,6 +389,9 @@
                         </td>
                         <td class="v-align-middle">
                           <p>14592</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Wilayah</p>
                         </td>
                       </tr>
                       <tr>
@@ -424,9 +425,6 @@
                           <p>Jl.Karangetan</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Provinsi</p>
-                        </td>
-                        <td class="v-align-middle">
                           <p>Jawa Timur</p>
                         </td>
                         <td class="v-align-middle">
@@ -434,6 +432,9 @@
                         </td>
                         <td class="v-align-middle">
                           <p>14592</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Wilayah</p>
                         </td>
                       </tr>
                       <tr>
@@ -467,9 +468,6 @@
                           <p>Jl.Karangetan</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Provinsi</p>
-                        </td>
-                        <td class="v-align-middle">
                           <p>Jawa Timur</p>
                         </td>
                         <td class="v-align-middle">
@@ -477,6 +475,9 @@
                         </td>
                         <td class="v-align-middle">
                           <p>14592</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Wilayah</p>
                         </td>
                       </tr>
                       <tr>
@@ -510,9 +511,6 @@
                           <p>Jl.Karangetan</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Provinsi</p>
-                        </td>
-                        <td class="v-align-middle">
                           <p>Jawa Timur</p>
                         </td>
                         <td class="v-align-middle">
@@ -520,6 +518,9 @@
                         </td>
                         <td class="v-align-middle">
                           <p>14592</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Wilayah</p>
                         </td>
                       </tr>
                       <tr>
@@ -553,9 +554,6 @@
                           <p>Jl.Karangetan</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Provinsi</p>
-                        </td>
-                        <td class="v-align-middle">
                           <p>Jawa Timur</p>
                         </td>
                         <td class="v-align-middle">
@@ -563,6 +561,9 @@
                         </td>
                         <td class="v-align-middle">
                           <p>14592</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Wilayah</p>
                         </td>
                       </tr>
                       <tr>
@@ -596,9 +597,6 @@
                           <p>Jl.Karangetan</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Cabang Kota / Kab</p>
-                        </td>
-                        <td class="v-align-middle">
                           <p>Banten</p>
                         </td>
                         <td class="v-align-middle">
@@ -606,6 +604,9 @@
                         </td>
                         <td class="v-align-middle">
                           <p>14592</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Cabang</p>
                         </td>
                       </tr>
                       <tr>
@@ -639,9 +640,6 @@
                           <p>Jl.Karangetan</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Cabang Kota / Kab</p>
-                        </td>
-                        <td class="v-align-middle">
                           <p>Banten</p>
                         </td>
                         <td class="v-align-middle">
@@ -649,6 +647,9 @@
                         </td>
                         <td class="v-align-middle">
                           <p>14592</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Cabang</p>
                         </td>
                       </tr>
                       <tr>
@@ -682,9 +683,6 @@
                           <p>Jl.Karangetan</p>
                         </td>
                         <td class="v-align-middle">
-                          <p>Pengurus Cabang Kota / Kab</p>
-                        </td>
-                        <td class="v-align-middle">
                           <p>Banten</p>
                         </td>
                         <td class="v-align-middle">
@@ -692,6 +690,9 @@
                         </td>
                         <td class="v-align-middle">
                           <p>14592</p>
+                        </td>
+                        <td class="v-align-middle">
+                          <p>Pengurus Cabang</p>
                         </td>
                       </tr>
 
