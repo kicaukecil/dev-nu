@@ -96,8 +96,8 @@
                             <div class="col-sm-4">
                               <div class="form-group form-group-default form-group-default-select2 ">
                                 <label>Terintegrasi Dengan Pesantren</label>
-                                <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
-                                  <option selected>Pilih...</option>
+                                <select class="full-width" placeholder="Pilih" data-init-plugin="select2">
+                                  <option placeholder value=""></option>
                                   <option>Ya</option>
                                   <option>Tidak</option>
                                 </select>
@@ -106,8 +106,8 @@
                             <div class="col-sm-4">
                               <div class="form-group form-group-default form-group-default-select2 required">
                                 <label>Bentuk Satuan Pendidikan</label>
-                                <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
-                                  <option selected>Pilih Bentuk Satuan Pendidikan</option>
+                                <select class="full-width" placeholder="Pilih Bentuk Satuan Pendidikan" data-init-plugin="select2">
+                                  <option placeholder value=""></option>
                                   <option>TK</option>
                                   <option>SD</option>
                                   <option>MI</option>
@@ -120,17 +120,95 @@
                             </div>
                             <div class="col-sm-4">
                               <div class="form-group form-group-default">
-                                <label>Tahun Pembukaan Sekolah</label>
+                                <label>Tahun Pembukaan</label>
                                 <input type="text" class="form-control" name="lastName">
                               </div>
                             </div>
                           </div>
                           <div class="form-group-attached">
-                            <div class="form-group form-group-default">
-                              <label>Alamat Satuan Pendidikan</label>
+                            <div class="form-group form-group-default required">
+                              <label>Alamat</label>
                               <textarea class="form-control" name="projectName" style="height:100px;"></textarea>
                             </div>
                             <div class="row clearfix">
+                              <div class="col-sm-4">
+                                <div class="form-group form-group-default form-group-default-select2 required">
+                                  <label>Provinsi</label>
+                                  <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
+                                    <option placeholder value=""></option>
+                                    <option>Aceh</option>
+                                    <option>Bali</option>
+                                    <option>Banten</option>
+                                    <option>Bengkulu</option>
+                                    <option>Gorontalo</option>
+                                    <option>Jakarta</option>
+                                    <option>Jambi</option>
+                                    <option>Jawa Barat</option>
+                                    <option>Jawa Tengah</option>
+                                    <option>Jawa Timur</option>
+                                    <option>Kalimantan Barat</option>
+                                    <option>Kalimantan Selatan</option>
+                                    <option>Kalimantan Tengah</option>
+                                    <option>Kalimantan Timur</option>
+                                    <option>Kalimantan Utara</option>
+                                    <option>Kepulauan Bangka Belitung</option>
+                                    <option>Kepulauan Riau</option>
+                                    <option>Lampung</option>
+                                    <option>Maluku</option>
+                                    <option>Maluku Utara</option>
+                                    <option>Nusa Tenggara Barat</option>
+                                    <option>Nusa Tenggara Timur</option>
+                                    <option>Papua</option>
+                                    <option>Papua Barat</option>
+                                    <option>Riau</option>
+                                    <option>Sulawesi Barat</option>
+                                    <option>Sulawesi Selatan</option>
+                                    <option>Sulawesi Tengah</option>
+                                    <option>Sulawesi Tenggara</option>
+                                    <option>Sulawesi Utara</option>
+                                    <option>Sumatera Barat</option>
+                                    <option>Sumatera Selatan</option>
+                                    <option>Sumatera Utara</option>
+                                    <option>Yogyakarta</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="form-group form-group-default form-group-default-select2 required">
+                                  <label>Kabupaten / Kotamadya</label>
+                                  <select class="full-width" placeholder="Pilih Kabupaten / Kotamadya" data-init-plugin="select2">
+                                    <option placeholder value=""></option>
+                                    <option>Kabupaten A</option>
+                                    <option>Kabupaten B</option>
+                                    <option>Kabupaten C</option>
+                                    <option>Kotamadya C</option>
+                                    <option>Kotamadya B</option>
+                                    <option>Kotamadya A</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="form-group form-group-default form-group-default-select2 required">
+                                  <label>Kecamatan</label>
+                                  <select class="full-width" placeholder="Pilih Kecamatan" data-init-plugin="select2">
+                                    <option placeholder value=""></option>
+                                    <option>Kecamatan A</option>
+                                    <option>Kecamatan B</option>
+                                    <option>Kecamatan C</option>
+                                    <option>Kecamatan C</option>
+                                    <option>Kecamatan B</option>
+                                    <option>Kecamatan A</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row clearfix">
+                              <div class="col-sm-4">
+                                <div class="form-group form-group-default required">
+                                  <label>Kode Pos</label>
+                                  <input type="text" class="form-control" name="lastName">
+                                </div>
+                              </div>
                               <div class="col-sm-4">
                                 <div class="form-group form-group-default">
                                   <label>Nomor Telepon</label>
@@ -139,74 +217,10 @@
                               </div>
                               <div class="col-sm-4">
                                 <div class="form-group form-group-default">
-                                  <label>No Faksimili</label>
+                                  <label>Nomor Faksimili</label>
                                   <input type="text" class="form-control" name="lastName">
                                 </div>
                               </div>
-                              <div class="col-sm-4">
-                                <div class="form-group form-group-default">
-                                  <label>E-mail</label>
-                                  <input type="text" class="form-control" name="lastName">
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row clearfix">
-                              <div class="col-sm-4">
-                                <div class="form-group form-group-default form-group-default-select2 required">
-                                  <label>Provinsi</label>
-                                  <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
-                                    <option selected>Pilih Provinsi</option>
-                                    <optgroup label="Indonesi Bagian Barat">
-                                      <option value="AK">DKI Jakarta</option>
-                                      <option value="HI">Jawa Barat</option>
-                                      <option value="HI">Banten</option>
-                                    </optgroup>
-                                    <optgroup label="Indonesi Bagian Tengah">
-                                      <option value="CA">Bali</option>
-                                      <option value="NV">Sulawesi Selatan</option>
-                                      <option value="OR">Kalimantan Timur</option>
-                                    </optgroup>
-                                    <optgroup label="Indonesi Bagian Timur">
-                                      <option value="AZ">Maluku</option>
-                                    </optgroup>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="col-sm-4">
-                                <div class="form-group form-group-default form-group-default-select2 required">
-                                  <label>Kabupaten / Kotamadya</label>
-                                  <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
-                                    <option selected>Pilih Kabupaten/Kotamadya</option>
-                                    <optgroup label="DKI Jakarta">
-                                      <option value="AK">Jakarta Pusat</option>
-                                      <option value="HI">Jakarta Barat</option>
-                                      <option value="HI">Jakarta Selatan</option>
-                                    </optgroup>
-                                    <optgroup label="Jawa Barat">
-                                      <option value="CA">Bandung</option>
-                                      <option value="NV">Bogor</option>
-                                    </optgroup>
-                                    <optgroup label="Jawa Timur">
-                                      <option value="AZ">Surabaya</option>
-                                      <option value="CO">Kediri</option>
-                                      <option value="ID">Lamogan</option>
-                                      <option value="MT">Ponorogo</option>
-                                    </optgroup>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="col-sm-4">
-                                <div class="form-group form-group-default form-group-default-select2 required">
-                                  <label>Kecamatan</label>
-                                  <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
-                                    <option selected>Pilih Kecamatan</option>
-                                    <option>Sari rejo</option>
-                                    <option>Wungu</option>
-                                    <option>Taman Sari</option>
-                                  </select>
-                                </div>
-                              </div>
-
                             </div>
                             <div class="row clearfix">
                               <div class="col-sm-6">
@@ -217,18 +231,17 @@
                               </div>
                               <div class="col-sm-6">
                                 <div class="form-group form-group-default">
-                                  <label>Kode Pos</label>
+                                  <label>Email</label>
                                   <input type="text" class="form-control" name="lastName">
                                 </div>
                               </div>
                             </div>
-
                             <div class="row clearfix">
                               <div class="col-sm-4">
                                 <div class="form-group form-group-default form-group-default-select2 ">
                                   <label>Tempat Praktek</label>
-                                  <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
-                                    <option selected>Pilih...</option>
+                                  <select class="full-width" placeholder="Pilih" data-init-plugin="select2">
+                                    <option placeholder value=""></option>
                                     <option>Milik Sendiri</option>
                                     <option>Kerja Sama</option>
                                     <option>Tidak Punya</option>
@@ -238,8 +251,8 @@
                               <div class="col-sm-4">
                                 <div class="form-group form-group-default form-group-default-select2 ">
                                   <label>Status Koneksi Internet</label>
-                                  <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
-                                    <option selected>Pilih...</option>
+                                  <select class="full-width" placeholder="Pilih" data-init-plugin="select2">
+                                    <option placeholder value=""></option>
                                     <option>Ada</option>
                                     <option>Tidak Ada</option>
                                   </select>
@@ -248,8 +261,8 @@
                               <div class="col-sm-4">
                                 <div class="form-group form-group-default form-group-default-select2 ">
                                   <label>Mapel Aswaja dan Ke-NU-an</label>
-                                  <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
-                                    <option selected>Pilih...</option>
+                                  <select class="full-width" placeholder="Pilih" data-init-plugin="select2">
+                                    <option placeholder value=""></option>
                                     <option>Ada</option>
                                     <option>Tidak Ada</option>
                                   </select>
@@ -266,25 +279,24 @@
                                 <div class="col-sm-4">
                                   <div class="form-group form-group-default form-group-default-select2 ">
                                     <label>Tahun Pelajaran</label>
-                                    <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
-                                      <option selected>Pilih Tahun Pelajaran</option>
+                                    <select class="full-width" placeholder="Pilih" data-init-plugin="select2">
+                                      <option placeholder value=""></option>
                                       <option>2015-2016</option>
                                       <option>2016-2017</option>
                                     </select>
                                   </div>
                                 </div>
-
                             </div>
                             <div class="row clearfix">
                               <div class="col-sm-6">
                                 <div class="form-group form-group-default">
-                                  <label>Nama Kepala Sekolah/Madrasah</label>
+                                  <label>Nama Kepala Sekolah / Madrasah</label>
                                   <input type="text" class="form-control" name="lastName">
                                 </div>
                               </div>
                               <div class="col-sm-6">
                                 <div class="form-group form-group-default">
-                                  <label>Nomor Handphone</label>
+                                  <label>Nomor Handphone Kepala Sekolah / Madrasah</label>
                                   <input type="text" class="form-control" name="lastName">
                                 </div>
                               </div>
@@ -293,8 +305,8 @@
                               <div class="col-sm-6">
                                 <div class="form-group form-group-default form-group-default-select2 ">
                                   <label>Status Akreditasi</label>
-                                  <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
-                                    <option selected>Pilih Status Akreditasi</option>
+                                  <select class="full-width" placeholder="Pilih Status Akreditasi" data-init-plugin="select2">
+                                    <option placeholder value=""></option>
                                     <option>Akreditasi A</option>
                                     <option>Akreditasi B</option>
                                     <option>Akreditasi C</option>
@@ -309,13 +321,10 @@
                                 </div>
                               </div>
                             </div>
-
-
                         </div>
-
                           <div class="row clearfix">
                             <div class="col-sm-6">
-                              <div class="form-group form-group-default required">
+                              <div class="form-group form-group-default">
                                 <label>Nomor SK Pendirian</label>
                                 <input type="text" class="form-control" name="firstName" required>
                               </div>
@@ -330,7 +339,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="form-group form-group-default required">
+                          <div class="form-group form-group-default">
                             <label>Dokumen SK Pendirian</label>
                             <div class="panel-heading">
                               <div class="tools">
@@ -341,17 +350,13 @@
                               </div>
                             </div>
                             <div class="panel-body no-scroll no-padding">
-                            <form action="/file-upload" class="dropzone no-margin">
+                            <form action="/file-upload">
                             <div class="fallback">
                               <input type="file" class="form-control" name="projectName" multiple required>
                             </div>
                           </form>
                         </div>
-
                           </div>
-
-
-
                               <div class="form-group form-group-default">
                                 <label>Status Badan Hukum</label>
                                 <div class="radio radio-success" id="statusHukum" style="margin-top:1px;">
@@ -369,11 +374,9 @@
                                   <label>Nama Yayasan</label>
                                   <input type="hiden" class="form-control" name="" >
                                 </div>
-
-
                           <div class="row clearfix">
                             <div class="col-sm-6">
-                              <div class="form-group form-group-default required">
+                              <div class="form-group form-group-default">
                                 <label>Nomor SK Izin Operasional</label>
                                 <input type="text" class="form-control" name="firstName" required>
                               </div>
@@ -386,7 +389,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="form-group form-group-default panel">
+                          <div class="form-group form-group-default">
                             <label>Dokumen SK Izin Operasional</label>
                             <div class="panel-heading">
                               <div class="tools">
@@ -397,19 +400,16 @@
                               </div>
                             </div>
                             <div class="panel-body no-scroll no-padding">
-                              <form action="/file-upload" class="dropzone no-margin">
-                                <div class="fallback">
-                                  <input name="file" type="file" multiple/>
-                                </div>
-                              </form>
+                            <form action="/file-upload">
+                            <div class="fallback">
+                              <input type="file" class="form-control" name="projectName" multiple required>
                             </div>
-
-
+                          </form>
+                        </div>
                           </div>
-
                           <div class="row clearfix">
                             <div class="col-sm-4">
-                              <div class="form-group form-group-default required">
+                              <div class="form-group form-group-default">
                                 <label>Jumlah Ruang Kelas</label>
                                 <input type="number" min="0" class="form-control" name="firstName" required>
                               </div>
@@ -449,13 +449,13 @@
                             </div>
                             <div class="col-sm-6">
                               <div class="form-group form-group-default">
-                                <label>Jumlah Fasilitas Penunjang lainya</label>
+                                <label>Jumlah Fasilitas Penunjang Lainnya</label>
                                 <input type="number" min="0" class="form-control" name="lastName">
                               </div>
                             </div>
                           </div>
                           <div class="form-group form-group-default">
-                            <label>Apa Fasilitas Penunjang ?
+                            <label>Sebutkan apa saja fasilitas penunjang yang tersedia
                             </label>
                             <textarea class="form-control" style="height:100px;"></textarea>
                           </div>
