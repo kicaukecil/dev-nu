@@ -4,6 +4,11 @@
 
 */
 
+.radio-spesial {
+  border-color: #10cfbd;
+  margin-top: 1px !important;
+}
+
   /*header area*/
 .header .header-inner{
   text-align: inherit;
