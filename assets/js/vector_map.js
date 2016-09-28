@@ -13,16 +13,14 @@
         // Apply mapplic plugin
         $('#mapplic').mapplic({
             source: 'assets/js/indonesia.json',
-            height: 500,
+            height: '500px',
             sidebar: false,
             minimap: false,
-            locations: true,
-            deeplinking: true,
-            fullscreen: true,
-            developer: false,
-            hovertip:false,
             maxscale: 4,
-            animate: true,
+            hovertip:false,
+            developer:true,
+            // mapfill:true,
+            // animate: true,
             clearbutton:true
         });
         // Resets map to default zoom

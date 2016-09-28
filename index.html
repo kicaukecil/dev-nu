@@ -52,7 +52,7 @@
     background-color: transparent;
   }
   .mapplic-container .mapplic-clear-button{
-    visibility: visible;
+    /*visibility: visible;*/
   }
   </style>
   <script type="text/javascript">
@@ -266,9 +266,9 @@ window.onload = function () {
             <!-- END ROW -->
 
             <!-- start ROW -->
-            <div class="row clearfix ">
+            <div id="mapindonesia" class="row clearfix m-t-80">
               <div class="panel panel-transparent inner full-height p-t-40 p-b-10 ">
-                <div class="row text-center m-b-10">
+                <div  class="row text-center m-b-10">
                   <h2 class="no-margin" style="font-size:25px;">Sebaran Satuan Pendidikan Ma'arif NU</h2>
                   <span>Jumlah total 60,000 Satuan Pendidikan di Seluruh Indonesia<span>
                 </div>
@@ -283,18 +283,19 @@ window.onload = function () {
                           <button class="btn btn-xs"><i class="fa fa-minus"></i>
                           </button>
                         </div>
-                        <br>
-                        <a href="#" class="btn btn-xs m-b-10 clear-map">
+                        <br>-->
+
+                        <a href="#mapindonesia" class="btn btn-xs m-b-10 clear-map">
                           <i class="fa fa-arrows"></i>
-                        </a> -->
-                        <!-- <form role="form">
+                        </a>
+                        <form role="form">
                           <div class="form-group form-group-default input-group">
                             <label>Provinsi</label>
                             <div class="controls">
                               <input type="hidden" id="country-list" data-placeholder="Cari berdasarkan Provinsi">
                             </div>
                           </div>
-                        </form> -->
+                        </form>
 
                       </div>
                     </div>
