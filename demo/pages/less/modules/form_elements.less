@@ -2,17 +2,17 @@
 [15. Form Elements]
 */
 
-label, 
-input, 
-button, 
-select, 
+label,
+input,
+button,
+select,
 textarea {
     font-size: 14px;
     font-weight: normal;
     line-height: 20px;
 }
 
-input[type="radio"], 
+input[type="radio"],
 input[type="checkbox"] {
     margin-top: 1px 0 0;
     line-height: normal;
@@ -20,16 +20,16 @@ input[type="checkbox"] {
     .box-sizing(border-box);
 }
 
-select[multiple], 
+select[multiple],
 select[size] {
     height: auto !important;
 }
 
 input:focus,
-select:focus, 
-textarea:focus, 
-input[type="file"]:focus, 
-input[type="radio"]:focus, 
+select:focus,
+textarea:focus,
+input[type="file"]:focus,
+input[type="radio"]:focus,
 input[type="checkbox"]:focus {
     outline: none;
     .box-shadow(none);
@@ -66,8 +66,8 @@ form legend {
         .placeholder(inherit, .7);
     }
     .placeholder(inherit, .33);
-    &[disabled], 
-    &[readonly], 
+    &[disabled],
+    &[readonly],
     fieldset[disabled] &{
         background: mix(@color-master-lighter, #fff, 50%);
         color: fade(@color-master, 23%);
@@ -88,7 +88,7 @@ form legend {
 --------------------------------------------------
 */
 
-.input-sm, 
+.input-sm,
 .form-horizontal .form-group-sm .form-control  {
     font-size: 13px;
     min-height: 32px;
@@ -96,7 +96,7 @@ form legend {
     padding: 8px 9px;
 }
 
-.input-lg, 
+.input-lg,
 .form-horizontal .form-group-lg .form-control {
     border-radius: 3px;
     font-size: 18px;
@@ -111,11 +111,11 @@ form legend {
 }
 
 
-/* Checkboxes and Radio buttons 
+/* Checkboxes and Radio buttons
 --------------------------------------------------
 */
 
-.radio, 
+.radio,
 .checkbox {
     margin-bottom: 10px;
     margin-top: 10px;
@@ -157,7 +157,7 @@ form legend {
             }
         }
     }
-    input[type="radio"]:focus{ 
+    input[type="radio"]:focus{
         & + label{
             color:@color-master-dark;
             &:before{
@@ -256,7 +256,7 @@ input[type=radio]:checked + label:before{
             }
         }
     }
-    input[type="checkbox"]:focus{ 
+    input[type="checkbox"]:focus{
         & + label{
             color:@color-master-dark;
             &:before{
@@ -279,7 +279,7 @@ input[type=radio]:checked + label:before{
             &:before {
                 right:-35px;
                 left:auto;
-               
+
             }
         }
         input[type=checkbox]:checked {
@@ -321,7 +321,7 @@ input[type=checkbox]:checked + label{
     .checkbox.check-info &:before{
         border-color: @color-info;
     }
-    
+
     .checkbox.check-success &::after,
     .checkbox.check-primary &::after,
     .checkbox.check-complete &::after,
@@ -330,7 +330,7 @@ input[type=checkbox]:checked + label{
     .checkbox.check-info &::after {
         color: @color-white;
     }
-    
+
 }
 .input-group-addon:first-child{
     .border-right(0);
@@ -384,11 +384,11 @@ input[type=checkbox]:checked + label{
             &:last-child{
                 .padding-right(0);
             }
-        }  
+        }
     }
 }
 @media (min-width: 768px) and (max-width: 991px){
-  form .row [class*="col-md-"]:not(:first-child), 
+  form .row [class*="col-md-"]:not(:first-child),
   form .row [class*="col-md-"]:not(:last-child){
     padding-right: 0;
     padding-left: 0;
@@ -437,14 +437,14 @@ input[type=checkbox]:checked + label{
                 &:last-child .form-group-default{
                     .border-top-right-radius(2px);
                 }
-            } 
+            }
             &.form-group-default{
                 .border-top-left-radius(2px);
                 .border-top-right-radius(2px);
             }
         }
-       
-        &:last-child{ 
+
+        &:last-child{
             &.row > [class*='col-']{
                 &:first-child .form-group-default{
                     .border-bottom-left-radius(2px);
@@ -452,7 +452,7 @@ input[type=checkbox]:checked + label{
                 &:last-child .form-group-default{
                     .border-bottom-right-radius(2px);
                 }
-            } 
+            }
             &.form-group-default{
                 .border-bottom-left-radius(2px);
                 .border-bottom-right-radius(2px);
@@ -465,7 +465,7 @@ input[type=checkbox]:checked + label{
         &.row > [class*='col-']:not(:only-child):not(:last-child) > .form-group-default{
             .border-right-color(transparent);
         }
-        &:not(:last-child) .form-group-default, 
+        &:not(:last-child) .form-group-default,
         &:not(:last-child).form-group-default{
             border-bottom-color: transparent;
         }
@@ -490,9 +490,9 @@ input[type=checkbox]:checked + label{
                 width: 100%;
             }
         }
-    }   
+    }
 }
-/* Form Groups 
+/* Form Groups
 --------------------------------------------------
 */
 .form-group {
@@ -505,7 +505,7 @@ input[type=checkbox]:checked + label{
     }
     label .help{
         .margin-left(8px);
-     
+
     }
     .help {
         font-size: 12px;
@@ -562,9 +562,9 @@ input[type=checkbox]:checked + label{
             display: none !important;
         }
     }
-    &.has-success .form-control, 
-    &.has-success .form-control:focus, 
-    &.has-error .form-control, 
+    &.has-success .form-control,
+    &.has-success .form-control:focus,
+    &.has-error .form-control,
     &.has-error .form-control:focus{
         border: none;
         box-shadow: none;
@@ -655,7 +655,7 @@ input[type=checkbox]:checked + label{
         }
         .ui-select-container{
             .select2-choices{
-                border:0px; 
+                border:0px;
             }
         }
     }
@@ -671,7 +671,7 @@ input[type=checkbox]:checked + label{
             }
             &.label-sm{
                 .left(0);
-                top: 0;                
+                top: 0;
             }
         }
         .select2-container{
@@ -688,8 +688,8 @@ input[type=checkbox]:checked + label{
             }
             .select2-choices{
                 padding-top: 20px;
-                height: 52px;  
-                border:0px;       
+                height: 52px;
+                border:0px;
             }
 
         }
@@ -722,7 +722,7 @@ input[type=checkbox]:checked + label{
             }
             &.label-sm{
                 left: 0;
-                top: 0;                
+                top: 0;
             }
         }
         .cs-wrapper{
@@ -733,7 +733,7 @@ input[type=checkbox]:checked + label{
             }
             .cs-select{
                 height: auto;
-                > span:after, 
+                > span:after,
                 .cs-selected span:after {
                    top: 39px;
                 }
@@ -932,8 +932,8 @@ https://github.com/eternicode/bootstrap-datepicker
                 &.active{
                     background-color:@color-primary !important;
                     &,
-                    &:hover, 
-                    &.disabled, 
+                    &:hover,
+                    &.disabled,
                     &.disabled:hover {
                         background-image: none;
                         text-shadow: none;
@@ -942,8 +942,8 @@ https://github.com/eternicode/bootstrap-datepicker
                 }
                 &.today{
                     &,
-                    &:hover, 
-                    &.disabled, 
+                    &:hover,
+                    &.disabled,
                     &.disabled:hover {
                         background-color: @color-master-lighter;
                         background-image: none;
@@ -958,9 +958,9 @@ https://github.com/eternicode/bootstrap-datepicker
                     &.active{
                         background-color: @color-primary !important;
                     }
-                    &.active, 
-                    &.active:hover, 
-                    &.active.disabled, 
+                    &.active,
+                    &.active:hover,
+                    &.active.disabled,
                     &.active.disabled:hover {
                         background-image: none;
                         border: none;
@@ -987,7 +987,7 @@ https://github.com/eternicode/bootstrap-datepicker
     border:0;
 }
 
-/* Timepicker 
+/* Timepicker
 https://github.com/m3wolf/bootstrap3-timepicker
 */
 
@@ -1017,11 +1017,11 @@ http://www.dangrossman.info/
         .prev, .next, th{
             color: @color-primary;
             text-transform: uppercase;
-            font-size: 11px;            
+            font-size: 11px;
         }
         .month{
             color: #6f7b8a;
-            font-size: 13px;            
+            font-size: 13px;
         }
     }
     td.active, td.active:hover{
@@ -1031,12 +1031,12 @@ http://www.dangrossman.info/
     td.in-range{
       //å  background:@color-primary-lighter;
     }
-}       
+}
 /* Select2
 http://ivaynberg.github.io/select2/
 */
 
-.form-group-default .select2-container .select2-choice, 
+.form-group-default .select2-container .select2-choice,
 .select2-container-multi .select2-choices{
     border-color:transparent;
 }
@@ -1077,13 +1077,13 @@ http://ivaynberg.github.io/select2/
         }
     }
 }
-.select2-search input, 
-.select2-search-choice-close, 
-.select2-container .select2-choice abbr, 
+.select2-search input,
+.select2-search-choice-close,
+.select2-container .select2-choice abbr,
 .select2-container .select2-choice .select2-arrow b{
     background-image: none !important;
 }
-.select2-dropdown-open.select2-drop-above .select2-choice, 
+.select2-dropdown-open.select2-drop-above .select2-choice,
 .select2-dropdown-open.select2-drop-above .select2-choices {
     background-image: none !important;
     border: 1px solid @form-control-border-color;
@@ -1110,7 +1110,7 @@ http://ivaynberg.github.io/select2/
         }
     }
 }
-.select2-container-active .select2-choice, 
+.select2-container-active .select2-choice,
 .select2-container-active .select2-choices {
     box-shadow: none;
     border: 1px solid @form-control-border-color;
@@ -1152,8 +1152,8 @@ http://ivaynberg.github.io/select2/
             color:  @color-master;
         }
     }
-    .select2-no-results, 
-    .select2-searching, 
+    .select2-no-results,
+    .select2-searching,
     .select2-selection-limit {
         background: none;
         color: @color-master;
@@ -1218,8 +1218,8 @@ http://ivaynberg.github.io/select2/
     }
 }
 .select2-drop-multi .select2-results {
-    .select2-no-results, 
-    .select2-searching, 
+    .select2-no-results,
+    .select2-searching,
     .select2-selection-limit {
         top: 0px;
     }
@@ -1554,15 +1554,15 @@ https://github.com/HackerWins/summernote
 
 // Placeholder text
 .placeholder(@color, @opacity) {
-    &::-moz-placeholder           { 
+    &::-moz-placeholder           {
         color: @color;   // Firefox
-        opacity: @opacity; 
+        opacity: @opacity;
     } // See https://github.com/twbs/bootstrap/pull/11526
-    &:-ms-input-placeholder       { 
+    &:-ms-input-placeholder       {
         color: @color;
-        opacity: @opacity; 
+        opacity: @opacity;
     } // Internet Explorer 10+
-    &::-webkit-input-placeholder  { 
+    &::-webkit-input-placeholder  {
         color: @color;
         opacity: @opacity;
     } // Safari and Chrome
@@ -1579,8 +1579,8 @@ input:-webkit-autofill {
 input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0 1000px @color-master-lighter inset !important;
 }
-input.error:-webkit-autofill, 
-input.error:-webkit-autofill:focus, 
+input.error:-webkit-autofill,
+input.error:-webkit-autofill:focus,
 .has-error input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px #F9E9E9 inset !important;
 }
@@ -1912,8 +1912,8 @@ div.cs-skin-slide{
                     max-height: 350px;
                     overflow-y: auto;
                 }
-                span:hover, 
-                &.cs-focus span, 
+                span:hover,
+                &.cs-focus span,
                 &.cs-selected span{
                     color: @color-master-dark;
                 }
@@ -1930,7 +1930,7 @@ div.cs-skin-slide{
     right: 0;
     top: 0;
     .transition(all .3s ease);
-    
+
 }
 .cs-skin-slide.cs-active .cs-options li:nth-child(6) {
     transition-delay: 0.3s;
