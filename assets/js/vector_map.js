@@ -19,6 +19,7 @@
             maxscale: 4,
             hovertip:false,
             developer:true,
+            landmark: true,
             // mapfill:true,
             // animate: true,
             clearbutton:true
