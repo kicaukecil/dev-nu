@@ -30,17 +30,30 @@
         // Basic Sample using Bloodhound
         // constructs the suggestion engine
 
-        var countries = new Bloodhound({
+        var alamat = new Bloodhound({
           datumTokenizer: Bloodhound.tokenizers.whitespace,
           queryTokenizer: Bloodhound.tokenizers.whitespace,
-          prefetch: 'http://sipenmanu.or.id:8080/demo/assets/js/aris.json'
+          prefetch: 'http://sipenmanu.or.id:8080/demo/assets/js/alamat.json'
         });
 
         // passing in `null` for the `options` arguments will result in the default
         // options being used
-        $('.sample-typehead').typeahead(null, {
-          name: 'countries',
-          source: countries
+        $('.sample-typehead-alamat').typeahead(null, {
+          name: 'alamat',
+          source: alamat
+        });
+
+        var alamatemail = new Bloodhound({
+          datumTokenizer: Bloodhound.tokenizers.whitespace,
+          queryTokenizer: Bloodhound.tokenizers.whitespace,
+          prefetch: 'http://sipenmanu.or.id:8080/demo/assets/js/alamatemail.json'
+        });
+
+        // passing in `null` for the `options` arguments will result in the default
+        // options being used
+        $('.sample-typehead-alamatemail').typeahead(null, {
+          name: 'alamatemail',
+          source: alamatemail
         });
 
         $('#daterangepicker').daterangepicker({
