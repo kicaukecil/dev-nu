@@ -144,7 +144,7 @@
   line-height: 27px;
 }
 .map-controls{
-  top: 76%;
+  top: 60%;
   left: 1%;
 }
 .page-sidebar{
@@ -218,7 +218,9 @@ display: inherit;
     font-size: 18px;
     line-height: 20px;
 }
-
+.mapplic-element{
+  background-color: transparent;
+}
 @media (max-width: 991px) {
 
   /*header area*/

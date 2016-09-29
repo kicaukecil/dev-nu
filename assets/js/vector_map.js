@@ -13,15 +13,17 @@
         // Apply mapplic plugin
         $('#mapplic').mapplic({
             source: 'assets/js/indonesia.json',
-            height: '600px',
+            height: '580px',
+            selector: '#regions > *',
             sidebar: false,
             minimap: false,
-            maxscale: 6,
+            maxscale: 2,
             hovertip:false,
+            zoom: true,
             // developer:true,
             // fullscreen:true,
             mapfill:true,
-            markers:false,
+            // markers:false,
             zoombuttons:true,
             // animate: true,
             clearbutton:true

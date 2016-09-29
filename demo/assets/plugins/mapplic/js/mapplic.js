@@ -896,7 +896,7 @@
 			if (scale !== undefined) {
 				self.map.stop().animate({
 					'left': x,
-					'top': y,
+					'top': y - 60,//custom
 					'width': self.contentWidth * scale,
 					'height': self.contentHeight * scale
 				}, d, easing);

@@ -132,8 +132,8 @@ right: 2%;
   line-height: 27px;
 }
 .map-controls{
-  top: 70px;
-  left:2%;
+  top: 60%;
+  left: 5%;
 }
 .page-sidebar{
   width: 250px;
@@ -184,6 +184,25 @@ body.menu-pin .page-sidebar{
 .form-group-default label.fade{
   opacity: 1;
 }
+.mapplic-tooltip::before{
+  content: '';
+}
+h4.mapplic-tooltip-title{
+  font-size: 12px;
+margin: 0px;
+line-height: normal;
+opacity: 0.7;
+color: rgb(98, 98, 98);
+display: inherit;
+}
+.mapplic-tooltip-content{
+  max-height: 200px;
+}
+.mapplic-tooltip-description strong {
+    width: 150px;
+    font-size: 18px;
+    line-height: 20px;
+}
 
 @media (max-width: 991px) {
 
@@ -209,9 +228,6 @@ body.menu-pin .page-sidebar{
 
   body.menu-pin .page-container .page-content-wrapper .content{padding-left: 0px;}
 
-  .map-controls, #widget-area{
-    top:70px;
-  }
   .page-container .page-content-wrapper .content{padding-top: 0px;}
 
 

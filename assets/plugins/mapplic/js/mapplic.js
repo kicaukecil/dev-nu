@@ -889,14 +889,14 @@
 			self.x = normalizeX(self.container.width() * 0.5 - self.scale * self.contentWidth * x);
 			self.y = normalizeY(self.container.height() * 0.5 - self.scale * self.contentHeight * y);
 
-			moveTo(self.x, self.y, self.scale, duration, easing);
+			moveTo(self.x, self.y - 80, self.scale, duration, easing);
 		}
 
 		var moveTo = function(x, y, scale, d, easing) {
 			if (scale !== undefined) {
 				self.map.stop().animate({
 					'left': x,
-					'top': y,
+					'top': y ,//- 80, //custom faridho
 					'width': self.contentWidth * scale,
 					'height': self.contentHeight * scale
 				}, d, easing);
@@ -904,7 +904,7 @@
 			else {
 				self.map.css({
 					'left': x,
-					'top': y
+					'top': y //+ 80 //custom faridho
 				});
 			}
 			if (self.minimap) self.minimap.update(x, y);
