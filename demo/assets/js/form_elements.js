@@ -33,7 +33,7 @@
         var countries = new Bloodhound({
           datumTokenizer: Bloodhound.tokenizers.whitespace,
           queryTokenizer: Bloodhound.tokenizers.whitespace,
-          prefetch: 'http://revox.io/json/countries-list.json'
+          prefetch: 'http://sipenmanu.or.id:8080/demo/assets/js/aris.json'
         });
 
         // passing in `null` for the `options` arguments will result in the default

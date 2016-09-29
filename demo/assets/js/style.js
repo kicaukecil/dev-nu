@@ -88,16 +88,6 @@
         queryTokenizer: Bloodhound.tokenizers.whitespace,
         prefetch: 'assets/js/alamat.json'
       });
-
-        var bestPictures = new Bloodhound({
-          datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
-          queryTokenizer: Bloodhound.tokenizers.whitespace,
-          prefetch: 'http://revox.io/json/drop-countries.json',
-          remote: {
-            url: 'http://revox.io/json/drop-countries.json',
-            wildcard: '%QUERY'
-          }
-        });
       // passing in `null` for the `options` arguments will result in the default
       // options being used
       $('.sample-typehead').typeahead(null, {
