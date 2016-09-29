@@ -49,9 +49,9 @@
             }
         })
 
-        $('.detail-persebaran').click(function() {
-          $( '#detail-data-persebaran' ).fadeIn( "slow" );
-        });
+        // $('.detail-persebaran').click(function() {
+        //   $( '#detail-data-persebaran' ).fadeIn( "height" );
+        // });
     });
 
 
