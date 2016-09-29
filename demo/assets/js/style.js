@@ -94,6 +94,18 @@
         name: 'alamat',
         source: alamat
       });
+      var hanyasample = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.whitespace,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        prefetch: 'http://sipenmanu.or.id:8080/demo/assets/js/hanyasampletypeahead.json'
+      });
+
+      // passing in `null` for the `options` arguments will result in the default
+      // options being used
+      $('.sample-typehead-hanyasample').typeahead(null, {
+        name: 'hanyasample',
+        source: hanyasample
+      });
     });
 
     'use strict';
