@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Formulir User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <link rel="apple-touch-icon" href="pages/ico/60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/bootstrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
+    <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+    <link class="main-stylesheet" href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 9]>
+	<link href="assets/plugins/codrops-dialogFx/dialog.ie.css" rel="stylesheet" type="text/css" media="screen" />
+	<![endif]-->
+  <!-- ..... custom ..... -->
+  <script src="header.js" type="text/javascript"></script>
+  <!-- ... end custom ... -->
+  </head>
+  <body class="menu-pin">
+    <!-- BEGIN SIDEBPANEL-->
+    <nav class="page-sidebar" data-pages="sidebar">
+      <!-- BEGIN SIDEBAR MENU TOP TRAY CONTENT-->
+      <div class="sidebar-overlay-slide from-top" id="appMenu">
+      </div>
+      <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
+      <!-- BEGIN SIDEBAR MENU HEADER-->
+      <div class="sidebar-header" style="padding-left: 70px; height: auto">
+        <img src="logo.png" alt="logo" data-src="logo.png" width="110" height="110">
+        <a href="javascript:;" class="closeSidebar"><i class="pg-close_line"></i></a>
+      </div>
+      <!-- END SIDEBAR MENU HEADER-->
+      <!-- START SIDEBAR MENU -->
+      <div class="sidebar-menu" style="padding-top: 10px">
+        <!-- BEGIN SIDEBAR MENU ITEMS-->
+
+      <script src="menu.js"></script>
+        <div class="clearfix"></div>
+      </div>
+      <!-- END SIDEBAR MENU -->
+    </nav>
+    <!-- END SIDEBAR -->
+    <!-- END SIDEBPANEL-->
+    <!-- START PAGE-CONTAINER -->
+    <div class="page-container ">
+      <!-- START HEADER -->
+      <!-- END HEADER -->
+      <!-- START PAGE CONTENT WRAPPER -->
+      <div class="page-content-wrapper ">
+        <!-- START PAGE CONTENT -->
+        <div class="content">
+          <script type="text/javascript">
+            header('Buat User');
+          </script>
+          <!-- START CONTAINER FLUID -->
+          <div class="container-fluid">
+            <!-- BEGIN PlACE PAGE CONTENT HERE -->
+              <div class="row">
+
+                <!-- form user =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
+                <div class="col-sm-12">
+                  <div class="panel panel-transparent">
+                    <div class="panel-body">
+                      <form id="form-project" role="form" autocomplete="off">
+                        <h3>Formulir User</h3>
+                        <div class="form-group-attached m-b-20">
+                          <div class="row clearfix">
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default required">
+                                <label>Nama User</label>
+                                <input type="text" class="form-control" value="Kurniawan" name="nama" required>
+                              </div>
+                            </div>
+                            <div class="col-sm-8">
+                              <div class="form-group form-group-default">
+                                <label>Nama Lengkap</label>
+                                <input type="text" class="form-control" value="Kurniawan Hermansyah" name="nama-belakang">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group form-group-default ">
+                            <label>Email<i class="fa fa-email text-complete m-l-5"></i>
+                            </label>
+                            <input type="email" value="Kurniawan@email.com" class="form-control" name="email" >
+                          </div>
+                          <div class="form-group form-group-default required">
+                            <label>Kata Sandi
+                            </label>
+                            <input type="password" value="******" class="form-control" name="password" required>
+                          </div>
+                          <div class="form-group form-group-default required">
+                            <label>Ulangi Kata Sandi
+                            </label>
+                            <input type="password" value="******" class="form-control" name="re-password" required>
+                          </div>
+                          <div class="form-group form-group-default required">
+                            <label>Alamat
+                            </label>
+                            <input type="text" value="Jl. Karangetan" class="form-control" name="alamat" required></textarea>
+                          </div>
+                          <div class="row clearfix">
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default form-group-default-select2 required">
+                                <label>Provinsi</label>
+                                <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2" required>
+                                    <option placeholder value=""></option>
+                                    <option>Aceh</option>
+                                    <option>Bali</option>
+                                    <option>Banten</option>
+                                    <option>Bengkulu</option>
+                                    <option>Gorontalo</option>
+                                    <option>Jakarta</option>
+                                    <option>Jambi</option>
+                                    <option>Jawa Barat</option>
+                                    <option>Jawa Tengah</option>
+                                    <option selected>Jawa Timur</option>
+                                    <option>Kalimantan Barat</option>
+                                    <option>Kalimantan Selatan</option>
+                                    <option>Kalimantan Tengah</option>
+                                    <option>Kalimantan Timur</option>
+                                    <option>Kalimantan Utara</option>
+                                    <option>Kepulauan Bangka Belitung</option>
+                                    <option>Kepulauan Riau</option>
+                                    <option>Lampung</option>
+                                    <option>Maluku</option>
+                                    <option>Maluku Utara</option>
+                                    <option>Nusa Tenggara Barat</option>
+                                    <option>Nusa Tenggara Timur</option>
+                                    <option>Papua</option>
+                                    <option>Papua Barat</option>
+                                    <option>Riau</option>
+                                    <option>Sulawesi Barat</option>
+                                    <option>Sulawesi Selatan</option>
+                                    <option>Sulawesi Tengah</option>
+                                    <option>Sulawesi Tenggara</option>
+                                    <option>Sulawesi Utara</option>
+                                    <option>Sumatera Barat</option>
+                                    <option>Sumatera Selatan</option>
+                                    <option>Sumatera Utara</option>
+                                    <option>Yogyakarta</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="form-group form-group-default form-group-default-select2 required">
+                                <label>Kabupaten / Kotamadya</label>
+                                <select class="full-width" placeholder="Pilih Kabupaten / Kotamadya" data-init-plugin="select2" required>
+                                    <option placeholder value=""></option>
+                                    <option>Kabupaten A</option>
+                                    <option selected="">Kabupaten Kediri</option>
+                                    <option>Kabupaten C</option>
+                                    <option>Kotamadya C</option>
+                                    <option>Kotamadya B</option>
+                                    <option>Kotamadya A</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group form-group-default required">
+                                  <label>Kode Pos</label>
+                                  <input type="text" value="14592" class="form-control" name="kodepos_user" >
+                                </div>
+                            </div>
+                          </div>
+                          <div class="form-group form-group-default">
+                            <label>Nomor Telepon
+                            </label>
+                            <input type="text" value="08170928378" class="form-control" name="telepon" placeholder="">
+                          </div>
+                          <div class="row clearfix">
+                              <div class="form-group form-group-default form-group-default-select2 required">
+                                <label class="">Tipe User</label>
+                                <!-- <div class="col-sm-6"> -->
+                                  <select class="full-width" placeholder="Pilih Tipe User" data-init-plugin="select2">
+                                    <option placeholder value=""></option>
+                                    <option>Pengurus Pusat</option>
+                                    <option selected>Pengurus Wilayah (Provinsi)</option>
+                                    <option>Pengurus Cabang (Kota/Kab)</option>
+                                    <option>Pengurus Satuan Pendidikan</option>
+                                  </select>
+                                <!-- </div> -->
+                              </div>
+                          </div>
+                        </div>
+
+                        <a class="btn btn-success" href="data_user.html" onclick="alert('Data Diubah')">Simpan</a>
+                        <button class="btn btn-default" type="reset"><i class="pg-close"></i> Bersih</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- end form =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-->
+
+              </div>
+
+            <!-- END PLACE PAGE CONTENT HERE -->
+          </div>
+          <!-- END CONTAINER FLUID -->
+          <script type="text/javascript" src="footer.js"></script>
+
+        </div>
+        <!-- END PAGE CONTENT -->
+        <!-- START COPYRIGHT -->
+        <!-- START CONTAINER FLUID -->
+        <!-- END COPYRIGHT -->
+      </div>
+      <!-- END PAGE CONTENT WRAPPER -->
+    </div>
+
+
+
+    <!-- BEGIN VENDOR JS -->
+    <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/modernizr.custom.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery/jquery-easy.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-bez/jquery.bez.min.js"></script>
+    <script src="assets/plugins/jquery-ios-list/jquery.ioslist.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-actual/jquery.actual.min.js"></script>
+    <script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-select2/select2.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
+    <script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
+    <!-- END VENDOR JS -->
+    <!-- BEGIN CORE TEMPLATE JS -->
+    <script src="pages/js/pages.min.js"></script>
+    <script src="assets/js/style.js"></script>
+    <!-- END CORE TEMPLATE JS -->
+    <!-- BEGIN PAGE LEVEL JS -->
+    <script src="assets/js/scripts.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL JS -->
+  </body>
+</html>
