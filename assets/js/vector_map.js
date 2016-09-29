@@ -25,7 +25,7 @@
   					minimap: false,
   					locations: true,
   					hovertip: true,
-  					maxscale: 8,
+  					maxscale: 10,
             search:true,
   					zoom: true
 
@@ -60,7 +60,7 @@
         $('#country-list').change(function() {
             var sel = $('#country-list').select2('data');
             var url = window.location.protocol + "//" + window.location.host + window.location.pathname + '?location=' + sel.id;
-            window.location.replace( url );
+    				window.history.pushState({path: url}, '', url);
         });
 
     });

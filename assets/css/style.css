@@ -203,6 +203,9 @@ display: inherit;
     font-size: 18px;
     line-height: 20px;
 }
+#detail-data-persebaran{
+  display: none;
+}
 
 @media (max-width: 991px) {
 

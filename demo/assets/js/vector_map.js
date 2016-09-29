@@ -14,7 +14,7 @@
         $('#mapplic').mapplic({
             source: 'assets/js/indonesia.json',
             height: 500,
-
+            tooltip:false,
             mapfill:true,
             zoombuttons:true,
             clearbutton:true,
