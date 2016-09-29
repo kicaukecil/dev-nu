@@ -13,20 +13,21 @@
         // Apply mapplic plugin
         $('#mapplic').mapplic({
             source: 'assets/js/indonesia.json',
-            height: '580px',
-            selector: '#regions > *',
-            sidebar: false,
-            minimap: false,
-            maxscale: 2,
-            hovertip:false,
-            zoom: true,
-            // developer:true,
-            // fullscreen:true,
+            height: 500,
+
             mapfill:true,
-            // markers:false,
             zoombuttons:true,
-            // animate: true,
-            clearbutton:true
+            clearbutton:true,
+            selector: '#regions > *',
+  					height: 420,
+  					animate: false,
+  					sidebar: false,
+  					minimap: false,
+  					locations: true,
+  					hovertip: true,
+  					maxscale: 8,
+            search:true,
+  					zoom: true
 
 
         });
@@ -58,7 +59,8 @@
         // jump to country on select2 change
         $('#country-list').change(function() {
             var sel = $('#country-list').select2('data');
-            window.location.hash = sel.id;
+            var url = window.location.protocol + "//" + window.location.host + window.location.pathname + '?location=' + sel.id;
+            window.location.replace( url );
         });
 
     });
