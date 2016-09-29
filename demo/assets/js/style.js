@@ -90,9 +90,9 @@
       });
       // passing in `null` for the `options` arguments will result in the default
       // options being used
-      $('.sample-typehead').typeahead(null, {
-        name: 'countries',
-        source: countries
+      $('.sample-typehead-alamat').typeahead(null, {
+        name: 'alamat',
+        source: alamat
       });
     });
 

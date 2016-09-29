@@ -43,17 +43,17 @@
           source: alamat
         });
 
-        var alamatemail = new Bloodhound({
+        var hanyasample = new Bloodhound({
           datumTokenizer: Bloodhound.tokenizers.whitespace,
           queryTokenizer: Bloodhound.tokenizers.whitespace,
-          prefetch: 'http://sipenmanu.or.id:8080/demo/assets/js/alamatemail.json'
+          prefetch: 'http://sipenmanu.or.id:8080/demo/assets/js/hanyasampletypeahead.json'
         });
 
         // passing in `null` for the `options` arguments will result in the default
         // options being used
-        $('.sample-typehead-alamatemail').typeahead(null, {
-          name: 'alamatemail',
-          source: alamatemail
+        $('.sample-typehead-hanyasample').typeahead(null, {
+          name: 'hanyasample',
+          source: hanyasample
         });
 
         $('#daterangepicker').daterangepicker({
