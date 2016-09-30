@@ -15,7 +15,7 @@
 					{
 							"id":"ID-AC",
 							"title":"Aceh",
-							"description": "Satuan Pendidikan:<br> <strong class='text-success'>723</strong><br><br>Peserta Didik:<br> <strong class='text-success'>12,021</strong><br><br>Tenaga Pendidik:<br> <strong class='text-success'>5,021</strong>",
+							"description": "Satuan Pendidikan:<br> <strong class='text-success'>723</strong><br><br>Peserta Didik:<br> <strong class='text-success'>12,021</strong><br><br>Tenaga Pendidik:<br> <strong class='text-success'>5,021</strong><a class='btn btn-sm ' onclick='detailPersebaran(this)' data-location-id='ID-AC' >Detail<a/>",
 							"action": "tooltip",
 							"pin": "marker yellow",
 							"x":"0.1021",

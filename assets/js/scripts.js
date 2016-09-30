@@ -49,9 +49,10 @@
             }
         })
 
-        // $('.detail-persebaran').click(function() {
-        //   $( '#detail-data-persebaran' ).fadeIn( "height" );
-        // });
+        function detailPersebaran(o) {
+          var id = o.attr("data-location-id");
+          $( "#detail-data-persebaran" ).fadeIn( "slow" );
+        };
     });
 
 
