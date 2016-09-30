@@ -30,41 +30,30 @@
         // Basic Sample using Bloodhound
         // constructs the suggestion engine
 
-        var countries = new Bloodhound({
+        var alamat = new Bloodhound({
           datumTokenizer: Bloodhound.tokenizers.whitespace,
           queryTokenizer: Bloodhound.tokenizers.whitespace,
-          prefetch: 'http://revox.io/json/countries-list.json'
+          prefetch: 'http://sipenmanu.or.id:8080/demo/assets/js/alamat.json'
         });
 
-          var bestPictures = new Bloodhound({
-            datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
-            queryTokenizer: Bloodhound.tokenizers.whitespace,
-            prefetch: 'http://revox.io/json/drop-countries.json',
-            remote: {
-              url: 'http://revox.io/json/drop-countries.json',
-              wildcard: '%QUERY'
-            }
-          });
         // passing in `null` for the `options` arguments will result in the default
         // options being used
-        $('.sample-typehead').typeahead(null, {
-          name: 'countries',
-          source: countries
+        $('.sample-typehead-alamat').typeahead(null, {
+          name: 'alamat',
+          source: alamat
         });
 
-        //Custom Template
-        $('#custom-templates .typeahead').typeahead(null, {
-              name: 'best-pictures',
-              display: 'value',
-              source: bestPictures,
-              templates: {
-                empty: [
-                  '<div class="empty-message">',
-                    'unable to find any Best Picture winners that match the current query',
-                  '</div>'
-                ].join('\n'),
-                suggestion: Handlebars.compile('<div>{{value}}– {{year}}</div>')
-              }
+        var hanyasample = new Bloodhound({
+          datumTokenizer: Bloodhound.tokenizers.whitespace,
+          queryTokenizer: Bloodhound.tokenizers.whitespace,
+          prefetch: 'http://sipenmanu.or.id:8080/demo/assets/js/hanyasampletypeahead.json'
+        });
+
+        // passing in `null` for the `options` arguments will result in the default
+        // options being used
+        $('.sample-typehead-hanyasample').typeahead(null, {
+          name: 'hanyasample',
+          source: hanyasample
         });
 
         $('#daterangepicker').daterangepicker({
