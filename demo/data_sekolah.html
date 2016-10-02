@@ -15,7 +15,6 @@
     <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
-
     <link href="assets/plugins/jquery-datatable/media/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/datatables-responsive/css/datatables.responsive.css" rel="stylesheet" type="text/css" media="screen" />
@@ -51,7 +50,7 @@
             <div class="table-responsive bg-white">
             <div class="panel panel-transparent">
               <div class="panel-heading">
-                <a href="input_sekolah.html" class="btn btn-success"><i  class="fa fa-plus"></i> Tambah Data</a>
+                <a href="input_sekolah.html" class="btn btn-success"><i  class="fa fa-plus"></i> TAMBAH SATUAN PENDIDIKAN</a>
                 <div class="pull-right">
                   <div class="col-xs-12 no-padding">
                     <button type="button" class="btn btn-success" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" name="button"><i class="fa fa-filter"></i> Filter</button>
@@ -71,32 +70,54 @@
                         <form>
                           <div class="row clearfix">
                               <div class="col-md-6">
-                                <div class="form-group    ">
+                                <div class="form-group">
+                                  <div class="tools">
+                                    <a href="javascript:;" class="collapse"></a>
+                                    <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                    <a href="javascript:;" class="reload"></a>
+                                    <a href="javascript:;" class="remove"></a>
+                                  </div>
                                   <label>Nama Satuan Pendidikan</label>
-                                  <input type="Nama" class="form-control" >
-                                </div>
+                                  <input class="typeahead form-control sample-typehead-hanyasample" type="text">
+                                  </div>
                               </div>
                               <div class="col-md-6">
-                              <div class="form-group    ">
-                                <label>Nomor Induk Sekolah / Madrasah</label>
-                                <input type="Nama" class="form-control" >
-                              </div>
+                                <div class="form-group">
+                                  <div class="tools">
+                                    <a href="javascript:;" class="collapse"></a>
+                                    <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                    <a href="javascript:;" class="reload"></a>
+                                    <a href="javascript:;" class="remove"></a>
+                                  </div>
+                                  <label>Nomor Induk Sekolah / Madrasah</label>
+                                  <input class="typeahead form-control sample-typehead-hanyasample" type="text">
+                                  </div>
                               </div>
                             </div>
                             <div class="row clearfix">
                               <div class="col-md-6">
-
-                                  <div class="form-group  ">
-                                    <label>Alamat Satuan Pendidikan</label>
-                                    <input class="form-control" ="" type="text">
-                                    </div>
+                                <div class="form-group">
+                                  <div class="tools">
+                                    <a href="javascript:;" class="collapse"></a>
+                                    <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                    <a href="javascript:;" class="reload"></a>
+                                    <a href="javascript:;" class="remove"></a>
+                                  </div>
+                                  <label>Alamat</label>
+                                  <input class="typeahead form-control sample-typehead-hanyasample" type="text">
+                                </div>
                               </div>
                               <div class="col-md-6">
-
-                                  <div class="form-group  ">
-                                    <label>Tahun Pembukaan</label>
-                                    <input class="form-control" ="" type="text">
-                                    </div>
+                                <div class="form-group">
+                                  <div class="tools">
+                                    <a href="javascript:;" class="collapse"></a>
+                                    <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                    <a href="javascript:;" class="reload"></a>
+                                    <a href="javascript:;" class="remove"></a>
+                                  </div>
+                                  <label>Tahun Pembukaan</label>
+                                  <input class="typeahead form-control sample-typehead-hanyasample" type="text">
+                                </div>
                               </div>
                           </div>
                           <div class="row clearfix">
@@ -110,7 +131,7 @@
                               </div>
                             </div>
                             <div class="col-sm-3">
-                              <div class="form-group   form-group-default-select2 ">
+                              <div class="form-group form-group-default-select2">
                                 <label>Status Koneksi Internet</label>
                                 <select class="full-width" placeholder="" multiple data-init-plugin="select2">
                                   <option>Ada</option>
@@ -119,7 +140,7 @@
                               </div>
                             </div>
                             <div class="col-sm-3">
-                              <div class="form-group   form-group-default-select2 ">
+                              <div class="form-group form-group-default-select2">
                                 <label>Mapel Aswaja dan Ke-NU-an</label>
                                 <select class="full-width" placeholder="" multiple data-init-plugin="select2">
                                   <option>Ada</option>
@@ -128,7 +149,7 @@
                               </div>
                             </div>
                             <div class="col-sm-3">
-                              <div class="form-group   form-group-default-select2 ">
+                              <div class="form-group form-group-default-select2">
                                 <label>Tempat Praktek</label>
                                 <select class="full-width" placeholder="" multiple data-init-plugin="select2">
                                   <option>Milik Sendiri</option>
@@ -142,27 +163,40 @@
                               <div class="form-group   form-group-default-select2 ">
                                 <label>Provinsi</label>
                                 <select class="full-width" data-placeholder="" multiple data-init-plugin="select2">
-                                  <optgroup label="Indonesi Bagian Barat">
-                                    <option value="AK">DKI Jakarta</option>
-                                    <option value="HI">Jawa Barat</option>
-                                    <option value="HI">Banten</option>
-                                  </optgroup>
-                                  <optgroup label="Indonesi Bagian Tengah">
-                                    <option value="CA">Bali</option>
-                                    <option value="NV">Sulawesi Selatan</option>
-                                    <option value="OR">Kalimantan Timur</option>
-                                  </optgroup>
-                                  <optgroup label="Indonesi Bagian Timur">
-                                    <option value="AZ">Maluku</option>
-                                    <option value="CO">Colorado</option>
-                                    <option value="ID">Idaho</option>
-                                    <option value="MT">Montana</option>
-                                    <option value="NE">Nebraska</option>
-                                    <option value="NM">New Mexico</option>
-                                    <option value="ND">North Dakota</option>
-                                    <option value="UT">Utah</option>
-                                    <option value="WY">Wyoming</option>
-                                  </optgroup>
+                                  <option>Aceh</option>
+                                  <option>Bali</option>
+                                  <option>Banten</option>
+                                  <option>Bengkulu</option>
+                                  <option>Gorontalo</option>
+                                  <option>Jakarta</option>
+                                  <option>Jambi</option>
+                                  <option>Jawa Barat</option>
+                                  <option>Jawa Tengah</option>
+                                  <option>Jawa Timur</option>
+                                  <option>Kalimantan Barat</option>
+                                  <option>Kalimantan Selatan</option>
+                                  <option>Kalimantan Tengah</option>
+                                  <option>Kalimantan Timur</option>
+                                  <option>Kalimantan Utara</option>
+                                  <option>Kepulauan Bangka Belitung</option>
+                                  <option>Kepulauan Riau</option>
+                                  <option>Lampung</option>
+                                  <option>Maluku</option>
+                                  <option>Maluku Utara</option>
+                                  <option>Nusa Tenggara Barat</option>
+                                  <option>Nusa Tenggara Timur</option>
+                                  <option>Papua</option>
+                                  <option>Papua Barat</option>
+                                  <option>Riau</option>
+                                  <option>Sulawesi Barat</option>
+                                  <option>Sulawesi Selatan</option>
+                                  <option>Sulawesi Tengah</option>
+                                  <option>Sulawesi Tenggara</option>
+                                  <option>Sulawesi Utara</option>
+                                  <option>Sumatera Barat</option>
+                                  <option>Sumatera Selatan</option>
+                                  <option>Sumatera Utara</option>
+                                  <option>Yogyakarta</option>
                                 </select>
                               </div>
                             </div>
@@ -170,21 +204,12 @@
                               <div class="form-group   form-group-default-select2 ">
                                 <label>Kabupaten / Kotamadya</label>
                                 <select class="full-width" placeholder="" multiple data-init-plugin="select2">
-                                  <optgroup label="DKI Jakarta">
-                                    <option value="AK">Jakarta Pusat</option>
-                                    <option value="HI">Jakarta Barat</option>
-                                    <option value="HI">Jakarta Selatan</option>
-                                  </optgroup>
-                                  <optgroup label="Jawa Barat">
-                                    <option value="CA">Bandung</option>
-                                    <option value="NV">Bogor</option>
-                                  </optgroup>
-                                  <optgroup label="Jawa Timur">
-                                    <option value="AZ">Surabaya</option>
-                                    <option value="CO">Kediri</option>
-                                    <option value="ID">Lamogan</option>
-                                    <option value="MT">Ponorogo</option>
-                                  </optgroup>
+                                  <option>Kabupaten A</option>
+                                  <option>Kabupaten B</option>
+                                  <option>Kabupaten C</option>
+                                  <option>Kotamadya C</option>
+                                  <option>Kotamadya B</option>
+                                  <option>Kotamadya A</option>
                                 </select>
                               </div>
                             </div>
@@ -192,7 +217,7 @@
                               <div class="form-group   form-group-default-select2 ">
                                 <label>Kecamatan</label>
                                 <select class="full-width" placeholder="" multiple data-init-plugin="select2">
-                                  <option>Sari rejo</option>
+                                  <option>Sari Rejo</option>
                                   <option>Wungu</option>
                                   <option>Taman Sari</option>
                                 </select>
@@ -200,37 +225,66 @@
                             </div>
                             <div class="col-sm-3">
                               <div class="form-group">
+                                <div class="tools">
+                                  <a href="javascript:;" class="collapse"></a>
+                                  <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                  <a href="javascript:;" class="reload"></a>
+                                  <a href="javascript:;" class="remove"></a>
+                                </div>
                                 <label>Kode Pos</label>
-                                <input type="text" class="form-control" >
-                              </div>
+                                <input class="typeahead form-control sample-typehead-hanyasample" type="text">
+                                </div>
                             </div>
                           </div>
                           <div class="row clearfix">
                             <div class="col-sm-3">
-                              <div class="form-group    ">
+                              <div class="form-group">
+                                <div class="tools">
+                                  <a href="javascript:;" class="collapse"></a>
+                                  <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                  <a href="javascript:;" class="reload"></a>
+                                  <a href="javascript:;" class="remove"></a>
+                                </div>
                                 <label>Nomor Telepon</label>
-                                <input type="text" class="form-control" >
-                              </div>
-                            </div>
-                            <div class="col-sm-3">
-                              <div class="form-group  ">
-                                <label>Nomor Faksimili</label>
-                                <input class="form-control" ="" type="text">
+                                <input class="typeahead form-control sample-typehead-hanyasample" type="text">
                                 </div>
                             </div>
                             <div class="col-sm-3">
-                              <div class="form-group  ">
-                                <label>Email</label>
-                                <input class="form-control" ="" type="text">
+                              <div class="form-group">
+                                <div class="tools">
+                                  <a href="javascript:;" class="collapse"></a>
+                                  <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                  <a href="javascript:;" class="reload"></a>
+                                  <a href="javascript:;" class="remove"></a>
+                                </div>
+                                <label>Nomor Faksimili</label>
+                                <input class="typeahead form-control sample-typehead-hanyasample" type="text">
                               </div>
                             </div>
                             <div class="col-sm-3">
-                              <div class="form-group  ">
-                                <label>Website</label>
-                                <input class="form-control" ="" type="text">
+                              <div class="form-group">
+                                <div class="tools">
+                                  <a href="javascript:;" class="collapse"></a>
+                                  <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                  <a href="javascript:;" class="reload"></a>
+                                  <a href="javascript:;" class="remove"></a>
+                                </div>
+                                <label>Email</label>
+                                <input class="typeahead form-control sample-typehead-hanyasample" type="text">
                               </div>
                             </div>
-
+                            <div class="col-sm-3">
+                              <div class="form-group">
+                                <div class="tools">
+                                  <a href="javascript:;" class="collapse"></a>
+                                  <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                  <a href="javascript:;" class="reload"></a>
+                                  <a href="javascript:;" class="remove"></a>
+                                </div>
+                                <label>Website</label>
+                                <input class="typeahead form-control sample-typehead-hanyasample" type="text">
+                                </div>
+                            </div>
                           </div>
                           <div class="row clearfix">
                             <div class="col-sm-2">
@@ -243,10 +297,16 @@
                               </div>
                             </div>
                             <div class="col-sm-4">
-                              <div class="form-group    ">
+                              <div class="form-group">
+                                <div class="tools">
+                                  <a href="javascript:;" class="collapse"></a>
+                                  <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                  <a href="javascript:;" class="reload"></a>
+                                  <a href="javascript:;" class="remove"></a>
+                                </div>
                                 <label>Nomor SK Pendirian</label>
-                                <input type="text" class="form-control" >
-                              </div>
+                                <input class="typeahead form-control sample-typehead-hanyasample" type="text">
+                                </div>
                             </div>
                             <div class="col-sm-3">
                               <div class="form-group   form-group-default-select2 ">
@@ -258,11 +318,16 @@
                               </div>
                             </div>
                             <div class="col-sm-3">
-                              <div class="form-group  ">
-                                <label>Nomor SK Ijin Operasional</label>
-                                <input class="form-control" ="" type="text">
+                              <div class="form-group">
+                                <div class="tools">
+                                  <a href="javascript:;" class="collapse"></a>
+                                  <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                  <a href="javascript:;" class="reload"></a>
+                                  <a href="javascript:;" class="remove"></a>
                                 </div>
-                            </div>
+                                <label>Nomor SK Ijin Operasional</label>
+                                <input class="typeahead form-control sample-typehead-hanyasample" type="text">
+                                </div>
                           </div>
                           <div class="row clearfix">
                             <div class="col-sm-3">
@@ -276,37 +341,59 @@
                               </div>
                             </div>
                             <div class="col-sm-3">
-                              <div class="form-group  ">
-                                <label>Nomor Registrasi Maarif</label>
-                                <input class="form-control" ="" type="text">
+                              <div class="form-group">
+                                <div class="tools">
+                                  <a href="javascript:;" class="collapse"></a>
+                                  <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                  <a href="javascript:;" class="reload"></a>
+                                  <a href="javascript:;" class="remove"></a>
+                                </div>
+                                <label>Nomor Registrasi Ma'arif</label>
+                                <input class="typeahead form-control sample-typehead-hanyasample" type="text">
                                 </div>
                             </div>
                             <div class="col-sm-3">
-
-                              <div class="form-group  ">
+                              <div class="form-group">
+                                <div class="tools">
+                                  <a href="javascript:;" class="collapse"></a>
+                                  <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                  <a href="javascript:;" class="reload"></a>
+                                  <a href="javascript:;" class="remove"></a>
+                                </div>
                                 <label>Nama Kepala Sekolah</label>
-                                <input class="form-control" ="" type="text">
+                                <input class="typeahead form-control sample-typehead-hanyasample" type="text">
                                 </div>
                             </div>
                             <div class="col-sm-3">
-                              <div class="form-group  ">
+                              <div class="form-group">
+                                <div class="tools">
+                                  <a href="javascript:;" class="collapse"></a>
+                                  <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                  <a href="javascript:;" class="reload"></a>
+                                  <a href="javascript:;" class="remove"></a>
+                                </div>
                                 <label>Nomor Handphone Kepala Sekolah</label>
-                                <input class="form-control" ="" type="text">
+                                <input class="typeahead form-control sample-typehead-hanyasample" type="text">
                                 </div>
                             </div>
 
                           </div>
                           <div class="row clearfix">
                             <div class="col-sm-3">
-
-                              <div class="form-group   form-group-default-select2 ">
-                                <label>Nomor SK Akreditasi </label>
-                                <input class="form-control" ="" type="text">
-                              </div>
+                              <div class="form-group">
+                                <div class="tools">
+                                  <a href="javascript:;" class="collapse"></a>
+                                  <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                  <a href="javascript:;" class="reload"></a>
+                                  <a href="javascript:;" class="remove"></a>
+                                </div>
+                                <label>Nomor SK Akreditasi</label>
+                                <input class="typeahead form-control sample-typehead-hanyasample" type="text">
+                                </div>
                             </div>
                             <div class="col-sm-3">
                               <div class="form-group   form-group-default-select2 ">
-                                <label>Status Satuan Pendidikan</label>
+                                <label>Status Akreditasi</label>
                                 <select class="full-width" placeholder="" multiple data-init-plugin="select2">
                                   <option>A</option>
                                   <option>B</option>
@@ -315,24 +402,9 @@
                                 </select>
                               </div>
                             </div>
-                            <div class="col-sm-3">
-
-                              <div class="form-group  ">
-                                <label>Nama Kepala Sekolah</label>
-                                <input class="form-control" ="" type="text">
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                              <div class="form-group  ">
-                                <label>Nomor Handphone Kepala Sekolah</label>
-                                <input class="form-control" ="" type="text">
-                                </div>
-                            </div>
-
                           </div>
                           <div class="row clearfix">
                             <div class="col-sm-3">
-
                               <div class="form-group   form-group-default-select2 ">
                                 <label>Bentuk Satuan Pendidikan</label>
                                 <select class="full-width" placeholder="" multiple data-init-plugin="select2">
@@ -345,18 +417,6 @@
                               </div>
                             </div>
                             <div class="col-sm-3">
-                              <div class="form-group   form-group-default-select2 ">
-                                <label>Jumlah Ruang Tenaga Pendidik</label>
-                                <select class="full-width" placeholder="" multiple data-init-plugin="select2">
-                                  <option>< 10 Ruang</option>
-                                  <option>10 - 50 Ruang</option>
-                                  <option>50 - 100 Ruang</option>
-                                  <option>> 100 Ruang</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-sm-3">
-
                               <div class="form-group   form-group-default-select2 ">
                                 <label>Jumlah Ruang Kelas</label>
                                 <select class="full-width" placeholder="" multiple data-init-plugin="select2">
@@ -374,7 +434,17 @@
                               </div>
                             </div>
                             <div class="col-sm-3">
-
+                              <div class="form-group   form-group-default-select2 ">
+                                <label>Jumlah Ruang Tenaga Pendidik</label>
+                                <select class="full-width" placeholder="" multiple data-init-plugin="select2">
+                                  <option>< 10 Ruang</option>
+                                  <option>10 - 50 Ruang</option>
+                                  <option>50 - 100 Ruang</option>
+                                  <option>> 100 Ruang</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-3">
                               <div class="form-group   form-group-default-select2 ">
                                 <label>Jumlah Rombongan Belajar</label>
                                 <select class="full-width" placeholder="" multiple data-init-plugin="select2">
@@ -385,11 +455,9 @@
                                 </select>
                               </div>
                             </div>
-
                           </div>
                           <div class="row clearfix">
                             <div class="col-sm-3">
-
                               <div class="form-group   form-group-default-select2 ">
                                 <label>Klasifikasi Geografis</label>
                                 <select class="full-width" placeholder="" multiple data-init-plugin="select2">
@@ -409,7 +477,6 @@
                               </div>
                             </div>
                             <div class="col-sm-3">
-
                               <div class="form-group   form-group-default-select2 ">
                                 <label>Karya Unggulan</label>
                                 <select class="full-width" placeholder="" multiple data-init-plugin="select2">
@@ -419,18 +486,14 @@
                               </div>
                             </div>
                             <div class="col-sm-3">
-
                               <div id="bidangPendidik" class="form-group   form-group-default-select2">
                                 <label>Tahun Pelajaran</label>
-                                <select class="selectpicker form-control" placeholder=""  >
-
+                                <select class="selectpicker form-control" placeholder="">
                                   <option value="">2015-2016</option>
                                   <option value="">2016-2017</option>
-
                                 </select>
                               </div>
                             </div>
-
                           </div>
                           <div class="row clearfix m-b-10">
                             <div class="col-sm-6">
@@ -485,7 +548,6 @@
                     <tr>
                       <th class="sorting-non "><button class="btn clickDelete"><i class="pg-trash"></i>
                       </button></th>
-
                       <th>Nama Satuan Pendidikan</th>
                       <th>Nomor Induk</th>
                       <th>Bentuk</th>
@@ -522,7 +584,7 @@
                       <th>Jumlah Rombongan Belajar</th>
                       <th>Jumlah Ruang Tenaga Pendidik</th>
                       <th>Waktu Penyelengaraan</th>
-                      <th>Jumlah Fasilitas Penunjang Lainya</th>
+                      <th>Jumlah Fasilitas Penunjang Lainnya</th>
                       <th>Keterangan Fasilitas Penunjang</th>
                       <th>Prestasi</th>
                       <th>Karya Unggulan</th>
@@ -1478,24 +1540,21 @@
     <script type="text/javascript" src="assets/plugins/bootstrap-select2/select2.min.js"></script>
     <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
     <script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
-
     <script src="assets/plugins/jquery-datatable/media/js/jquery.dataTables.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery-datatable/extensions/FixedColumns/js/dataTables.fixedColumns.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery-datatable/media/js/dataTables.bootstrap.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js" type="text/javascript"></script>
-
     <script src="pages/js/pages.min.js"></script>
-
     <script type="text/javascript" src="/assets/plugins/datatables-responsive/js/datatables.responsive.js"></script>
     <script type="text/javascript" src="/assets/plugins/datatables-responsive/js/lodash.min.js"></script>
     <script src="assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.js" type="text/javascript"></script>
-
     <script src="assets/js/scripts.js" type="text/javascript"></script>
     <script src="assets/js/datatables.js" type="text/javascript"></script>
     <script src="assets/js/tables.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap-typehead/typeahead.bundle.min.js"></script>
+    <script src="assets/plugins/bootstrap-typehead/typeahead.jquery.min.js"></script>
     <!-- <script src="assets/js/style.js" type="text/javascript"></script> -->
-
-
+    <script src="assets/js/form_elements.js" type="text/javascript"></script>
     <script src="assets/js/scripts.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS -->
     <script type="text/javascript">
