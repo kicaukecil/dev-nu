@@ -52,11 +52,11 @@
 
           <div class="container-fluid container-fixed-lg p-t-20">
             <div class="row">
-              <div class="table-responsive bg-white ">
+              <div class="table-responsive bg-white">
                 <div class="panel panel-transparent">
                 <div class="panel-heading">
                   <div class="panel-title">
-                    <a href="input_kantor_cabang.html" class="btn btn-success" style="color:#fff;"><i class="fa fa-plus"></i>Tambah Kantor Cabang</a>
+                    <a href="input_kantor_cabang.html" class="btn btn-success" style="color:#fff;"><i class="fa fa-plus"></i> Tambah Kantor Cabang</a>
                   </div>
                   <div class="pull-right">
                     <div class="col-xs-12 no-padding">
@@ -77,18 +77,30 @@
                           <form>
                             <div class="row clearfix">
                               <div class="col-sm-12">
-                                <div class="form-group    ">
+                                <div class="form-group">
+                                  <div class="tools">
+                                    <a href="javascript:;" class="collapse"></a>
+                                    <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                    <a href="javascript:;" class="reload"></a>
+                                    <a href="javascript:;" class="remove"></a>
+                                  </div>
                                   <label>Nama Kantor</label>
-                                  <input type="Nama" class="form-control" >
-                                </div>
+                                  <input class="typeahead form-control sample-typehead-hanyasample" type="text">
+                                  </div>
                               </div>
                             </div>
                               <div class="row clearfix">
                               <div class="col-sm-12">
-                                <div class="form-group  ">
-                                  <label>Alamat</label>
-                                  <input class="form-control"  type="text">
+                                <div class="form-group">
+                                  <div class="tools">
+                                    <a href="javascript:;" class="collapse"></a>
+                                    <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                    <a href="javascript:;" class="reload"></a>
+                                    <a href="javascript:;" class="remove"></a>
                                   </div>
+                                  <label>Alamat</label>
+                                  <input class="typeahead form-control sample-typehead-hanyasample" type="text">
+                                </div>
                               </div>
 
                             </div>
@@ -98,13 +110,40 @@
                                 <div class="form-group   form-group-default-select2 ">
                                   <label>Provinsi</label>
                                   <select class="full-width" data-init-plugin="select2" multiple="">
-                                      <option value="AK">Jakarta </option>
-                                      <option value="CA">Jawa Barat</option>
-                                      <option value="NV">Jawa Tengah</option>
-                                      <option value="AZ">Jawa Timur</option>
-                                      <option value="CO">Banten</option>
-                                      <option value="ID">Bali</option>
-                                      <option value="MT">Bengkulu</option>
+                                    <option>Aceh</option>
+                                    <option>Bali</option>
+                                    <option>Banten</option>
+                                    <option>Bengkulu</option>
+                                    <option>Gorontalo</option>
+                                    <option>Jakarta</option>
+                                    <option>Jambi</option>
+                                    <option>Jawa Barat</option>
+                                    <option>Jawa Tengah</option>
+                                    <option>Jawa Timur</option>
+                                    <option>Kalimantan Barat</option>
+                                    <option>Kalimantan Selatan</option>
+                                    <option>Kalimantan Tengah</option>
+                                    <option>Kalimantan Timur</option>
+                                    <option>Kalimantan Utara</option>
+                                    <option>Kepulauan Bangka Belitung</option>
+                                    <option>Kepulauan Riau</option>
+                                    <option>Lampung</option>
+                                    <option>Maluku</option>
+                                    <option>Maluku Utara</option>
+                                    <option>Nusa Tenggara Barat</option>
+                                    <option>Nusa Tenggara Timur</option>
+                                    <option>Papua</option>
+                                    <option>Papua Barat</option>
+                                    <option>Riau</option>
+                                    <option>Sulawesi Barat</option>
+                                    <option>Sulawesi Selatan</option>
+                                    <option>Sulawesi Tengah</option>
+                                    <option>Sulawesi Tenggara</option>
+                                    <option>Sulawesi Utara</option>
+                                    <option>Sumatera Barat</option>
+                                    <option>Sumatera Selatan</option>
+                                    <option>Sumatera Utara</option>
+                                    <option>Yogyakarta</option>
                                   </select>
                                 </div>
                               </div>
@@ -112,54 +151,57 @@
                                 <div class="form-group   form-group-default-select2 ">
                                   <label>Kabupaten / Kotamadya</label>
                                   <select class="full-width" data-init-plugin="select2" multiple="">
-                                    <optgroup label="DKI Jakarta">
-                                      <option value="AK">Jakarta Pusat</option>
-                                      <option value="HI">Jakarta Barat</option>
-                                      <option value="HI">Jakarta Selatan</option>
-                                    </optgroup>
-                                    <optgroup label="Jawa Barat">
-                                      <option value="CA">Bandung</option>
-                                      <option value="NV">Bogor</option>
-                                    </optgroup>
-                                    <optgroup label="Jawa Timur">
-                                      <option value="AZ">Surabaya</option>
-                                      <option value="CO">Kediri</option>
-                                      <option value="ID">Lamogan</option>
-                                      <option value="MT">Ponorogo</option>
-                                    </optgroup>
+                                    <option>Kabupaten A</option>
+                                    <option>Kabupaten B</option>
+                                    <option>Kabupaten C</option>
+                                    <option>Kotamadya C</option>
+                                    <option>Kotamadya B</option>
+                                    <option>Kotamadya A</option>
                                   </select>
                                 </div>
                               </div>
                               <div class="col-sm-4">
-                                <div class="form-group  ">
+                                <div class="form-group">
+                                  <div class="tools">
+                                    <a href="javascript:;" class="collapse"></a>
+                                    <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                    <a href="javascript:;" class="reload"></a>
+                                    <a href="javascript:;" class="remove"></a>
+                                  </div>
                                   <label>Kode Pos</label>
-                                  <input class="form-control"  type="text">
-                                </div>
+                                  <input class="typeahead form-control sample-typehead-hanyasample" type="text">
+                                  </div>
                               </div>
                             </div>
                             <div class="row clearfix">
                               <div class="col-sm-6">
-                                <div class="form-group  ">
+                                <div class="form-group">
+                                  <div class="tools">
+                                    <a href="javascript:;" class="collapse"></a>
+                                    <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                    <a href="javascript:;" class="reload"></a>
+                                    <a href="javascript:;" class="remove"></a>
+                                  </div>
                                   <label>Nomor Telepon</label>
-                                  <input class="form-control"  type="text">
-                                </div>
+                                  <input class="typeahead form-control sample-typehead-hanyasample" type="text">
+                                  </div>
                               </div>
                               <div class="col-sm-6">
-                                <div class="form-group   form-group-default-select2 ">
+                                <div class="form-group">
+                                  <div class="tools">
+                                    <a href="javascript:;" class="collapse"></a>
+                                    <a href="#grid-config" data-toggle="modal" class="config"></a>
+                                    <a href="javascript:;" class="reload"></a>
+                                    <a href="javascript:;" class="remove"></a>
+                                  </div>
                                   <label>Nama Admin</label>
-                                  <select class="full-width" data-init-plugin="select2" multiple="">
-
-                                    <option value="Joko">Joko</option>
-                                    <option value="Waluyo">Waluyo</option>
-                                    <option value="Indah">Indah Kurmaningsih</option>
-                                    <option value="Winda">Winda</option>
-                                  </select>
-                                </div>
+                                  <input class="typeahead form-control sample-typehead-hanyasample" type="text">
+                                  </div>
                               </div>
                             </div>
                             <div class="row clearfix">
                               <div class="col-sm-4">
-                                <button type="button" class=" btn btn-success"> Filter </button><button type="button" class=" btn btn-default m-l-10"><i class=" pg-download"></i> Export </button>
+                                <button type="button" class=" btn btn-success"> Filter </button><button type="button" class=" btn btn-default m-l-10"><i class=" pg-download"></i> Expor </button>
                               </div>
                             </div>
                           </form>
