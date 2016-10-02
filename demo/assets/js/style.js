@@ -125,7 +125,7 @@
             "scrollCollapse": true,
             "oLanguage": {
                 "sLengthMenu": "_MENU_ ",
-                "sInfo": "<span>Ditemukan _TOTAL_ data. | </span><span>Jumlah data per halaman: </span><div class='btn-group' data-toggle='buttons'>\
+                "sInfo": "<span>Ditemukan _TOTAL_ data. </span><span>Jumlah data per halaman: </span><div class='btn-group' data-toggle='buttons'>\
                   <label class='btn btn-success btn-xs active'>\
                     <input type='radio' value='10' name='options' id='perpage1' checked> 10\
                   </label>\
@@ -140,7 +140,7 @@
                   </label>\
                 </div>\
                 ",
-                "sInfoFiltered":"<span>Jumlah data perhalaman: </span><div class='btn-group' data-toggle='buttons'>\
+                "sInfoFiltered":"<span>Ditemukan _TOTAL_ data. </span><span>Jumlah data per halaman: </span><div class='btn-group' data-toggle='buttons'>\
                   <label class='btn btn-success btn-xs active'>\
                     <input type='radio' value='10' name='options' id='perpage1' checked> 10\
                   </label>\
@@ -153,8 +153,7 @@
                   <label class='btn btn-success btn-xs'>\
                     <input type='radio' value='100' name='options' id='perpage3'> 100\
                   </label>\
-                </div>\
-                <span>Ditemukan _TOTAL_ data.</span>",
+                </div>",
                 "sInfoEmpty":"",
                 "sZeroRecords":"Data tidak ditemukan"
             },
