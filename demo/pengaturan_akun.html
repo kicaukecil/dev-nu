@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
-    <title>Halaman User</title>
+    <title>Pengaturan Akun</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
     <meta content="" name="description" />
     <meta content="" name="author" />
@@ -79,7 +79,7 @@
                         <div class="row column-seperation">
                           <div class="col-md-12">
                             <h3 class="no-margin"><span class="semi-bold">Akun Anda</span></h3>
-                            <p class="small">Ubah Data dan Informasi Akun Anda melalui Formulir di Bawah ini.</p>
+                            <p class="small">Ubah data dan informasi Akun Anda melalui formulir di bawah ini.</p>
                               <form id="form-project" class="m-t-20" role="form" autocomplete="off">
                                 <div class="form-group-attached">
                                   <div class="row clearfix">
@@ -102,66 +102,72 @@
                                     <input type="email" class="form-control" value="andi@email.com" name="email" required>
                                   </div>
                                   <div class="form-group form-group-default">
-                                    <label>No. Telepon <i class="fa fa-phone text-complete m-l-5"></i>
+                                    <label>No. Telepon <i class="fa text-complete m-l-5"></i>
                                     </label>
-                                    <input type="text" class="form-control" name="telepon" placeholder="+6200009999000 ">
+                                    <input type="text" class="form-control" name="telepon" value="+6200009999000">
                                   </div>
-                                  <div class="form-group form-group-default">
-                                    <label>Alamat
-                                    </label>
+                                  <div class="form-group form-group-default required">
+                                    <label>Alamat</label>
                                     <textarea rows="7" type="text" class="form-control" name="alamat">Jl. Serui No. 40</textarea>
                                   </div>
                                   <div class="">
                                     <div class="form-group form-group-default form-group-default-select2 required">
                                       <label>Provinsi</label>
-                                      <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2">
-                                        <option selected>Pilih Provinsi</option>
-                                        <optgroup label="Indonesi Bagian Barat">
-                                          <option value="AK">DKI Jakarta</option>
-                                          <option value="HI">Jawa Barat</option>
-                                          <option value="HI">Banten</option>
-                                        </optgroup>
-                                        <optgroup label="Indonesi Bagian Tengah">
-                                          <option value="CA">Bali</option>
-                                          <option value="NV">Sulawesi Selatan</option>
-                                          <option value="OR">Kalimantan Timur</option>
-                                        </optgroup>
-                                        <optgroup label="Indonesi Bagian Timur">
-                                          <option value="AZ">Maluku</option>
-                                          <option value="AZ">Papua</option>
-                                          <option value="AZ">Papua Barat</option>
-
-                                        </optgroup>
+                                      <select class="full-width" data-placeholder="Pilih Provinsi" data-init-plugin="select2" required>
+                                        <option>Aceh</option>
+                                        <option>Bali</option>
+                                        <option>Banten</option>
+                                        <option>Bengkulu</option>
+                                        <option>Gorontalo</option>
+                                        <option>Jakarta</option>
+                                        <option>Jambi</option>
+                                        <option>Jawa Barat</option>
+                                        <option>Jawa Tengah</option>
+                                        <option>Jawa Timur</option>
+                                        <option>Kalimantan Barat</option>
+                                        <option>Kalimantan Selatan</option>
+                                        <option>Kalimantan Tengah</option>
+                                        <option>Kalimantan Timur</option>
+                                        <option>Kalimantan Utara</option>
+                                        <option>Kepulauan Bangka Belitung</option>
+                                        <option>Kepulauan Riau</option>
+                                        <option>Lampung</option>
+                                        <option>Maluku</option>
+                                        <option>Maluku Utara</option>
+                                        <option>Nusa Tenggara Barat</option>
+                                        <option>Nusa Tenggara Timur</option>
+                                        <option>Papua</option>
+                                        <option>Papua Barat</option>
+                                        <option>Riau</option>
+                                        <option>Sulawesi Barat</option>
+                                        <option>Sulawesi Selatan</option>
+                                        <option>Sulawesi Tengah</option>
+                                        <option>Sulawesi Tenggara</option>
+                                        <option>Sulawesi Utara</option>
+                                        <option>Sumatera Barat</option>
+                                        <option>Sumatera Selatan</option>
+                                        <option>Sumatera Utara</option>
+                                        <option>Yogyakarta</option>
                                       </select>
                                     </div>
                                   </div>
                                   <div class="">
                                     <div class="form-group form-group-default form-group-default-select2 required">
                                       <label>Kabupaten / Kotamadya</label>
-                                      <select class="full-width" placeholder="Pilih Kota" data-init-plugin="select2">
-                                        <option selected>Pilih Kabupaten / Kotamadya</option>
-                                        <optgroup label="DKI Jakarta">
-                                          <option value="AK">Jakarta Pusat</option>
-                                          <option value="HI">Jakarta Barat</option>
-                                          <option value="HI">Jakarta Selatan</option>
-                                        </optgroup>
-                                        <optgroup label="Jawa Barat">
-                                          <option value="CA">Bandung</option>
-                                          <option value="NV">Bogor</option>
-                                        </optgroup>
-                                        <optgroup label="Jawa Timur">
-                                          <option value="AZ">Surabaya</option>
-                                          <option value="CO">Kediri</option>
-                                          <option value="ID">Lamogan</option>
-                                          <option value="MT">Ponorogo</option>
-                                        </optgroup>
+                                      <select class="full-width" placeholder="Pilih Kabupaten / Kotamadya" data-init-plugin="select2" required>
+                                          <option>Kabupaten A</option>
+                                          <option>Kabupaten B</option>
+                                          <option>Kabupaten C</option>
+                                          <option>Kotamadya C</option>
+                                          <option>Kotamadya B</option>
+                                          <option>Kotamadya A</option>
                                       </select>
                                     </div>
                                   </div>
                                   <div class="">
-                                      <div class="form-group form-group-default">
+                                      <div class="form-group form-group-default required">
                                         <label>Kode Pos</label>
-                                        <input type="text" class="form-control" name="kodepos_user">
+                                        <input type="text" class="form-control" name="kodepos_user" value="11111">
                                       </div>
                                   </div>
                                 </div>
@@ -183,11 +189,9 @@
                                   <label> Kata Sandi Lama
                                   </label>
                                   <input type=" Kata Sandi" class="form-control" name=" Kata Sandi" required>
-
                                 </div>
                               </div>
-
-                              <div class="form-group-attached m-t-20">
+                              <div class="form-group-attached">
                                 <div class="form-group form-group-default required">
                                   <label> Kata Sandi Baru
                                   </label>
