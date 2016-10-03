@@ -5,14 +5,6 @@
     <meta charset="utf-8" />
     <title>Detail Verifikasi Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
-    <link rel="apple-touch-icon" href="pages/ico/60.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta content="" name="description" />
     <meta content="" name="author" />
     <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
@@ -21,52 +13,19 @@
     <link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="assets/plugins/jquery-datatable/media/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/datatables-responsive/css/datatables.responsive.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/jquery-datatable/media/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/datatables-responsive/css/datatables.responsive.css" rel="stylesheet" type="text/css" media="screen" />
+    <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
     <link class="main-stylesheet" href="assets/css/style.css" rel="stylesheet" type="text/css" />
-    <!--[if lte IE 9]>
-	<link href="assets/plugins/codrops-dialogFx/dialog.ie.css" rel="stylesheet" type="text/css" media="screen" />
-	<![endif]-->
   <!-- ..... custom ..... -->
   <script src="header.js" type="text/javascript"></script>
   <!-- ... end custom ... -->
-  <style media="screen">
-
-  </style>
-  <script type="text/javascript">
-
-  </script>
   </head>
   <body class=" menu-pin">
-    <!-- BEGIN SIDEBPANEL-->
-    <nav class="page-sidebar" data-pages="sidebar">
-      <!-- BEGIN SIDEBAR MENU TOP TRAY CONTENT-->
-      <div class="sidebar-overlay-slide from-top" id="appMenu">
-      </div>
-      <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
-      <!-- BEGIN SIDEBAR MENU HEADER-->
-      <div class="sidebar-header" style="padding-left: 70px; height: auto">
-        <img src="logo.png" alt="logo" data-src="logo.png" width="110" height="110">
-        <a href="javascript:;" class="closeSidebar"><i class="pg-close_line"></i></a>
-      </div>
-
-      <!-- END SIDEBAR MENU HEADER-->
-      <!-- START SIDEBAR MENU -->
-      <div class="sidebar-menu" style="padding-top: 10px">
-        <!-- BEGIN SIDEBAR MENU ITEMS-->
-
-      <script src="menu.js"></script>
-
-        <div class="clearfix"></div>
-      </div>
-      <!-- END SIDEBAR MENU -->
-    </nav>
-    <!-- END SIDEBAR -->
-    <!-- END SIDEBPANEL-->
-    <!-- START PAGE-CONTAINER -->
+    <script src="menu.js"></script>
     <div class="page-container ">
       <!-- START HEADER -->
       <!-- END HEADER -->
@@ -91,8 +50,6 @@
                 <div class="input-group">
                  <span class="input-group-btn">
                    <button class="btn btn-success clickDelete" type="button">Setuju</button>
-                 </span>
-                 <span class="input-group-btn">
                    <button class="btn btn-success clickDelete" type="button">Tolak</button>
                  </span>
                </div>
@@ -104,168 +61,946 @@
           <div class="container-fluid container-fixed-lg bg-white">
             <div class="panel panel-transparent">
               <div class="panel-body">
-                <table class="table demo-table-search link-table" style="text-transform: none;" id="tableUser">
+
+                <table class="table" id="example">
                   <thead>
                     <tr>
-                       <th class="sorting-non" style="width:1%;" >
-
-                      </th>
+                      <th class="sorting-non "><button class="btn clickDelete"><i class="pg-trash"></i>
+                      </button></th>
                       <th>Nama Satuan Pendidikan</th>
-                      <th>Nomor Induk Sekolah</th>
+                      <th>Nomor Induk</th>
+                      <th>Bentuk</th>
+                      <th>Terintegrasi Dengan Pesantren</th>
+                      <th>Tahun Pembukaan Sekolah</th>
+                      <th>Alamat</th>
+                      <th>Provinsi</th>
+                      <th>Kabupaten / Kotamadya</th>
+                      <th>Kecamatan</th>
+                      <th>Kode Pos</th>
+                      <th>Klasifikasi Geografis</th>
+                      <th>Nomor Telepon</th>
+                      <th>Nomor Faksimili</th>
+                      <th>E-mail</th>
+                      <th>Website</th>
+                      <th>Tempat Praktek</th>
+                      <th>Status Koneksi Internet</th>
+                      <th>Mapel Aswaja dan Ke-NU-an</th>
+                      <th>Nomor Registrasi Maarif</th>
+                      <th>Tahun Pelajaran</th>
+                      <th>Nama Kepala Sekolah/Madrasah</th>
+                      <th>Nomor Handphone</th>
                       <th>Status Akreditasi</th>
-                      <th>Bentuk Satuan pendidikan</th>
-                      <th>Verifikasi</th>
+                      <th>Nomor SK Akreditasi Terakhir</th>
+                      <th>Nomor SK Pendirian</th>
+                      <th>Tanggal SK Pendirian</th>
+                      <th class="sorting-non">Dokumen SK Pendirian</th>
+                      <th>Status Badan Hukum</th>
+                      <th>Nama Yayasan</th>
+                      <th>Nomor SK Izin Operasional</th>
+                      <th>Tanggal SK Izin Operasional</th>
+                      <th class="sorting-non">Dokumen SK Izin Operasional</th>
+                      <th>Jumlah Ruang Kelas</th>
+                      <th>Jumlah Rombongan Belajar</th>
+                      <th>Jumlah Ruang Tenaga Pendidik</th>
+                      <th>Waktu Penyelengaraan</th>
+                      <th>Jumlah Fasilitas Penunjang Lainnya</th>
+                      <th>Keterangan Fasilitas Penunjang</th>
+                      <th>Prestasi</th>
+                      <th>Karya Unggulan</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <input type="checkbox" value="1" id="checkbox1">
-                        </span>
-                        <!-- <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
-                              <ul style="" class="dropdown-menu ">
-                                <li><a href="#" class="clickDelete">Setuju</a></li>
-                                <li><a href="#" class="clickDelete" class="clickDelete">Tolak</a></li>
+                      <td class="v-align-middle  ">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default"> <a aria-expanded="false"   class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu">
+                                <li><a href="#">Lihat</a></li>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#" class="clickDelete">Hapus</a></li>
                               </ul>
-                        </div> -->
-                      </div>
+                          </div>
+                        </div>
                       </td>
-                      <td>
-                        MTs Al Hikmah
+                      <td class="v-align-middle">
+                        <p>SMP Al Islah</p>
                       </td>
-                      <td>
-                        123445623
+                      <td class="v-align-middle">
+                        <p>123445777234566432</p>
                       </td>
-                      <td class="text-center">
-                        <label class="label label-default">A</label>
+
+                      <td class="v-align-middle">
+                        <p>MTs</p>
                       </td>
-                      <td class="text-center">
-                        MTs
+                      <td class="v-align-middle">
+                        <p>Ya</p>
                       </td>
-                      <td class="text-center">
-                        <label class="label label-danger">Belum terverifikasi</label>
+                      <td class="v-align-middle">
+                        <p>1990</p>
                       </td>
+                      <td class="v-align-middle">
+                        <p>Jl. Darma Bakti No. 43</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jawa Tengah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Semarang</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Tembalang</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>50275</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Perkotaan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif@maarifnu.or.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif.sch.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Kerja Sama</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+
+                      <td class="v-align-middle">
+                        <p>01019876-A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>2015-2016</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>KH. Shiradjuddin</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>08761928378</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Akreditasi A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>161/BAP-SM/LPG/XXI/2014</p>
+                      </td>
+                      <td class="v-align-middle">
+                        SK.00523.12331.21
+                      </td>
+                      <td class="v-align-middle">
+                        <p>06/21/2005</p>
+                      </td>
+                      <td class="sorting-non v-align-middle">
+                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Yayasan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Al-Islah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>SK.0009231.1231.223.1</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>06/21/2005</p>
+                      </td>
+                      <td class="sorting-non v-align-middle">
+                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>21</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>32</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>3</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Pagi</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>3</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          <ul>
+                            <li>Ruang Kesenian</li>
+                            <li>Lab Komputer</li>
+                            <li>Lab IPA</li>
+                          </ul>
+                        </p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          -
+                        </p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          -
+                        </p>
+                      </td>
+
                     </tr>
                     <tr>
-                      <td>
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <input type="checkbox" value="1" id="checkbox1">
-                        </span>
-                        <!-- <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
-                              <ul style="" class="dropdown-menu ">
-                                <li><a href="#" class="clickDelete">Setuju</a></li>
-                                <li><a href="#" class="clickDelete">Tolak</a></li>
+                      <td class="v-align-middle  ">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default"> <a aria-expanded="false"   class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu">
+                                <li><a href="#">Lihat</a></li>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#" class="clickDelete">Hapus</a></li>
                               </ul>
-                        </div> -->
-                      </div>
+                          </div>
+                        </div>
                       </td>
-                      <td>
-                        MTs Al Hikmah
+                      <td class="v-align-middle">
+                        <p>SMP Al Islah</p>
                       </td>
-                      <td>
-                        123445623
+                      <td class="v-align-middle">
+                        <p>123445777234566432</p>
                       </td>
-                      <td class="text-center">
-                        <label class="label label-default">A</label>
+
+                      <td class="v-align-middle">
+                        <p>MTs</p>
                       </td>
-                      <td class="text-center">
-                        MTs
+                      <td class="v-align-middle">
+                        <p>Ya</p>
                       </td>
-                      <td class="text-center">
-                        <label class="label label-danger">Belum terverifikasi</label>
+                      <td class="v-align-middle">
+                        <p>1990</p>
                       </td>
+                      <td class="v-align-middle">
+                        <p>Jl. Darma Bakti No. 43</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jawa Tengah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Semarang</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Tembalang</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>50275</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Perkotaan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif@maarifnu.or.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif.sch.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Kerja Sama</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+
+                      <td class="v-align-middle">
+                        <p>01019876-A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>2015-2016</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>KH. Shiradjuddin</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>08761928378</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Akreditasi A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>161/BAP-SM/LPG/XXI/2014</p>
+                      </td>
+                      <td class="v-align-middle">
+                        SK.00523.12331.21
+                      </td>
+                      <td class="v-align-middle">
+                        <p>06/21/2005</p>
+                      </td>
+                      <td class="sorting-non v-align-middle">
+                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Yayasan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Al-Islah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>SK.0009231.1231.223.1</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>06/21/2005</p>
+                      </td>
+                      <td class="sorting-non v-align-middle">
+                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>21</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>32</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>3</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Pagi</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>3</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          <ul>
+                            <li>Ruang Kesenian</li>
+                            <li>Lab Komputer</li>
+                            <li>Lab IPA</li>
+                          </ul>
+                        </p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          -
+                        </p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          -
+                        </p>
+                      </td>
+
                     </tr>
                     <tr>
-                      <td>
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <input type="checkbox" value="1" id="checkbox1">
-                        </span>
-                        <!-- <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
-                              <ul style="" class="dropdown-menu ">
-                                <li><a href="#" class="clickDelete">Setuju</a></li>
-                                <li><a href="#" class="clickDelete">Tolak</a></li>
+                      <td class="v-align-middle  ">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default"> <a aria-expanded="false"   class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu">
+                                <li><a href="#">Lihat</a></li>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#" class="clickDelete">Hapus</a></li>
                               </ul>
-                        </div> -->
-                      </div>
+                          </div>
+                        </div>
                       </td>
-                      <td>
-                        MTs Al Hikmah
+                      <td class="v-align-middle">
+                        <p>SMP Al Islah</p>
                       </td>
-                      <td>
-                        123445623
+                      <td class="v-align-middle">
+                        <p>123445777234566432</p>
                       </td>
-                      <td class="text-center">
-                        <label class="label label-default">A</label>
+
+                      <td class="v-align-middle">
+                        <p>MTs</p>
                       </td>
-                      <td class="text-center">
-                        MTs
+                      <td class="v-align-middle">
+                        <p>Ya</p>
                       </td>
-                      <td class="text-center">
-                        <label class="label label-danger">Belum terverifikasi</label>
+                      <td class="v-align-middle">
+                        <p>1990</p>
                       </td>
+                      <td class="v-align-middle">
+                        <p>Jl. Darma Bakti No. 43</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jawa Tengah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Semarang</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Tembalang</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>50275</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Perkotaan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif@maarifnu.or.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif.sch.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Kerja Sama</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+
+                      <td class="v-align-middle">
+                        <p>01019876-A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>2015-2016</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>KH. Shiradjuddin</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>08761928378</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Akreditasi A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>161/BAP-SM/LPG/XXI/2014</p>
+                      </td>
+                      <td class="v-align-middle">
+                        SK.00523.12331.21
+                      </td>
+                      <td class="v-align-middle">
+                        <p>06/21/2005</p>
+                      </td>
+                      <td class="sorting-non v-align-middle">
+                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Yayasan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Al-Islah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>SK.0009231.1231.223.1</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>06/21/2005</p>
+                      </td>
+                      <td class="sorting-non v-align-middle">
+                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>21</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>32</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>3</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Pagi</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>3</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          <ul>
+                            <li>Ruang Kesenian</li>
+                            <li>Lab Komputer</li>
+                            <li>Lab IPA</li>
+                          </ul>
+                        </p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          -
+                        </p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          -
+                        </p>
+                      </td>
+
                     </tr>
                     <tr>
-                      <td>
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <input type="checkbox" value="1" id="checkbox1">
-                        </span>
-                        <!-- <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
-                              <ul style="" class="dropdown-menu ">
-                                <li><a href="#" class="clickDelete">Setuju</a></li>
-                                <li><a href="#" class="clickDelete">Tolak</a></li>
+                      <td class="v-align-middle  ">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default"> <a aria-expanded="false"   class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu">
+                                <li><a href="#">Lihat</a></li>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#" class="clickDelete">Hapus</a></li>
                               </ul>
-                        </div> -->
-                      </div>
+                          </div>
+                        </div>
                       </td>
-                      <td>
-                        MI Al Nur
+                      <td class="v-align-middle">
+                        <p>SMP Al Islah</p>
                       </td>
-                      <td>
-                        123445623
+                      <td class="v-align-middle">
+                        <p>123445777234566432</p>
                       </td>
-                      <td class="text-center">
-                        <label class="label label-default">A</label>
+
+                      <td class="v-align-middle">
+                        <p>MTs</p>
                       </td>
-                      <td class="text-center">
-                        MI
+                      <td class="v-align-middle">
+                        <p>Ya</p>
                       </td>
-                      <td class="text-center">
-                        <label class="label label-danger">Belum terverifikasi</label>
+                      <td class="v-align-middle">
+                        <p>1990</p>
                       </td>
+                      <td class="v-align-middle">
+                        <p>Jl. Darma Bakti No. 43</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jawa Tengah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Semarang</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Tembalang</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>50275</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Perkotaan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif@maarifnu.or.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif.sch.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Kerja Sama</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+
+                      <td class="v-align-middle">
+                        <p>01019876-A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>2015-2016</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>KH. Shiradjuddin</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>08761928378</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Akreditasi A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>161/BAP-SM/LPG/XXI/2014</p>
+                      </td>
+                      <td class="v-align-middle">
+                        SK.00523.12331.21
+                      </td>
+                      <td class="v-align-middle">
+                        <p>06/21/2005</p>
+                      </td>
+                      <td class="sorting-non v-align-middle">
+                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Yayasan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Al-Islah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>SK.0009231.1231.223.1</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>06/21/2005</p>
+                      </td>
+                      <td class="sorting-non v-align-middle">
+                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>21</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>32</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>3</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Pagi</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>3</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          <ul>
+                            <li>Ruang Kesenian</li>
+                            <li>Lab Komputer</li>
+                            <li>Lab IPA</li>
+                          </ul>
+                        </p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          -
+                        </p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          -
+                        </p>
+                      </td>
+
                     </tr>
                     <tr>
-                      <td>
-                      <div class="input-group">
-                        <span class="input-group-addon">
-                          <input type="checkbox" value="1" id="checkbox1">
-                        </span>
-                        <!-- <div class="btn-group dropdown-default "> <a  style="" class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class=""></span> </a>
-                              <ul style="" class="dropdown-menu ">
-                                <li><a href="#" class="clickDelete">Setuju</a></li>
-                                <li><a href="#" class="clickDelete">Tolak</a></li>
+                      <td class="v-align-middle  ">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default"> <a aria-expanded="false"   class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu">
+                                <li><a href="#">Lihat</a></li>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#" class="clickDelete">Hapus</a></li>
                               </ul>
-                        </div> -->
-                      </div>
+                          </div>
+                        </div>
                       </td>
-                      <td>
-                        MTs Al Hikmah
+                      <td class="v-align-middle">
+                        <p>SMP Al Islah</p>
                       </td>
-                      <td>
-                        123445623
+                      <td class="v-align-middle">
+                        <p>123445777234566432</p>
                       </td>
-                      <td class="text-center">
-                        <label class="label label-default">A</label>
+
+                      <td class="v-align-middle">
+                        <p>MTs</p>
                       </td>
-                      <td class="text-center">
-                        MTs
+                      <td class="v-align-middle">
+                        <p>Ya</p>
                       </td>
-                      <td class="text-center">
-                        <label class="label label-danger">Belum terverifikasi</label>
+                      <td class="v-align-middle">
+                        <p>1990</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jl. Darma Bakti No. 43</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jawa Tengah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Semarang</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Tembalang</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>50275</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Perkotaan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif@maarifnu.or.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif.sch.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Kerja Sama</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+
+                      <td class="v-align-middle">
+                        <p>01019876-A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>2015-2016</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>KH. Shiradjuddin</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>08761928378</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Akreditasi A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>161/BAP-SM/LPG/XXI/2014</p>
+                      </td>
+                      <td class="v-align-middle">
+                        SK.00523.12331.21
+                      </td>
+                      <td class="v-align-middle">
+                        <p>06/21/2005</p>
+                      </td>
+                      <td class="sorting-non v-align-middle">
+                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Yayasan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Al-Islah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>SK.0009231.1231.223.1</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>06/21/2005</p>
+                      </td>
+                      <td class="sorting-non v-align-middle">
+                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>21</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>32</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>3</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Pagi</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>3</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          <ul>
+                            <li>Ruang Kesenian</li>
+                            <li>Lab Komputer</li>
+                            <li>Lab IPA</li>
+                          </ul>
+                        </p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          -
+                        </p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          -
+                        </p>
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <td class="v-align-middle  ">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" value="1" id="checkbox1">
+                          </span>
+                          <div class="btn-group dropdown-default"> <a aria-expanded="false"   class="btn dropdown-toggle" data-toggle="dropdown" href="#"> Action <span class="caret"></span> </a>
+                              <ul   class="dropdown-menu">
+                                <li><a href="#">Lihat</a></li>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#" class="clickDelete">Hapus</a></li>
+                              </ul>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>SMP Al Islah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>123445777234566432</p>
+                      </td>
+
+                      <td class="v-align-middle">
+                        <p>MTs</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ya</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>1990</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jl. Darma Bakti No. 43</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Jawa Tengah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Semarang</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Tembalang</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>50275</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Perkotaan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>(024) 334 993</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif@maarifnu.or.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>LPNUmaarif.sch.id</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Kerja Sama</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Ada</p>
+                      </td>
+
+                      <td class="v-align-middle">
+                        <p>01019876-A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>2015-2016</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>KH. Shiradjuddin</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>08761928378</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Akreditasi A</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>161/BAP-SM/LPG/XXI/2014</p>
+                      </td>
+                      <td class="v-align-middle">
+                        SK.00523.12331.21
+                      </td>
+                      <td class="v-align-middle">
+                        <p>06/21/2005</p>
+                      </td>
+                      <td class="sorting-non v-align-middle">
+                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Yayasan</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Al-Islah</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>SK.0009231.1231.223.1</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>06/21/2005</p>
+                      </td>
+                      <td class="sorting-non v-align-middle">
+                        <p><button class="btn btn-default"><i class="fa fa-download"></i> Unduh</button></p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>21</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>32</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>3</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>Pagi</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>3</p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          <ul>
+                            <li>Ruang Kesenian</li>
+                            <li>Lab Komputer</li>
+                            <li>Lab IPA</li>
+                          </ul>
+                        </p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          -
+                        </p>
+                      </td>
+                      <td class="v-align-middle">
+                        <p>
+                          -
+                        </p>
                       </td>
                     </tr>
                   </tbody>
@@ -324,19 +1059,83 @@
     <script src="assets/plugins/jquery-datatable/media/js/jquery.dataTables.min.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.min.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery-datatable/media/js/dataTables.bootstrap.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-datatable/extensions/FixedColumns/js/dataTables.fixedColumns.js" type="text/javascript"></script>
     <script src="assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js" type="text/javascript"></script>
     <script type="text/javascript" src="assets/plugins/datatables-responsive/js/datatables.responsive.js"></script>
     <script type="text/javascript" src="assets/plugins/datatables-responsive/js/lodash.min.js"></script>
-    <!-- END VENDOR JS -->
-    <!-- BEGIN CORE TEMPLATE JS -->
-    <script src="pages/js/pages.min.js"></script>
-    <!-- END CORE TEMPLATE JS -->
-    <!-- BEGIN PAGE LEVEL JS -->
-    <script src="assets/js/datatables.js" type="text/javascript"></script>
-    <script src="assets/js/tables.js" type="text/javascript"></script>
-    <script src="assets/js/style.js" type="text/javascript"></script>
-
-    <script src="assets/js/scripts.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap-typehead/typeahead.bundle.min.js"></script>
+    <script src="assets/plugins/bootstrap-typehead/typeahead.jquery.min.js"></script>
+    <script src="assets/plugins/handlebars/handlebars-v4.0.5.js"></script>
+    <script src="assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-select2/select2.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/classie/classie.js"></script>
+    <script src="assets/plugins/switchery/js/switchery.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-autonumeric/autoNumeric.js"></script>
+    <script type="text/javascript" src="assets/plugins/dropzone/dropzone.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-tag/bootstrap-tagsinput.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-inputmask/jquery.inputmask.min.js"></script>
+    <script src="assets/plugins/bootstrap-form-wizard/js/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="assets/plugins/summernote/js/summernote.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/moment/moment.min.js"></script>
+    <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="assets/plugins/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
+    <script src="assets/plugins/handlebars/handlebars-v4.0.5.js"></script>
     <!-- END PAGE LEVEL JS -->
+    <script src="pages/js/pages.min.js"></script>
+    <script src="assets/js/form_elements.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+      var table = $('#example').DataTable( {
+        scrollX: true,
+        scrollCollapse: true,
+        paging: false,
+        oLanguage: {
+            sLengthMenu: "_MENU_ ",
+            sInfo: "<span>Ditemukan _TOTAL_ data.</span>\
+            <span>Jumlah data per halaman: </span><div class='btn-group' data-toggle='buttons'>\
+              <label class='btn btn-success btn-xs active'>\
+                <input type='radio' value='10' name='options' id='perpage1' checked> 10\
+              </label>\
+              <label class='btn btn-success btn-xs'>\
+                <input type='radio' value='20' name='options' id='perpage2'> 20\
+              </label>\
+              <label class='btn btn-success btn-xs'>\
+                <input type='radio' value='50' name='options' id='perpage3'> 50\
+              </label>\
+              <label class='btn btn-success btn-xs'>\
+                <input type='radio' value='100' name='options' id='perpage3'> 100\
+              </label>\
+            </div>",
+            sInfoFiltered:"<span>Ditemukan _TOTAL_ data.</span>\
+            <span>Jumlah data per halaman: </span><div class='btn-group' data-toggle='buttons'>\
+              <label class='btn btn-success btn-xs active'>\
+                <input type='radio' value='10' name='options' id='perpage1' checked> 10\
+              </label>\
+              <label class='btn btn-success btn-xs'>\
+                <input type='radio' value='20' name='options' id='perpage2'> 20\
+              </label>\
+              <label class='btn btn-success btn-xs'>\
+                <input type='radio' value='50' name='options' id='perpage3'> 50\
+              </label>\
+              <label class='btn btn-success btn-xs'>\
+                <input type='radio' value='100' name='options' id='perpage3'> 100\
+              </label>\
+            </div>",
+            sInfoEmpty:"",
+            sZeroRecords:"Data tidak ditemukan"
+        },
+        paging: true,
+        iDisplayLength: 10
+
+      } );
+        new $.fn.dataTable.FixedColumns( table );
+
+       } );
+
+    </script>
   </body>
 </html>
