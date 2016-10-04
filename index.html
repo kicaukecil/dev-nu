@@ -266,7 +266,7 @@ window.onload = function () {
             <div class="row clearfix ">
               <div class="panel panel-transparent m-t-40 p-l-50 p-r-50 ">
                 <div  class="row text-center m-b-10">
-                  <h2 class="no-margin" style="font-size:25px; margin-top:35px !important;">Sebaran Satuan Pendidikan Ma'arif NU</h2>
+                  <h2 class="no-margin" style="font-size:25px; !important;">Sebaran Satuan Pendidikan Ma'arif NU</h2>
                   <span>Jumlah total 60,000 Satuan Pendidikan di Seluruh Indonesia<span>
                 </div>
                 <!-- <h2 class="text-master no-margin text-center">Sebaran Satuan Pendidikan Ma'arif NU</h2> -->
@@ -293,28 +293,206 @@ window.onload = function () {
                             </div>
                           </div>
                         </form> -->
-
                       </div>
                     </div>
                     <div id="mapplic"></div>
-
                   </div>
                   <!-- <div class="text-center">
                     <a href="#main-dash" class="hinted-text text-master">Scroll ke Bawah<br><i class="fa fa-chevron-down" style="font-size:20px"></i></a>
                   </div> -->
               </div>
             </div>
-            <div id="detail-data-persebaran" class="row clearfix">
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
+
+            <div class="row clearfix">
+              <div class="panel panel-transparent">
+                <div class="row text-center m-b-10">
+                <span>Pilih Provinsi untuk menampilkan detail data sebaran<span>
+                </div>
+                <form class="text-center">
+                  <div class="col-sm-4"></div>
+                  <div class="col-sm-4 m-b-10 select2-container required">
+                    <select class="full-width" placeholder="Pilih Provinsi" data-init-plugin="select2">
+                      <option placeholder value=""></option>
+                      <option>Aceh</option>
+                      <option>Bali</option>
+                      <option>Banten</option>
+                      <option>Bengkulu</option>
+                      <option>Gorontalo</option>
+                      <option selected>Jakarta</option>
+                      <option>Jambi</option>
+                      <option>Jawa Barat</option>
+                      <option>Jawa Tengah</option>
+                      <option>Jawa Timur</option>
+                      <option>Kalimantan Barat</option>
+                      <option>Kalimantan Selatan</option>
+                      <option>Kalimantan Tengah</option>
+                      <option>Kalimantan Timur</option>
+                      <option>Kalimantan Utara</option>
+                      <option>Kepulauan Bangka Belitung</option>
+                      <option>Kepulauan Riau</option>
+                      <option>Lampung</option>
+                      <option>Maluku</option>
+                      <option>Maluku Utara</option>
+                      <option>Nusa Tenggara Barat</option>
+                      <option>Nusa Tenggara Timur</option>
+                      <option>Papua</option>
+                      <option>Papua Barat</option>
+                      <option>Riau</option>
+                      <option>Sulawesi Barat</option>
+                      <option>Sulawesi Selatan</option>
+                      <option>Sulawesi Tengah</option>
+                      <option>Sulawesi Tenggara</option>
+                      <option>Sulawesi Utara</option>
+                      <option>Sumatera Barat</option>
+                      <option>Sumatera Selatan</option>
+                      <option>Sumatera Utara</option>
+                      <option>Yogyakarta</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-4"></div>
+                </form>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 m-b-10">
+                <div class="panel no-border panel-default no-margin widget-loader-circle">
+                    <div class="p-l-30 p-r-30 p-b-30">
+                        <table class="table" id="rankingTable">
+                            <thead>
+                                <tr>
+                                    <th class="hint-text fs-11">Kabupaten / Kotamadya</th>
+                                    <th class="hint-text fs-11">Satuan Pendidikan</th>
+                                    <th class="hint-text fs-11">Peserta Didik</th>
+                                    <th class="hint-text fs-11">Pengajar</th>
+                                    <th class="hint-text fs-11">Rombongan Belajar</th>
+                                    <th class="hint-text fs-11">Ruang Kelas</th>
+                                    <th class="hint-text fs-11">Siswa Berprestasi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>Jakarta Selatan</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>763</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1000</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>150</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>300</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>100</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>80</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>Jakarta Utara</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>763</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1000</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>150</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>300</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>100</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>80</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>Jakarta Pusat</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>763</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1000</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>150</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>300</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>100</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>80</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>Jakarta Barat</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>763</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1000</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>150</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>300</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>100</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>80</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-align-middle">
+                                        <p>Jakarta Timur</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>763</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>1000</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>150</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>300</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>100</p>
+                                    </td>
+                                    <td class="v-align-middle">
+                                        <p>80</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
               </div>
             </div>
-            <div class="row clearfix padding-40">
+
+            <div class="row clearfix p-t-30">
 
               <div class="panel panel-transparent">
                 <div class="row text-center m-b-10">
@@ -322,7 +500,8 @@ window.onload = function () {
                   <span>Pilih Provinsi dan Kabupaten / Kotamadya untuk menampilkan statistik<span>
                 </div>
                 <form>
-                  <div class=" col-sm-6 form-group form-group-default form-group-default-select2 required">
+                  <div class="col-sm-3"></div>
+                  <div class="col-sm-3 form-group form-group-default form-group-default-select2 required">
                     <label>Provinsi</label>
                     <select class="full-width" placeholder="Pilih Provinsi" data-init-plugin="select2">
                       <option placeholder value=""></option>
@@ -362,7 +541,7 @@ window.onload = function () {
                       <option>Yogyakarta</option>
                     </select>
                   </div>
-                  <div class="col-sm-6 form-group form-group-default form-group-default-select2 required">
+                  <div class="col-sm-3 form-group form-group-default form-group-default-select2 required">
                     <label>Kabupaten / Kotamadya</label>
                     <select class="full-width" placeholder="Pilih Kabupaten / Kotamadya" data-init-plugin="select2">
                       <option placeholder value=""></option>
@@ -374,6 +553,7 @@ window.onload = function () {
                       <option selected>Jakarta Selatan</option>
                     </select>
                   </div>
+                  <div class="col-sm-3"></div>
                 </form>
               </div>
             </div>
@@ -393,7 +573,7 @@ window.onload = function () {
                             <div class="clearfix"></div>
                         </div>
                         <div class="p-l-30 p-r-30 p-b-30">
-                            <table class="table table-hover" id="rankingTable">
+                            <table class="table" id="rankingTable">
                                 <thead>
                                     <tr>
                                         <th class="hint-text fs-11 col-xs-4">Satuan Pendidikan</th>
