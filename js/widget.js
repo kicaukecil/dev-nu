@@ -68,7 +68,66 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
               "iDisplayLength": 5
             };
 
+            table.dataTable(settings);
 
+            // search box for table
+            $('#tableUser-cari').keyup(function() {table.fnFilter($(this).val());});
+            $('#tableUser input[type=checkbox]').click(function() {
+                if ($(this).is(':checked')) {
+                    $(this).closest('tr').addClass('selected');
+                } else {
+                    $(this).closest('tr').removeClass('selected');
+                }
+
+            });
+        }
+
+        initTableWithSearch();
+
+        var initTableWithSearch = function() {
+            var table = $('#rankingTable-2');
+
+            var settings = {
+              "sDom": "<'table-responsive't><'row'<p i>>",
+              "destroy": true,
+              "scrollCollapse": true,
+              "oLanguage": {
+                  "sLengthMenu": "_MENU_ ",
+                  "sInfo": "<span>Ditemukan _TOTAL_ data.</span>\
+                  <span>Jumlah data per halaman: </span><div class='btn-group' data-toggle='buttons'>\
+                    <label class='btn btn-success btn-xs active'>\
+                      <input type='radio' value='10' name='options' id='perpage1' checked> 10\
+                    </label>\
+                    <label class='btn btn-success btn-xs'>\
+                      <input type='radio' value='20' name='options' id='perpage2'> 20\
+                    </label>\
+                    <label class='btn btn-success btn-xs'>\
+                      <input type='radio' value='50' name='options' id='perpage3'> 50\
+                    </label>\
+                    <label class='btn btn-success btn-xs'>\
+                      <input type='radio' value='100' name='options' id='perpage3'> 100\
+                    </label>\
+                  </div>",
+                  "sInfoFiltered":"<span>Ditemukan _TOTAL_ data.</span>\
+                  <span>Jumlah data per halaman: </span><div class='btn-group' data-toggle='buttons'>\
+                    <label class='btn btn-success btn-xs active'>\
+                      <input type='radio' value='10' name='options' id='perpage1' checked> 10\
+                    </label>\
+                    <label class='btn btn-success btn-xs'>\
+                      <input type='radio' value='20' name='options' id='perpage2'> 20\
+                    </label>\
+                    <label class='btn btn-success btn-xs'>\
+                      <input type='radio' value='50' name='options' id='perpage3'> 50\
+                    </label>\
+                    <label class='btn btn-success btn-xs'>\
+                      <input type='radio' value='100' name='options' id='perpage3'> 100\
+                    </label>\
+                  </div>",
+                  "sInfoEmpty":"",
+                  "sZeroRecords":"Data tidak ditemukan"
+              },
+              "iDisplayLength": 5
+            };
 
             table.dataTable(settings);
 
